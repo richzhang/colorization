@@ -1,0 +1,1081 @@
+Img: 0
+Type: gray
+fountain
+earthstar
+mushroom
+hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa
+spider web, spider's web
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+garden spider, Aranea diademata
+cicada, cicala
+slug
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+spaghetti squash
+sulphur butterfly, sulfur butterfly
+zucchini, courgette
+artichoke, globe artichoke
+
+
+Img: 1
+Type: gray
+sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+weevil
+fiddler crab
+hip, rose hip, rosehip
+crayfish, crawfish, crawdad, crawdaddy
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+bee
+sulphur butterfly, sulfur butterfly
+ant, emmet, pismire
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+sulphur butterfly, sulfur butterfly
+cucumber, cuke
+rapeseed
+bee
+
+
+Img: 2
+Type: gray
+ping-pong ball
+bubble
+barn spider, Araneus cavaticus
+mushroom
+spotlight, spot
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+lemon
+hip, rose hip, rosehip
+bell pepper
+Granny Smith
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+spaghetti squash
+lemon
+ear, spike, capitulum
+corn
+
+
+Img: 3
+Type: gray
+American egret, great white heron, Egretta albus
+sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+coral fungus
+pelican
+picket fence, paling
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+sulphur butterfly, sulfur butterfly
+jackfruit, jak, jack
+lemon
+bolete
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+sulphur butterfly, sulfur butterfly
+tench, Tinca tinca
+spaghetti squash
+jackfruit, jak, jack
+
+
+Img: 4
+Type: gray
+coral fungus
+artichoke, globe artichoke
+ear, spike, capitulum
+corn
+earthstar
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+bell pepper
+lemon
+jackfruit, jak, jack
+hip, rose hip, rosehip
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+zucchini, courgette
+spaghetti squash
+ear, spike, capitulum
+acorn squash
+
+
+Img: 5
+Type: gray
+pinwheel
+swing
+plastic bag
+syringe
+shovel
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+European fire salamander, Salamandra salamandra
+eft
+coral fungus
+rock beauty, Holocanthus tricolor
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+jackfruit, jak, jack
+cucumber, cuke
+lemon
+spaghetti squash
+
+
+Img: 6
+Type: gray
+crayfish, crawfish, crawdad, crawdaddy
+little blue heron, Egretta caerulea
+magpie
+water ouzel, dipper
+bittern
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+lemon
+slug
+bittern
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+sulphur butterfly, sulfur butterfly
+spaghetti squash
+lemon
+rapeseed
+
+
+Img: 7
+Type: gray
+mushroom
+earthstar
+pinwheel
+lycaenid, lycaenid butterfly
+spider web, spider's web
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+mushroom
+earthstar
+coral fungus
+acorn
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+spaghetti squash
+daisy
+sulphur butterfly, sulfur butterfly
+
+
+Img: 8
+Type: gray
+plastic bag
+toilet tissue, toilet paper, bathroom tissue
+brassiere, bra, bandeau
+conch
+knot
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+slug
+bell pepper
+ear, spike, capitulum
+banana
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+ear, spike, capitulum
+lemon
+banana
+sulphur butterfly, sulfur butterfly
+
+
+Img: 9
+Type: gray
+brassiere, bra, bandeau
+ear, spike, capitulum
+picket fence, paling
+plastic bag
+chainlink fence
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+bittern
+ear, spike, capitulum
+lemon
+hip, rose hip, rosehip
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+spaghetti squash
+ear, spike, capitulum
+lemon
+butternut squash
+
+
+Img: 10
+Type: gray
+bittern
+American egret, great white heron, Egretta albus
+soccer ball
+armadillo
+birdhouse
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+slug
+European fire salamander, Salamandra salamandra
+leaf beetle, chrysomelid
+stinkhorn, carrion fungus
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+mushroom
+bolete
+buckeye, horse chestnut, conker
+stinkhorn, carrion fungus
+
+
+Img: 11
+Type: gray
+earthstar
+cock
+goose
+artichoke, globe artichoke
+black grouse
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+lemon
+hip, rose hip, rosehip
+bee
+sulphur butterfly, sulfur butterfly
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+rapeseed
+sulphur butterfly, sulfur butterfly
+lemon
+bee
+
+
+Img: 12
+Type: gray
+daisy
+cabbage butterfly
+picket fence, paling
+earthstar
+mushroom
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+lemon
+hip, rose hip, rosehip
+spaghetti squash
+fig
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+spaghetti squash
+lemon
+zucchini, courgette
+cucumber, cuke
+
+
+Img: 13
+Type: gray
+coral fungus
+ear, spike, capitulum
+earthstar
+daisy
+acorn
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+rapeseed
+earthstar
+coral fungus
+hip, rose hip, rosehip
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+ear, spike, capitulum
+corn
+zucchini, courgette
+spaghetti squash
+
+
+Img: 14
+Type: gray
+plastic bag
+cauliflower
+corn
+ear, spike, capitulum
+syringe
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+ear, spike, capitulum
+banana
+jackfruit, jak, jack
+corn
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+ear, spike, capitulum
+jackfruit, jak, jack
+banana
+corn
+
+
+Img: 15
+Type: gray
+groom, bridegroom
+bubble
+picket fence, paling
+acorn
+earthstar
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+bee
+sulphur butterfly, sulfur butterfly
+mantis, mantid
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+rapeseed
+sulphur butterfly, sulfur butterfly
+zucchini, courgette
+lemon
+
+
+Img: 16
+Type: gray
+picket fence, paling
+daisy
+cabbage butterfly
+mushroom
+birdhouse
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+spaghetti squash
+zucchini, courgette
+bolete
+hip, rose hip, rosehip
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+spaghetti squash
+zucchini, courgette
+sulphur butterfly, sulfur butterfly
+cucumber, cuke
+
+
+Img: 17
+Type: gray
+hip, rose hip, rosehip
+artichoke, globe artichoke
+bubble
+ear, spike, capitulum
+soccer ball
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+lemon
+garden spider, Aranea diademata
+buckeye, horse chestnut, conker
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+ear, spike, capitulum
+hip, rose hip, rosehip
+lemon
+garden spider, Aranea diademata
+
+
+Img: 18
+Type: gray
+worm fence, snake fence, snake-rail fence, Virginia fence
+barrow, garden cart, lawn cart, wheelbarrow
+plow, plough
+picket fence, paling
+hay
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+lemon
+ear, spike, capitulum
+cucumber, cuke
+spaghetti squash
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+ear, spike, capitulum
+cucumber, cuke
+spaghetti squash
+corn
+
+
+Img: 19
+Type: gray
+daisy
+pinwheel
+picket fence, paling
+bee
+plastic bag
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+sulphur butterfly, sulfur butterfly
+earthstar
+pot, flowerpot
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+sulphur butterfly, sulfur butterfly
+cucumber, cuke
+rapeseed
+buckeye, horse chestnut, conker
+
+
+Img: 20
+Type: gray
+ear, spike, capitulum
+daisy
+corn
+bee
+cabbage butterfly
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+ear, spike, capitulum
+slug
+bell pepper
+zucchini, courgette
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+ear, spike, capitulum
+zucchini, courgette
+sulphur butterfly, sulfur butterfly
+corn
+
+
+Img: 21
+Type: gray
+mushroom
+daisy
+earthstar
+agaric
+picket fence, paling
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+agaric
+mushroom
+bolete
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+spaghetti squash
+lemon
+cucumber, cuke
+
+
+Img: 22
+Type: gray
+cabbage butterfly
+earthstar
+daisy
+mushroom
+fly
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+spaghetti squash
+hip, rose hip, rosehip
+zucchini, courgette
+butternut squash
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+spaghetti squash
+zucchini, courgette
+sulphur butterfly, sulfur butterfly
+butternut squash
+
+
+Img: 23
+Type: gray
+daisy
+plastic bag
+hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa
+acorn
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+slug
+zucchini, courgette
+lemon
+bell pepper
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+zucchini, courgette
+spaghetti squash
+cucumber, cuke
+butternut squash
+
+
+Img: 24
+Type: gray
+earthstar
+mushroom
+daisy
+coral fungus
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+slug
+lemon
+sulphur butterfly, sulfur butterfly
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+spaghetti squash
+lemon
+sulphur butterfly, sulfur butterfly
+rapeseed
+
+
+Img: 25
+Type: gray
+ear, spike, capitulum
+earthstar
+barrow, garden cart, lawn cart, wheelbarrow
+corn
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+ear, spike, capitulum
+zucchini, courgette
+cucumber, cuke
+corn
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+ear, spike, capitulum
+starfish, sea star
+corn
+mantis, mantid
+
+
+Img: 26
+Type: gray
+ear, spike, capitulum
+corn
+coral fungus
+mantis, mantid
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+ear, spike, capitulum
+lemon
+mantis, mantid
+corn
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+lemon
+spaghetti squash
+ear, spike, capitulum
+corn
+
+
+Img: 27
+Type: gray
+fountain
+brassiere, bra, bandeau
+picket fence, paling
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+weevil
+hip, rose hip, rosehip
+lemon
+ear, spike, capitulum
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+ear, spike, capitulum
+weevil
+bee
+lycaenid, lycaenid butterfly
+
+
+Img: 28
+Type: gray
+soccer ball
+ear, spike, capitulum
+American egret, great white heron, Egretta albus
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+corn
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+buckeye, horse chestnut, conker
+hip, rose hip, rosehip
+ear, spike, capitulum
+croquet ball
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+buckeye, horse chestnut, conker
+acorn
+spaghetti squash
+ear, spike, capitulum
+
+
+Img: 29
+Type: gray
+hip, rose hip, rosehip
+coral fungus
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+earthstar
+picket fence, paling
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+bee
+sulphur butterfly, sulfur butterfly
+slug
+hip, rose hip, rosehip
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+sulphur butterfly, sulfur butterfly
+buckeye, horse chestnut, conker
+bee
+slug
+
+
+Img: 30
+Type: gray
+cabbage butterfly
+hummingbird
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+picket fence, paling
+vase
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+slug
+bittern
+jackfruit, jak, jack
+spaghetti squash
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+sulphur butterfly, sulfur butterfly
+spaghetti squash
+lemon
+jackfruit, jak, jack
+
+
+Img: 31
+Type: gray
+bubble
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+picket fence, paling
+ear, spike, capitulum
+mantis, mantid
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+zucchini, courgette
+hip, rose hip, rosehip
+cicada, cicala
+mantis, mantid
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+zucchini, courgette
+sulphur butterfly, sulfur butterfly
+rapeseed
+ear, spike, capitulum
+
+
+Img: 32
+Type: gray
+earthstar
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hourglass
+hip, rose hip, rosehip
+candle, taper, wax light
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+lemon
+fig
+hip, rose hip, rosehip
+spaghetti squash
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+lemon
+spaghetti squash
+fig
+hip, rose hip, rosehip
+
+
+Img: 33
+Type: gray
+earthstar
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+garden spider, Aranea diademata
+barn spider, Araneus cavaticus
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+bell pepper
+spaghetti squash
+slug
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+spaghetti squash
+hip, rose hip, rosehip
+bell pepper
+butternut squash
+
+
+Img: 34
+Type: gray
+knot
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+bonnet, poke bonnet
+hip, rose hip, rosehip
+ear, spike, capitulum
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+slug
+hip, rose hip, rosehip
+bell pepper
+lemon
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+slug
+hip, rose hip, rosehip
+vine snake
+bell pepper
+
+
+Img: 35
+Type: gray
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+ear, spike, capitulum
+corn
+knot
+artichoke, globe artichoke
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+zucchini, courgette
+hip, rose hip, rosehip
+bee
+slug
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+zucchini, courgette
+ear, spike, capitulum
+cock
+hip, rose hip, rosehip
+
+
+Img: 36
+Type: gray
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+earthstar
+hoopskirt, crinoline
+table lamp
+vase
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+spaghetti squash
+lemon
+hip, rose hip, rosehip
+butternut squash
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+spaghetti squash
+butternut squash
+zucchini, courgette
+acorn squash
+
+
+Img: 37
+Type: gray
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+wolf spider, hunting spider
+mantis, mantid
+tarantula
+barn spider, Araneus cavaticus
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+sulphur butterfly, sulfur butterfly
+ear, spike, capitulum
+zucchini, courgette
+spaghetti squash
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+zucchini, courgette
+ear, spike, capitulum
+sulphur butterfly, sulfur butterfly
+rapeseed
+
+
+Img: 38
+Type: gray
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+knot
+ear, spike, capitulum
+barn spider, Araneus cavaticus
+garden spider, Aranea diademata
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+bell pepper
+bee
+ant, emmet, pismire
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+spaghetti squash
+sulphur butterfly, sulfur butterfly
+ear, spike, capitulum
+zucchini, courgette
+
+
+Img: 39
+Type: gray
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+earthstar
+hip, rose hip, rosehip
+mushroom
+plastic bag
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+earthstar
+lemon
+spaghetti squash
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+lemon
+spaghetti squash
+sulphur butterfly, sulfur butterfly
+rapeseed
+
+
+Img: 40
+Type: gray
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+ear, spike, capitulum
+corn
+garden spider, Aranea diademata
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+bell pepper
+ear, spike, capitulum
+slug
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+spaghetti squash
+zucchini, courgette
+butternut squash
+cucumber, cuke
+
+
+Img: 41
+Type: gray
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+lycaenid, lycaenid butterfly
+cabbage butterfly
+daisy
+conch
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+garden spider, Aranea diademata
+spaghetti squash
+cicada, cicala
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+sulphur butterfly, sulfur butterfly
+garden spider, Aranea diademata
+lycaenid, lycaenid butterfly
+
+
+Img: 42
+Type: gray
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+barn spider, Araneus cavaticus
+weevil
+lampshade, lamp shade
+fountain
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+spaghetti squash
+ant, emmet, pismire
+lemon
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+weevil
+spaghetti squash
+barn spider, Araneus cavaticus
+ear, spike, capitulum
+
+
+Img: 43
+Type: gray
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+earthstar
+candle, taper, wax light
+matchstick
+mushroom
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+earthstar
+table lamp
+candle, taper, wax light
+
+Type: result
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+hip, rose hip, rosehip
+lemon
+Granny Smith
+earthstar
+
+
+Img: 44
+Type: gray
+picket fence, paling
+spider web, spider's web
+fountain
+coral fungus
+earthstar
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+lemon
+jackfruit, jak, jack
+spaghetti squash
+ear, spike, capitulum
+
+Type: result
+spider web, spider's web
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+acorn
+mushroom
+tennis ball
+
+
+Img: 45
+Type: gray
+ear, spike, capitulum
+corn
+coral fungus
+banana
+picket fence, paling
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+zucchini, courgette
+cucumber, cuke
+leaf beetle, chrysomelid
+hip, rose hip, rosehip
+
+Type: result
+ear, spike, capitulum
+zucchini, courgette
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+cucumber, cuke
+corn
+
+
+Img: 46
+Type: gray
+plastic bag
+cicada, cicala
+leafhopper
+ear, spike, capitulum
+corn
+
+Type: ground truth
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+cicada, cicala
+jackfruit, jak, jack
+slug
+bell pepper
+
+Type: result
+head cabbage
+ear, spike, capitulum
+cauliflower
+broccoli
+artichoke, globe artichoke
+
+

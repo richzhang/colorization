@@ -1,0 +1,1104 @@
+Img: 0
+Type: gray
+lemon
+whiskey jug
+Granny Smith
+butternut squash
+tick
+
+Type: ground truth
+orange
+lemon
+banana
+pomegranate
+butternut squash
+
+Type: result
+orange
+butternut squash
+lemon
+spaghetti squash
+pomegranate
+
+
+Img: 1
+Type: gray
+golf ball
+acorn
+tennis ball
+matchstick
+web site, website, internet site, site
+
+Type: ground truth
+orange
+lemon
+tennis ball
+banana
+acorn
+
+Type: result
+orange
+lemon
+acorn
+tennis ball
+buckeye, horse chestnut, conker
+
+
+Img: 2
+Type: gray
+switch, electric switch, electrical switch
+ping-pong ball
+mortar
+ladle
+mouse, computer mouse
+
+Type: ground truth
+orange
+lemon
+banana
+pomegranate
+croquet ball
+
+Type: result
+orange
+buckeye, horse chestnut, conker
+banana
+wooden spoon
+pomegranate
+
+
+Img: 3
+Type: gray
+plastic bag
+paper towel
+fountain
+mushroom
+banana
+
+Type: ground truth
+orange
+lemon
+pineapple, ananas
+bee
+zucchini, courgette
+
+Type: result
+orange
+lemon
+pineapple, ananas
+banana
+jackfruit, jak, jack
+
+
+Img: 4
+Type: gray
+daisy
+sea anemone, anemone
+jellyfish
+lemon
+matchstick
+
+Type: ground truth
+orange
+lemon
+sea anemone, anemone
+honeycomb
+daisy
+
+Type: result
+orange
+lemon
+sea anemone, anemone
+jackfruit, jak, jack
+daisy
+
+
+Img: 5
+Type: gray
+bubble
+dough
+maraca
+bell pepper
+lemon
+
+Type: ground truth
+orange
+lemon
+bell pepper
+banana
+strawberry
+
+Type: result
+orange
+lemon
+jellyfish
+hotdog, hot dog, red hot
+banana
+
+
+Img: 6
+Type: gray
+toilet tissue, toilet paper, bathroom tissue
+paper towel
+lemon
+ladle
+Band Aid
+
+Type: ground truth
+orange
+lemon
+banana
+pomegranate
+pitcher, ewer
+
+Type: result
+orange
+lemon
+banana
+tennis ball
+pitcher, ewer
+
+
+Img: 7
+Type: gray
+gong, tam-tam
+shield, buckler
+chime, bell, gong
+solar dish, solar collector, solar furnace
+lemon
+
+Type: ground truth
+orange
+lemon
+strawberry
+fig
+soup bowl
+
+Type: result
+orange
+lemon
+fig
+strawberry
+honeycomb
+
+
+Img: 8
+Type: gray
+jellyfish
+chiton, coat-of-mail shell, sea cradle, polyplacophore
+bubble
+isopod
+nematode, nematode worm, roundworm
+
+Type: ground truth
+orange
+bell pepper
+lemon
+strawberry
+butternut squash
+
+Type: result
+orange
+lemon
+bell pepper
+pineapple, ananas
+acorn squash
+
+
+Img: 9
+Type: gray
+nematode, nematode worm, roundworm
+bubble
+fig
+lemon
+Petri dish
+
+Type: ground truth
+orange
+strawberry
+lemon
+French loaf
+banana
+
+Type: result
+orange
+banana
+lemon
+acorn squash
+fig
+
+
+Img: 10
+Type: gray
+saltshaker, salt shaker
+ping-pong ball
+pool table, billiard table, snooker table
+piggy bank, penny bank
+golf ball
+
+Type: ground truth
+orange
+jack-o'-lantern
+banana
+lemon
+ping-pong ball
+
+Type: result
+orange
+lemon
+banana
+spaghetti squash
+pineapple, ananas
+
+
+Img: 11
+Type: gray
+pick, plectrum, plectron
+toilet tissue, toilet paper, bathroom tissue
+paper towel
+strainer
+wooden spoon
+
+Type: ground truth
+orange
+lemon
+butternut squash
+strainer
+spaghetti squash
+
+Type: result
+orange
+lemon
+butternut squash
+soup bowl
+consomme
+
+
+Img: 12
+Type: gray
+butternut squash
+earthstar
+dough
+lemon
+banana
+
+Type: ground truth
+orange
+lemon
+banana
+spaghetti squash
+butternut squash
+
+Type: result
+orange
+lemon
+banana
+Granny Smith
+butternut squash
+
+
+Img: 13
+Type: gray
+dough
+frying pan, frypan, skillet
+mixing bowl
+plastic bag
+spatula
+
+Type: ground truth
+orange
+butternut squash
+lemon
+acorn squash
+spaghetti squash
+
+Type: result
+orange
+lemon
+ice cream, icecream
+consomme
+soup bowl
+
+
+Img: 14
+Type: gray
+dough
+ping-pong ball
+confectionery, confectionary, candy store
+lemon
+golf ball
+
+Type: ground truth
+lemon
+orange
+pineapple, ananas
+banana
+spaghetti squash
+
+Type: result
+orange
+lemon
+pineapple, ananas
+banana
+grocery store, grocery, food market, market
+
+
+Img: 15
+Type: gray
+frying pan, frypan, skillet
+dough
+strainer
+lemon
+matchstick
+
+Type: ground truth
+lemon
+orange
+banana
+Granny Smith
+pineapple, ananas
+
+Type: result
+orange
+lemon
+banana
+pineapple, ananas
+acorn squash
+
+
+Img: 16
+Type: gray
+fountain
+shower curtain
+plastic bag
+alp
+orange
+
+Type: ground truth
+orange
+honeycomb
+lemon
+butternut squash
+lampshade, lamp shade
+
+Type: result
+orange
+lemon
+honeycomb
+spaghetti squash
+banana
+
+
+Img: 17
+Type: gray
+dough
+lemon
+confectionery, confectionary, candy store
+grocery store, grocery, food market, market
+orange
+
+Type: ground truth
+orange
+grocery store, grocery, food market, market
+strawberry
+banana
+lemon
+
+Type: result
+orange
+grocery store, grocery, food market, market
+lemon
+strawberry
+confectionery, confectionary, candy store
+
+
+Img: 18
+Type: gray
+lemon
+Granny Smith
+mortar
+orange
+Band Aid
+
+Type: ground truth
+orange
+lemon
+butternut squash
+buckeye, horse chestnut, conker
+banana
+
+Type: result
+orange
+lemon
+butternut squash
+Granny Smith
+spaghetti squash
+
+
+Img: 19
+Type: gray
+matchstick
+lemon
+orange
+microphone, mike
+Mexican hairless
+
+Type: ground truth
+orange
+lemon
+strawberry
+pomegranate
+banana
+
+Type: result
+orange
+lemon
+pomegranate
+harmonica, mouth organ, harp, mouth harp
+rotisserie
+
+
+Img: 20
+Type: gray
+golf ball
+abacus
+orange
+lemon
+dough
+
+Type: ground truth
+orange
+banana
+lemon
+Granny Smith
+grocery store, grocery, food market, market
+
+Type: result
+orange
+banana
+lemon
+grocery store, grocery, food market, market
+cheeseburger
+
+
+Img: 21
+Type: gray
+lemon
+orange
+grocery store, grocery, food market, market
+dough
+golf ball
+
+Type: ground truth
+orange
+lemon
+banana
+grocery store, grocery, food market, market
+pineapple, ananas
+
+Type: result
+orange
+lemon
+grocery store, grocery, food market, market
+banana
+pineapple, ananas
+
+
+Img: 22
+Type: gray
+lemon
+orange
+plastic bag
+hip, rose hip, rosehip
+matchstick
+
+Type: ground truth
+orange
+lemon
+butternut squash
+honeycomb
+spaghetti squash
+
+Type: result
+orange
+lemon
+spaghetti squash
+hip, rose hip, rosehip
+pineapple, ananas
+
+
+Img: 23
+Type: gray
+orange
+banana
+lemon
+Granny Smith
+fig
+
+Type: ground truth
+orange
+lemon
+banana
+pineapple, ananas
+pomegranate
+
+Type: result
+orange
+lemon
+banana
+grocery store, grocery, food market, market
+pomegranate
+
+
+Img: 24
+Type: gray
+matchstick
+golf ball
+abacus
+confectionery, confectionary, candy store
+tennis ball
+
+Type: ground truth
+orange
+lemon
+confectionery, confectionary, candy store
+grocery store, grocery, food market, market
+tennis ball
+
+Type: result
+lemon
+orange
+grocery store, grocery, food market, market
+confectionery, confectionary, candy store
+croquet ball
+
+
+Img: 25
+Type: gray
+earthstar
+paper towel
+black widow, Latrodectus mactans
+wolf spider, hunting spider
+toilet tissue, toilet paper, bathroom tissue
+
+Type: ground truth
+orange
+lemon
+hip, rose hip, rosehip
+pomegranate
+Granny Smith
+
+Type: result
+lemon
+orange
+Granny Smith
+tennis ball
+pineapple, ananas
+
+
+Img: 26
+Type: gray
+pick, plectrum, plectron
+dough
+burrito
+rubber eraser, rubber, pencil eraser
+toilet tissue, toilet paper, bathroom tissue
+
+Type: ground truth
+orange
+butternut squash
+bell pepper
+lemon
+acorn squash
+
+Type: result
+lemon
+orange
+French loaf
+ice cream, icecream
+banana
+
+
+Img: 27
+Type: gray
+lemon
+dough
+hook, claw
+orange
+chain
+
+Type: ground truth
+lemon
+orange
+banana
+Granny Smith
+pomegranate
+
+Type: result
+lemon
+orange
+tennis ball
+Granny Smith
+spaghetti squash
+
+
+Img: 28
+Type: gray
+lemon
+orange
+shower cap
+lycaenid, lycaenid butterfly
+jellyfish
+
+Type: ground truth
+orange
+lemon
+butternut squash
+spaghetti squash
+honeycomb
+
+Type: result
+lemon
+orange
+fig
+banana
+spaghetti squash
+
+
+Img: 29
+Type: gray
+shower cap
+strainer
+Petri dish
+lemon
+mixing bowl
+
+Type: ground truth
+orange
+butternut squash
+lemon
+soup bowl
+acorn squash
+
+Type: result
+lemon
+consomme
+orange
+ice cream, icecream
+shower cap
+
+
+Img: 30
+Type: gray
+grocery store, grocery, food market, market
+confectionery, confectionary, candy store
+scale, weighing machine
+strawberry
+fig
+
+Type: ground truth
+orange
+grocery store, grocery, food market, market
+strawberry
+lemon
+banana
+
+Type: result
+grocery store, grocery, food market, market
+lemon
+orange
+strawberry
+pineapple, ananas
+
+
+Img: 31
+Type: gray
+abacus
+dumbbell
+matchstick
+tennis ball
+nail
+
+Type: ground truth
+orange
+lemon
+banana
+pomegranate
+pineapple, ananas
+
+Type: result
+pomegranate
+matchstick
+orange
+banana
+fig
+
+
+Img: 32
+Type: gray
+hip, rose hip, rosehip
+lemon
+grocery store, grocery, food market, market
+orange
+artichoke, globe artichoke
+
+Type: ground truth
+grocery store, grocery, food market, market
+orange
+lemon
+pomegranate
+hip, rose hip, rosehip
+
+Type: result
+lemon
+grocery store, grocery, food market, market
+orange
+spaghetti squash
+butternut squash
+
+
+Img: 33
+Type: gray
+ping-pong ball
+lampshade, lamp shade
+dumbbell
+dough
+Band Aid
+
+Type: ground truth
+orange
+lemon
+banana
+pool table, billiard table, snooker table
+pineapple, ananas
+
+Type: result
+lemon
+ping-pong ball
+dough
+orange
+bathtub, bathing tub, bath, tub
+
+
+Img: 34
+Type: gray
+golf ball
+ping-pong ball
+tennis ball
+baseball
+maraca
+
+Type: ground truth
+orange
+lemon
+pineapple, ananas
+banana
+pomegranate
+
+Type: result
+pomegranate
+strawberry
+banana
+orange
+lemon
+
+
+Img: 35
+Type: gray
+toilet tissue, toilet paper, bathroom tissue
+paper towel
+Granny Smith
+cowboy hat, ten-gallon hat
+lampshade, lamp shade
+
+Type: ground truth
+lemon
+orange
+banana
+Granny Smith
+pineapple, ananas
+
+Type: result
+lemon
+spaghetti squash
+banana
+orange
+dough
+
+
+Img: 36
+Type: gray
+vase
+picket fence, paling
+pot, flowerpot
+acorn
+daisy
+
+Type: ground truth
+orange
+lemon
+hip, rose hip, rosehip
+bell pepper
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+
+Type: result
+lemon
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+fig
+bell pepper
+Granny Smith
+
+
+Img: 37
+Type: gray
+projector
+teddy, teddy bear
+carton
+toaster
+sewing machine
+
+Type: ground truth
+orange
+bagel, beigel
+toaster
+jack-o'-lantern
+teddy, teddy bear
+
+Type: result
+carton
+crate
+sewing machine
+envelope
+toaster
+
+
+Img: 38
+Type: gray
+ping-pong ball
+acorn
+wooden spoon
+teddy, teddy bear
+earthstar
+
+Type: ground truth
+orange
+lemon
+acorn
+Granny Smith
+fig
+
+Type: result
+acorn
+anemone fish
+jackfruit, jak, jack
+lemon
+butternut squash
+
+
+Img: 39
+Type: gray
+birdhouse
+chime, bell, gong
+chainlink fence
+acorn
+gong, tam-tam
+
+Type: ground truth
+hip, rose hip, rosehip
+orange
+pot, flowerpot
+lemon
+pomegranate
+
+Type: result
+harvestman, daddy longlegs, Phalangium opilio
+walking stick, walkingstick, stick insect
+acorn
+pot, flowerpot
+Granny Smith
+
+
+Img: 40
+Type: gray
+croquet ball
+baseball
+ping-pong ball
+rugby ball
+golf ball
+
+Type: ground truth
+croquet ball
+orange
+lemon
+bucket, pail
+golf ball
+
+Type: result
+croquet ball
+tennis ball
+baseball
+rugby ball
+golf ball
+
+
+Img: 41
+Type: gray
+ice cream, icecream
+trifle
+chocolate sauce, chocolate syrup
+strawberry
+plate
+
+Type: ground truth
+strawberry
+ice cream, icecream
+trifle
+orange
+banana
+
+Type: result
+strawberry
+trifle
+ice cream, icecream
+banana
+pineapple, ananas
+
+
+Img: 42
+Type: gray
+cardigan
+teddy, teddy bear
+triceratops
+armadillo
+maraca
+
+Type: ground truth
+maraca
+ping-pong ball
+cardigan
+orange
+jackfruit, jak, jack
+
+Type: result
+cardigan
+armadillo
+chain mail, ring mail, mail, chain armor, chain armour, ring armor, ring armour
+teddy, teddy bear
+ping-pong ball
+
+
+Img: 43
+Type: gray
+corn
+abacus
+ear, spike, capitulum
+ping-pong ball
+accordion, piano accordion, squeeze box
+
+Type: ground truth
+corn
+ear, spike, capitulum
+pineapple, ananas
+rotisserie
+banana
+
+Type: result
+corn
+ear, spike, capitulum
+pineapple, ananas
+abacus
+banana
+
+
+Img: 44
+Type: gray
+accordion, piano accordion, squeeze box
+panpipe, pandean pipe, syrinx
+television, television system
+marimba, xylophone
+stage
+
+Type: ground truth
+corn
+ear, spike, capitulum
+abacus
+rotisserie
+hotdog, hot dog, red hot
+
+Type: result
+corn
+ear, spike, capitulum
+accordion, piano accordion, squeeze box
+banana
+abacus
+
+
+Img: 45
+Type: gray
+custard apple
+acorn
+cauliflower
+brain coral
+bubble
+
+Type: ground truth
+stinkhorn, carrion fungus
+gyromitra
+coral fungus
+brain coral
+cauliflower
+
+Type: result
+gyromitra
+stinkhorn, carrion fungus
+strawberry
+pomegranate
+ice cream, icecream
+
+
+Img: 46
+Type: gray
+plow, plough
+harvester, reaper
+forklift
+tractor
+snowplow, snowplough
+
+Type: ground truth
+harvester, reaper
+forklift
+snowplow, snowplough
+thresher, thrasher, threshing machine
+honeycomb
+
+Type: result
+harvester, reaper
+plow, plough
+tractor
+lawn mower, mower
+chain saw, chainsaw
+
+
+Img: 47
+Type: gray
+hair slide
+custard apple
+honeycomb
+necklace
+vase
+
+Type: ground truth
+hair slide
+candle, taper, wax light
+bakery, bakeshop, bakehouse
+ice cream, icecream
+strawberry
+
+Type: result
+hair slide
+honeycomb
+custard apple
+thimble
+candle, taper, wax light
+
+

@@ -1,0 +1,1127 @@
+Img: 0
+Type: gray
+hummingbird
+magpie
+great grey owl, great gray owl, Strix nebulosa
+water ouzel, dipper
+frilled lizard, Chlamydosaurus kingi
+
+Type: ground truth
+lorikeet
+toucan
+coucal
+king penguin, Aptenodytes patagonica
+oystercatcher, oyster catcher
+
+Type: result
+lorikeet
+jacamar
+macaw
+hummingbird
+bee eater
+
+
+Img: 1
+Type: gray
+African grey, African gray, Psittacus erithacus
+puffer, pufferfish, blowfish, globefish
+partridge
+junco, snowbird
+mask
+
+Type: ground truth
+lorikeet
+macaw
+partridge
+wig
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+Type: result
+lorikeet
+house finch, linnet, Carpodacus mexicanus
+goldfinch, Carduelis carduelis
+partridge
+macaw
+
+
+Img: 2
+Type: gray
+acorn
+water ouzel, dipper
+junco, snowbird
+magpie
+drake
+
+Type: ground truth
+lorikeet
+macaw
+fig
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+hummingbird
+
+Type: result
+lorikeet
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+fig
+croquet ball
+European gallinule, Porphyrio porphyrio
+
+
+Img: 3
+Type: gray
+ptarmigan
+ruffed grouse, partridge, Bonasa umbellus
+magpie
+partridge
+water ouzel, dipper
+
+Type: ground truth
+lorikeet
+macaw
+hummingbird
+partridge
+drake
+
+Type: result
+lorikeet
+macaw
+European gallinule, Porphyrio porphyrio
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+jacamar
+
+
+Img: 4
+Type: gray
+giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca
+guenon, guenon monkey
+marmoset
+pole
+orangutan, orang, orangutang, Pongo pygmaeus
+
+Type: ground truth
+lorikeet
+macaw
+toucan
+hummingbird
+jacamar
+
+Type: result
+lorikeet
+macaw
+jacamar
+toucan
+coucal
+
+
+Img: 5
+Type: gray
+ostrich, Struthio camelus
+peacock
+bustard
+water ouzel, dipper
+albatross, mollymawk
+
+Type: ground truth
+lorikeet
+macaw
+bee eater
+sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+Type: result
+lorikeet
+macaw
+crane
+house finch, linnet, Carpodacus mexicanus
+goldfinch, Carduelis carduelis
+
+
+Img: 6
+Type: gray
+chickadee
+screw
+water ouzel, dipper
+parking meter
+junco, snowbird
+
+Type: ground truth
+lorikeet
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+macaw
+European gallinule, Porphyrio porphyrio
+hummingbird
+
+Type: result
+lorikeet
+house finch, linnet, Carpodacus mexicanus
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+European gallinule, Porphyrio porphyrio
+goldfinch, Carduelis carduelis
+
+
+Img: 7
+Type: gray
+ptarmigan
+junco, snowbird
+ruffed grouse, partridge, Bonasa umbellus
+water ouzel, dipper
+partridge
+
+Type: ground truth
+lorikeet
+macaw
+sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+partridge
+coucal
+
+Type: result
+lorikeet
+house finch, linnet, Carpodacus mexicanus
+partridge
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+
+
+Img: 8
+Type: gray
+African grey, African gray, Psittacus erithacus
+weevil
+microphone, mike
+junco, snowbird
+house finch, linnet, Carpodacus mexicanus
+
+Type: ground truth
+lorikeet
+macaw
+house finch, linnet, Carpodacus mexicanus
+partridge
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+Type: result
+lorikeet
+house finch, linnet, Carpodacus mexicanus
+cock
+hen
+macaw
+
+
+Img: 9
+Type: gray
+nail
+picket fence, paling
+birdhouse
+padlock
+fountain
+
+Type: ground truth
+lorikeet
+macaw
+hummingbird
+toucan
+jacamar
+
+Type: result
+lorikeet
+coucal
+hummingbird
+bee eater
+macaw
+
+
+Img: 10
+Type: gray
+ruffed grouse, partridge, Bonasa umbellus
+prairie chicken, prairie grouse, prairie fowl
+black grouse
+partridge
+peacock
+
+Type: ground truth
+lorikeet
+macaw
+partridge
+peacock
+bee eater
+
+Type: result
+lorikeet
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+European gallinule, Porphyrio porphyrio
+macaw
+black grouse
+
+
+Img: 11
+Type: gray
+African grey, African gray, Psittacus erithacus
+house finch, linnet, Carpodacus mexicanus
+kite
+three-toed sloth, ai, Bradypus tridactylus
+junco, snowbird
+
+Type: ground truth
+lorikeet
+macaw
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+house finch, linnet, Carpodacus mexicanus
+bee eater
+
+Type: result
+lorikeet
+macaw
+house finch, linnet, Carpodacus mexicanus
+African grey, African gray, Psittacus erithacus
+bee eater
+
+
+Img: 12
+Type: gray
+acorn
+honeycomb
+birdhouse
+chainlink fence
+three-toed sloth, ai, Bradypus tridactylus
+
+Type: ground truth
+lorikeet
+toucan
+fig
+macaw
+custard apple
+
+Type: result
+lorikeet
+acorn
+fig
+jackfruit, jak, jack
+jacamar
+
+
+Img: 13
+Type: gray
+coucal
+ruffed grouse, partridge, Bonasa umbellus
+partridge
+house finch, linnet, Carpodacus mexicanus
+hen
+
+Type: ground truth
+lorikeet
+macaw
+coucal
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+bee eater
+
+Type: result
+lorikeet
+coucal
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+bee eater
+macaw
+
+
+Img: 14
+Type: gray
+wool, woolen, woollen
+African grey, African gray, Psittacus erithacus
+wig
+mask
+megalith, megalithic structure
+
+Type: ground truth
+lorikeet
+macaw
+toucan
+wool, woolen, woollen
+wig
+
+Type: result
+lorikeet
+macaw
+cock
+hen
+wig
+
+
+Img: 15
+Type: gray
+echidna, spiny anteater, anteater
+quail
+knot
+ruffed grouse, partridge, Bonasa umbellus
+water ouzel, dipper
+
+Type: ground truth
+lorikeet
+macaw
+hummingbird
+coucal
+jacamar
+
+Type: result
+lorikeet
+macaw
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+goldfinch, Carduelis carduelis
+coucal
+
+
+Img: 16
+Type: gray
+ruffed grouse, partridge, Bonasa umbellus
+acorn
+hummingbird
+marmoset
+bulbul
+
+Type: ground truth
+lorikeet
+jacamar
+macaw
+hummingbird
+bee eater
+
+Type: result
+lorikeet
+jacamar
+macaw
+bee eater
+hummingbird
+
+
+Img: 17
+Type: gray
+acorn
+great grey owl, great gray owl, Strix nebulosa
+marmoset
+ruffed grouse, partridge, Bonasa umbellus
+teddy, teddy bear
+
+Type: ground truth
+lorikeet
+macaw
+hummingbird
+partridge
+cock
+
+Type: result
+lorikeet
+macaw
+house finch, linnet, Carpodacus mexicanus
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+
+
+Img: 18
+Type: gray
+water ouzel, dipper
+ptarmigan
+quail
+ruffed grouse, partridge, Bonasa umbellus
+partridge
+
+Type: ground truth
+lorikeet
+toucan
+macaw
+coucal
+partridge
+
+Type: result
+lorikeet
+hummingbird
+coucal
+house finch, linnet, Carpodacus mexicanus
+macaw
+
+
+Img: 19
+Type: gray
+hummingbird
+acorn
+water ouzel, dipper
+weevil
+robin, American robin, Turdus migratorius
+
+Type: ground truth
+lorikeet
+hummingbird
+jacamar
+macaw
+toucan
+
+Type: result
+lorikeet
+hummingbird
+jacamar
+coucal
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+
+Img: 20
+Type: gray
+echidna, spiny anteater, anteater
+earthstar
+teddy, teddy bear
+mushroom
+hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa
+
+Type: ground truth
+lorikeet
+macaw
+wool, woolen, woollen
+hummingbird
+toucan
+
+Type: result
+lorikeet
+goldfinch, Carduelis carduelis
+banana
+pineapple, ananas
+house finch, linnet, Carpodacus mexicanus
+
+
+Img: 21
+Type: gray
+ruffed grouse, partridge, Bonasa umbellus
+great grey owl, great gray owl, Strix nebulosa
+prairie chicken, prairie grouse, prairie fowl
+black grouse
+vulture
+
+Type: ground truth
+lorikeet
+macaw
+hummingbird
+partridge
+ruffed grouse, partridge, Bonasa umbellus
+
+Type: result
+lorikeet
+partridge
+ruffed grouse, partridge, Bonasa umbellus
+vulture
+prairie chicken, prairie grouse, prairie fowl
+
+
+Img: 22
+Type: gray
+acorn
+snail
+ruffed grouse, partridge, Bonasa umbellus
+water ouzel, dipper
+brambling, Fringilla montifringilla
+
+Type: ground truth
+lorikeet
+hummingbird
+bee eater
+goldfinch, Carduelis carduelis
+jacamar
+
+Type: result
+lorikeet
+jacamar
+hummingbird
+goldfinch, Carduelis carduelis
+coucal
+
+
+Img: 23
+Type: gray
+junco, snowbird
+house finch, linnet, Carpodacus mexicanus
+quail
+ruffed grouse, partridge, Bonasa umbellus
+partridge
+
+Type: ground truth
+lorikeet
+macaw
+partridge
+sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+cock
+
+Type: result
+lorikeet
+house finch, linnet, Carpodacus mexicanus
+hen
+cock
+partridge
+
+
+Img: 24
+Type: gray
+junco, snowbird
+ruffed grouse, partridge, Bonasa umbellus
+great grey owl, great gray owl, Strix nebulosa
+quail
+magpie
+
+Type: ground truth
+lorikeet
+macaw
+goldfinch, Carduelis carduelis
+sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+house finch, linnet, Carpodacus mexicanus
+
+Type: result
+lorikeet
+macaw
+goldfinch, Carduelis carduelis
+sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+house finch, linnet, Carpodacus mexicanus
+
+
+Img: 25
+Type: gray
+African grey, African gray, Psittacus erithacus
+vulture
+junco, snowbird
+quail
+water ouzel, dipper
+
+Type: ground truth
+lorikeet
+macaw
+hummingbird
+toucan
+jacamar
+
+Type: result
+lorikeet
+macaw
+hummingbird
+jacamar
+goldfinch, Carduelis carduelis
+
+
+Img: 26
+Type: gray
+great grey owl, great gray owl, Strix nebulosa
+ruffed grouse, partridge, Bonasa umbellus
+sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+vulture
+quail
+
+Type: ground truth
+lorikeet
+macaw
+coucal
+partridge
+hummingbird
+
+Type: result
+lorikeet
+macaw
+sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+coucal
+
+
+Img: 27
+Type: gray
+jacamar
+hummingbird
+chickadee
+magpie
+junco, snowbird
+
+Type: ground truth
+lorikeet
+macaw
+jacamar
+coucal
+bee eater
+
+Type: result
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+lorikeet
+bee eater
+European gallinule, Porphyrio porphyrio
+macaw
+
+
+Img: 28
+Type: gray
+quail
+junco, snowbird
+ruffed grouse, partridge, Bonasa umbellus
+jay
+ptarmigan
+
+Type: ground truth
+lorikeet
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+house finch, linnet, Carpodacus mexicanus
+goldfinch, Carduelis carduelis
+coucal
+
+Type: result
+robin, American robin, Turdus migratorius
+coucal
+lorikeet
+brambling, Fringilla montifringilla
+house finch, linnet, Carpodacus mexicanus
+
+
+Img: 29
+Type: gray
+water ouzel, dipper
+hummingbird
+ruffed grouse, partridge, Bonasa umbellus
+robin, American robin, Turdus migratorius
+bulbul
+
+Type: ground truth
+lorikeet
+macaw
+jacamar
+toucan
+hummingbird
+
+Type: result
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+European gallinule, Porphyrio porphyrio
+lorikeet
+jacamar
+hummingbird
+
+
+Img: 30
+Type: gray
+artichoke, globe artichoke
+cardoon
+pineapple, ananas
+acorn
+earthstar
+
+Type: ground truth
+lorikeet
+pomegranate
+hip, rose hip, rosehip
+macaw
+artichoke, globe artichoke
+
+Type: result
+bee eater
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+European gallinule, Porphyrio porphyrio
+lorikeet
+macaw
+
+
+Img: 31
+Type: gray
+hummingbird
+vulture
+water ouzel, dipper
+African grey, African gray, Psittacus erithacus
+junco, snowbird
+
+Type: ground truth
+lorikeet
+macaw
+matchstick
+hummingbird
+European gallinule, Porphyrio porphyrio
+
+Type: result
+hummingbird
+jacamar
+bee eater
+leafhopper
+lorikeet
+
+
+Img: 32
+Type: gray
+nail
+dung beetle
+mushroom
+stinkhorn, carrion fungus
+acorn
+
+Type: ground truth
+lorikeet
+cock
+macaw
+European gallinule, Porphyrio porphyrio
+hen
+
+Type: result
+bolete
+mushroom
+acorn
+buckeye, horse chestnut, conker
+weevil
+
+
+Img: 33
+Type: gray
+pineapple, ananas
+cardoon
+stinkhorn, carrion fungus
+daisy
+artichoke, globe artichoke
+
+Type: ground truth
+lorikeet
+strawberry
+orange
+coucal
+hip, rose hip, rosehip
+
+Type: result
+artichoke, globe artichoke
+pot, flowerpot
+cardoon
+pineapple, ananas
+bell pepper
+
+
+Img: 34
+Type: gray
+nail
+snail
+picket fence, paling
+frilled lizard, Chlamydosaurus kingi
+stinkhorn, carrion fungus
+
+Type: ground truth
+lorikeet
+macaw
+toucan
+jacamar
+bee eater
+
+Type: result
+snail
+stinkhorn, carrion fungus
+cicada, cicala
+frilled lizard, Chlamydosaurus kingi
+slug
+
+
+Img: 35
+Type: gray
+partridge
+ruffed grouse, partridge, Bonasa umbellus
+quail
+ptarmigan
+robin, American robin, Turdus migratorius
+
+Type: ground truth
+lorikeet
+bee eater
+macaw
+partridge
+ruffed grouse, partridge, Bonasa umbellus
+
+Type: result
+partridge
+ruffed grouse, partridge, Bonasa umbellus
+European gallinule, Porphyrio porphyrio
+quail
+crane
+
+
+Img: 36
+Type: gray
+picket fence, paling
+ruffed grouse, partridge, Bonasa umbellus
+brambling, Fringilla montifringilla
+diamondback, diamondback rattlesnake, Crotalus adamanteus
+acorn
+
+Type: ground truth
+lorikeet
+macaw
+cock
+hummingbird
+peacock
+
+Type: result
+broccoli
+buckeye, horse chestnut, conker
+acorn
+custard apple
+sulphur butterfly, sulfur butterfly
+
+
+Img: 37
+Type: gray
+hummingbird
+kite
+vulture
+black grouse
+house finch, linnet, Carpodacus mexicanus
+
+Type: ground truth
+lorikeet
+hummingbird
+bee eater
+macaw
+goldfinch, Carduelis carduelis
+
+Type: result
+goldfinch, Carduelis carduelis
+hummingbird
+kite
+bulbul
+bee eater
+
+
+Img: 38
+Type: gray
+fountain
+cliff, drop, drop-off
+mushroom
+knot
+chain
+
+Type: ground truth
+lorikeet
+green lizard, Lacerta viridis
+green mamba
+green snake, grass snake
+vine snake
+
+Type: result
+fox squirrel, eastern fox squirrel, Sciurus niger
+mongoose
+mushroom
+cliff, drop, drop-off
+proboscis monkey, Nasalis larvatus
+
+
+Img: 39
+Type: gray
+squirrel monkey, Saimiri sciureus
+Madagascar cat, ring-tailed lemur, Lemur catta
+marmoset
+koala, koala bear, kangaroo bear, native bear, Phascolarctos cinereus
+junco, snowbird
+
+Type: ground truth
+lorikeet
+jacamar
+macaw
+toucan
+bee eater
+
+Type: result
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+capuchin, ringtail, Cebus capucinus
+howler monkey, howler
+coucal
+spider monkey, Ateles geoffroyi
+
+
+Img: 40
+Type: gray
+bald eagle, American eagle, Haliaeetus leucocephalus
+toucan
+hornbill
+hummingbird
+magpie
+
+Type: ground truth
+lorikeet
+jacamar
+macaw
+coucal
+hummingbird
+
+Type: result
+coucal
+jacamar
+hummingbird
+hornbill
+toucan
+
+
+Img: 41
+Type: gray
+web site, website, internet site, site
+hip, rose hip, rosehip
+earthstar
+acorn
+proboscis monkey, Nasalis larvatus
+
+Type: ground truth
+lorikeet
+macaw
+monitor
+bee eater
+European gallinule, Porphyrio porphyrio
+
+Type: result
+web site, website, internet site, site
+monitor
+bee eater
+television, television system
+proboscis monkey, Nasalis larvatus
+
+
+Img: 42
+Type: gray
+cardoon
+dung beetle
+artichoke, globe artichoke
+ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle
+hay
+
+Type: ground truth
+lorikeet
+macaw
+jacamar
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+robin, American robin, Turdus migratorius
+
+Type: result
+artichoke, globe artichoke
+buckeye, horse chestnut, conker
+acorn
+cardoon
+partridge
+
+
+Img: 43
+Type: gray
+pelican
+nail
+paintbrush
+sundial
+vulture
+
+Type: ground truth
+lorikeet
+macaw
+jacamar
+bee eater
+hummingbird
+
+Type: result
+broom
+paintbrush
+bee eater
+hay
+thatch, thatched roof
+
+
+Img: 44
+Type: gray
+howler monkey, howler
+squirrel monkey, Saimiri sciureus
+spider monkey, Ateles geoffroyi
+gibbon, Hylobates lar
+junco, snowbird
+
+Type: ground truth
+lorikeet
+coucal
+jacamar
+toucan
+macaw
+
+Type: result
+coucal
+jacamar
+howler monkey, howler
+titi, titi monkey
+capuchin, ringtail, Cebus capucinus
+
+
+Img: 45
+Type: gray
+chain saw, chainsaw
+chainlink fence
+birdhouse
+great grey owl, great gray owl, Strix nebulosa
+colobus, colobus monkey
+
+Type: ground truth
+macaw
+lorikeet
+bee eater
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+toucan
+
+Type: result
+great grey owl, great gray owl, Strix nebulosa
+Madagascar cat, ring-tailed lemur, Lemur catta
+indri, indris, Indri indri, Indri brevicaudatus
+snow leopard, ounce, Panthera uncia
+leopard, Panthera pardus
+
+
+Img: 46
+Type: gray
+acorn
+earthstar
+ear, spike, capitulum
+horned viper, cerastes, sand viper, horned asp, Cerastes cornutus
+armadillo
+
+Type: ground truth
+hummingbird
+lorikeet
+hip, rose hip, rosehip
+goldfinch, Carduelis carduelis
+bee
+
+Type: result
+agama
+hummingbird
+house finch, linnet, Carpodacus mexicanus
+acorn
+hen
+
+
+Img: 47
+Type: gray
+dung beetle
+cicada, cicala
+fly
+dragonfly, darning needle, devil's darning needle, sewing needle, snake feeder, snake doctor, mosquito hawk, skeeter hawk
+stinkhorn, carrion fungus
+
+Type: ground truth
+macaw
+cock
+lorikeet
+hen
+house finch, linnet, Carpodacus mexicanus
+
+Type: result
+hen
+cock
+partridge
+proboscis monkey, Nasalis larvatus
+house finch, linnet, Carpodacus mexicanus
+
+
+Img: 48
+Type: gray
+echidna, spiny anteater, anteater
+dung beetle
+wombat
+Gila monster, Heloderma suspectum
+Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis
+
+Type: ground truth
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+peacock
+dung beetle
+croquet ball
+lorikeet
+
+Type: result
+gorilla, Gorilla gorilla
+giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca
+chimpanzee, chimp, Pan troglodytes
+American black bear, black bear, Ursus americanus, Euarctos americanus
+wombat
+
+
