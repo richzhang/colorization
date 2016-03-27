@@ -1,0 +1,1127 @@
+Img: 0
+Type: gray
+boa constrictor, Constrictor constrictor
+rock python, rock snake, Python sebae
+night snake, Hypsiglena torquata
+horned viper, cerastes, sand viper, horned asp, Cerastes cornutus
+sidewinder, horned rattlesnake, Crotalus cerastes
+
+Type: ground truth
+green snake, grass snake
+green mamba
+vine snake
+night snake, Hypsiglena torquata
+boa constrictor, Constrictor constrictor
+
+Type: result
+green snake, grass snake
+green mamba
+boa constrictor, Constrictor constrictor
+vine snake
+night snake, Hypsiglena torquata
+
+
+Img: 1
+Type: gray
+ringneck snake, ring-necked snake, ring snake
+thunder snake, worm snake, Carphophis amoenus
+king snake, kingsnake
+horned viper, cerastes, sand viper, horned asp, Cerastes cornutus
+sidewinder, horned rattlesnake, Crotalus cerastes
+
+Type: ground truth
+green snake, grass snake
+green mamba
+vine snake
+night snake, Hypsiglena torquata
+sidewinder, horned rattlesnake, Crotalus cerastes
+
+Type: result
+green snake, grass snake
+green mamba
+vine snake
+night snake, Hypsiglena torquata
+horned viper, cerastes, sand viper, horned asp, Cerastes cornutus
+
+
+Img: 2
+Type: gray
+alligator lizard
+hook, claw
+nail
+thunder snake, worm snake, Carphophis amoenus
+banded gecko
+
+Type: ground truth
+green snake, grass snake
+green mamba
+vine snake
+night snake, Hypsiglena torquata
+green lizard, Lacerta viridis
+
+Type: result
+green snake, grass snake
+green mamba
+thunder snake, worm snake, Carphophis amoenus
+African chameleon, Chamaeleo chamaeleon
+vine snake
+
+
+Img: 3
+Type: gray
+knot
+hook, claw
+nail
+padlock
+ladle
+
+Type: ground truth
+green snake, grass snake
+green mamba
+cucumber, cuke
+tree frog, tree-frog
+vine snake
+
+Type: result
+green snake, grass snake
+green mamba
+cucumber, cuke
+fig
+vine snake
+
+
+Img: 4
+Type: gray
+hognose snake, puff adder, sand viper
+thunder snake, worm snake, Carphophis amoenus
+Indian cobra, Naja naja
+ringneck snake, ring-necked snake, ring snake
+night snake, Hypsiglena torquata
+
+Type: ground truth
+green snake, grass snake
+green mamba
+night snake, Hypsiglena torquata
+vine snake
+thunder snake, worm snake, Carphophis amoenus
+
+Type: result
+green snake, grass snake
+green mamba
+night snake, Hypsiglena torquata
+hognose snake, puff adder, sand viper
+vine snake
+
+
+Img: 5
+Type: gray
+knot
+chainlink fence
+chain
+African chameleon, Chamaeleo chamaeleon
+nail
+
+Type: ground truth
+green snake, grass snake
+green mamba
+night snake, Hypsiglena torquata
+vine snake
+boa constrictor, Constrictor constrictor
+
+Type: result
+green snake, grass snake
+African chameleon, Chamaeleo chamaeleon
+green mamba
+green lizard, Lacerta viridis
+American chameleon, anole, Anolis carolinensis
+
+
+Img: 6
+Type: gray
+ringneck snake, ring-necked snake, ring snake
+thunder snake, worm snake, Carphophis amoenus
+night snake, Hypsiglena torquata
+vine snake
+Band Aid
+
+Type: ground truth
+green snake, grass snake
+green mamba
+vine snake
+night snake, Hypsiglena torquata
+ringneck snake, ring-necked snake, ring snake
+
+Type: result
+green snake, grass snake
+vine snake
+green mamba
+night snake, Hypsiglena torquata
+ringneck snake, ring-necked snake, ring snake
+
+
+Img: 7
+Type: gray
+knot
+chain
+ant, emmet, pismire
+hook, claw
+nail
+
+Type: ground truth
+green snake, grass snake
+green mamba
+vine snake
+snail
+bell pepper
+
+Type: result
+green snake, grass snake
+ant, emmet, pismire
+knot
+green mamba
+bell pepper
+
+
+Img: 8
+Type: gray
+hook, claw
+screw
+chain
+knot
+padlock
+
+Type: ground truth
+green snake, grass snake
+vine snake
+bell pepper
+hook, claw
+green mamba
+
+Type: result
+green snake, grass snake
+hook, claw
+vine snake
+green mamba
+chain
+
+
+Img: 9
+Type: gray
+conch
+triceratops
+African chameleon, Chamaeleo chamaeleon
+screw
+radiator
+
+Type: ground truth
+green snake, grass snake
+green mamba
+vine snake
+African chameleon, Chamaeleo chamaeleon
+boa constrictor, Constrictor constrictor
+
+Type: result
+green snake, grass snake
+green mamba
+zucchini, courgette
+cucumber, cuke
+bell pepper
+
+
+Img: 10
+Type: gray
+knot
+coil, spiral, volute, whorl, helix
+snail
+horned viper, cerastes, sand viper, horned asp, Cerastes cornutus
+hermit crab
+
+Type: ground truth
+green snake, grass snake
+green mamba
+vine snake
+coil, spiral, volute, whorl, helix
+African chameleon, Chamaeleo chamaeleon
+
+Type: result
+green snake, grass snake
+coil, spiral, volute, whorl, helix
+green mamba
+African chameleon, Chamaeleo chamaeleon
+lacewing, lacewing fly
+
+
+Img: 11
+Type: gray
+chain
+chainlink fence
+hook, claw
+padlock
+combination lock
+
+Type: ground truth
+green snake, grass snake
+green mamba
+African chameleon, Chamaeleo chamaeleon
+green lizard, Lacerta viridis
+vine snake
+
+Type: result
+green snake, grass snake
+African chameleon, Chamaeleo chamaeleon
+green mamba
+cucumber, cuke
+vine snake
+
+
+Img: 12
+Type: gray
+whiptail, whiptail lizard
+green mamba
+thunder snake, worm snake, Carphophis amoenus
+American chameleon, anole, Anolis carolinensis
+African chameleon, Chamaeleo chamaeleon
+
+Type: ground truth
+green mamba
+green snake, grass snake
+vine snake
+night snake, Hypsiglena torquata
+green lizard, Lacerta viridis
+
+Type: result
+green snake, grass snake
+green mamba
+vine snake
+night snake, Hypsiglena torquata
+green lizard, Lacerta viridis
+
+
+Img: 13
+Type: gray
+thunder snake, worm snake, Carphophis amoenus
+ringneck snake, ring-necked snake, ring snake
+night snake, Hypsiglena torquata
+vine snake
+green snake, grass snake
+
+Type: ground truth
+green snake, grass snake
+night snake, Hypsiglena torquata
+green mamba
+vine snake
+thunder snake, worm snake, Carphophis amoenus
+
+Type: result
+green snake, grass snake
+green mamba
+vine snake
+night snake, Hypsiglena torquata
+thunder snake, worm snake, Carphophis amoenus
+
+
+Img: 14
+Type: gray
+Indian cobra, Naja naja
+green mamba
+vine snake
+water snake
+green snake, grass snake
+
+Type: ground truth
+green mamba
+green snake, grass snake
+vine snake
+night snake, Hypsiglena torquata
+jackfruit, jak, jack
+
+Type: result
+green snake, grass snake
+green mamba
+vine snake
+water snake
+Indian cobra, Naja naja
+
+
+Img: 15
+Type: gray
+boa constrictor, Constrictor constrictor
+knot
+green snake, grass snake
+Band Aid
+night snake, Hypsiglena torquata
+
+Type: ground truth
+green snake, grass snake
+green mamba
+vine snake
+night snake, Hypsiglena torquata
+green lizard, Lacerta viridis
+
+Type: result
+green snake, grass snake
+green mamba
+American chameleon, anole, Anolis carolinensis
+vine snake
+green lizard, Lacerta viridis
+
+
+Img: 16
+Type: gray
+boa constrictor, Constrictor constrictor
+rock python, rock snake, Python sebae
+green snake, grass snake
+night snake, Hypsiglena torquata
+horned viper, cerastes, sand viper, horned asp, Cerastes cornutus
+
+Type: ground truth
+green snake, grass snake
+green mamba
+vine snake
+night snake, Hypsiglena torquata
+boa constrictor, Constrictor constrictor
+
+Type: result
+green snake, grass snake
+green mamba
+vine snake
+boa constrictor, Constrictor constrictor
+night snake, Hypsiglena torquata
+
+
+Img: 17
+Type: gray
+nail
+hook, claw
+chain
+knot
+screw
+
+Type: ground truth
+green snake, grass snake
+tree frog, tree-frog
+vine snake
+nail
+green mamba
+
+Type: result
+African chameleon, Chamaeleo chamaeleon
+green snake, grass snake
+tree frog, tree-frog
+green lizard, Lacerta viridis
+green mamba
+
+
+Img: 18
+Type: gray
+coil, spiral, volute, whorl, helix
+barrow, garden cart, lawn cart, wheelbarrow
+knot
+plow, plough
+tractor
+
+Type: ground truth
+green snake, grass snake
+coil, spiral, volute, whorl, helix
+vine snake
+green mamba
+knot
+
+Type: result
+coil, spiral, volute, whorl, helix
+green snake, grass snake
+vine snake
+nematode, nematode worm, roundworm
+maze, labyrinth
+
+
+Img: 19
+Type: gray
+Indian cobra, Naja naja
+hognose snake, puff adder, sand viper
+night snake, Hypsiglena torquata
+rock python, rock snake, Python sebae
+sidewinder, horned rattlesnake, Crotalus cerastes
+
+Type: ground truth
+green snake, grass snake
+green mamba
+night snake, Hypsiglena torquata
+vine snake
+thunder snake, worm snake, Carphophis amoenus
+
+Type: result
+green mamba
+green snake, grass snake
+night snake, Hypsiglena torquata
+Indian cobra, Naja naja
+vine snake
+
+
+Img: 20
+Type: gray
+thunder snake, worm snake, Carphophis amoenus
+night snake, Hypsiglena torquata
+ringneck snake, ring-necked snake, ring snake
+king snake, kingsnake
+alligator lizard
+
+Type: ground truth
+green mamba
+green snake, grass snake
+night snake, Hypsiglena torquata
+vine snake
+thunder snake, worm snake, Carphophis amoenus
+
+Type: result
+green mamba
+green snake, grass snake
+vine snake
+night snake, Hypsiglena torquata
+thunder snake, worm snake, Carphophis amoenus
+
+
+Img: 21
+Type: gray
+knot
+horned viper, cerastes, sand viper, horned asp, Cerastes cornutus
+armadillo
+sidewinder, horned rattlesnake, Crotalus cerastes
+alligator lizard
+
+Type: ground truth
+green mamba
+green snake, grass snake
+vine snake
+night snake, Hypsiglena torquata
+African chameleon, Chamaeleo chamaeleon
+
+Type: result
+green mamba
+green snake, grass snake
+vine snake
+African chameleon, Chamaeleo chamaeleon
+night snake, Hypsiglena torquata
+
+
+Img: 22
+Type: gray
+vine snake
+sunglasses, dark glasses, shades
+harmonica, mouth organ, harp, mouth harp
+sunglass
+cellular telephone, cellular phone, cellphone, cell, mobile phone
+
+Type: ground truth
+vine snake
+green snake, grass snake
+green mamba
+tree frog, tree-frog
+night snake, Hypsiglena torquata
+
+Type: result
+vine snake
+green snake, grass snake
+green mamba
+tree frog, tree-frog
+green lizard, Lacerta viridis
+
+
+Img: 23
+Type: gray
+ringneck snake, ring-necked snake, ring snake
+water snake
+thunder snake, worm snake, Carphophis amoenus
+hognose snake, puff adder, sand viper
+Indian cobra, Naja naja
+
+Type: ground truth
+green mamba
+green snake, grass snake
+night snake, Hypsiglena torquata
+vine snake
+horned viper, cerastes, sand viper, horned asp, Cerastes cornutus
+
+Type: result
+green mamba
+green snake, grass snake
+night snake, Hypsiglena torquata
+water snake
+horned viper, cerastes, sand viper, horned asp, Cerastes cornutus
+
+
+Img: 24
+Type: gray
+vine snake
+alligator lizard
+night snake, Hypsiglena torquata
+hognose snake, puff adder, sand viper
+American chameleon, anole, Anolis carolinensis
+
+Type: ground truth
+vine snake
+green snake, grass snake
+American chameleon, anole, Anolis carolinensis
+green lizard, Lacerta viridis
+night snake, Hypsiglena torquata
+
+Type: result
+vine snake
+green snake, grass snake
+American chameleon, anole, Anolis carolinensis
+green lizard, Lacerta viridis
+green mamba
+
+
+Img: 25
+Type: gray
+snail
+cabbage butterfly
+lycaenid, lycaenid butterfly
+slug
+earthstar
+
+Type: ground truth
+green mamba
+green snake, grass snake
+vine snake
+night snake, Hypsiglena torquata
+grasshopper, hopper
+
+Type: result
+green mamba
+green snake, grass snake
+vine snake
+night snake, Hypsiglena torquata
+African chameleon, Chamaeleo chamaeleon
+
+
+Img: 26
+Type: gray
+American chameleon, anole, Anolis carolinensis
+boa constrictor, Constrictor constrictor
+alligator lizard
+green mamba
+night snake, Hypsiglena torquata
+
+Type: ground truth
+green mamba
+green snake, grass snake
+vine snake
+night snake, Hypsiglena torquata
+green lizard, Lacerta viridis
+
+Type: result
+green mamba
+green snake, grass snake
+vine snake
+American chameleon, anole, Anolis carolinensis
+night snake, Hypsiglena torquata
+
+
+Img: 27
+Type: gray
+vine snake
+American chameleon, anole, Anolis carolinensis
+green snake, grass snake
+green mamba
+green lizard, Lacerta viridis
+
+Type: ground truth
+green snake, grass snake
+vine snake
+green mamba
+night snake, Hypsiglena torquata
+thunder snake, worm snake, Carphophis amoenus
+
+Type: result
+vine snake
+green snake, grass snake
+American chameleon, anole, Anolis carolinensis
+green lizard, Lacerta viridis
+green mamba
+
+
+Img: 28
+Type: gray
+chainlink fence
+padlock
+hook, claw
+prison, prison house
+chain
+
+Type: ground truth
+green snake, grass snake
+green mamba
+marmoset
+vine snake
+green lizard, Lacerta viridis
+
+Type: result
+marmoset
+African chameleon, Chamaeleo chamaeleon
+green snake, grass snake
+grasshopper, hopper
+tree frog, tree-frog
+
+
+Img: 29
+Type: gray
+chain
+chainlink fence
+padlock
+chain mail, ring mail, mail, chain armor, chain armour, ring armor, ring armour
+knot
+
+Type: ground truth
+vine snake
+green snake, grass snake
+green mamba
+night snake, Hypsiglena torquata
+American chameleon, anole, Anolis carolinensis
+
+Type: result
+chain
+vine snake
+chainlink fence
+green snake, grass snake
+knot
+
+
+Img: 30
+Type: gray
+armadillo
+swab, swob, mop
+knot
+ear, spike, capitulum
+acorn
+
+Type: ground truth
+green mamba
+African chameleon, Chamaeleo chamaeleon
+green snake, grass snake
+lorikeet
+green lizard, Lacerta viridis
+
+Type: result
+cucumber, cuke
+green mamba
+African chameleon, Chamaeleo chamaeleon
+green snake, grass snake
+walking stick, walkingstick, stick insect
+
+
+Img: 31
+Type: gray
+ballpoint, ballpoint pen, ballpen, Biro
+bubble
+parachute, chute
+spotlight, spot
+ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle
+
+Type: ground truth
+green snake, grass snake
+vine snake
+green mamba
+tree frog, tree-frog
+night snake, Hypsiglena torquata
+
+Type: result
+lycaenid, lycaenid butterfly
+leaf beetle, chrysomelid
+weevil
+ant, emmet, pismire
+green snake, grass snake
+
+
+Img: 32
+Type: gray
+plow, plough
+barrow, garden cart, lawn cart, wheelbarrow
+shovel
+electric fan, blower
+lumbermill, sawmill
+
+Type: ground truth
+green snake, grass snake
+cucumber, cuke
+walking stick, walkingstick, stick insect
+vine snake
+green mamba
+
+Type: result
+cucumber, cuke
+acorn squash
+walking stick, walkingstick, stick insect
+zucchini, courgette
+spaghetti squash
+
+
+Img: 33
+Type: gray
+ringneck snake, ring-necked snake, ring snake
+thunder snake, worm snake, Carphophis amoenus
+water snake
+Indian cobra, Naja naja
+night snake, Hypsiglena torquata
+
+Type: ground truth
+green snake, grass snake
+green mamba
+night snake, Hypsiglena torquata
+vine snake
+horned viper, cerastes, sand viper, horned asp, Cerastes cornutus
+
+Type: result
+thunder snake, worm snake, Carphophis amoenus
+ringneck snake, ring-necked snake, ring snake
+Indian cobra, Naja naja
+night snake, Hypsiglena torquata
+hognose snake, puff adder, sand viper
+
+
+Img: 34
+Type: gray
+knot
+vine snake
+ringneck snake, ring-necked snake, ring snake
+thunder snake, worm snake, Carphophis amoenus
+sandal
+
+Type: ground truth
+green snake, grass snake
+green mamba
+vine snake
+night snake, Hypsiglena torquata
+thunder snake, worm snake, Carphophis amoenus
+
+Type: result
+knot
+cowboy hat, ten-gallon hat
+walking stick, walkingstick, stick insect
+sandal
+bath towel
+
+
+Img: 35
+Type: gray
+alligator lizard
+fiddler crab
+eel
+crayfish, crawfish, crawdad, crawdaddy
+gar, garfish, garpike, billfish, Lepisosteus osseus
+
+Type: ground truth
+green snake, grass snake
+green mamba
+green lizard, Lacerta viridis
+vine snake
+night snake, Hypsiglena torquata
+
+Type: result
+eel
+green lizard, Lacerta viridis
+African chameleon, Chamaeleo chamaeleon
+green mamba
+Komodo dragon, Komodo lizard, dragon lizard, giant lizard, Varanus komodoensis
+
+
+Img: 36
+Type: gray
+thunder snake, worm snake, Carphophis amoenus
+ringneck snake, ring-necked snake, ring snake
+night snake, Hypsiglena torquata
+hognose snake, puff adder, sand viper
+sea snake
+
+Type: ground truth
+green snake, grass snake
+green mamba
+vine snake
+night snake, Hypsiglena torquata
+thunder snake, worm snake, Carphophis amoenus
+
+Type: result
+thunder snake, worm snake, Carphophis amoenus
+night snake, Hypsiglena torquata
+Indian cobra, Naja naja
+ringneck snake, ring-necked snake, ring snake
+hognose snake, puff adder, sand viper
+
+
+Img: 37
+Type: gray
+corn
+ear, spike, capitulum
+banana
+coral fungus
+weevil
+
+Type: ground truth
+green snake, grass snake
+cucumber, cuke
+African chameleon, Chamaeleo chamaeleon
+tree frog, tree-frog
+green mamba
+
+Type: result
+cucumber, cuke
+zucchini, courgette
+tree frog, tree-frog
+ear, spike, capitulum
+acorn squash
+
+
+Img: 38
+Type: gray
+hay
+plow, plough
+barrow, garden cart, lawn cart, wheelbarrow
+nail
+shovel
+
+Type: ground truth
+green snake, grass snake
+green mamba
+common newt, Triturus vulgaris
+green lizard, Lacerta viridis
+thunder snake, worm snake, Carphophis amoenus
+
+Type: result
+goldfish, Carassius auratus
+eft
+common newt, Triturus vulgaris
+stinkhorn, carrion fungus
+slug
+
+
+Img: 39
+Type: gray
+hook, claw
+nail
+chainlink fence
+chain
+knot
+
+Type: ground truth
+vine snake
+green snake, grass snake
+green mamba
+thunder snake, worm snake, Carphophis amoenus
+night snake, Hypsiglena torquata
+
+Type: result
+thunder snake, worm snake, Carphophis amoenus
+vine snake
+nail
+hook, claw
+ringneck snake, ring-necked snake, ring snake
+
+
+Img: 40
+Type: gray
+Indian cobra, Naja naja
+vine snake
+night snake, Hypsiglena torquata
+ringneck snake, ring-necked snake, ring snake
+thunder snake, worm snake, Carphophis amoenus
+
+Type: ground truth
+vine snake
+green snake, grass snake
+green mamba
+night snake, Hypsiglena torquata
+mantis, mantid
+
+Type: result
+Indian cobra, Naja naja
+vine snake
+thunder snake, worm snake, Carphophis amoenus
+night snake, Hypsiglena torquata
+ringneck snake, ring-necked snake, ring snake
+
+
+Img: 41
+Type: gray
+chain
+knot
+African chameleon, Chamaeleo chamaeleon
+chainlink fence
+vine snake
+
+Type: ground truth
+vine snake
+green snake, grass snake
+green mamba
+green lizard, Lacerta viridis
+African chameleon, Chamaeleo chamaeleon
+
+Type: result
+mantis, mantid
+vine snake
+walking stick, walkingstick, stick insect
+grasshopper, hopper
+acorn
+
+
+Img: 42
+Type: gray
+hook, claw
+chain
+padlock
+knot
+chainlink fence
+
+Type: ground truth
+green mamba
+green snake, grass snake
+green lizard, Lacerta viridis
+American chameleon, anole, Anolis carolinensis
+vine snake
+
+Type: result
+green lizard, Lacerta viridis
+green mamba
+common iguana, iguana, Iguana iguana
+American chameleon, anole, Anolis carolinensis
+sea snake
+
+
+Img: 43
+Type: gray
+alligator lizard
+American chameleon, anole, Anolis carolinensis
+African crocodile, Nile crocodile, Crocodylus niloticus
+walking stick, walkingstick, stick insect
+American alligator, Alligator mississipiensis
+
+Type: ground truth
+vine snake
+green snake, grass snake
+green mamba
+green lizard, Lacerta viridis
+American chameleon, anole, Anolis carolinensis
+
+Type: result
+alligator lizard
+common newt, Triturus vulgaris
+vine snake
+American chameleon, anole, Anolis carolinensis
+green lizard, Lacerta viridis
+
+
+Img: 44
+Type: gray
+knot
+chain
+American alligator, Alligator mississipiensis
+green mamba
+marmoset
+
+Type: ground truth
+knot
+green mamba
+green snake, grass snake
+vine snake
+marmoset
+
+Type: result
+knot
+king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica
+black and gold garden spider, Argiope aurantia
+barn spider, Araneus cavaticus
+American alligator, Alligator mississipiensis
+
+
+Img: 45
+Type: gray
+hatchet
+echidna, spiny anteater, anteater
+stinkhorn, carrion fungus
+worm fence, snake fence, snake-rail fence, Virginia fence
+giant panda, panda, panda bear, coon bear, Ailuropoda melanoleuca
+
+Type: ground truth
+green lizard, Lacerta viridis
+American chameleon, anole, Anolis carolinensis
+mantis, mantid
+green mamba
+green snake, grass snake
+
+Type: result
+stinkhorn, carrion fungus
+black stork, Ciconia nigra
+albatross, mollymawk
+pelican
+white stork, Ciconia ciconia
+
+
+Img: 46
+Type: gray
+boa constrictor, Constrictor constrictor
+night snake, Hypsiglena torquata
+rock python, rock snake, Python sebae
+thunder snake, worm snake, Carphophis amoenus
+slug
+
+Type: ground truth
+leafhopper
+mud turtle
+water snake
+night snake, Hypsiglena torquata
+terrapin
+
+Type: result
+leafhopper
+water snake
+thunder snake, worm snake, Carphophis amoenus
+mud turtle
+night snake, Hypsiglena torquata
+
+
+Img: 47
+Type: gray
+night snake, Hypsiglena torquata
+water snake
+diamondback, diamondback rattlesnake, Crotalus adamanteus
+hognose snake, puff adder, sand viper
+ringneck snake, ring-necked snake, ring snake
+
+Type: ground truth
+eft
+jigsaw puzzle
+water snake
+garter snake, grass snake
+vine snake
+
+Type: result
+water snake
+thunder snake, worm snake, Carphophis amoenus
+night snake, Hypsiglena torquata
+eft
+ringneck snake, ring-necked snake, ring snake
+
+
+Img: 48
+Type: gray
+picket fence, paling
+American chameleon, anole, Anolis carolinensis
+walking stick, walkingstick, stick insect
+junco, snowbird
+green lizard, Lacerta viridis
+
+Type: ground truth
+American chameleon, anole, Anolis carolinensis
+green lizard, Lacerta viridis
+cucumber, cuke
+African chameleon, Chamaeleo chamaeleon
+tree frog, tree-frog
+
+Type: result
+American chameleon, anole, Anolis carolinensis
+walking stick, walkingstick, stick insect
+dragonfly, darning needle, devil's darning needle, sewing needle, snake feeder, snake doctor, mosquito hawk, skeeter hawk
+green lizard, Lacerta viridis
+African chameleon, Chamaeleo chamaeleon
+
+

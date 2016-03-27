@@ -1,0 +1,1081 @@
+Img: 0
+Type: gray
+water bottle
+pop bottle, soda bottle
+cocktail shaker
+beer glass
+beer bottle
+
+Type: ground truth
+cocktail shaker
+beer glass
+water bottle
+pop bottle, soda bottle
+wine bottle
+
+Type: result
+beer glass
+beer bottle
+whiskey jug
+candle, taper, wax light
+wine bottle
+
+
+Img: 1
+Type: gray
+water bottle
+water jug
+beaker
+bucket, pail
+potter's wheel
+
+Type: ground truth
+water bottle
+water jug
+bucket, pail
+rain barrel
+nipple
+
+Type: result
+potter's wheel
+water jug
+barrel, cask
+rain barrel
+candle, taper, wax light
+
+
+Img: 2
+Type: gray
+water bottle
+thimble
+pop bottle, soda bottle
+perfume, essence
+wine bottle
+
+Type: ground truth
+water bottle
+pop bottle, soda bottle
+shower curtain
+vase
+water jug
+
+Type: result
+rubber eraser, rubber, pencil eraser
+perfume, essence
+candle, taper, wax light
+lipstick, lip rouge
+wine bottle
+
+
+Img: 3
+Type: gray
+water bottle
+perfume, essence
+saltshaker, salt shaker
+thimble
+pop bottle, soda bottle
+
+Type: ground truth
+water bottle
+pop bottle, soda bottle
+water jug
+nipple
+bottlecap
+
+Type: result
+perfume, essence
+saltshaker, salt shaker
+thimble
+lotion
+nipple
+
+
+Img: 4
+Type: gray
+water bottle
+crutch
+streetcar, tram, tramcar, trolley, trolley car
+pole
+vacuum, vacuum cleaner
+
+Type: ground truth
+water bottle
+pop bottle, soda bottle
+gas pump, gasoline pump, petrol pump, island dispenser
+streetcar, tram, tramcar, trolley, trolley car
+pole
+
+Type: result
+fire engine, fire truck
+trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi
+ambulance
+streetcar, tram, tramcar, trolley, trolley car
+pop bottle, soda bottle
+
+
+Img: 5
+Type: gray
+park bench
+water bottle
+water jug
+bubble
+bannister, banister, balustrade, balusters, handrail
+
+Type: ground truth
+water bottle
+water jug
+pop bottle, soda bottle
+beer bottle
+ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin
+
+Type: result
+canoe
+crate
+mousetrap
+chest
+apiary, bee house
+
+
+Img: 6
+Type: gray
+syringe
+hair spray
+water bottle
+pill bottle
+lotion
+
+Type: ground truth
+syringe
+hair spray
+water bottle
+pill bottle
+tennis ball
+
+Type: result
+hair spray
+drumstick
+mountain bike, all-terrain bike, off-roader
+water jug
+harp
+
+
+Img: 7
+Type: gray
+pop bottle, soda bottle
+hourglass
+water bottle
+wine bottle
+beaker
+
+Type: ground truth
+water bottle
+pop bottle, soda bottle
+water jug
+wine bottle
+beer bottle
+
+Type: result
+hourglass
+wine bottle
+pop bottle, soda bottle
+perfume, essence
+beaker
+
+
+Img: 8
+Type: gray
+ice lolly, lolly, lollipop, popsicle
+swing
+tricycle, trike, velocipede
+park bench
+water bottle
+
+Type: ground truth
+ice lolly, lolly, lollipop, popsicle
+sunscreen, sunblock, sun blocker
+soccer ball
+maraca
+knee pad
+
+Type: result
+ice lolly, lolly, lollipop, popsicle
+sunscreen, sunblock, sun blocker
+nipple
+hair spray
+soccer ball
+
+
+Img: 9
+Type: gray
+tricycle, trike, velocipede
+panpipe, pandean pipe, syrinx
+milk can
+drum, membranophone, tympan
+water bottle
+
+Type: ground truth
+jinrikisha, ricksha, rickshaw
+tricycle, trike, velocipede
+bearskin, busby, shako
+milk can
+oxcart
+
+Type: result
+bow
+panpipe, pandean pipe, syrinx
+jinrikisha, ricksha, rickshaw
+butcher shop, meat market
+drum, membranophone, tympan
+
+
+Img: 10
+Type: gray
+cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM
+medicine chest, medicine cabinet
+vending machine
+Band Aid
+water bottle
+
+Type: ground truth
+nipple
+Band Aid
+water bottle
+cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM
+pill bottle
+
+Type: result
+Band Aid
+cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM
+medicine chest, medicine cabinet
+vending machine
+tobacco shop, tobacconist shop, tobacconist
+
+
+Img: 11
+Type: gray
+banjo
+accordion, piano accordion, squeeze box
+cowboy hat, ten-gallon hat
+spatula
+assault rifle, assault gun
+
+Type: ground truth
+mountain bike, all-terrain bike, off-roader
+unicycle, monocycle
+bicycle-built-for-two, tandem bicycle, tandem
+Dutch oven
+knee pad
+
+Type: result
+bicycle-built-for-two, tandem bicycle, tandem
+banjo
+unicycle, monocycle
+steel drum
+accordion, piano accordion, squeeze box
+
+
+Img: 12
+Type: gray
+stage
+microphone, mike
+accordion, piano accordion, squeeze box
+electric guitar
+banjo
+
+Type: ground truth
+stage
+electric guitar
+microphone, mike
+knee pad
+punching bag, punch bag, punching ball, punchball
+
+Type: result
+electric guitar
+drum, membranophone, tympan
+stage
+banjo
+accordion, piano accordion, squeeze box
+
+
+Img: 13
+Type: gray
+mountain bike, all-terrain bike, off-roader
+tricycle, trike, velocipede
+moped
+bicycle-built-for-two, tandem bicycle, tandem
+picket fence, paling
+
+Type: ground truth
+mountain bike, all-terrain bike, off-roader
+bicycle-built-for-two, tandem bicycle, tandem
+unicycle, monocycle
+moped
+turnstile
+
+Type: result
+mountain bike, all-terrain bike, off-roader
+moped
+bicycle-built-for-two, tandem bicycle, tandem
+tricycle, trike, velocipede
+unicycle, monocycle
+
+
+Img: 14
+Type: gray
+cannon
+military uniform
+airship, dirigible
+tank, army tank, armored combat vehicle, armoured combat vehicle
+shovel
+
+Type: ground truth
+alp
+shovel
+tank, army tank, armored combat vehicle, armoured combat vehicle
+solar dish, solar collector, solar furnace
+cannon
+
+Type: result
+thresher, thrasher, threshing machine
+lumbermill, sawmill
+harvester, reaper
+radio telescope, radio reflector
+plow, plough
+
+
+Img: 15
+Type: gray
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+shower curtain
+bathtub, bathing tub, bath, tub
+washbasin, handbasin, washbowl, lavabo, wash-hand basin
+hair spray
+
+Type: ground truth
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+ballpoint, ballpoint pen, ballpen, Biro
+lotion
+hair spray
+zucchini, courgette
+
+Type: result
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+hair spray
+lotion
+cockroach, roach
+saltshaker, salt shaker
+
+
+Img: 16
+Type: gray
+barbershop
+bookshop, bookstore, bookstall
+shoe shop, shoe-shop, shoe store
+punching bag, punch bag, punching ball, punchball
+vending machine
+
+Type: ground truth
+bookshop, bookstore, bookstall
+cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM
+library
+sliding door
+tobacco shop, tobacconist shop, tobacconist
+
+Type: result
+bookshop, bookstore, bookstall
+tobacco shop, tobacconist shop, tobacconist
+throne
+hair spray
+restaurant, eating house, eating place, eatery
+
+
+Img: 17
+Type: gray
+stage
+sax, saxophone
+bubble
+fountain
+padlock
+
+Type: ground truth
+ballplayer, baseball player
+unicycle, monocycle
+baseball
+bathing cap, swimming cap
+chain saw, chainsaw
+
+Type: result
+flute, transverse flute
+accordion, piano accordion, squeeze box
+chain saw, chainsaw
+harp
+groom, bridegroom
+
+
+Img: 18
+Type: gray
+volcano
+valley, vale
+sarong
+cliff, drop, drop-off
+sunscreen, sunblock, sun blocker
+
+Type: ground truth
+valley, vale
+volcano
+swimming trunks, bathing trunks
+sarong
+alp
+
+Type: result
+sandbar, sand bar
+swimming trunks, bathing trunks
+sunscreen, sunblock, sun blocker
+bikini, two-piece
+sarong
+
+
+Img: 19
+Type: gray
+harp
+window shade
+violin, fiddle
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+shower curtain
+
+Type: ground truth
+hair spray
+ice lolly, lolly, lollipop, popsicle
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+sunscreen, sunblock, sun blocker
+cleaver, meat cleaver, chopper
+
+Type: result
+shower curtain
+window shade
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+violin, fiddle
+harp
+
+
+Img: 20
+Type: gray
+bubble
+maypole
+groom, bridegroom
+hair spray
+harp
+
+Type: ground truth
+torch
+maypole
+bubble
+plunger, plumber's helper
+guillotine
+
+Type: result
+groom, bridegroom
+maypole
+bubble
+mosque
+hoopskirt, crinoline
+
+
+Img: 21
+Type: gray
+teapot
+toilet tissue, toilet paper, bathroom tissue
+toilet seat
+water jug
+mixing bowl
+
+Type: ground truth
+toilet seat
+teapot
+toilet tissue, toilet paper, bathroom tissue
+lampshade, lamp shade
+water jug
+
+Type: result
+eggnog
+teapot
+candle, taper, wax light
+trifle
+water jug
+
+
+Img: 22
+Type: gray
+English setter
+wire-haired fox terrier
+alp
+stone wall
+cliff, drop, drop-off
+
+Type: ground truth
+valley, vale
+alp
+marmot
+stone wall
+cliff, drop, drop-off
+
+Type: result
+maze, labyrinth
+patas, hussar monkey, Erythrocebus patas
+langur
+Ibizan hound, Ibizan Podenco
+marmot
+
+
+Img: 23
+Type: gray
+cup
+measuring cup
+strainer
+mixing bowl
+soup bowl
+
+Type: ground truth
+cup
+pitcher, ewer
+vase
+measuring cup
+water jug
+
+Type: result
+pitcher, ewer
+ice cream, icecream
+cup
+trifle
+soup bowl
+
+
+Img: 24
+Type: gray
+potter's wheel
+scale, weighing machine
+dining table, board
+abacus
+patio, terrace
+
+Type: ground truth
+potter's wheel
+gong, tam-tam
+spindle
+chime, bell, gong
+mortar
+
+Type: result
+potter's wheel
+dining table, board
+mortar
+gong, tam-tam
+dough
+
+
+Img: 25
+Type: gray
+Boston bull, Boston terrier
+French bulldog
+Chihuahua
+toy terrier
+Brabancon griffon
+
+Type: ground truth
+Boston bull, Boston terrier
+French bulldog
+toy terrier
+Chihuahua
+tennis ball
+
+Type: result
+Boston bull, Boston terrier
+French bulldog
+toy terrier
+Chihuahua
+Brabancon griffon
+
+
+Img: 26
+Type: gray
+spotlight, spot
+megalith, megalithic structure
+wreck
+gasmask, respirator, gas helmet
+cliff, drop, drop-off
+
+Type: ground truth
+cliff, drop, drop-off
+parachute, chute
+flagpole, flagstaff
+megalith, megalithic structure
+water bottle
+
+Type: result
+cliff, drop, drop-off
+torch
+fountain
+spotlight, spot
+wreck
+
+
+Img: 27
+Type: gray
+jellyfish
+electric ray, crampfish, numbfish, torpedo
+isopod
+conch
+scorpion
+
+Type: ground truth
+leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea
+eel
+jellyfish
+water bottle
+damselfly
+
+Type: result
+jellyfish
+electric ray, crampfish, numbfish, torpedo
+frilled lizard, Chlamydosaurus kingi
+conch
+trilobite
+
+
+Img: 28
+Type: gray
+cliff, drop, drop-off
+geyser
+valley, vale
+seashore, coast, seacoast, sea-coast
+volcano
+
+Type: ground truth
+valley, vale
+water bottle
+rock crab, Cancer irroratus
+snorkel
+coho, cohoe, coho salmon, blue jack, silver salmon, Oncorhynchus kisutch
+
+Type: result
+cliff, drop, drop-off
+valley, vale
+mountain bike, all-terrain bike, off-roader
+rock crab, Cancer irroratus
+volcano
+
+
+Img: 29
+Type: gray
+milk can
+pedestal, plinth, footstall
+ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin
+electric fan, blower
+bell cote, bell cot
+
+Type: ground truth
+water bottle
+hamper
+shopping basket
+scale, weighing machine
+ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin
+
+Type: result
+perfume, essence
+candle, taper, wax light
+hamper
+medicine chest, medicine cabinet
+packet
+
+
+Img: 30
+Type: gray
+water bottle
+pill bottle
+rubber eraser, rubber, pencil eraser
+spotlight, spot
+nipple
+
+Type: ground truth
+water bottle
+pill bottle
+spotlight, spot
+rubber eraser, rubber, pencil eraser
+microphone, mike
+
+Type: result
+rubber eraser, rubber, pencil eraser
+spotlight, spot
+beer bottle
+pill bottle
+water bottle
+
+
+Img: 31
+Type: gray
+water bottle
+wine bottle
+pop bottle, soda bottle
+perfume, essence
+beaker
+
+Type: ground truth
+water bottle
+pop bottle, soda bottle
+perfume, essence
+wine bottle
+vase
+
+Type: result
+perfume, essence
+wine bottle
+vase
+whiskey jug
+water bottle
+
+
+Img: 32
+Type: gray
+water bottle
+hair spray
+water jug
+milk can
+medicine chest, medicine cabinet
+
+Type: ground truth
+water bottle
+coffeepot
+milk can
+water jug
+hair spray
+
+Type: result
+hair spray
+medicine chest, medicine cabinet
+whiskey jug
+lotion
+water bottle
+
+
+Img: 33
+Type: gray
+pop bottle, soda bottle
+water bottle
+beer bottle
+beaker
+saltshaker, salt shaker
+
+Type: ground truth
+pop bottle, soda bottle
+water bottle
+beer bottle
+water jug
+beaker
+
+Type: result
+pop bottle, soda bottle
+beer bottle
+saltshaker, salt shaker
+beaker
+water bottle
+
+
+Img: 34
+Type: gray
+syringe
+pill bottle
+water bottle
+lotion
+nipple
+
+Type: ground truth
+pill bottle
+syringe
+lotion
+water bottle
+sunscreen, sunblock, sun blocker
+
+Type: result
+syringe
+pill bottle
+lotion
+perfume, essence
+water bottle
+
+
+Img: 35
+Type: gray
+pill bottle
+milk can
+lotion
+water jug
+whiskey jug
+
+Type: ground truth
+lotion
+pill bottle
+water bottle
+hair spray
+nipple
+
+Type: result
+pill bottle
+lotion
+whiskey jug
+water jug
+water bottle
+
+
+Img: 36
+Type: gray
+water bottle
+pop bottle, soda bottle
+dome
+spotlight, spot
+hourglass
+
+Type: ground truth
+water bottle
+soap dispenser
+pop bottle, soda bottle
+water jug
+hourglass
+
+Type: result
+hourglass
+pop bottle, soda bottle
+perfume, essence
+water bottle
+dome
+
+
+Img: 37
+Type: gray
+beer bottle
+water bottle
+pop bottle, soda bottle
+wine bottle
+thimble
+
+Type: ground truth
+water bottle
+pop bottle, soda bottle
+beer bottle
+nipple
+water jug
+
+Type: result
+beer bottle
+pop bottle, soda bottle
+wine bottle
+water bottle
+hair spray
+
+
+Img: 38
+Type: gray
+water bottle
+water jug
+milk can
+lighter, light, igniter, ignitor
+cocktail shaker
+
+Type: ground truth
+lighter, light, igniter, ignitor
+water bottle
+water jug
+pencil sharpener
+whistle
+
+Type: result
+lighter, light, igniter, ignitor
+water jug
+water bottle
+lotion
+nipple
+
+
+Img: 39
+Type: gray
+water bottle
+pop bottle, soda bottle
+perfume, essence
+water jug
+saltshaker, salt shaker
+
+Type: ground truth
+water bottle
+pop bottle, soda bottle
+perfume, essence
+water jug
+soap dispenser
+
+Type: result
+perfume, essence
+water bottle
+pop bottle, soda bottle
+soap dispenser
+water jug
+
+
+Img: 40
+Type: gray
+water bottle
+cocktail shaker
+saltshaker, salt shaker
+perfume, essence
+soap dispenser
+
+Type: ground truth
+water bottle
+perfume, essence
+cocktail shaker
+soap dispenser
+saltshaker, salt shaker
+
+Type: result
+lotion
+water bottle
+perfume, essence
+cocktail shaker
+soap dispenser
+
+
+Img: 41
+Type: gray
+spotlight, spot
+nipple
+water bottle
+pop bottle, soda bottle
+perfume, essence
+
+Type: ground truth
+spotlight, spot
+water bottle
+nipple
+saltshaker, salt shaker
+pop bottle, soda bottle
+
+Type: result
+spotlight, spot
+water bottle
+perfume, essence
+nipple
+oxygen mask
+
+
+Img: 42
+Type: gray
+water bottle
+water jug
+saltshaker, salt shaker
+pill bottle
+quill, quill pen
+
+Type: ground truth
+water bottle
+water jug
+nipple
+pop bottle, soda bottle
+pill bottle
+
+Type: result
+water bottle
+stupa, tope
+perfume, essence
+quill, quill pen
+water jug
+
+
+Img: 43
+Type: gray
+water bottle
+water jug
+soap dispenser
+rain barrel
+milk can
+
+Type: ground truth
+water bottle
+water jug
+vizsla, Hungarian pointer
+pinwheel
+rapeseed
+
+Type: result
+water bottle
+water jug
+nipple
+sunscreen, sunblock, sun blocker
+pinwheel
+
+
+Img: 44
+Type: gray
+water bottle
+pop bottle, soda bottle
+beer bottle
+saltshaker, salt shaker
+water jug
+
+Type: ground truth
+water bottle
+pop bottle, soda bottle
+water jug
+beer bottle
+saltshaker, salt shaker
+
+Type: result
+water bottle
+beer bottle
+pop bottle, soda bottle
+saltshaker, salt shaker
+beer glass
+
+
+Img: 45
+Type: gray
+water bottle
+water jug
+whiskey jug
+soap dispenser
+nipple
+
+Type: ground truth
+water bottle
+nipple
+water jug
+beaker
+soap dispenser
+
+Type: result
+water bottle
+medicine chest, medicine cabinet
+refrigerator, icebox
+pop bottle, soda bottle
+pill bottle
+
+
+Img: 46
+Type: gray
+water bottle
+pop bottle, soda bottle
+perfume, essence
+cocktail shaker
+beer glass
+
+Type: ground truth
+water bottle
+pop bottle, soda bottle
+water jug
+nipple
+vending machine
+
+Type: result
+water bottle
+pop bottle, soda bottle
+beer glass
+perfume, essence
+cocktail shaker
+
+

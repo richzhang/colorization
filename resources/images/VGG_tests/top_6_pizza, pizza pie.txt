@@ -1,0 +1,1104 @@
+Img: 0
+Type: gray
+brain coral
+chiton, coat-of-mail shell, sea cradle, polyplacophore
+trilobite
+coral reef
+brass, memorial tablet, plaque
+
+Type: ground truth
+pizza, pizza pie
+Dutch oven
+frying pan, frypan, skillet
+meat loaf, meatloaf
+acorn squash
+
+Type: result
+pizza, pizza pie
+frying pan, frypan, skillet
+Dutch oven
+meat loaf, meatloaf
+chiton, coat-of-mail shell, sea cradle, polyplacophore
+
+
+Img: 1
+Type: gray
+frying pan, frypan, skillet
+Dutch oven
+Petri dish
+wok
+banjo
+
+Type: ground truth
+pizza, pizza pie
+frying pan, frypan, skillet
+spaghetti squash
+pomegranate
+potpie
+
+Type: result
+pizza, pizza pie
+frying pan, frypan, skillet
+trifle
+potpie
+waffle iron
+
+
+Img: 2
+Type: gray
+hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa
+ice cream, icecream
+custard apple
+pomegranate
+bolete
+
+Type: ground truth
+pizza, pizza pie
+acorn squash
+French loaf
+bagel, beigel
+burrito
+
+Type: result
+pizza, pizza pie
+acorn squash
+plate
+carbonara
+spaghetti squash
+
+
+Img: 3
+Type: gray
+toilet tissue, toilet paper, bathroom tissue
+steel drum
+burrito
+washbasin, handbasin, washbowl, lavabo, wash-hand basin
+toilet seat
+
+Type: ground truth
+pizza, pizza pie
+trifle
+bagel, beigel
+burrito
+plate
+
+Type: result
+pizza, pizza pie
+trifle
+burrito
+plate
+ice cream, icecream
+
+
+Img: 4
+Type: gray
+bonnet, poke bonnet
+Great Dane
+mask
+triceratops
+handkerchief, hankie, hanky, hankey
+
+Type: ground truth
+pizza, pizza pie
+burrito
+bakery, bakeshop, bakehouse
+paper towel
+French loaf
+
+Type: result
+pizza, pizza pie
+bakery, bakeshop, bakehouse
+French loaf
+honeycomb
+burrito
+
+
+Img: 5
+Type: gray
+chiton, coat-of-mail shell, sea cradle, polyplacophore
+frying pan, frypan, skillet
+wok
+Dutch oven
+crayfish, crawfish, crawdad, crawdaddy
+
+Type: ground truth
+pizza, pizza pie
+frying pan, frypan, skillet
+Dutch oven
+meat loaf, meatloaf
+zucchini, courgette
+
+Type: result
+pizza, pizza pie
+acorn squash
+frying pan, frypan, skillet
+Dutch oven
+mashed potato
+
+
+Img: 6
+Type: gray
+Petri dish
+toilet seat
+pot, flowerpot
+bucket, pail
+strainer
+
+Type: ground truth
+pizza, pizza pie
+soup bowl
+plate
+broccoli
+guacamole
+
+Type: result
+pizza, pizza pie
+meat loaf, meatloaf
+plate
+soup bowl
+burrito
+
+
+Img: 7
+Type: gray
+Petri dish
+toilet seat
+strainer
+spatula
+shield, buckler
+
+Type: ground truth
+pizza, pizza pie
+toilet seat
+plate
+trifle
+potpie
+
+Type: result
+pizza, pizza pie
+toilet seat
+trifle
+Dutch oven
+spatula
+
+
+Img: 8
+Type: gray
+burrito
+guacamole
+cleaver, meat cleaver, chopper
+ice cream, icecream
+mortar
+
+Type: ground truth
+pizza, pizza pie
+guacamole
+burrito
+plate
+acorn squash
+
+Type: result
+pizza, pizza pie
+burrito
+guacamole
+plate
+hotdog, hot dog, red hot
+
+
+Img: 9
+Type: gray
+loggerhead, loggerhead turtle, Caretta caretta
+custard apple
+hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa
+chiton, coat-of-mail shell, sea cradle, polyplacophore
+mushroom
+
+Type: ground truth
+pizza, pizza pie
+French loaf
+frying pan, frypan, skillet
+meat loaf, meatloaf
+pomegranate
+
+Type: result
+pizza, pizza pie
+French loaf
+potpie
+frying pan, frypan, skillet
+hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa
+
+
+Img: 10
+Type: gray
+jigsaw puzzle
+tub, vat
+frying pan, frypan, skillet
+pizza, pizza pie
+bathtub, bathing tub, bath, tub
+
+Type: ground truth
+pizza, pizza pie
+French loaf
+zucchini, courgette
+meat loaf, meatloaf
+bakery, bakeshop, bakehouse
+
+Type: result
+pizza, pizza pie
+mashed potato
+plate
+potpie
+meat loaf, meatloaf
+
+
+Img: 11
+Type: gray
+trifle
+chocolate sauce, chocolate syrup
+screw
+pizza, pizza pie
+jigsaw puzzle
+
+Type: ground truth
+pizza, pizza pie
+trifle
+bakery, bakeshop, bakehouse
+bagel, beigel
+French loaf
+
+Type: result
+pizza, pizza pie
+trifle
+chocolate sauce, chocolate syrup
+bakery, bakeshop, bakehouse
+ice cream, icecream
+
+
+Img: 12
+Type: gray
+wok
+Dutch oven
+spatula
+frying pan, frypan, skillet
+ice cream, icecream
+
+Type: ground truth
+pizza, pizza pie
+frying pan, frypan, skillet
+acorn squash
+spatula
+potpie
+
+Type: result
+mashed potato
+pizza, pizza pie
+potpie
+frying pan, frypan, skillet
+meat loaf, meatloaf
+
+
+Img: 13
+Type: gray
+custard apple
+plate
+mashed potato
+washer, automatic washer, washing machine
+mixing bowl
+
+Type: ground truth
+pizza, pizza pie
+potpie
+plate
+trifle
+meat loaf, meatloaf
+
+Type: result
+mashed potato
+pizza, pizza pie
+plate
+potpie
+custard apple
+
+
+Img: 14
+Type: gray
+caldron, cauldron
+Dutch oven
+dough
+wok
+potter's wheel
+
+Type: ground truth
+pizza, pizza pie
+potpie
+frying pan, frypan, skillet
+spatula
+Dutch oven
+
+Type: result
+potpie
+pizza, pizza pie
+frying pan, frypan, skillet
+trifle
+bakery, bakeshop, bakehouse
+
+
+Img: 15
+Type: gray
+fountain
+knot
+sunglass
+matchstick
+seashore, coast, seacoast, sea-coast
+
+Type: ground truth
+pizza, pizza pie
+meat loaf, meatloaf
+rotisserie
+potpie
+bakery, bakeshop, bakehouse
+
+Type: result
+meat loaf, meatloaf
+pizza, pizza pie
+bakery, bakeshop, bakehouse
+plate
+mashed potato
+
+
+Img: 16
+Type: gray
+electric ray, crampfish, numbfish, torpedo
+Petri dish
+tick
+steel drum
+custard apple
+
+Type: ground truth
+pizza, pizza pie
+acorn squash
+potpie
+frying pan, frypan, skillet
+French loaf
+
+Type: result
+potpie
+pizza, pizza pie
+French loaf
+acorn squash
+frying pan, frypan, skillet
+
+
+Img: 17
+Type: gray
+dough
+frying pan, frypan, skillet
+ladle
+wok
+mixing bowl
+
+Type: ground truth
+pizza, pizza pie
+frying pan, frypan, skillet
+meat loaf, meatloaf
+French loaf
+spatula
+
+Type: result
+frying pan, frypan, skillet
+potpie
+pizza, pizza pie
+meat loaf, meatloaf
+French loaf
+
+
+Img: 18
+Type: gray
+Petri dish
+ice cream, icecream
+trifle
+soup bowl
+mixing bowl
+
+Type: ground truth
+pizza, pizza pie
+potpie
+soup bowl
+bagel, beigel
+frying pan, frypan, skillet
+
+Type: result
+trifle
+Petri dish
+pizza, pizza pie
+potpie
+mashed potato
+
+
+Img: 19
+Type: gray
+caldron, cauldron
+Dutch oven
+gong, tam-tam
+frying pan, frypan, skillet
+wok
+
+Type: ground truth
+pizza, pizza pie
+frying pan, frypan, skillet
+meat loaf, meatloaf
+potpie
+Dutch oven
+
+Type: result
+frying pan, frypan, skillet
+potpie
+pizza, pizza pie
+Dutch oven
+French loaf
+
+
+Img: 20
+Type: gray
+wok
+caldron, cauldron
+restaurant, eating house, eating place, eatery
+frying pan, frypan, skillet
+butcher shop, meat market
+
+Type: ground truth
+pizza, pizza pie
+restaurant, eating house, eating place, eatery
+plate
+burrito
+Dungeness crab, Cancer magister
+
+Type: result
+restaurant, eating house, eating place, eatery
+dining table, board
+pizza, pizza pie
+plate
+bakery, bakeshop, bakehouse
+
+
+Img: 21
+Type: gray
+Petri dish
+bucket, pail
+soup bowl
+mixing bowl
+steel drum
+
+Type: ground truth
+pizza, pizza pie
+soup bowl
+plate
+acorn squash
+spaghetti squash
+
+Type: result
+soup bowl
+mashed potato
+pizza, pizza pie
+potpie
+plate
+
+
+Img: 22
+Type: gray
+starfish, sea star
+water snake
+ringneck snake, ring-necked snake, ring snake
+night snake, Hypsiglena torquata
+thunder snake, worm snake, Carphophis amoenus
+
+Type: ground truth
+pizza, pizza pie
+zucchini, courgette
+soup bowl
+potpie
+carbonara
+
+Type: result
+mashed potato
+carbonara
+pizza, pizza pie
+potpie
+dough
+
+
+Img: 23
+Type: gray
+spatula
+dough
+trifle
+ladle
+waffle iron
+
+Type: ground truth
+pizza, pizza pie
+trifle
+potpie
+plate
+burrito
+
+Type: result
+trifle
+dough
+mashed potato
+pizza, pizza pie
+waffle iron
+
+
+Img: 24
+Type: gray
+bakery, bakeshop, bakehouse
+dough
+confectionery, confectionary, candy store
+bagel, beigel
+Dutch oven
+
+Type: ground truth
+bakery, bakeshop, bakehouse
+pizza, pizza pie
+bagel, beigel
+corn
+rotisserie
+
+Type: result
+bakery, bakeshop, bakehouse
+tray
+bagel, beigel
+pizza, pizza pie
+menu
+
+
+Img: 25
+Type: gray
+Petri dish
+strainer
+pomegranate
+coil, spiral, volute, whorl, helix
+strawberry
+
+Type: ground truth
+strawberry
+trifle
+pomegranate
+tray
+bakery, bakeshop, bakehouse
+
+Type: result
+pomegranate
+trifle
+strawberry
+pizza, pizza pie
+bakery, bakeshop, bakehouse
+
+
+Img: 26
+Type: gray
+ice cream, icecream
+mixing bowl
+vase
+dough
+wooden spoon
+
+Type: ground truth
+pizza, pizza pie
+spaghetti squash
+French loaf
+bagel, beigel
+carbonara
+
+Type: result
+carbonara
+spaghetti squash
+mashed potato
+plate
+pizza, pizza pie
+
+
+Img: 27
+Type: gray
+steel drum
+stingray
+shield, buckler
+electric ray, crampfish, numbfish, torpedo
+barrow, garden cart, lawn cart, wheelbarrow
+
+Type: ground truth
+pizza, pizza pie
+potpie
+frying pan, frypan, skillet
+spaghetti squash
+acorn squash
+
+Type: result
+mashed potato
+spaghetti squash
+waffle iron
+potpie
+pizza, pizza pie
+
+
+Img: 28
+Type: gray
+strainer
+wooden spoon
+ladle
+frying pan, frypan, skillet
+wok
+
+Type: ground truth
+pizza, pizza pie
+frying pan, frypan, skillet
+potpie
+Dutch oven
+spatula
+
+Type: result
+wooden spoon
+frying pan, frypan, skillet
+potpie
+strainer
+carbonara
+
+
+Img: 29
+Type: gray
+shield, buckler
+gong, tam-tam
+toilet seat
+buckle
+washbasin, handbasin, washbowl, lavabo, wash-hand basin
+
+Type: ground truth
+pizza, pizza pie
+toilet seat
+soup bowl
+espresso
+plate
+
+Type: result
+chocolate sauce, chocolate syrup
+soup bowl
+consomme
+tray
+toilet seat
+
+
+Img: 30
+Type: gray
+golf ball
+soccer ball
+custard apple
+teddy, teddy bear
+ice cream, icecream
+
+Type: ground truth
+pizza, pizza pie
+plate
+ice cream, icecream
+burrito
+French loaf
+
+Type: result
+ice cream, icecream
+plate
+bakery, bakeshop, bakehouse
+bagel, beigel
+mashed potato
+
+
+Img: 31
+Type: gray
+cleaver, meat cleaver, chopper
+shovel
+iron, smoothing iron
+ladle
+spatula
+
+Type: ground truth
+pizza, pizza pie
+meat loaf, meatloaf
+cleaver, meat cleaver, chopper
+spatula
+burrito
+
+Type: result
+burrito
+meat loaf, meatloaf
+potpie
+cleaver, meat cleaver, chopper
+spatula
+
+
+Img: 32
+Type: gray
+book jacket, dust cover, dust jacket, dust wrapper
+tank, army tank, armored combat vehicle, armoured combat vehicle
+cliff dwelling
+potter's wheel
+pickelhaube
+
+Type: ground truth
+pizza, pizza pie
+meat loaf, meatloaf
+bakery, bakeshop, bakehouse
+toaster
+plate
+
+Type: result
+bakery, bakeshop, bakehouse
+trifle
+eggnog
+dough
+ice cream, icecream
+
+
+Img: 33
+Type: gray
+ice cream, icecream
+strainer
+bucket, pail
+mixing bowl
+coffee mug
+
+Type: ground truth
+pizza, pizza pie
+bagel, beigel
+potpie
+hotdog, hot dog, red hot
+burrito
+
+Type: result
+ice cream, icecream
+potpie
+burrito
+mashed potato
+plate
+
+
+Img: 34
+Type: gray
+grey whale, gray whale, devilfish, Eschrichtius gibbosus, Eschrichtius robustus
+dugong, Dugong dugon
+sea lion
+hammerhead, hammerhead shark
+slug
+
+Type: ground truth
+pizza, pizza pie
+meat loaf, meatloaf
+potpie
+French loaf
+dough
+
+Type: result
+slug
+potpie
+dough
+pretzel
+French loaf
+
+
+Img: 35
+Type: gray
+confectionery, confectionary, candy store
+jigsaw puzzle
+toyshop
+perfume, essence
+hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa
+
+Type: ground truth
+menu
+pizza, pizza pie
+jigsaw puzzle
+tray
+plate
+
+Type: result
+bakery, bakeshop, bakehouse
+confectionery, confectionary, candy store
+dining table, board
+menu
+tray
+
+
+Img: 36
+Type: gray
+strainer
+mixing bowl
+cup
+wooden spoon
+soup bowl
+
+Type: ground truth
+trifle
+pizza, pizza pie
+corn
+soup bowl
+mixing bowl
+
+Type: result
+carbonara
+plate
+soup bowl
+wooden spoon
+guacamole
+
+
+Img: 37
+Type: gray
+custard apple
+slug
+nematode, nematode worm, roundworm
+horned viper, cerastes, sand viper, horned asp, Cerastes cornutus
+chiton, coat-of-mail shell, sea cradle, polyplacophore
+
+Type: ground truth
+potpie
+pizza, pizza pie
+French loaf
+acorn squash
+bagel, beigel
+
+Type: result
+French loaf
+plate
+potpie
+bagel, beigel
+mashed potato
+
+
+Img: 38
+Type: gray
+spotlight, spot
+strainer
+mortar
+mixing bowl
+coffee mug
+
+Type: ground truth
+soup bowl
+pizza, pizza pie
+plate
+consomme
+potpie
+
+Type: result
+pomegranate
+fig
+wooden spoon
+mortar
+trifle
+
+
+Img: 39
+Type: gray
+jigsaw puzzle
+hair spray
+crossword puzzle, crossword
+paper towel
+toilet tissue, toilet paper, bathroom tissue
+
+Type: ground truth
+jigsaw puzzle
+burrito
+pizza, pizza pie
+paper towel
+conch
+
+Type: result
+jigsaw puzzle
+paper towel
+pajama, pyjama, pj's, jammies
+shower cap
+quilt, comforter, comfort, puff
+
+
+Img: 40
+Type: gray
+hermit crab
+tick
+necklace
+acorn
+screw
+
+Type: ground truth
+pomegranate
+Band Aid
+strawberry
+pretzel
+hotdog, hot dog, red hot
+
+Type: result
+pomegranate
+tick
+Band Aid
+buckeye, horse chestnut, conker
+pretzel
+
+
+Img: 41
+Type: gray
+leatherback turtle, leatherback, leathery turtle, Dermochelys coriacea
+chain saw, chainsaw
+conch
+banjo
+chiton, coat-of-mail shell, sea cradle, polyplacophore
+
+Type: ground truth
+Rottweiler
+bluetick
+jigsaw puzzle
+malinois
+German shepherd, German shepherd dog, German police dog, alsatian
+
+Type: result
+chain saw, chainsaw
+shield, buckler
+honeycomb
+rock crab, Cancer irroratus
+teddy, teddy bear
+
+
+Img: 42
+Type: gray
+baboon
+squirrel monkey, Saimiri sciureus
+fox squirrel, eastern fox squirrel, Sciurus niger
+macaque
+guenon, guenon monkey
+
+Type: ground truth
+fox squirrel, eastern fox squirrel, Sciurus niger
+squirrel monkey, Saimiri sciureus
+spider monkey, Ateles geoffroyi
+titi, titi monkey
+grey fox, gray fox, Urocyon cinereoargenteus
+
+Type: result
+baboon
+fox squirrel, eastern fox squirrel, Sciurus niger
+guenon, guenon monkey
+macaque
+koala, koala bear, kangaroo bear, native bear, Phascolarctos cinereus
+
+
+Img: 43
+Type: gray
+confectionery, confectionary, candy store
+face powder
+vending machine
+bakery, bakeshop, bakehouse
+toyshop
+
+Type: ground truth
+bakery, bakeshop, bakehouse
+menu
+packet
+grocery store, grocery, food market, market
+vending machine
+
+Type: result
+bakery, bakeshop, bakehouse
+confectionery, confectionary, candy store
+grocery store, grocery, food market, market
+hamper
+toyshop
+
+
+Img: 44
+Type: gray
+bow tie, bow-tie, bowtie
+groom, bridegroom
+bubble
+swing
+brassiere, bra, bandeau
+
+Type: ground truth
+restaurant, eating house, eating place, eatery
+conch
+bow tie, bow-tie, bowtie
+plate
+crayfish, crawfish, crawdad, crawdaddy
+
+Type: result
+conch
+grocery store, grocery, food market, market
+groom, bridegroom
+butcher shop, meat market
+restaurant, eating house, eating place, eatery
+
+
+Img: 45
+Type: gray
+necklace
+dial telephone, dial phone
+hair slide
+bell pepper
+pretzel
+
+Type: ground truth
+cucumber, cuke
+bell pepper
+tray
+Granny Smith
+zucchini, courgette
+
+Type: result
+bell pepper
+carbonara
+Granny Smith
+tray
+plate
+
+
+Img: 46
+Type: gray
+thimble
+pinwheel
+lampshade, lamp shade
+Band Aid
+saltshaker, salt shaker
+
+Type: ground truth
+packet
+saltshaker, salt shaker
+vestment
+thimble
+French loaf
+
+Type: result
+thimble
+saltshaker, salt shaker
+candle, taper, wax light
+face powder
+pinwheel
+
+
+Img: 47
+Type: gray
+laptop, laptop computer
+studio couch, day bed
+throne
+fire screen, fireguard
+notebook, notebook computer
+
+Type: ground truth
+studio couch, day bed
+throne
+chest
+bakery, bakeshop, bakehouse
+crate
+
+Type: result
+four-poster
+throne
+studio couch, day bed
+fire screen, fireguard
+mosquito net
+
+

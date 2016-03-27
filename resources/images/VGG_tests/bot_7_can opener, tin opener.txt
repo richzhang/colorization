@@ -1,0 +1,1081 @@
+Img: 0
+Type: gray
+can opener, tin opener
+pencil sharpener
+combination lock
+switch, electric switch, electrical switch
+lighter, light, igniter, ignitor
+
+Type: ground truth
+can opener, tin opener
+pencil sharpener
+plane, carpenter's plane, woodworking plane
+lighter, light, igniter, ignitor
+switch, electric switch, electrical switch
+
+Type: result
+pencil sharpener
+rubber eraser, rubber, pencil eraser
+lighter, light, igniter, ignitor
+hair slide
+mousetrap
+
+
+Img: 1
+Type: gray
+dial telephone, dial phone
+can opener, tin opener
+ladle
+remote control, remote
+pencil sharpener
+
+Type: ground truth
+dial telephone, dial phone
+toaster
+can opener, tin opener
+spatula
+soap dispenser
+
+Type: result
+dial telephone, dial phone
+pomegranate
+toaster
+cleaver, meat cleaver, chopper
+wooden spoon
+
+
+Img: 2
+Type: gray
+espresso maker
+can opener, tin opener
+switch, electric switch, electrical switch
+pencil sharpener
+spotlight, spot
+
+Type: ground truth
+espresso maker
+can opener, tin opener
+pencil sharpener
+spotlight, spot
+scale, weighing machine
+
+Type: result
+guillotine
+espresso maker
+space heater
+scale, weighing machine
+pencil sharpener
+
+
+Img: 3
+Type: gray
+sewing machine
+espresso maker
+can opener, tin opener
+joystick
+toaster
+
+Type: ground truth
+sewing machine
+joystick
+can opener, tin opener
+soap dispenser
+espresso maker
+
+Type: result
+sewing machine
+joystick
+espresso maker
+soap dispenser
+toaster
+
+
+Img: 4
+Type: gray
+washbasin, handbasin, washbowl, lavabo, wash-hand basin
+soap dispenser
+can opener, tin opener
+bathtub, bathing tub, bath, tub
+espresso maker
+
+Type: ground truth
+washbasin, handbasin, washbowl, lavabo, wash-hand basin
+can opener, tin opener
+bathtub, bathing tub, bath, tub
+hook, claw
+tub, vat
+
+Type: result
+bathtub, bathing tub, bath, tub
+espresso maker
+plunger, plumber's helper
+washbasin, handbasin, washbowl, lavabo, wash-hand basin
+vacuum, vacuum cleaner
+
+
+Img: 5
+Type: gray
+stretcher
+scale, weighing machine
+can opener, tin opener
+spotlight, spot
+barbell
+
+Type: ground truth
+stretcher
+can opener, tin opener
+spotlight, spot
+scale, weighing machine
+barbell
+
+Type: result
+mousetrap
+stretcher
+bow
+guillotine
+plow, plough
+
+
+Img: 6
+Type: gray
+syringe
+screwdriver
+whistle
+can opener, tin opener
+screw
+
+Type: ground truth
+screwdriver
+syringe
+can opener, tin opener
+whistle
+dumbbell
+
+Type: result
+syringe
+lipstick, lip rouge
+flute, transverse flute
+whistle
+fountain pen
+
+
+Img: 7
+Type: gray
+mortar
+ballpoint, ballpoint pen, ballpen, Biro
+lipstick, lip rouge
+can opener, tin opener
+hammer
+
+Type: ground truth
+mortar
+can opener, tin opener
+screw
+hook, claw
+nail
+
+Type: result
+mortar
+lipstick, lip rouge
+hourglass
+maraca
+face powder
+
+
+Img: 8
+Type: gray
+binder, ring-binder
+lighter, light, igniter, ignitor
+fountain pen
+ballpoint, ballpoint pen, ballpen, Biro
+can opener, tin opener
+
+Type: ground truth
+ballpoint, ballpoint pen, ballpen, Biro
+binder, ring-binder
+fountain pen
+letter opener, paper knife, paperknife
+nail
+
+Type: result
+binder, ring-binder
+ballpoint, ballpoint pen, ballpen, Biro
+fountain pen
+slide rule, slipstick
+lighter, light, igniter, ignitor
+
+
+Img: 9
+Type: gray
+revolver, six-gun, six-shooter
+lighter, light, igniter, ignitor
+screwdriver
+rifle
+can opener, tin opener
+
+Type: ground truth
+revolver, six-gun, six-shooter
+lighter, light, igniter, ignitor
+screwdriver
+can opener, tin opener
+rubber eraser, rubber, pencil eraser
+
+Type: result
+revolver, six-gun, six-shooter
+lighter, light, igniter, ignitor
+screwdriver
+lipstick, lip rouge
+ballpoint, ballpoint pen, ballpen, Biro
+
+
+Img: 10
+Type: gray
+hook, claw
+hair slide
+whistle
+nematode, nematode worm, roundworm
+strainer
+
+Type: ground truth
+broccoli
+hair slide
+strainer
+head cabbage
+magnetic compass
+
+Type: result
+whistle
+hair slide
+nipple
+hook, claw
+ice lolly, lolly, lollipop, popsicle
+
+
+Img: 11
+Type: gray
+letter opener, paper knife, paperknife
+scabbard
+corkscrew, bottle screw
+ballpoint, ballpoint pen, ballpen, Biro
+syringe
+
+Type: ground truth
+letter opener, paper knife, paperknife
+corkscrew, bottle screw
+scabbard
+bow
+ballpoint, ballpoint pen, ballpen, Biro
+
+Type: result
+letter opener, paper knife, paperknife
+scabbard
+flute, transverse flute
+fountain pen
+bow
+
+
+Img: 12
+Type: gray
+nail
+maraca
+hammer
+letter opener, paper knife, paperknife
+matchstick
+
+Type: ground truth
+maraca
+matchstick
+hammer
+nail
+drumstick
+
+Type: result
+maraca
+nail
+matchstick
+drumstick
+tick
+
+
+Img: 13
+Type: gray
+toilet tissue, toilet paper, bathroom tissue
+washbasin, handbasin, washbowl, lavabo, wash-hand basin
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+crossword puzzle, crossword
+paper towel
+
+Type: ground truth
+toilet tissue, toilet paper, bathroom tissue
+paper towel
+washbasin, handbasin, washbowl, lavabo, wash-hand basin
+space shuttle
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+
+Type: result
+clog, geta, patten, sabot
+space shuttle
+shoe shop, shoe-shop, shoe store
+crossword puzzle, crossword
+cowboy boot
+
+
+Img: 14
+Type: gray
+knot
+nail
+hair slide
+hook, claw
+drumstick
+
+Type: ground truth
+hair slide
+nail
+knot
+drumstick
+hook, claw
+
+Type: result
+hair slide
+matchstick
+maraca
+plunger, plumber's helper
+drumstick
+
+
+Img: 15
+Type: gray
+bottlecap
+loupe, jeweler's loupe
+puck, hockey puck
+lens cap, lens cover
+pill bottle
+
+Type: ground truth
+bottlecap
+bubble
+Band Aid
+lens cap, lens cover
+puck, hockey puck
+
+Type: result
+bottlecap
+bathing cap, swimming cap
+bubble
+pill bottle
+Band Aid
+
+
+Img: 16
+Type: gray
+whistle
+loupe, jeweler's loupe
+hook, claw
+corkscrew, bottle screw
+chain
+
+Type: ground truth
+whistle
+hook, claw
+chain
+corkscrew, bottle screw
+necklace
+
+Type: result
+whistle
+letter opener, paper knife, paperknife
+necklace
+hook, claw
+chain
+
+
+Img: 17
+Type: gray
+screwdriver
+dumbbell
+screw
+power drill
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+
+Type: ground truth
+screw
+dumbbell
+screwdriver
+whistle
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+
+Type: result
+screwdriver
+dumbbell
+screw
+lighter, light, igniter, ignitor
+power drill
+
+
+Img: 18
+Type: gray
+screwdriver
+tripod
+letter opener, paper knife, paperknife
+carpenter's kit, tool kit
+hammer
+
+Type: ground truth
+screwdriver
+carpenter's kit, tool kit
+letter opener, paper knife, paperknife
+tripod
+can opener, tin opener
+
+Type: result
+matchstick
+screwdriver
+paintbrush
+quill, quill pen
+rubber eraser, rubber, pencil eraser
+
+
+Img: 19
+Type: gray
+syringe
+screwdriver
+revolver, six-gun, six-shooter
+tripod
+corkscrew, bottle screw
+
+Type: ground truth
+screwdriver
+can opener, tin opener
+power drill
+carpenter's kit, tool kit
+lighter, light, igniter, ignitor
+
+Type: result
+syringe
+lipstick, lip rouge
+fountain pen
+screwdriver
+paintbrush
+
+
+Img: 20
+Type: gray
+corkscrew, bottle screw
+hair spray
+ballpoint, ballpoint pen, ballpen, Biro
+fountain pen
+carpenter's kit, tool kit
+
+Type: ground truth
+can opener, tin opener
+cleaver, meat cleaver, chopper
+corkscrew, bottle screw
+carpenter's kit, tool kit
+fountain pen
+
+Type: result
+screwdriver
+ballpoint, ballpoint pen, ballpen, Biro
+carpenter's kit, tool kit
+corkscrew, bottle screw
+fountain pen
+
+
+Img: 21
+Type: gray
+can opener, tin opener
+aircraft carrier, carrier, flattop, attack aircraft carrier
+warplane, military plane
+stretcher
+mousetrap
+
+Type: ground truth
+can opener, tin opener
+hair slide
+swab, swob, mop
+whistle
+stretcher
+
+Type: result
+space shuttle
+mousetrap
+aircraft carrier, carrier, flattop, attack aircraft carrier
+missile
+can opener, tin opener
+
+
+Img: 22
+Type: gray
+can opener, tin opener
+corkscrew, bottle screw
+hatchet
+hammer
+hard disc, hard disk, fixed disk
+
+Type: ground truth
+can opener, tin opener
+corkscrew, bottle screw
+hard disc, hard disk, fixed disk
+hook, claw
+hatchet
+
+Type: result
+hatchet
+electric guitar
+bow
+corkscrew, bottle screw
+can opener, tin opener
+
+
+Img: 23
+Type: gray
+can opener, tin opener
+letter opener, paper knife, paperknife
+carpenter's kit, tool kit
+scabbard
+hammer
+
+Type: ground truth
+can opener, tin opener
+carpenter's kit, tool kit
+scabbard
+bow
+hammer
+
+Type: result
+letter opener, paper knife, paperknife
+scabbard
+can opener, tin opener
+screwdriver
+rubber eraser, rubber, pencil eraser
+
+
+Img: 24
+Type: gray
+can opener, tin opener
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+hammer
+whistle
+screw
+
+Type: ground truth
+can opener, tin opener
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+whistle
+hammer
+screw
+
+Type: result
+whistle
+lipstick, lip rouge
+can opener, tin opener
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+rubber eraser, rubber, pencil eraser
+
+
+Img: 25
+Type: gray
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+can opener, tin opener
+whistle
+corkscrew, bottle screw
+hook, claw
+
+Type: ground truth
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+whistle
+can opener, tin opener
+hook, claw
+ocarina, sweet potato
+
+Type: result
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+whistle
+can opener, tin opener
+hook, claw
+ocarina, sweet potato
+
+
+Img: 26
+Type: gray
+pencil sharpener
+reel
+can opener, tin opener
+combination lock
+hook, claw
+
+Type: ground truth
+can opener, tin opener
+hook, claw
+pencil sharpener
+reel
+combination lock
+
+Type: result
+hook, claw
+reel
+can opener, tin opener
+pencil sharpener
+lighter, light, igniter, ignitor
+
+
+Img: 27
+Type: gray
+whistle
+hook, claw
+chain
+can opener, tin opener
+purse
+
+Type: ground truth
+whistle
+chain
+hook, claw
+can opener, tin opener
+magnetic compass
+
+Type: result
+whistle
+hook, claw
+can opener, tin opener
+chain
+purse
+
+
+Img: 28
+Type: gray
+can opener, tin opener
+whistle
+magnetic compass
+loupe, jeweler's loupe
+syringe
+
+Type: ground truth
+whistle
+can opener, tin opener
+magnetic compass
+muzzle
+hook, claw
+
+Type: result
+whistle
+can opener, tin opener
+lighter, light, igniter, ignitor
+magnetic compass
+hair slide
+
+
+Img: 29
+Type: gray
+can opener, tin opener
+washbasin, handbasin, washbowl, lavabo, wash-hand basin
+toilet seat
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+bathtub, bathing tub, bath, tub
+
+Type: ground truth
+can opener, tin opener
+toilet seat
+washbasin, handbasin, washbowl, lavabo, wash-hand basin
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+bathtub, bathing tub, bath, tub
+
+Type: result
+mousetrap
+can opener, tin opener
+vacuum, vacuum cleaner
+spotlight, spot
+modem
+
+
+Img: 30
+Type: gray
+can opener, tin opener
+hammer
+cleaver, meat cleaver, chopper
+corkscrew, bottle screw
+hatchet
+
+Type: ground truth
+can opener, tin opener
+hammer
+cleaver, meat cleaver, chopper
+holster
+scabbard
+
+Type: result
+hammer
+can opener, tin opener
+cleaver, meat cleaver, chopper
+hatchet
+screwdriver
+
+
+Img: 31
+Type: gray
+can opener, tin opener
+whistle
+fountain pen
+lighter, light, igniter, ignitor
+corkscrew, bottle screw
+
+Type: ground truth
+can opener, tin opener
+whistle
+corkscrew, bottle screw
+lighter, light, igniter, ignitor
+loupe, jeweler's loupe
+
+Type: result
+lipstick, lip rouge
+can opener, tin opener
+pencil sharpener
+rubber eraser, rubber, pencil eraser
+harmonica, mouth organ, harp, mouth harp
+
+
+Img: 32
+Type: gray
+saltshaker, salt shaker
+can opener, tin opener
+pill bottle
+lighter, light, igniter, ignitor
+screwdriver
+
+Type: ground truth
+lighter, light, igniter, ignitor
+ballpoint, ballpoint pen, ballpen, Biro
+can opener, tin opener
+lipstick, lip rouge
+rubber eraser, rubber, pencil eraser
+
+Type: result
+lighter, light, igniter, ignitor
+can opener, tin opener
+ballpoint, ballpoint pen, ballpen, Biro
+saltshaker, salt shaker
+pencil sharpener
+
+
+Img: 33
+Type: gray
+hair slide
+can opener, tin opener
+spatula
+buckle
+frying pan, frypan, skillet
+
+Type: ground truth
+buckle
+can opener, tin opener
+hair slide
+spatula
+holster
+
+Type: result
+hair slide
+can opener, tin opener
+cleaver, meat cleaver, chopper
+spatula
+carpenter's kit, tool kit
+
+
+Img: 34
+Type: gray
+corkscrew, bottle screw
+scabbard
+can opener, tin opener
+letter opener, paper knife, paperknife
+ladle
+
+Type: ground truth
+corkscrew, bottle screw
+can opener, tin opener
+scabbard
+letter opener, paper knife, paperknife
+shield, buckler
+
+Type: result
+corkscrew, bottle screw
+can opener, tin opener
+letter opener, paper knife, paperknife
+scabbard
+hook, claw
+
+
+Img: 35
+Type: gray
+can opener, tin opener
+nail
+screw
+barbell
+hook, claw
+
+Type: ground truth
+can opener, tin opener
+screw
+nail
+whistle
+barbell
+
+Type: result
+can opener, tin opener
+nail
+ballpoint, ballpoint pen, ballpen, Biro
+lighter, light, igniter, ignitor
+whistle
+
+
+Img: 36
+Type: gray
+can opener, tin opener
+corkscrew, bottle screw
+revolver, six-gun, six-shooter
+lighter, light, igniter, ignitor
+whistle
+
+Type: ground truth
+can opener, tin opener
+corkscrew, bottle screw
+revolver, six-gun, six-shooter
+hook, claw
+cleaver, meat cleaver, chopper
+
+Type: result
+can opener, tin opener
+corkscrew, bottle screw
+cleaver, meat cleaver, chopper
+revolver, six-gun, six-shooter
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+
+
+Img: 37
+Type: gray
+can opener, tin opener
+screw
+nail
+corkscrew, bottle screw
+hair slide
+
+Type: ground truth
+can opener, tin opener
+corkscrew, bottle screw
+screw
+hair slide
+nail
+
+Type: result
+can opener, tin opener
+corkscrew, bottle screw
+hair slide
+screw
+nail
+
+
+Img: 38
+Type: gray
+can opener, tin opener
+holster
+corkscrew, bottle screw
+hair slide
+plane, carpenter's plane, woodworking plane
+
+Type: ground truth
+can opener, tin opener
+motor scooter, scooter
+crash helmet
+neck brace
+chain saw, chainsaw
+
+Type: result
+can opener, tin opener
+holster
+crash helmet
+hair slide
+corkscrew, bottle screw
+
+
+Img: 39
+Type: gray
+can opener, tin opener
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+loupe, jeweler's loupe
+spotlight, spot
+reel
+
+Type: ground truth
+can opener, tin opener
+loupe, jeweler's loupe
+oil filter
+spotlight, spot
+reel
+
+Type: result
+can opener, tin opener
+oil filter
+stethoscope
+reel
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+
+
+Img: 40
+Type: gray
+can opener, tin opener
+corkscrew, bottle screw
+hook, claw
+hair slide
+whistle
+
+Type: ground truth
+can opener, tin opener
+hair slide
+hook, claw
+scabbard
+whistle
+
+Type: result
+can opener, tin opener
+whistle
+hook, claw
+harmonica, mouth organ, harp, mouth harp
+hair slide
+
+
+Img: 41
+Type: gray
+can opener, tin opener
+switch, electric switch, electrical switch
+piggy bank, penny bank
+hammer
+hammerhead, hammerhead shark
+
+Type: ground truth
+can opener, tin opener
+oxygen mask
+water bottle
+knot
+stethoscope
+
+Type: result
+can opener, tin opener
+switch, electric switch, electrical switch
+power drill
+snorkel
+bathing cap, swimming cap
+
+
+Img: 42
+Type: gray
+can opener, tin opener
+safety pin
+buckle
+corkscrew, bottle screw
+hair slide
+
+Type: ground truth
+can opener, tin opener
+buckle
+scabbard
+hair slide
+safety pin
+
+Type: result
+can opener, tin opener
+buckle
+hair slide
+scabbard
+corkscrew, bottle screw
+
+
+Img: 43
+Type: gray
+can opener, tin opener
+hair slide
+lighter, light, igniter, ignitor
+pencil sharpener
+corkscrew, bottle screw
+
+Type: ground truth
+can opener, tin opener
+lighter, light, igniter, ignitor
+typewriter keyboard
+hair slide
+revolver, six-gun, six-shooter
+
+Type: result
+can opener, tin opener
+lighter, light, igniter, ignitor
+typewriter keyboard
+revolver, six-gun, six-shooter
+space bar
+
+
+Img: 44
+Type: gray
+can opener, tin opener
+corkscrew, bottle screw
+hair slide
+carpenter's kit, tool kit
+hook, claw
+
+Type: ground truth
+can opener, tin opener
+corkscrew, bottle screw
+hook, claw
+hair slide
+carpenter's kit, tool kit
+
+Type: result
+can opener, tin opener
+corkscrew, bottle screw
+hair slide
+letter opener, paper knife, paperknife
+hook, claw
+
+
+Img: 45
+Type: gray
+can opener, tin opener
+letter opener, paper knife, paperknife
+plane, carpenter's plane, woodworking plane
+pencil sharpener
+hammer
+
+Type: ground truth
+can opener, tin opener
+cleaver, meat cleaver, chopper
+letter opener, paper knife, paperknife
+corkscrew, bottle screw
+rubber eraser, rubber, pencil eraser
+
+Type: result
+can opener, tin opener
+pencil sharpener
+rubber eraser, rubber, pencil eraser
+corkscrew, bottle screw
+fountain pen
+
+
+Img: 46
+Type: gray
+can opener, tin opener
+corkscrew, bottle screw
+hair slide
+hook, claw
+letter opener, paper knife, paperknife
+
+Type: ground truth
+can opener, tin opener
+corkscrew, bottle screw
+hair slide
+hook, claw
+letter opener, paper knife, paperknife
+
+Type: result
+can opener, tin opener
+hair slide
+corkscrew, bottle screw
+letter opener, paper knife, paperknife
+buckle
+
+

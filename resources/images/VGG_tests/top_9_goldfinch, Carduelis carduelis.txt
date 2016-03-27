@@ -1,0 +1,1104 @@
+Img: 0
+Type: gray
+chickadee
+brambling, Fringilla montifringilla
+junco, snowbird
+jay
+crayfish, crawfish, crawdad, crawdaddy
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+chickadee
+bee eater
+
+Type: result
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+chickadee
+black and gold garden spider, Argiope aurantia
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+
+Img: 1
+Type: gray
+ptarmigan
+water ouzel, dipper
+kite
+jay
+coucal
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+bulbul
+water ouzel, dipper
+
+Type: result
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+bulbul
+water ouzel, dipper
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+
+Img: 2
+Type: gray
+ptarmigan
+junco, snowbird
+brambling, Fringilla montifringilla
+house finch, linnet, Carpodacus mexicanus
+chickadee
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+house finch, linnet, Carpodacus mexicanus
+bulbul
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+Type: result
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+junco, snowbird
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+water ouzel, dipper
+
+
+Img: 3
+Type: gray
+ptarmigan
+bulbul
+junco, snowbird
+water ouzel, dipper
+bee eater
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+bulbul
+brambling, Fringilla montifringilla
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+bee eater
+
+Type: result
+goldfinch, Carduelis carduelis
+bulbul
+brambling, Fringilla montifringilla
+bee eater
+house finch, linnet, Carpodacus mexicanus
+
+
+Img: 4
+Type: gray
+chickadee
+quail
+water ouzel, dipper
+junco, snowbird
+brambling, Fringilla montifringilla
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+bulbul
+water ouzel, dipper
+brambling, Fringilla montifringilla
+magpie
+
+Type: result
+goldfinch, Carduelis carduelis
+sulphur butterfly, sulfur butterfly
+lycaenid, lycaenid butterfly
+water ouzel, dipper
+bulbul
+
+
+Img: 5
+Type: gray
+chickadee
+jay
+junco, snowbird
+magpie
+brambling, Fringilla montifringilla
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+bee eater
+house finch, linnet, Carpodacus mexicanus
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+Type: result
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+bee eater
+chickadee
+bulbul
+
+
+Img: 6
+Type: gray
+junco, snowbird
+ptarmigan
+chickadee
+magpie
+water ouzel, dipper
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+junco, snowbird
+chickadee
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+Type: result
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+junco, snowbird
+water ouzel, dipper
+
+
+Img: 7
+Type: gray
+water ouzel, dipper
+junco, snowbird
+jay
+ruddy turnstone, Arenaria interpres
+ptarmigan
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+junco, snowbird
+bulbul
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+Type: result
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+water ouzel, dipper
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+junco, snowbird
+
+
+Img: 8
+Type: gray
+jay
+chickadee
+magpie
+junco, snowbird
+brambling, Fringilla montifringilla
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+junco, snowbird
+water ouzel, dipper
+
+Type: result
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+jay
+chickadee
+
+
+Img: 9
+Type: gray
+ptarmigan
+hip, rose hip, rosehip
+water ouzel, dipper
+quail
+ant, emmet, pismire
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+house finch, linnet, Carpodacus mexicanus
+bulbul
+
+Type: result
+goldfinch, Carduelis carduelis
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+house finch, linnet, Carpodacus mexicanus
+brambling, Fringilla montifringilla
+tick
+
+
+Img: 10
+Type: gray
+junco, snowbird
+chickadee
+syringe
+hummingbird
+spotlight, spot
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+brambling, Fringilla montifringilla
+bulbul
+junco, snowbird
+
+Type: result
+goldfinch, Carduelis carduelis
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+chickadee
+bulbul
+brambling, Fringilla montifringilla
+
+
+Img: 11
+Type: gray
+junco, snowbird
+ptarmigan
+brambling, Fringilla montifringilla
+chickadee
+kite
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+bulbul
+bee eater
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+Type: result
+goldfinch, Carduelis carduelis
+bee eater
+brambling, Fringilla montifringilla
+bulbul
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+
+Img: 12
+Type: gray
+ptarmigan
+junco, snowbird
+water ouzel, dipper
+chickadee
+brambling, Fringilla montifringilla
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+house finch, linnet, Carpodacus mexicanus
+bulbul
+
+Type: result
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+bulbul
+house finch, linnet, Carpodacus mexicanus
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+
+Img: 13
+Type: gray
+ptarmigan
+water ouzel, dipper
+kite
+junco, snowbird
+jay
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+house finch, linnet, Carpodacus mexicanus
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+brambling, Fringilla montifringilla
+bulbul
+
+Type: result
+goldfinch, Carduelis carduelis
+bulbul
+sulphur butterfly, sulfur butterfly
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+kite
+
+
+Img: 14
+Type: gray
+jay
+magpie
+chickadee
+water ouzel, dipper
+ptarmigan
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+bulbul
+house finch, linnet, Carpodacus mexicanus
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+brambling, Fringilla montifringilla
+
+Type: result
+goldfinch, Carduelis carduelis
+bulbul
+bee eater
+brambling, Fringilla montifringilla
+house finch, linnet, Carpodacus mexicanus
+
+
+Img: 15
+Type: gray
+jay
+junco, snowbird
+chickadee
+ptarmigan
+water ouzel, dipper
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+bee eater
+bulbul
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+house finch, linnet, Carpodacus mexicanus
+
+Type: result
+goldfinch, Carduelis carduelis
+bulbul
+brambling, Fringilla montifringilla
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+bee eater
+
+
+Img: 16
+Type: gray
+chickadee
+jay
+magpie
+junco, snowbird
+bulbul
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+bulbul
+brambling, Fringilla montifringilla
+bee eater
+junco, snowbird
+
+Type: result
+goldfinch, Carduelis carduelis
+bulbul
+chickadee
+water ouzel, dipper
+jay
+
+
+Img: 17
+Type: gray
+junco, snowbird
+chickadee
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+house finch, linnet, Carpodacus mexicanus
+kite
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+bulbul
+house finch, linnet, Carpodacus mexicanus
+
+Type: result
+goldfinch, Carduelis carduelis
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+bulbul
+sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+chickadee
+
+
+Img: 18
+Type: gray
+ptarmigan
+chickadee
+magpie
+water ouzel, dipper
+brambling, Fringilla montifringilla
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+bulbul
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+house finch, linnet, Carpodacus mexicanus
+
+Type: result
+goldfinch, Carduelis carduelis
+bulbul
+brambling, Fringilla montifringilla
+chickadee
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+
+Img: 19
+Type: gray
+magpie
+jay
+chickadee
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+brambling, Fringilla montifringilla
+
+Type: ground truth
+bee eater
+goldfinch, Carduelis carduelis
+toucan
+lorikeet
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+Type: result
+goldfinch, Carduelis carduelis
+bee eater
+bulbul
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+jay
+
+
+Img: 20
+Type: gray
+fountain
+padlock
+weevil
+chickadee
+goldfinch, Carduelis carduelis
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+bulbul
+weevil
+ant, emmet, pismire
+
+Type: result
+goldfinch, Carduelis carduelis
+weevil
+leafhopper
+grasshopper, hopper
+ant, emmet, pismire
+
+
+Img: 21
+Type: gray
+bulbul
+chickadee
+coucal
+jay
+goldfinch, Carduelis carduelis
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+bulbul
+brambling, Fringilla montifringilla
+bee eater
+coucal
+
+Type: result
+goldfinch, Carduelis carduelis
+bulbul
+chickadee
+coucal
+jay
+
+
+Img: 22
+Type: gray
+quail
+house finch, linnet, Carpodacus mexicanus
+ruffed grouse, partridge, Bonasa umbellus
+brambling, Fringilla montifringilla
+goldfinch, Carduelis carduelis
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+bulbul
+house finch, linnet, Carpodacus mexicanus
+bee eater
+
+Type: result
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+bulbul
+house finch, linnet, Carpodacus mexicanus
+quail
+
+
+Img: 23
+Type: gray
+jay
+chickadee
+magpie
+junco, snowbird
+goldfinch, Carduelis carduelis
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+house finch, linnet, Carpodacus mexicanus
+chickadee
+
+Type: result
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+chickadee
+house finch, linnet, Carpodacus mexicanus
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+
+Img: 24
+Type: gray
+chickadee
+magpie
+brambling, Fringilla montifringilla
+jay
+goldfinch, Carduelis carduelis
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+house finch, linnet, Carpodacus mexicanus
+bee eater
+
+Type: result
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+chickadee
+bee eater
+
+
+Img: 25
+Type: gray
+jay
+chickadee
+junco, snowbird
+magpie
+goldfinch, Carduelis carduelis
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+worm fence, snake fence, snake-rail fence, Virginia fence
+leafhopper
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+Type: result
+goldfinch, Carduelis carduelis
+bulbul
+brambling, Fringilla montifringilla
+kite
+jay
+
+
+Img: 26
+Type: gray
+house finch, linnet, Carpodacus mexicanus
+chickadee
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+goldfinch, Carduelis carduelis
+junco, snowbird
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+house finch, linnet, Carpodacus mexicanus
+brambling, Fringilla montifringilla
+chickadee
+
+Type: result
+goldfinch, Carduelis carduelis
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+house finch, linnet, Carpodacus mexicanus
+leafhopper
+brambling, Fringilla montifringilla
+
+
+Img: 27
+Type: gray
+house finch, linnet, Carpodacus mexicanus
+jay
+brambling, Fringilla montifringilla
+goldfinch, Carduelis carduelis
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+house finch, linnet, Carpodacus mexicanus
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+junco, snowbird
+
+Type: result
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+jay
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+house finch, linnet, Carpodacus mexicanus
+
+
+Img: 28
+Type: gray
+chickadee
+goldfinch, Carduelis carduelis
+junco, snowbird
+brambling, Fringilla montifringilla
+jay
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+house finch, linnet, Carpodacus mexicanus
+bee eater
+
+Type: result
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+bulbul
+bee eater
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+
+Img: 29
+Type: gray
+hummingbird
+junco, snowbird
+chickadee
+house finch, linnet, Carpodacus mexicanus
+kite
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+chickadee
+bulbul
+house finch, linnet, Carpodacus mexicanus
+
+Type: result
+kite
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+chickadee
+bulbul
+
+
+Img: 30
+Type: gray
+ptarmigan
+black grouse
+prairie chicken, prairie grouse, prairie fowl
+ruffed grouse, partridge, Bonasa umbellus
+hummingbird
+
+Type: ground truth
+bee eater
+goldfinch, Carduelis carduelis
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+hummingbird
+brambling, Fringilla montifringilla
+
+Type: result
+hummingbird
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+house finch, linnet, Carpodacus mexicanus
+coucal
+
+
+Img: 31
+Type: gray
+jay
+stingray
+syringe
+albatross, mollymawk
+cleaver, meat cleaver, chopper
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+house finch, linnet, Carpodacus mexicanus
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+junco, snowbird
+
+Type: result
+house finch, linnet, Carpodacus mexicanus
+brambling, Fringilla montifringilla
+goldfinch, Carduelis carduelis
+robin, American robin, Turdus migratorius
+hummingbird
+
+
+Img: 32
+Type: gray
+junco, snowbird
+chickadee
+brambling, Fringilla montifringilla
+goldfinch, Carduelis carduelis
+quail
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+junco, snowbird
+house finch, linnet, Carpodacus mexicanus
+chickadee
+
+Type: result
+chickadee
+brambling, Fringilla montifringilla
+goldfinch, Carduelis carduelis
+bulbul
+junco, snowbird
+
+
+Img: 33
+Type: gray
+chickadee
+junco, snowbird
+brambling, Fringilla montifringilla
+bulbul
+ptarmigan
+
+Type: ground truth
+brambling, Fringilla montifringilla
+goldfinch, Carduelis carduelis
+junco, snowbird
+chickadee
+house finch, linnet, Carpodacus mexicanus
+
+Type: result
+chickadee
+bulbul
+bee
+goldfinch, Carduelis carduelis
+junco, snowbird
+
+
+Img: 34
+Type: gray
+chickadee
+bulbul
+junco, snowbird
+jay
+hummingbird
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+brambling, Fringilla montifringilla
+junco, snowbird
+bulbul
+chickadee
+
+Type: result
+bulbul
+chickadee
+junco, snowbird
+water ouzel, dipper
+goldfinch, Carduelis carduelis
+
+
+Img: 35
+Type: gray
+chickadee
+brambling, Fringilla montifringilla
+junco, snowbird
+jay
+bulbul
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+house finch, linnet, Carpodacus mexicanus
+brambling, Fringilla montifringilla
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+bulbul
+
+Type: result
+brambling, Fringilla montifringilla
+chickadee
+bulbul
+jay
+magpie
+
+
+Img: 36
+Type: gray
+mushroom
+weasel
+red fox, Vulpes vulpes
+slug
+stinkhorn, carrion fungus
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+goose
+bulbul
+weevil
+slug
+
+Type: result
+stinkhorn, carrion fungus
+matchstick
+flamingo
+strawberry
+crane
+
+
+Img: 37
+Type: gray
+walking stick, walkingstick, stick insect
+prison, prison house
+squirrel monkey, Saimiri sciureus
+proboscis monkey, Nasalis larvatus
+window screen
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+bulbul
+bee eater
+brambling, Fringilla montifringilla
+jacamar
+
+Type: result
+bulbul
+coucal
+hummingbird
+magpie
+jacamar
+
+
+Img: 38
+Type: gray
+chickadee
+junco, snowbird
+jay
+brambling, Fringilla montifringilla
+magpie
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+bulbul
+bee eater
+jacamar
+brambling, Fringilla montifringilla
+
+Type: result
+jay
+bulbul
+chickadee
+jacamar
+magpie
+
+
+Img: 39
+Type: gray
+hare
+drake
+Ibizan hound, Ibizan Podenco
+wood rabbit, cottontail, cottontail rabbit
+Great Dane
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+American coot, marsh hen, mud hen, water hen, Fulica americana
+hare
+water ouzel, dipper
+drake
+
+Type: result
+drake
+prairie chicken, prairie grouse, prairie fowl
+black swan, Cygnus atratus
+goose
+oystercatcher, oyster catcher
+
+
+Img: 40
+Type: gray
+junco, snowbird
+bulbul
+hummingbird
+chickadee
+brambling, Fringilla montifringilla
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+bulbul
+hummingbird
+brambling, Fringilla montifringilla
+jacamar
+
+Type: result
+bulbul
+hummingbird
+lycaenid, lycaenid butterfly
+junco, snowbird
+quail
+
+
+Img: 41
+Type: gray
+chickadee
+kite
+hummingbird
+bee
+papillon
+
+Type: ground truth
+goldfinch, Carduelis carduelis
+bulbul
+lorikeet
+bee eater
+hummingbird
+
+Type: result
+bald eagle, American eagle, Haliaeetus leucocephalus
+kite
+sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+colobus, colobus monkey
+vulture
+
+
+Img: 42
+Type: gray
+pineapple, ananas
+cardoon
+artichoke, globe artichoke
+ear, spike, capitulum
+fountain
+
+Type: ground truth
+sulphur butterfly, sulfur butterfly
+goldfinch, Carduelis carduelis
+hummingbird
+bee
+lorikeet
+
+Type: result
+sulphur butterfly, sulfur butterfly
+bee
+cardoon
+monarch, monarch butterfly, milkweed butterfly, Danaus plexippus
+admiral
+
+
+Img: 43
+Type: gray
+ptarmigan
+bald eagle, American eagle, Haliaeetus leucocephalus
+sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+magpie
+kite
+
+Type: ground truth
+bee eater
+goldfinch, Carduelis carduelis
+lorikeet
+toucan
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+
+Type: result
+sulphur-crested cockatoo, Kakatoe galerita, Cacatua galerita
+bald eagle, American eagle, Haliaeetus leucocephalus
+kite
+white stork, Ciconia ciconia
+magpie
+
+
+Img: 44
+Type: gray
+bulbul
+jay
+hummingbird
+chickadee
+junco, snowbird
+
+Type: ground truth
+bee eater
+goldfinch, Carduelis carduelis
+bulbul
+jacamar
+hummingbird
+
+Type: result
+brambling, Fringilla montifringilla
+jacamar
+hummingbird
+bee eater
+robin, American robin, Turdus migratorius
+
+
+Img: 45
+Type: gray
+stone wall
+nail
+megalith, megalithic structure
+weasel
+hatchet
+
+Type: ground truth
+agama
+eft
+European fire salamander, Salamandra salamandra
+sulphur butterfly, sulfur butterfly
+stone wall
+
+Type: result
+marmot
+weasel
+stone wall
+bighorn, bighorn sheep, cimarron, Rocky Mountain bighorn, Rocky Mountain sheep, Ovis canadensis
+megalith, megalithic structure
+
+
+Img: 46
+Type: gray
+chime, bell, gong
+torch
+swing
+beaker
+perfume, essence
+
+Type: ground truth
+worm fence, snake fence, snake-rail fence, Virginia fence
+tractor
+chime, bell, gong
+indigo bunting, indigo finch, indigo bird, Passerina cyanea
+park bench
+
+Type: result
+Persian cat
+Angora, Angora rabbit
+yurt
+fire screen, fireguard
+book jacket, dust cover, dust jacket, dust wrapper
+
+
+Img: 47
+Type: gray
+matchstick
+harvestman, daddy longlegs, Phalangium opilio
+bow
+cricket
+web site, website, internet site, site
+
+Type: ground truth
+bee eater
+harvestman, daddy longlegs, Phalangium opilio
+dragonfly, darning needle, devil's darning needle, sewing needle, snake feeder, snake doctor, mosquito hawk, skeeter hawk
+cricket
+walking stick, walkingstick, stick insect
+
+Type: result
+television, television system
+web site, website, internet site, site
+harvestman, daddy longlegs, Phalangium opilio
+walking stick, walkingstick, stick insect
+monitor
+
+

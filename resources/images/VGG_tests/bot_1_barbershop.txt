@@ -1,0 +1,966 @@
+Img: 0
+Type: gray
+barbershop
+vestment
+barber chair
+chimpanzee, chimp, Pan troglodytes
+hair spray
+
+Type: ground truth
+vestment
+barbershop
+hair spray
+altar
+groom, bridegroom
+
+Type: result
+vestment
+bassoon
+harp
+altar
+groom, bridegroom
+
+
+Img: 1
+Type: gray
+barbershop
+bubble
+lab coat, laboratory coat
+barber chair
+confectionery, confectionary, candy store
+
+Type: ground truth
+barbershop
+oxygen mask
+lab coat, laboratory coat
+syringe
+nipple
+
+Type: result
+pajama, pyjama, pj's, jammies
+groom, bridegroom
+candle, taper, wax light
+restaurant, eating house, eating place, eatery
+syringe
+
+
+Img: 2
+Type: gray
+television, television system
+barbershop
+book jacket, dust cover, dust jacket, dust wrapper
+barber chair
+groom, bridegroom
+
+Type: ground truth
+German short-haired pointer
+Brittany spaniel
+English setter
+television, television system
+book jacket, dust cover, dust jacket, dust wrapper
+
+Type: result
+bakery, bakeshop, bakehouse
+butcher shop, meat market
+teddy, teddy bear
+book jacket, dust cover, dust jacket, dust wrapper
+restaurant, eating house, eating place, eatery
+
+
+Img: 3
+Type: gray
+lumbermill, sawmill
+barbershop
+restaurant, eating house, eating place, eatery
+barber chair
+forklift
+
+Type: ground truth
+stage
+forklift
+gondola
+throne
+guillotine
+
+Type: result
+lumbermill, sawmill
+restaurant, eating house, eating place, eatery
+four-poster
+vault
+throne
+
+
+Img: 4
+Type: gray
+restaurant, eating house, eating place, eatery
+barbershop
+bakery, bakeshop, bakehouse
+grocery store, grocery, food market, market
+barber chair
+
+Type: ground truth
+restaurant, eating house, eating place, eatery
+bookshop, bookstore, bookstall
+barbershop
+library
+bakery, bakeshop, bakehouse
+
+Type: result
+restaurant, eating house, eating place, eatery
+bakery, bakeshop, bakehouse
+grocery store, grocery, food market, market
+bookshop, bookstore, bookstall
+library
+
+
+Img: 5
+Type: gray
+barber chair
+barbershop
+bookshop, bookstore, bookstall
+tobacco shop, tobacconist shop, tobacconist
+shoe shop, shoe-shop, shoe store
+
+Type: ground truth
+barber chair
+barbershop
+vacuum, vacuum cleaner
+bookshop, bookstore, bookstall
+library
+
+Type: result
+restaurant, eating house, eating place, eatery
+barber chair
+tobacco shop, tobacconist shop, tobacconist
+bookshop, bookstore, bookstall
+china cabinet, china closet
+
+
+Img: 6
+Type: gray
+cinema, movie theater, movie theatre, movie house, picture palace
+bookshop, bookstore, bookstall
+vending machine
+barbershop
+gas pump, gasoline pump, petrol pump, island dispenser
+
+Type: ground truth
+cinema, movie theater, movie theatre, movie house, picture palace
+restaurant, eating house, eating place, eatery
+bakery, bakeshop, bakehouse
+bookshop, bookstore, bookstall
+barbershop
+
+Type: result
+cinema, movie theater, movie theatre, movie house, picture palace
+vending machine
+bookshop, bookstore, bookstall
+tobacco shop, tobacconist shop, tobacconist
+bakery, bakeshop, bakehouse
+
+
+Img: 7
+Type: gray
+crate
+cinema, movie theater, movie theatre, movie house, picture palace
+bookshop, bookstore, bookstall
+barbershop
+tobacco shop, tobacconist shop, tobacconist
+
+Type: ground truth
+barbershop
+bakery, bakeshop, bakehouse
+cinema, movie theater, movie theatre, movie house, picture palace
+bookshop, bookstore, bookstall
+grocery store, grocery, food market, market
+
+Type: result
+barn
+freight car
+tobacco shop, tobacconist shop, tobacconist
+crate
+lumbermill, sawmill
+
+
+Img: 8
+Type: gray
+umbrella
+marimba, xylophone
+jinrikisha, ricksha, rickshaw
+barber chair
+barbershop
+
+Type: ground truth
+oxcart
+horse cart, horse-cart
+jinrikisha, ricksha, rickshaw
+patio, terrace
+thatch, thatched roof
+
+Type: result
+oxcart
+jinrikisha, ricksha, rickshaw
+horse cart, horse-cart
+yurt
+wreck
+
+
+Img: 9
+Type: gray
+brass, memorial tablet, plaque
+book jacket, dust cover, dust jacket, dust wrapper
+comic book
+street sign
+barbershop
+
+Type: ground truth
+tobacco shop, tobacconist shop, tobacconist
+street sign
+barbershop
+book jacket, dust cover, dust jacket, dust wrapper
+brass, memorial tablet, plaque
+
+Type: result
+book jacket, dust cover, dust jacket, dust wrapper
+vault
+brass, memorial tablet, plaque
+menu
+comic book
+
+
+Img: 10
+Type: gray
+cinema, movie theater, movie theatre, movie house, picture palace
+prison, prison house
+bookshop, bookstore, bookstall
+bakery, bakeshop, bakehouse
+barbershop
+
+Type: ground truth
+cinema, movie theater, movie theatre, movie house, picture palace
+barbershop
+bakery, bakeshop, bakehouse
+bookshop, bookstore, bookstall
+tobacco shop, tobacconist shop, tobacconist
+
+Type: result
+cinema, movie theater, movie theatre, movie house, picture palace
+crate
+prison, prison house
+library
+monastery
+
+
+Img: 11
+Type: gray
+tobacco shop, tobacconist shop, tobacconist
+bookshop, bookstore, bookstall
+shoe shop, shoe-shop, shoe store
+bakery, bakeshop, bakehouse
+restaurant, eating house, eating place, eatery
+
+Type: ground truth
+tobacco shop, tobacconist shop, tobacconist
+bookshop, bookstore, bookstall
+restaurant, eating house, eating place, eatery
+shoe shop, shoe-shop, shoe store
+toyshop
+
+Type: result
+tobacco shop, tobacconist shop, tobacconist
+restaurant, eating house, eating place, eatery
+bookshop, bookstore, bookstall
+shoe shop, shoe-shop, shoe store
+streetcar, tram, tramcar, trolley, trolley car
+
+
+Img: 12
+Type: gray
+lumbermill, sawmill
+picket fence, paling
+patio, terrace
+shovel
+shopping cart
+
+Type: ground truth
+solar dish, solar collector, solar furnace
+patio, terrace
+radio telescope, radio reflector
+lumbermill, sawmill
+sundial
+
+Type: result
+solar dish, solar collector, solar furnace
+patio, terrace
+radio telescope, radio reflector
+lumbermill, sawmill
+bakery, bakeshop, bakehouse
+
+
+Img: 13
+Type: gray
+accordion, piano accordion, squeeze box
+abaya
+crutch
+cowboy boot
+cleaver, meat cleaver, chopper
+
+Type: ground truth
+abaya
+kimono
+trench coat
+bearskin, busby, shako
+cloak
+
+Type: result
+shoe shop, shoe-shop, shoe store
+oboe, hautboy, hautbois
+flute, transverse flute
+abaya
+cowboy boot
+
+
+Img: 14
+Type: gray
+passenger car, coach, carriage
+streetcar, tram, tramcar, trolley, trolley car
+cinema, movie theater, movie theatre, movie house, picture palace
+gas pump, gasoline pump, petrol pump, island dispenser
+freight car
+
+Type: ground truth
+gas pump, gasoline pump, petrol pump, island dispenser
+cinema, movie theater, movie theatre, movie house, picture palace
+passenger car, coach, carriage
+streetcar, tram, tramcar, trolley, trolley car
+vending machine
+
+Type: result
+passenger car, coach, carriage
+streetcar, tram, tramcar, trolley, trolley car
+cinema, movie theater, movie theatre, movie house, picture palace
+fire engine, fire truck
+vending machine
+
+
+Img: 15
+Type: gray
+turnstile
+combination lock
+nail
+lipstick, lip rouge
+padlock
+
+Type: ground truth
+Band Aid
+oil filter
+lighter, light, igniter, ignitor
+turnstile
+syringe
+
+Type: result
+eggnog
+mousetrap
+lighter, light, igniter, ignitor
+lipstick, lip rouge
+matchstick
+
+
+Img: 16
+Type: gray
+seat belt, seatbelt
+hair spray
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+drumstick
+punching bag, punch bag, punching ball, punchball
+
+Type: ground truth
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+seat belt, seatbelt
+neck brace
+hair spray
+tub, vat
+
+Type: result
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+seat belt, seatbelt
+hair spray
+drumstick
+grand piano, grand
+
+
+Img: 17
+Type: gray
+street sign
+cinema, movie theater, movie theatre, movie house, picture palace
+water tower
+traffic light, traffic signal, stoplight
+mobile home, manufactured home
+
+Type: ground truth
+street sign
+barbershop
+cinema, movie theater, movie theatre, movie house, picture palace
+flagpole, flagstaff
+mobile home, manufactured home
+
+Type: result
+cinema, movie theater, movie theatre, movie house, picture palace
+street sign
+mobile home, manufactured home
+traffic light, traffic signal, stoplight
+boathouse
+
+
+Img: 18
+Type: gray
+barbershop
+barber chair
+shoe shop, shoe-shop, shoe store
+restaurant, eating house, eating place, eatery
+hair spray
+
+Type: ground truth
+barbershop
+bakery, bakeshop, bakehouse
+bookshop, bookstore, bookstall
+restaurant, eating house, eating place, eatery
+barber chair
+
+Type: result
+restaurant, eating house, eating place, eatery
+altar
+vestment
+bakery, bakeshop, bakehouse
+barbershop
+
+
+Img: 19
+Type: gray
+barn
+lumbermill, sawmill
+pay-phone, pay-station
+crate
+barbershop
+
+Type: ground truth
+barn
+barbershop
+bakery, bakeshop, bakehouse
+tobacco shop, tobacconist shop, tobacconist
+mailbox, letter box
+
+Type: result
+lumbermill, sawmill
+tobacco shop, tobacconist shop, tobacconist
+crate
+barn
+barbershop
+
+
+Img: 20
+Type: gray
+barbershop
+barber chair
+butcher shop, meat market
+tobacco shop, tobacconist shop, tobacconist
+shoe shop, shoe-shop, shoe store
+
+Type: ground truth
+butcher shop, meat market
+grocery store, grocery, food market, market
+barbershop
+tobacco shop, tobacconist shop, tobacconist
+confectionery, confectionary, candy store
+
+Type: result
+lumbermill, sawmill
+butcher shop, meat market
+barbershop
+barber chair
+tobacco shop, tobacconist shop, tobacconist
+
+
+Img: 21
+Type: gray
+barbershop
+gas pump, gasoline pump, petrol pump, island dispenser
+padlock
+lumbermill, sawmill
+freight car
+
+Type: ground truth
+toyshop
+barbershop
+tobacco shop, tobacconist shop, tobacconist
+restaurant, eating house, eating place, eatery
+hook, claw
+
+Type: result
+lumbermill, sawmill
+toyshop
+barbershop
+tobacco shop, tobacconist shop, tobacconist
+thresher, thrasher, threshing machine
+
+
+Img: 22
+Type: gray
+barbershop
+passenger car, coach, carriage
+turnstile
+barber chair
+forklift
+
+Type: ground truth
+restaurant, eating house, eating place, eatery
+turnstile
+passenger car, coach, carriage
+barbershop
+sliding door
+
+Type: result
+restaurant, eating house, eating place, eatery
+barbershop
+sliding door
+pool table, billiard table, snooker table
+spotlight, spot
+
+
+Img: 23
+Type: gray
+barbershop
+tobacco shop, tobacconist shop, tobacconist
+bookshop, bookstore, bookstall
+bakery, bakeshop, bakehouse
+restaurant, eating house, eating place, eatery
+
+Type: ground truth
+tobacco shop, tobacconist shop, tobacconist
+bookshop, bookstore, bookstall
+barbershop
+restaurant, eating house, eating place, eatery
+bakery, bakeshop, bakehouse
+
+Type: result
+tobacco shop, tobacconist shop, tobacconist
+barbershop
+restaurant, eating house, eating place, eatery
+bakery, bakeshop, bakehouse
+bookshop, bookstore, bookstall
+
+
+Img: 24
+Type: gray
+barbershop
+barber chair
+violin, fiddle
+cello, violoncello
+barrow, garden cart, lawn cart, wheelbarrow
+
+Type: ground truth
+barber chair
+barbershop
+patio, terrace
+folding chair
+barrow, garden cart, lawn cart, wheelbarrow
+
+Type: result
+barber chair
+barbershop
+stretcher
+barrow, garden cart, lawn cart, wheelbarrow
+violin, fiddle
+
+
+Img: 25
+Type: gray
+barbershop
+barber chair
+restaurant, eating house, eating place, eatery
+shoe shop, shoe-shop, shoe store
+bakery, bakeshop, bakehouse
+
+Type: ground truth
+barbershop
+restaurant, eating house, eating place, eatery
+barber chair
+grocery store, grocery, food market, market
+shoe shop, shoe-shop, shoe store
+
+Type: result
+restaurant, eating house, eating place, eatery
+barbershop
+barber chair
+butcher shop, meat market
+grocery store, grocery, food market, market
+
+
+Img: 26
+Type: gray
+barbershop
+barber chair
+shoe shop, shoe-shop, shoe store
+plunger, plumber's helper
+toilet seat
+
+Type: ground truth
+barbershop
+barber chair
+scale, weighing machine
+sewing machine
+toilet seat
+
+Type: result
+barber chair
+barbershop
+shoe shop, shoe-shop, shoe store
+plunger, plumber's helper
+potter's wheel
+
+
+Img: 27
+Type: gray
+tobacco shop, tobacconist shop, tobacconist
+barbershop
+bakery, bakeshop, bakehouse
+bookshop, bookstore, bookstall
+shoe shop, shoe-shop, shoe store
+
+Type: ground truth
+bakery, bakeshop, bakehouse
+tobacco shop, tobacconist shop, tobacconist
+barbershop
+grocery store, grocery, food market, market
+restaurant, eating house, eating place, eatery
+
+Type: result
+tobacco shop, tobacconist shop, tobacconist
+barbershop
+bakery, bakeshop, bakehouse
+grocery store, grocery, food market, market
+butcher shop, meat market
+
+
+Img: 28
+Type: gray
+barber chair
+barbershop
+iron, smoothing iron
+scale, weighing machine
+desk
+
+Type: ground truth
+barbershop
+barber chair
+scale, weighing machine
+stove
+iron, smoothing iron
+
+Type: result
+barber chair
+barbershop
+restaurant, eating house, eating place, eatery
+drum, membranophone, tympan
+scale, weighing machine
+
+
+Img: 29
+Type: gray
+bookshop, bookstore, bookstall
+pay-phone, pay-station
+barbershop
+cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM
+mailbox, letter box
+
+Type: ground truth
+cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM
+bookshop, bookstore, bookstall
+barbershop
+tobacco shop, tobacconist shop, tobacconist
+pay-phone, pay-station
+
+Type: result
+bookshop, bookstore, bookstall
+barbershop
+cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM
+tobacco shop, tobacconist shop, tobacconist
+pay-phone, pay-station
+
+
+Img: 30
+Type: gray
+bookshop, bookstore, bookstall
+tobacco shop, tobacconist shop, tobacconist
+barbershop
+bakery, bakeshop, bakehouse
+restaurant, eating house, eating place, eatery
+
+Type: ground truth
+barbershop
+tobacco shop, tobacconist shop, tobacconist
+restaurant, eating house, eating place, eatery
+bakery, bakeshop, bakehouse
+cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM
+
+Type: result
+tobacco shop, tobacconist shop, tobacconist
+barbershop
+restaurant, eating house, eating place, eatery
+bookshop, bookstore, bookstall
+bakery, bakeshop, bakehouse
+
+
+Img: 31
+Type: gray
+barbershop
+street sign
+bakery, bakeshop, bakehouse
+cinema, movie theater, movie theatre, movie house, picture palace
+tobacco shop, tobacconist shop, tobacconist
+
+Type: ground truth
+barbershop
+street sign
+cinema, movie theater, movie theatre, movie house, picture palace
+pay-phone, pay-station
+crate
+
+Type: result
+barbershop
+cinema, movie theater, movie theatre, movie house, picture palace
+bakery, bakeshop, bakehouse
+restaurant, eating house, eating place, eatery
+street sign
+
+
+Img: 32
+Type: gray
+barbershop
+bookshop, bookstore, bookstall
+gas pump, gasoline pump, petrol pump, island dispenser
+tobacco shop, tobacconist shop, tobacconist
+restaurant, eating house, eating place, eatery
+
+Type: ground truth
+barbershop
+restaurant, eating house, eating place, eatery
+tobacco shop, tobacconist shop, tobacconist
+bakery, bakeshop, bakehouse
+bookshop, bookstore, bookstall
+
+Type: result
+barbershop
+bookshop, bookstore, bookstall
+tobacco shop, tobacconist shop, tobacconist
+gas pump, gasoline pump, petrol pump, island dispenser
+restaurant, eating house, eating place, eatery
+
+
+Img: 33
+Type: gray
+barbershop
+barber chair
+restaurant, eating house, eating place, eatery
+butcher shop, meat market
+tobacco shop, tobacconist shop, tobacconist
+
+Type: ground truth
+barbershop
+barber chair
+vestment
+restaurant, eating house, eating place, eatery
+cloak
+
+Type: result
+barbershop
+barber chair
+butcher shop, meat market
+restaurant, eating house, eating place, eatery
+vestment
+
+
+Img: 34
+Type: gray
+barbershop
+barber chair
+pay-phone, pay-station
+cash machine, cash dispenser, automated teller machine, automatic teller machine, automated teller, automatic teller, ATM
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+
+Type: ground truth
+barbershop
+barber chair
+abaya
+bookshop, bookstore, bookstall
+sliding door
+
+Type: result
+barbershop
+barber chair
+bookshop, bookstore, bookstall
+sliding door
+abaya
+
+
+Img: 35
+Type: gray
+barbershop
+barber chair
+butcher shop, meat market
+lab coat, laboratory coat
+bakery, bakeshop, bakehouse
+
+Type: ground truth
+barbershop
+barber chair
+lab coat, laboratory coat
+bakery, bakeshop, bakehouse
+butcher shop, meat market
+
+Type: result
+barbershop
+lumbermill, sawmill
+barber chair
+bakery, bakeshop, bakehouse
+butcher shop, meat market
+
+
+Img: 36
+Type: gray
+barbershop
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+barber chair
+refrigerator, icebox
+television, television system
+
+Type: ground truth
+barbershop
+barber chair
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+cowboy hat, ten-gallon hat
+refrigerator, icebox
+
+Type: result
+barbershop
+barber chair
+refrigerator, icebox
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+shoe shop, shoe-shop, shoe store
+
+
+Img: 37
+Type: gray
+barbershop
+book jacket, dust cover, dust jacket, dust wrapper
+web site, website, internet site, site
+cinema, movie theater, movie theatre, movie house, picture palace
+tobacco shop, tobacconist shop, tobacconist
+
+Type: ground truth
+barbershop
+book jacket, dust cover, dust jacket, dust wrapper
+bakery, bakeshop, bakehouse
+tobacco shop, tobacconist shop, tobacconist
+bookshop, bookstore, bookstall
+
+Type: result
+barbershop
+bakery, bakeshop, bakehouse
+restaurant, eating house, eating place, eatery
+cinema, movie theater, movie theatre, movie house, picture palace
+menu
+
+
+Img: 38
+Type: gray
+barbershop
+shoe shop, shoe-shop, shoe store
+parking meter
+bakery, bakeshop, bakehouse
+motor scooter, scooter
+
+Type: ground truth
+barbershop
+bakery, bakeshop, bakehouse
+parking meter
+amphibian, amphibious vehicle
+shoe shop, shoe-shop, shoe store
+
+Type: result
+barbershop
+fire engine, fire truck
+sliding door
+minivan
+ambulance
+
+
+Img: 39
+Type: gray
+barbershop
+barn
+bakery, bakeshop, bakehouse
+bookshop, bookstore, bookstall
+tobacco shop, tobacconist shop, tobacconist
+
+Type: ground truth
+barbershop
+bakery, bakeshop, bakehouse
+barn
+tobacco shop, tobacconist shop, tobacconist
+restaurant, eating house, eating place, eatery
+
+Type: result
+barbershop
+barn
+mailbox, letter box
+bakery, bakeshop, bakehouse
+gas pump, gasoline pump, petrol pump, island dispenser
+
+
+Img: 40
+Type: gray
+barbershop
+cleaver, meat cleaver, chopper
+barber chair
+syringe
+bow tie, bow-tie, bowtie
+
+Type: ground truth
+barbershop
+hair spray
+syringe
+spatula
+cleaver, meat cleaver, chopper
+
+Type: result
+barbershop
+barber chair
+cleaver, meat cleaver, chopper
+crossword puzzle, crossword
+burrito
+
+
+Img: 41
+Type: gray
+bookshop, bookstore, bookstall
+barbershop
+restaurant, eating house, eating place, eatery
+prison, prison house
+tobacco shop, tobacconist shop, tobacconist
+
+Type: ground truth
+restaurant, eating house, eating place, eatery
+barbershop
+tobacco shop, tobacconist shop, tobacconist
+bakery, bakeshop, bakehouse
+thatch, thatched roof
+
+Type: result
+barbershop
+patio, terrace
+restaurant, eating house, eating place, eatery
+bookshop, bookstore, bookstall
+monastery
+
+

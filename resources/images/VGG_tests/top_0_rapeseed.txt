@@ -1,0 +1,1127 @@
+Img: 0
+Type: gray
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+hay
+fountain
+picket fence, paling
+
+Type: ground truth
+rapeseed
+school bus
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+hay
+
+Type: result
+rapeseed
+school bus
+barn
+hay
+worm fence, snake fence, snake-rail fence, Virginia fence
+
+
+Img: 1
+Type: gray
+bee
+acorn
+ant, emmet, pismire
+cabbage butterfly
+conch
+
+Type: ground truth
+rapeseed
+fly
+bee
+ant, emmet, pismire
+cabbage butterfly
+
+Type: result
+rapeseed
+bee
+fly
+ant, emmet, pismire
+cabbage butterfly
+
+
+Img: 2
+Type: gray
+lakeside, lakeshore
+fountain
+breakwater, groin, groyne, mole, bulwark, seawall, jetty
+hay
+car mirror
+
+Type: ground truth
+rapeseed
+hay
+school bus
+barn
+corn
+
+Type: result
+rapeseed
+hay
+corn
+harvester, reaper
+barn
+
+
+Img: 3
+Type: gray
+daisy
+cabbage butterfly
+ant, emmet, pismire
+coral fungus
+pot, flowerpot
+
+Type: ground truth
+rapeseed
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+sulphur butterfly, sulfur butterfly
+cabbage butterfly
+daisy
+
+Type: result
+rapeseed
+cabbage butterfly
+sulphur butterfly, sulfur butterfly
+daisy
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+
+
+Img: 4
+Type: gray
+television, television system
+barn
+monitor
+hay
+church, church building
+
+Type: ground truth
+rapeseed
+barn
+church, church building
+hay
+worm fence, snake fence, snake-rail fence, Virginia fence
+
+Type: result
+rapeseed
+barn
+church, church building
+hay
+worm fence, snake fence, snake-rail fence, Virginia fence
+
+
+Img: 5
+Type: gray
+daisy
+vase
+picket fence, paling
+ant, emmet, pismire
+bee
+
+Type: ground truth
+rapeseed
+fly
+bee
+sulphur butterfly, sulfur butterfly
+cabbage butterfly
+
+Type: result
+rapeseed
+fly
+bee
+sulphur butterfly, sulfur butterfly
+cabbage butterfly
+
+
+Img: 6
+Type: gray
+hay
+harvester, reaper
+barn
+bustard
+soccer ball
+
+Type: ground truth
+rapeseed
+harvester, reaper
+school bus
+hay
+barn
+
+Type: result
+rapeseed
+hay
+harvester, reaper
+school bus
+corn
+
+
+Img: 7
+Type: gray
+daisy
+hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa
+mushroom
+conch
+bee
+
+Type: ground truth
+rapeseed
+bee
+sulphur butterfly, sulfur butterfly
+fly
+ant, emmet, pismire
+
+Type: result
+rapeseed
+sulphur butterfly, sulfur butterfly
+bee
+vase
+cabbage butterfly
+
+
+Img: 8
+Type: gray
+lakeside, lakeshore
+boathouse
+park bench
+breakwater, groin, groyne, mole, bulwark, seawall, jetty
+car mirror
+
+Type: ground truth
+rapeseed
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+school bus
+hay
+
+Type: result
+rapeseed
+school bus
+lakeside, lakeshore
+barn
+hay
+
+
+Img: 9
+Type: gray
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+mailbox, letter box
+picket fence, paling
+stone wall
+
+Type: ground truth
+rapeseed
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+hay
+school bus
+
+Type: result
+rapeseed
+barn
+hay
+worm fence, snake fence, snake-rail fence, Virginia fence
+school bus
+
+
+Img: 10
+Type: gray
+airship, dirigible
+flagpole, flagstaff
+missile
+radio telescope, radio reflector
+pole
+
+Type: ground truth
+rapeseed
+school bus
+worm fence, snake fence, snake-rail fence, Virginia fence
+pole
+hay
+
+Type: result
+rapeseed
+school bus
+hay
+worm fence, snake fence, snake-rail fence, Virginia fence
+parachute, chute
+
+
+Img: 11
+Type: gray
+promontory, headland, head, foreland
+cliff, drop, drop-off
+breakwater, groin, groyne, mole, bulwark, seawall, jetty
+seashore, coast, seacoast, sea-coast
+sandbar, sand bar
+
+Type: ground truth
+rapeseed
+lakeside, lakeshore
+valley, vale
+stone wall
+cliff, drop, drop-off
+
+Type: result
+rapeseed
+hay
+valley, vale
+viaduct
+stone wall
+
+
+Img: 12
+Type: gray
+hay
+breakwater, groin, groyne, mole, bulwark, seawall, jetty
+fountain
+stone wall
+thatch, thatched roof
+
+Type: ground truth
+rapeseed
+barn
+hay
+worm fence, snake fence, snake-rail fence, Virginia fence
+harvester, reaper
+
+Type: result
+rapeseed
+hay
+barn
+harvester, reaper
+school bus
+
+
+Img: 13
+Type: gray
+barn
+stone wall
+hay
+worm fence, snake fence, snake-rail fence, Virginia fence
+snowmobile
+
+Type: ground truth
+rapeseed
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+school bus
+hay
+
+Type: result
+rapeseed
+barn
+hay
+worm fence, snake fence, snake-rail fence, Virginia fence
+harvester, reaper
+
+
+Img: 14
+Type: gray
+plow, plough
+harvester, reaper
+worm fence, snake fence, snake-rail fence, Virginia fence
+steam locomotive
+hay
+
+Type: ground truth
+rapeseed
+worm fence, snake fence, snake-rail fence, Virginia fence
+barn
+hay
+harvester, reaper
+
+Type: result
+rapeseed
+hay
+worm fence, snake fence, snake-rail fence, Virginia fence
+barn
+harvester, reaper
+
+
+Img: 15
+Type: gray
+hay
+breakwater, groin, groyne, mole, bulwark, seawall, jetty
+barn
+stone wall
+beacon, lighthouse, beacon light, pharos
+
+Type: ground truth
+rapeseed
+hay
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+harvester, reaper
+
+Type: result
+rapeseed
+hay
+barn
+stone wall
+worm fence, snake fence, snake-rail fence, Virginia fence
+
+
+Img: 16
+Type: gray
+barn
+harvester, reaper
+hay
+park bench
+plow, plough
+
+Type: ground truth
+rapeseed
+barn
+hay
+harvester, reaper
+school bus
+
+Type: result
+rapeseed
+barn
+harvester, reaper
+hay
+worm fence, snake fence, snake-rail fence, Virginia fence
+
+
+Img: 17
+Type: gray
+park bench
+radio telescope, radio reflector
+picket fence, paling
+car mirror
+airship, dirigible
+
+Type: ground truth
+rapeseed
+worm fence, snake fence, snake-rail fence, Virginia fence
+school bus
+barn
+hay
+
+Type: result
+rapeseed
+school bus
+worm fence, snake fence, snake-rail fence, Virginia fence
+barn
+hay
+
+
+Img: 18
+Type: gray
+breakwater, groin, groyne, mole, bulwark, seawall, jetty
+pole
+park bench
+plow, plough
+sandbar, sand bar
+
+Type: ground truth
+rapeseed
+barn
+stone wall
+worm fence, snake fence, snake-rail fence, Virginia fence
+hay
+
+Type: result
+rapeseed
+barn
+hay
+worm fence, snake fence, snake-rail fence, Virginia fence
+harvester, reaper
+
+
+Img: 19
+Type: gray
+ski
+snowplow, snowplough
+bison
+snowmobile
+picket fence, paling
+
+Type: ground truth
+rapeseed
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+school bus
+hay
+
+Type: result
+rapeseed
+hay
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+bison
+
+
+Img: 20
+Type: gray
+web site, website, internet site, site
+hay
+television, television system
+barn
+golf ball
+
+Type: ground truth
+rapeseed
+television, television system
+barn
+hay
+web site, website, internet site, site
+
+Type: result
+rapeseed
+television, television system
+hay
+web site, website, internet site, site
+barn
+
+
+Img: 21
+Type: gray
+fountain
+castle
+church, church building
+barn
+steam locomotive
+
+Type: ground truth
+rapeseed
+castle
+barn
+harvester, reaper
+hay
+
+Type: result
+rapeseed
+barn
+harvester, reaper
+castle
+hay
+
+
+Img: 22
+Type: gray
+barn
+park bench
+worm fence, snake fence, snake-rail fence, Virginia fence
+radio telescope, radio reflector
+picket fence, paling
+
+Type: ground truth
+rapeseed
+worm fence, snake fence, snake-rail fence, Virginia fence
+school bus
+barn
+harvester, reaper
+
+Type: result
+rapeseed
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+hay
+bison
+
+
+Img: 23
+Type: gray
+hay
+barn
+church, church building
+picket fence, paling
+worm fence, snake fence, snake-rail fence, Virginia fence
+
+Type: ground truth
+rapeseed
+school bus
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+hay
+
+Type: result
+rapeseed
+hay
+barn
+school bus
+worm fence, snake fence, snake-rail fence, Virginia fence
+
+
+Img: 24
+Type: gray
+pole
+flagpole, flagstaff
+shovel
+pinwheel
+birdhouse
+
+Type: ground truth
+rapeseed
+worm fence, snake fence, snake-rail fence, Virginia fence
+lakeside, lakeshore
+picket fence, paling
+pole
+
+Type: result
+rapeseed
+lakeside, lakeshore
+alp
+worm fence, snake fence, snake-rail fence, Virginia fence
+valley, vale
+
+
+Img: 25
+Type: gray
+airship, dirigible
+maze, labyrinth
+breakwater, groin, groyne, mole, bulwark, seawall, jetty
+obelisk
+lakeside, lakeshore
+
+Type: ground truth
+rapeseed
+school bus
+worm fence, snake fence, snake-rail fence, Virginia fence
+castle
+barn
+
+Type: result
+rapeseed
+hay
+barn
+castle
+stone wall
+
+
+Img: 26
+Type: gray
+stone wall
+picket fence, paling
+birdhouse
+chainlink fence
+pot, flowerpot
+
+Type: ground truth
+rapeseed
+daisy
+cliff, drop, drop-off
+lakeside, lakeshore
+picket fence, paling
+
+Type: result
+rapeseed
+head cabbage
+buckeye, horse chestnut, conker
+greenhouse, nursery, glasshouse
+pot, flowerpot
+
+
+Img: 27
+Type: gray
+hay
+harvester, reaper
+plow, plough
+barn
+tractor
+
+Type: ground truth
+rapeseed
+school bus
+hay
+tractor
+worm fence, snake fence, snake-rail fence, Virginia fence
+
+Type: result
+rapeseed
+hay
+harvester, reaper
+barn
+corn
+
+
+Img: 28
+Type: gray
+picket fence, paling
+fountain
+chainlink fence
+spider web, spider's web
+ear, spike, capitulum
+
+Type: ground truth
+rapeseed
+school bus
+monarch, monarch butterfly, milkweed butterfly, Danaus plexippus
+hip, rose hip, rosehip
+barn
+
+Type: result
+rapeseed
+hare
+red fox, Vulpes vulpes
+coyote, prairie wolf, brush wolf, Canis latrans
+red wolf, maned wolf, Canis rufus, Canis niger
+
+
+Img: 29
+Type: gray
+park bench
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+megalith, megalithic structure
+hay
+
+Type: ground truth
+rapeseed
+worm fence, snake fence, snake-rail fence, Virginia fence
+stone wall
+barn
+hay
+
+Type: result
+rapeseed
+worm fence, snake fence, snake-rail fence, Virginia fence
+barn
+hay
+stone wall
+
+
+Img: 30
+Type: gray
+greenhouse, nursery, glasshouse
+stone wall
+lakeside, lakeshore
+suspension bridge
+park bench
+
+Type: ground truth
+rapeseed
+lakeside, lakeshore
+stone wall
+seashore, coast, seacoast, sea-coast
+greenhouse, nursery, glasshouse
+
+Type: result
+rapeseed
+lakeside, lakeshore
+stone wall
+seashore, coast, seacoast, sea-coast
+water tower
+
+
+Img: 31
+Type: gray
+hay
+breakwater, groin, groyne, mole, bulwark, seawall, jetty
+stone wall
+barn
+lakeside, lakeshore
+
+Type: ground truth
+rapeseed
+school bus
+harvester, reaper
+barn
+corn
+
+Type: result
+rapeseed
+hay
+corn
+school bus
+harvester, reaper
+
+
+Img: 32
+Type: gray
+worm fence, snake fence, snake-rail fence, Virginia fence
+barn
+water tower
+radio telescope, radio reflector
+picket fence, paling
+
+Type: ground truth
+rapeseed
+barn
+school bus
+worm fence, snake fence, snake-rail fence, Virginia fence
+hay
+
+Type: result
+rapeseed
+school bus
+worm fence, snake fence, snake-rail fence, Virginia fence
+barn
+hay
+
+
+Img: 33
+Type: gray
+breakwater, groin, groyne, mole, bulwark, seawall, jetty
+sandbar, sand bar
+hay
+lakeside, lakeshore
+rapeseed
+
+Type: ground truth
+rapeseed
+barn
+corn
+worm fence, snake fence, snake-rail fence, Virginia fence
+school bus
+
+Type: result
+rapeseed
+corn
+harvester, reaper
+hay
+school bus
+
+
+Img: 34
+Type: gray
+barn
+hay
+park bench
+worm fence, snake fence, snake-rail fence, Virginia fence
+rapeseed
+
+Type: ground truth
+rapeseed
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+school bus
+hay
+
+Type: result
+rapeseed
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+hay
+school bus
+
+
+Img: 35
+Type: gray
+barn
+hay
+worm fence, snake fence, snake-rail fence, Virginia fence
+stone wall
+rapeseed
+
+Type: ground truth
+rapeseed
+barn
+hay
+school bus
+worm fence, snake fence, snake-rail fence, Virginia fence
+
+Type: result
+rapeseed
+hay
+barn
+stone wall
+worm fence, snake fence, snake-rail fence, Virginia fence
+
+
+Img: 36
+Type: gray
+radio telescope, radio reflector
+airship, dirigible
+hay
+rapeseed
+water tower
+
+Type: ground truth
+rapeseed
+corn
+hay
+school bus
+ear, spike, capitulum
+
+Type: result
+rapeseed
+hay
+corn
+harvester, reaper
+ear, spike, capitulum
+
+
+Img: 37
+Type: gray
+hay
+barn
+megalith, megalithic structure
+rapeseed
+stone wall
+
+Type: ground truth
+rapeseed
+barn
+school bus
+hay
+worm fence, snake fence, snake-rail fence, Virginia fence
+
+Type: result
+rapeseed
+hay
+barn
+corn
+ear, spike, capitulum
+
+
+Img: 38
+Type: gray
+web site, website, internet site, site
+barn
+rapeseed
+hay
+castle
+
+Type: ground truth
+rapeseed
+barn
+web site, website, internet site, site
+hay
+church, church building
+
+Type: result
+rapeseed
+barn
+web site, website, internet site, site
+hay
+castle
+
+
+Img: 39
+Type: gray
+hay
+barn
+rapeseed
+bison
+web site, website, internet site, site
+
+Type: ground truth
+rapeseed
+barn
+hay
+web site, website, internet site, site
+plow, plough
+
+Type: result
+rapeseed
+barn
+hay
+web site, website, internet site, site
+church, church building
+
+
+Img: 40
+Type: gray
+hay
+barn
+rapeseed
+church, church building
+maze, labyrinth
+
+Type: ground truth
+rapeseed
+barn
+television, television system
+school bus
+hay
+
+Type: result
+rapeseed
+barn
+school bus
+hay
+television, television system
+
+
+Img: 41
+Type: gray
+hay
+golf ball
+rapeseed
+barn
+plow, plough
+
+Type: ground truth
+rapeseed
+school bus
+harvester, reaper
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+
+Type: result
+rapeseed
+hay
+school bus
+harvester, reaper
+barn
+
+
+Img: 42
+Type: gray
+rapeseed
+barn
+hay
+church, church building
+web site, website, internet site, site
+
+Type: ground truth
+rapeseed
+barn
+worm fence, snake fence, snake-rail fence, Virginia fence
+school bus
+web site, website, internet site, site
+
+Type: result
+rapeseed
+web site, website, internet site, site
+hay
+barn
+school bus
+
+
+Img: 43
+Type: gray
+hay
+barn
+harvester, reaper
+plow, plough
+maze, labyrinth
+
+Type: ground truth
+rapeseed
+hay
+barn
+harvester, reaper
+stone wall
+
+Type: result
+hay
+rapeseed
+barn
+harvester, reaper
+soccer ball
+
+
+Img: 44
+Type: gray
+picket fence, paling
+chainlink fence
+cabbage butterfly
+coral fungus
+ear, spike, capitulum
+
+Type: ground truth
+rapeseed
+daisy
+cabbage butterfly
+sulphur butterfly, sulfur butterfly
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+
+Type: result
+daisy
+cabbage butterfly
+rapeseed
+sulphur butterfly, sulfur butterfly
+yellow lady's slipper, yellow lady-slipper, Cypripedium calceolus, Cypripedium parviflorum
+
+
+Img: 45
+Type: gray
+breakwater, groin, groyne, mole, bulwark, seawall, jetty
+park bench
+fountain
+beacon, lighthouse, beacon light, pharos
+lakeside, lakeshore
+
+Type: ground truth
+barn
+rapeseed
+worm fence, snake fence, snake-rail fence, Virginia fence
+beacon, lighthouse, beacon light, pharos
+picket fence, paling
+
+Type: result
+lakeside, lakeshore
+barn
+monastery
+picket fence, paling
+worm fence, snake fence, snake-rail fence, Virginia fence
+
+
+Img: 46
+Type: gray
+barn
+container ship, containership, container vessel
+worm fence, snake fence, snake-rail fence, Virginia fence
+freight car
+crate
+
+Type: ground truth
+container ship, containership, container vessel
+barn
+library
+crate
+rapeseed
+
+Type: result
+barn
+container ship, containership, container vessel
+library
+freight car
+boathouse
+
+
+Img: 47
+Type: gray
+chainlink fence
+car mirror
+traffic light, traffic signal, stoplight
+breakwater, groin, groyne, mole, bulwark, seawall, jetty
+trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi
+
+Type: ground truth
+chainlink fence
+traffic light, traffic signal, stoplight
+unicycle, monocycle
+school bus
+tripod
+
+Type: result
+unicycle, monocycle
+trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi
+go-kart
+chainlink fence
+bicycle-built-for-two, tandem bicycle, tandem
+
+
+Img: 48
+Type: gray
+ear, spike, capitulum
+picket fence, paling
+bee
+coral fungus
+vase
+
+Type: ground truth
+sulphur butterfly, sulfur butterfly
+grasshopper, hopper
+hummingbird
+cabbage butterfly
+mantis, mantid
+
+Type: result
+cabbage butterfly
+sulphur butterfly, sulfur butterfly
+cardoon
+lacewing, lacewing fly
+bee
+
+

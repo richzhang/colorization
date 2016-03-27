@@ -1,0 +1,1150 @@
+Img: 0
+Type: gray
+ice cream, icecream
+chocolate sauce, chocolate syrup
+frying pan, frypan, skillet
+dough
+spatula
+
+Type: ground truth
+cheeseburger
+meat loaf, meatloaf
+guacamole
+burrito
+bagel, beigel
+
+Type: result
+cheeseburger
+meat loaf, meatloaf
+ice cream, icecream
+mashed potato
+chocolate sauce, chocolate syrup
+
+
+Img: 1
+Type: gray
+isopod
+scorpion
+fiddler crab
+crayfish, crawfish, crawdad, crawdaddy
+Dungeness crab, Cancer magister
+
+Type: ground truth
+cheeseburger
+hotdog, hot dog, red hot
+potpie
+plate
+burrito
+
+Type: result
+cheeseburger
+hotdog, hot dog, red hot
+isopod
+plate
+Dungeness crab, Cancer magister
+
+
+Img: 2
+Type: gray
+ice lolly, lolly, lollipop, popsicle
+ice cream, icecream
+spatula
+dough
+chocolate sauce, chocolate syrup
+
+Type: ground truth
+cheeseburger
+meat loaf, meatloaf
+hotdog, hot dog, red hot
+plate
+burrito
+
+Type: result
+cheeseburger
+chocolate sauce, chocolate syrup
+ice cream, icecream
+meat loaf, meatloaf
+plate
+
+
+Img: 3
+Type: gray
+plate
+potter's wheel
+wok
+Dungeness crab, Cancer magister
+spatula
+
+Type: ground truth
+cheeseburger
+hotdog, hot dog, red hot
+plate
+bagel, beigel
+guacamole
+
+Type: result
+cheeseburger
+Dungeness crab, Cancer magister
+plate
+king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica
+American lobster, Northern lobster, Maine lobster, Homarus americanus
+
+
+Img: 4
+Type: gray
+ice cream, icecream
+Dungeness crab, Cancer magister
+plate
+hermit crab
+burrito
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+French loaf
+hotdog, hot dog, red hot
+plate
+
+Type: result
+cheeseburger
+bagel, beigel
+ice cream, icecream
+plate
+potpie
+
+
+Img: 5
+Type: gray
+ice cream, icecream
+chocolate sauce, chocolate syrup
+bagel, beigel
+dough
+bakery, bakeshop, bakehouse
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+bakery, bakeshop, bakehouse
+ice cream, icecream
+plate
+
+Type: result
+cheeseburger
+ice cream, icecream
+bakery, bakeshop, bakehouse
+chocolate sauce, chocolate syrup
+bagel, beigel
+
+
+Img: 6
+Type: gray
+chiton, coat-of-mail shell, sea cradle, polyplacophore
+knot
+jellyfish
+acorn
+trilobite
+
+Type: ground truth
+cheeseburger
+bolete
+bagel, beigel
+mushroom
+meat loaf, meatloaf
+
+Type: result
+cheeseburger
+bagel, beigel
+bakery, bakeshop, bakehouse
+pretzel
+French loaf
+
+
+Img: 7
+Type: gray
+crayfish, crawfish, crawdad, crawdaddy
+sea cucumber, holothurian
+king crab, Alaska crab, Alaskan king crab, Alaska king crab, Paralithodes camtschatica
+plate
+Dungeness crab, Cancer magister
+
+Type: ground truth
+cheeseburger
+hotdog, hot dog, red hot
+plate
+bagel, beigel
+bakery, bakeshop, bakehouse
+
+Type: result
+cheeseburger
+plate
+hotdog, hot dog, red hot
+mashed potato
+chocolate sauce, chocolate syrup
+
+
+Img: 8
+Type: gray
+sea cucumber, holothurian
+ice cream, icecream
+mashed potato
+dough
+meat loaf, meatloaf
+
+Type: ground truth
+cheeseburger
+mashed potato
+meat loaf, meatloaf
+potpie
+hotdog, hot dog, red hot
+
+Type: result
+cheeseburger
+mashed potato
+meat loaf, meatloaf
+potpie
+hotdog, hot dog, red hot
+
+
+Img: 9
+Type: gray
+plate
+soup bowl
+chocolate sauce, chocolate syrup
+ice cream, icecream
+potter's wheel
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+potpie
+pretzel
+hotdog, hot dog, red hot
+
+Type: result
+cheeseburger
+bagel, beigel
+bakery, bakeshop, bakehouse
+potpie
+dough
+
+
+Img: 10
+Type: gray
+hermit crab
+burrito
+ice cream, icecream
+loggerhead, loggerhead turtle, Caretta caretta
+shower cap
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+bakery, bakeshop, bakehouse
+ice cream, icecream
+plate
+
+Type: result
+cheeseburger
+bagel, beigel
+ice cream, icecream
+dough
+bakery, bakeshop, bakehouse
+
+
+Img: 11
+Type: gray
+ice cream, icecream
+jellyfish
+shower cap
+conch
+scorpion
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+hotdog, hot dog, red hot
+meat loaf, meatloaf
+strawberry
+
+Type: result
+cheeseburger
+hotdog, hot dog, red hot
+ice cream, icecream
+mashed potato
+trifle
+
+
+Img: 12
+Type: gray
+ice cream, icecream
+burrito
+potter's wheel
+cauliflower
+Dungeness crab, Cancer magister
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+burrito
+hotdog, hot dog, red hot
+meat loaf, meatloaf
+
+Type: result
+cheeseburger
+ice cream, icecream
+bagel, beigel
+plate
+hotdog, hot dog, red hot
+
+
+Img: 13
+Type: gray
+ice cream, icecream
+conch
+hermit crab
+chocolate sauce, chocolate syrup
+ice lolly, lolly, lollipop, popsicle
+
+Type: ground truth
+cheeseburger
+ice cream, icecream
+chocolate sauce, chocolate syrup
+trifle
+bakery, bakeshop, bakehouse
+
+Type: result
+cheeseburger
+ice cream, icecream
+mashed potato
+burrito
+chocolate sauce, chocolate syrup
+
+
+Img: 14
+Type: gray
+burrito
+ice cream, icecream
+conch
+hermit crab
+potter's wheel
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+guacamole
+potpie
+burrito
+
+Type: result
+cheeseburger
+bagel, beigel
+burrito
+hotdog, hot dog, red hot
+ice cream, icecream
+
+
+Img: 15
+Type: gray
+pretzel
+bakery, bakeshop, bakehouse
+ice cream, icecream
+dough
+sea cucumber, holothurian
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+hotdog, hot dog, red hot
+potpie
+plate
+
+Type: result
+cheeseburger
+mashed potato
+bakery, bakeshop, bakehouse
+plate
+meat loaf, meatloaf
+
+
+Img: 16
+Type: gray
+potter's wheel
+chain
+frying pan, frypan, skillet
+scale, weighing machine
+banana
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+hotdog, hot dog, red hot
+bakery, bakeshop, bakehouse
+French loaf
+
+Type: result
+cheeseburger
+bagel, beigel
+mushroom
+hotdog, hot dog, red hot
+hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa
+
+
+Img: 17
+Type: gray
+ice cream, icecream
+Dungeness crab, Cancer magister
+chocolate sauce, chocolate syrup
+rock crab, Cancer irroratus
+cheeseburger
+
+Type: ground truth
+cheeseburger
+hotdog, hot dog, red hot
+plate
+bagel, beigel
+guacamole
+
+Type: result
+cheeseburger
+ice cream, icecream
+hotdog, hot dog, red hot
+mashed potato
+plate
+
+
+Img: 18
+Type: gray
+pretzel
+ice cream, icecream
+slug
+cheeseburger
+bagel, beigel
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+hotdog, hot dog, red hot
+pretzel
+plate
+
+Type: result
+cheeseburger
+plate
+bagel, beigel
+pretzel
+hotdog, hot dog, red hot
+
+
+Img: 19
+Type: gray
+ice cream, icecream
+burrito
+cheeseburger
+conch
+ice lolly, lolly, lollipop, popsicle
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+guacamole
+hotdog, hot dog, red hot
+burrito
+
+Type: result
+cheeseburger
+burrito
+bagel, beigel
+meat loaf, meatloaf
+ice cream, icecream
+
+
+Img: 20
+Type: gray
+hermit crab
+ice cream, icecream
+cheeseburger
+Dungeness crab, Cancer magister
+isopod
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+hotdog, hot dog, red hot
+plate
+guacamole
+
+Type: result
+cheeseburger
+ice cream, icecream
+bagel, beigel
+chocolate sauce, chocolate syrup
+bakery, bakeshop, bakehouse
+
+
+Img: 21
+Type: gray
+hermit crab
+rock crab, Cancer irroratus
+cheeseburger
+isopod
+Dungeness crab, Cancer magister
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+hotdog, hot dog, red hot
+burrito
+guacamole
+
+Type: result
+cheeseburger
+burrito
+hotdog, hot dog, red hot
+bagel, beigel
+potpie
+
+
+Img: 22
+Type: gray
+ice cream, icecream
+cheeseburger
+dough
+potter's wheel
+bagel, beigel
+
+Type: ground truth
+cheeseburger
+hotdog, hot dog, red hot
+bagel, beigel
+ice cream, icecream
+French loaf
+
+Type: result
+cheeseburger
+ice cream, icecream
+bagel, beigel
+bakery, bakeshop, bakehouse
+hotdog, hot dog, red hot
+
+
+Img: 23
+Type: gray
+hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa
+cheeseburger
+mushroom
+ice cream, icecream
+plate
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+guacamole
+plate
+burrito
+
+Type: result
+cheeseburger
+bagel, beigel
+hotdog, hot dog, red hot
+plate
+potpie
+
+
+Img: 24
+Type: gray
+jellyfish
+cheeseburger
+dough
+ice cream, icecream
+ice lolly, lolly, lollipop, popsicle
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+hotdog, hot dog, red hot
+burrito
+guacamole
+
+Type: result
+cheeseburger
+hotdog, hot dog, red hot
+bagel, beigel
+meat loaf, meatloaf
+mashed potato
+
+
+Img: 25
+Type: gray
+cheeseburger
+Dungeness crab, Cancer magister
+conch
+potter's wheel
+hermit crab
+
+Type: ground truth
+cheeseburger
+hotdog, hot dog, red hot
+bagel, beigel
+guacamole
+burrito
+
+Type: result
+cheeseburger
+hotdog, hot dog, red hot
+bagel, beigel
+burrito
+plate
+
+
+Img: 26
+Type: gray
+cheeseburger
+ice cream, icecream
+bakery, bakeshop, bakehouse
+burrito
+cauliflower
+
+Type: ground truth
+cheeseburger
+guacamole
+hotdog, hot dog, red hot
+bagel, beigel
+plate
+
+Type: result
+cheeseburger
+hotdog, hot dog, red hot
+bagel, beigel
+bakery, bakeshop, bakehouse
+meat loaf, meatloaf
+
+
+Img: 27
+Type: gray
+cheeseburger
+ice cream, icecream
+bakery, bakeshop, bakehouse
+mushroom
+plate
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+hotdog, hot dog, red hot
+meat loaf, meatloaf
+plate
+
+Type: result
+cheeseburger
+bagel, beigel
+ice cream, icecream
+plate
+hotdog, hot dog, red hot
+
+
+Img: 28
+Type: gray
+cheeseburger
+bakery, bakeshop, bakehouse
+ice cream, icecream
+plate
+chocolate sauce, chocolate syrup
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+plate
+bakery, bakeshop, bakehouse
+hotdog, hot dog, red hot
+
+Type: result
+cheeseburger
+bagel, beigel
+bakery, bakeshop, bakehouse
+plate
+ice cream, icecream
+
+
+Img: 29
+Type: gray
+cheeseburger
+ice cream, icecream
+pretzel
+Dungeness crab, Cancer magister
+rock crab, Cancer irroratus
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+hotdog, hot dog, red hot
+guacamole
+meat loaf, meatloaf
+
+Type: result
+cheeseburger
+bagel, beigel
+ice cream, icecream
+chocolate sauce, chocolate syrup
+hotdog, hot dog, red hot
+
+
+Img: 30
+Type: gray
+cheeseburger
+ice cream, icecream
+chocolate sauce, chocolate syrup
+plate
+bolete
+
+Type: ground truth
+cheeseburger
+bagel, beigel
+plate
+chocolate sauce, chocolate syrup
+bakery, bakeshop, bakehouse
+
+Type: result
+cheeseburger
+ice cream, icecream
+chocolate sauce, chocolate syrup
+plate
+bakery, bakeshop, bakehouse
+
+
+Img: 31
+Type: gray
+cheeseburger
+ice cream, icecream
+dough
+earthstar
+bakery, bakeshop, bakehouse
+
+Type: ground truth
+cheeseburger
+hotdog, hot dog, red hot
+bagel, beigel
+plate
+guacamole
+
+Type: result
+cheeseburger
+hotdog, hot dog, red hot
+bagel, beigel
+plate
+meat loaf, meatloaf
+
+
+Img: 32
+Type: gray
+toilet tissue, toilet paper, bathroom tissue
+paper towel
+muzzle
+spatula
+bucket, pail
+
+Type: ground truth
+cheeseburger
+hotdog, hot dog, red hot
+guacamole
+plate
+packet
+
+Type: result
+hotdog, hot dog, red hot
+cheeseburger
+burrito
+plate
+guacamole
+
+
+Img: 33
+Type: gray
+candle, taper, wax light
+ice cream, icecream
+bakery, bakeshop, bakehouse
+conch
+trifle
+
+Type: ground truth
+cheeseburger
+hotdog, hot dog, red hot
+bagel, beigel
+guacamole
+French loaf
+
+Type: result
+hotdog, hot dog, red hot
+cheeseburger
+bagel, beigel
+trifle
+ice cream, icecream
+
+
+Img: 34
+Type: gray
+grocery store, grocery, food market, market
+butcher shop, meat market
+banana
+Dungeness crab, Cancer magister
+plastic bag
+
+Type: ground truth
+cheeseburger
+hotdog, hot dog, red hot
+bagel, beigel
+French loaf
+plate
+
+Type: result
+burrito
+cheeseburger
+plate
+restaurant, eating house, eating place, eatery
+Dungeness crab, Cancer magister
+
+
+Img: 35
+Type: gray
+ice cream, icecream
+butcher shop, meat market
+conch
+dough
+spatula
+
+Type: ground truth
+cheeseburger
+bakery, bakeshop, bakehouse
+plate
+ice cream, icecream
+meat loaf, meatloaf
+
+Type: result
+ice cream, icecream
+cheeseburger
+chocolate sauce, chocolate syrup
+bakery, bakeshop, bakehouse
+waffle iron
+
+
+Img: 36
+Type: gray
+hotdog, hot dog, red hot
+plate
+crayfish, crawfish, crawdad, crawdaddy
+isopod
+burrito
+
+Type: ground truth
+cheeseburger
+hotdog, hot dog, red hot
+burrito
+guacamole
+plate
+
+Type: result
+hotdog, hot dog, red hot
+cheeseburger
+burrito
+plate
+carbonara
+
+
+Img: 37
+Type: gray
+fur coat
+packet
+Dungeness crab, Cancer magister
+teddy, teddy bear
+book jacket, dust cover, dust jacket, dust wrapper
+
+Type: ground truth
+cheeseburger
+hotdog, hot dog, red hot
+French loaf
+bagel, beigel
+bakery, bakeshop, bakehouse
+
+Type: result
+Dungeness crab, Cancer magister
+cheeseburger
+banana
+hotdog, hot dog, red hot
+fur coat
+
+
+Img: 38
+Type: gray
+ice cream, icecream
+potter's wheel
+swab, swob, mop
+chocolate sauce, chocolate syrup
+pretzel
+
+Type: ground truth
+cheeseburger
+hotdog, hot dog, red hot
+ice cream, icecream
+burrito
+guacamole
+
+Type: result
+ice cream, icecream
+cheeseburger
+hotdog, hot dog, red hot
+chocolate sauce, chocolate syrup
+burrito
+
+
+Img: 39
+Type: gray
+dough
+axolotl, mud puppy, Ambystoma mexicanum
+ice cream, icecream
+mixing bowl
+cheeseburger
+
+Type: ground truth
+cheeseburger
+French loaf
+hotdog, hot dog, red hot
+bagel, beigel
+meat loaf, meatloaf
+
+Type: result
+trifle
+cheeseburger
+meat loaf, meatloaf
+ice cream, icecream
+bakery, bakeshop, bakehouse
+
+
+Img: 40
+Type: gray
+chambered nautilus, pearly nautilus, nautilus
+snail
+isopod
+puffer, pufferfish, blowfish, globefish
+jellyfish
+
+Type: ground truth
+cheeseburger
+jackfruit, jak, jack
+Granny Smith
+pineapple, ananas
+bagel, beigel
+
+Type: result
+ice cream, icecream
+plate
+cheeseburger
+bakery, bakeshop, bakehouse
+consomme
+
+
+Img: 41
+Type: gray
+ice cream, icecream
+bakery, bakeshop, bakehouse
+plate
+dough
+chocolate sauce, chocolate syrup
+
+Type: ground truth
+cheeseburger
+bakery, bakeshop, bakehouse
+bagel, beigel
+ice cream, icecream
+plate
+
+Type: result
+ice cream, icecream
+bakery, bakeshop, bakehouse
+cheeseburger
+chocolate sauce, chocolate syrup
+plate
+
+
+Img: 42
+Type: gray
+earthstar
+ice cream, icecream
+plate
+mortar
+terrapin
+
+Type: ground truth
+acorn squash
+plate
+zucchini, courgette
+cheeseburger
+fig
+
+Type: result
+plate
+ice cream, icecream
+cheeseburger
+chocolate sauce, chocolate syrup
+acorn squash
+
+
+Img: 43
+Type: gray
+ice cream, icecream
+bakery, bakeshop, bakehouse
+plate
+ladle
+restaurant, eating house, eating place, eatery
+
+Type: ground truth
+cheeseburger
+bakery, bakeshop, bakehouse
+bagel, beigel
+hotdog, hot dog, red hot
+potpie
+
+Type: result
+bakery, bakeshop, bakehouse
+ice cream, icecream
+plate
+cheeseburger
+dough
+
+
+Img: 44
+Type: gray
+bubble
+fountain
+plastic bag
+obelisk
+conch
+
+Type: ground truth
+hotdog, hot dog, red hot
+cheeseburger
+pretzel
+conch
+ice cream, icecream
+
+Type: result
+conch
+bubble
+ice cream, icecream
+shower cap
+hermit crab
+
+
+Img: 45
+Type: gray
+snowplow, snowplough
+fountain
+swab, swob, mop
+tank, army tank, armored combat vehicle, armoured combat vehicle
+tractor
+
+Type: ground truth
+bakery, bakeshop, bakehouse
+cheeseburger
+ice cream, icecream
+bagel, beigel
+honeycomb
+
+Type: result
+ice cream, icecream
+chocolate sauce, chocolate syrup
+trifle
+honeycomb
+bakery, bakeshop, bakehouse
+
+
+Img: 46
+Type: gray
+loupe, jeweler's loupe
+switch, electric switch, electrical switch
+mask
+cassette
+dial telephone, dial phone
+
+Type: ground truth
+acorn squash
+bakery, bakeshop, bakehouse
+hotdog, hot dog, red hot
+cheeseburger
+spaghetti squash
+
+Type: result
+bakery, bakeshop, bakehouse
+ice cream, icecream
+chocolate sauce, chocolate syrup
+plate
+spatula
+
+
+Img: 47
+Type: gray
+hen-of-the-woods, hen of the woods, Polyporus frondosus, Grifola frondosa
+web site, website, internet site, site
+earthstar
+rock crab, Cancer irroratus
+scorpion
+
+Type: ground truth
+plate
+menu
+web site, website, internet site, site
+guacamole
+meat loaf, meatloaf
+
+Type: result
+plate
+pretzel
+chocolate sauce, chocolate syrup
+web site, website, internet site, site
+gyromitra
+
+
+Img: 48
+Type: gray
+bullet train, bullet
+passenger car, coach, carriage
+streetcar, tram, tramcar, trolley, trolley car
+sliding door
+toaster
+
+Type: ground truth
+hotdog, hot dog, red hot
+bullet train, bullet
+burrito
+rotisserie
+bakery, bakeshop, bakehouse
+
+Type: result
+dough
+burrito
+bakery, bakeshop, bakehouse
+hotdog, hot dog, red hot
+restaurant, eating house, eating place, eatery
+
+
+Img: 49
+Type: gray
+pretzel
+plate
+bagel, beigel
+chocolate sauce, chocolate syrup
+paper towel
+
+Type: ground truth
+pretzel
+hotdog, hot dog, red hot
+plate
+meat loaf, meatloaf
+bagel, beigel
+
+Type: result
+hotdog, hot dog, red hot
+plate
+meat loaf, meatloaf
+bakery, bakeshop, bakehouse
+pretzel
+
+

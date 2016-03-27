@@ -1,0 +1,1081 @@
+Img: 0
+Type: gray
+standard schnauzer
+Great Dane
+bluetick
+Kerry blue terrier
+Airedale, Airedale terrier
+
+Type: ground truth
+Kerry blue terrier
+standard schnauzer
+giant schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+miniature schnauzer
+
+Type: result
+Kerry blue terrier
+Airedale, Airedale terrier
+Lakeland terrier
+standard poodle
+Irish water spaniel
+
+
+Img: 1
+Type: gray
+standard schnauzer
+Irish wolfhound
+giant schnauzer
+otterhound, otter hound
+Bouvier des Flandres, Bouviers des Flandres
+
+Type: ground truth
+Bouvier des Flandres, Bouviers des Flandres
+standard schnauzer
+giant schnauzer
+Irish wolfhound
+Irish terrier
+
+Type: result
+otterhound, otter hound
+Irish terrier
+Bouvier des Flandres, Bouviers des Flandres
+briard
+Irish wolfhound
+
+
+Img: 2
+Type: gray
+standard schnauzer
+Irish wolfhound
+Irish terrier
+miniature schnauzer
+Sealyham terrier, Sealyham
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+Sealyham terrier, Sealyham
+giant schnauzer
+Dandie Dinmont, Dandie Dinmont terrier
+
+Type: result
+Dandie Dinmont, Dandie Dinmont terrier
+Norfolk terrier
+Irish terrier
+Weimaraner
+vizsla, Hungarian pointer
+
+
+Img: 3
+Type: gray
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+Airedale, Airedale terrier
+otterhound, otter hound
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+Sealyham terrier, Sealyham
+wire-haired fox terrier
+
+Type: result
+otterhound, otter hound
+Irish wolfhound
+Irish terrier
+briard
+wire-haired fox terrier
+
+
+Img: 4
+Type: gray
+standard schnauzer
+giant schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+miniature schnauzer
+soft-coated wheaten terrier
+
+Type: ground truth
+standard schnauzer
+giant schnauzer
+miniature schnauzer
+Lakeland terrier
+Irish wolfhound
+
+Type: result
+Irish terrier
+Lakeland terrier
+Airedale, Airedale terrier
+wire-haired fox terrier
+otterhound, otter hound
+
+
+Img: 5
+Type: gray
+miniature schnauzer
+standard schnauzer
+West Highland white terrier
+Lakeland terrier
+Dandie Dinmont, Dandie Dinmont terrier
+
+Type: ground truth
+miniature schnauzer
+standard schnauzer
+giant schnauzer
+wire-haired fox terrier
+West Highland white terrier
+
+Type: result
+wire-haired fox terrier
+miniature schnauzer
+Lakeland terrier
+West Highland white terrier
+cairn, cairn terrier
+
+
+Img: 6
+Type: gray
+wood rabbit, cottontail, cottontail rabbit
+standard schnauzer
+hare
+wombat
+cairn, cairn terrier
+
+Type: ground truth
+standard schnauzer
+wombat
+fox squirrel, eastern fox squirrel, Sciurus niger
+wood rabbit, cottontail, cottontail rabbit
+miniature schnauzer
+
+Type: result
+wombat
+beaver
+llama
+wallaby, brush kangaroo
+hare
+
+
+Img: 7
+Type: gray
+Lakeland terrier
+Kerry blue terrier
+standard schnauzer
+Sealyham terrier, Sealyham
+soft-coated wheaten terrier
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+Kerry blue terrier
+wire-haired fox terrier
+Sealyham terrier, Sealyham
+
+Type: result
+Lakeland terrier
+Airedale, Airedale terrier
+wire-haired fox terrier
+soft-coated wheaten terrier
+Irish terrier
+
+
+Img: 8
+Type: gray
+German shepherd, German shepherd dog, German police dog, alsatian
+Norwegian elkhound, elkhound
+standard schnauzer
+malinois
+cairn, cairn terrier
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+Scotch terrier, Scottish terrier, Scottie
+
+Type: result
+Scotch terrier, Scottish terrier, Scottie
+cairn, cairn terrier
+German shepherd, German shepherd dog, German police dog, alsatian
+cocker spaniel, English cocker spaniel, cocker
+tennis ball
+
+
+Img: 9
+Type: gray
+miniature schnauzer
+Dandie Dinmont, Dandie Dinmont terrier
+standard schnauzer
+Norwich terrier
+Yorkshire terrier
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+Lakeland terrier
+Kerry blue terrier
+giant schnauzer
+
+Type: result
+Lakeland terrier
+Norwich terrier
+Norfolk terrier
+wire-haired fox terrier
+Australian terrier
+
+
+Img: 10
+Type: gray
+Scotch terrier, Scottish terrier, Scottie
+giant schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+cairn, cairn terrier
+standard schnauzer
+
+Type: ground truth
+Scotch terrier, Scottish terrier, Scottie
+giant schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+standard schnauzer
+miniature schnauzer
+
+Type: result
+Scotch terrier, Scottish terrier, Scottie
+Bouvier des Flandres, Bouviers des Flandres
+giant schnauzer
+briard
+cairn, cairn terrier
+
+
+Img: 11
+Type: gray
+otterhound, otter hound
+Airedale, Airedale terrier
+Irish wolfhound
+Scottish deerhound, deerhound
+Bouvier des Flandres, Bouviers des Flandres
+
+Type: ground truth
+wire-haired fox terrier
+Bedlington terrier
+Bouvier des Flandres, Bouviers des Flandres
+Kerry blue terrier
+Lakeland terrier
+
+Type: result
+Bouvier des Flandres, Bouviers des Flandres
+Irish wolfhound
+otterhound, otter hound
+Irish terrier
+Scottish deerhound, deerhound
+
+
+Img: 12
+Type: gray
+Tibetan terrier, chrysanthemum dog
+Lhasa, Lhasa apso
+Norfolk terrier
+miniature schnauzer
+Yorkshire terrier
+
+Type: ground truth
+miniature schnauzer
+Yorkshire terrier
+Tibetan terrier, chrysanthemum dog
+Lhasa, Lhasa apso
+silky terrier, Sydney silky
+
+Type: result
+Norfolk terrier
+Tibetan terrier, chrysanthemum dog
+Yorkshire terrier
+soft-coated wheaten terrier
+Irish terrier
+
+
+Img: 13
+Type: gray
+soft-coated wheaten terrier
+Great Pyrenees
+Bedlington terrier
+Irish wolfhound
+pug, pug-dog
+
+Type: ground truth
+soft-coated wheaten terrier
+Irish terrier
+Lakeland terrier
+Airedale, Airedale terrier
+Border terrier
+
+Type: result
+soft-coated wheaten terrier
+Irish terrier
+golden retriever
+Labrador retriever
+Chesapeake Bay retriever
+
+
+Img: 14
+Type: gray
+Lakeland terrier
+Bedlington terrier
+Airedale, Airedale terrier
+soft-coated wheaten terrier
+fur coat
+
+Type: ground truth
+Bedlington terrier
+Irish wolfhound
+standard schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+Scottish deerhound, deerhound
+
+Type: result
+Irish wolfhound
+standard poodle
+komondor
+fur coat
+Scottish deerhound, deerhound
+
+
+Img: 15
+Type: gray
+Norwich terrier
+cairn, cairn terrier
+West Highland white terrier
+Norfolk terrier
+kelpie
+
+Type: ground truth
+Norwegian elkhound, elkhound
+miniature schnauzer
+standard schnauzer
+cairn, cairn terrier
+pug, pug-dog
+
+Type: result
+kelpie
+schipperke
+Australian terrier
+Norwich terrier
+groenendael
+
+
+Img: 16
+Type: gray
+Irish terrier
+coyote, prairie wolf, brush wolf, Canis latrans
+hyena, hyaena
+Lakeland terrier
+wire-haired fox terrier
+
+Type: ground truth
+miniature schnauzer
+standard schnauzer
+wire-haired fox terrier
+giant schnauzer
+silky terrier, Sydney silky
+
+Type: result
+Irish terrier
+Norwich terrier
+basenji
+wire-haired fox terrier
+Australian terrier
+
+
+Img: 17
+Type: gray
+long-horned beetle, longicorn, longicorn beetle
+wolf spider, hunting spider
+hamster
+cockroach, roach
+great grey owl, great gray owl, Strix nebulosa
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+Irish wolfhound
+Airedale, Airedale terrier
+giant schnauzer
+
+Type: result
+mashed potato
+fur coat
+hamster
+wool, woolen, woollen
+gyromitra
+
+
+Img: 18
+Type: gray
+soft-coated wheaten terrier
+standard schnauzer
+giant schnauzer
+Irish terrier
+Irish wolfhound
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+soft-coated wheaten terrier
+Bouvier des Flandres, Bouviers des Flandres
+
+Type: result
+soft-coated wheaten terrier
+giant schnauzer
+Irish wolfhound
+Irish terrier
+standard schnauzer
+
+
+Img: 19
+Type: gray
+Kerry blue terrier
+Bouvier des Flandres, Bouviers des Flandres
+standard schnauzer
+Airedale, Airedale terrier
+soft-coated wheaten terrier
+
+Type: ground truth
+Kerry blue terrier
+Bouvier des Flandres, Bouviers des Flandres
+Airedale, Airedale terrier
+Lakeland terrier
+standard schnauzer
+
+Type: result
+Kerry blue terrier
+Airedale, Airedale terrier
+Bouvier des Flandres, Bouviers des Flandres
+Lakeland terrier
+standard schnauzer
+
+
+Img: 20
+Type: gray
+soft-coated wheaten terrier
+Dandie Dinmont, Dandie Dinmont terrier
+standard schnauzer
+cocker spaniel, English cocker spaniel, cocker
+miniature schnauzer
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+Sealyham terrier, Sealyham
+wire-haired fox terrier
+
+Type: result
+soft-coated wheaten terrier
+Irish wolfhound
+otterhound, otter hound
+Irish terrier
+standard schnauzer
+
+
+Img: 21
+Type: gray
+standard schnauzer
+Irish terrier
+giant schnauzer
+Irish wolfhound
+miniature schnauzer
+
+Type: ground truth
+standard schnauzer
+giant schnauzer
+Irish wolfhound
+miniature schnauzer
+Irish terrier
+
+Type: result
+briard
+Irish wolfhound
+Irish terrier
+standard schnauzer
+soft-coated wheaten terrier
+
+
+Img: 22
+Type: gray
+Tibetan terrier, chrysanthemum dog
+standard schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+miniature schnauzer
+giant schnauzer
+
+Type: ground truth
+Dandie Dinmont, Dandie Dinmont terrier
+otterhound, otter hound
+miniature schnauzer
+standard schnauzer
+Old English sheepdog, bobtail
+
+Type: result
+Dandie Dinmont, Dandie Dinmont terrier
+otterhound, otter hound
+Tibetan terrier, chrysanthemum dog
+standard schnauzer
+miniature schnauzer
+
+
+Img: 23
+Type: gray
+miniature schnauzer
+standard schnauzer
+Dandie Dinmont, Dandie Dinmont terrier
+cairn, cairn terrier
+soft-coated wheaten terrier
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+cairn, cairn terrier
+West Highland white terrier
+
+Type: result
+cairn, cairn terrier
+Irish wolfhound
+soft-coated wheaten terrier
+standard schnauzer
+briard
+
+
+Img: 24
+Type: gray
+Kerry blue terrier
+Bedlington terrier
+standard schnauzer
+wire-haired fox terrier
+Lakeland terrier
+
+Type: ground truth
+Kerry blue terrier
+standard schnauzer
+Bedlington terrier
+Lakeland terrier
+wire-haired fox terrier
+
+Type: result
+Kerry blue terrier
+soft-coated wheaten terrier
+Irish terrier
+standard schnauzer
+Lakeland terrier
+
+
+Img: 25
+Type: gray
+giant schnauzer
+Great Dane
+standard schnauzer
+Scotch terrier, Scottish terrier, Scottie
+Bouvier des Flandres, Bouviers des Flandres
+
+Type: ground truth
+giant schnauzer
+standard schnauzer
+Scotch terrier, Scottish terrier, Scottie
+Kerry blue terrier
+Great Dane
+
+Type: result
+giant schnauzer
+Great Dane
+Scotch terrier, Scottish terrier, Scottie
+standard schnauzer
+Mexican hairless
+
+
+Img: 26
+Type: gray
+giant schnauzer
+briard
+standard schnauzer
+Irish wolfhound
+Scottish deerhound, deerhound
+
+Type: ground truth
+giant schnauzer
+standard schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+Irish wolfhound
+Scottish deerhound, deerhound
+
+Type: result
+giant schnauzer
+briard
+Bouvier des Flandres, Bouviers des Flandres
+standard schnauzer
+Kerry blue terrier
+
+
+Img: 27
+Type: gray
+Great Dane
+Irish wolfhound
+standard schnauzer
+soft-coated wheaten terrier
+miniature schnauzer
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+Irish wolfhound
+Bedlington terrier
+giant schnauzer
+
+Type: result
+Irish wolfhound
+Great Dane
+standard schnauzer
+Weimaraner
+giant schnauzer
+
+
+Img: 28
+Type: gray
+standard schnauzer
+miniature schnauzer
+Sealyham terrier, Sealyham
+soft-coated wheaten terrier
+Lakeland terrier
+
+Type: ground truth
+standard schnauzer
+soft-coated wheaten terrier
+Lakeland terrier
+Airedale, Airedale terrier
+miniature schnauzer
+
+Type: result
+soft-coated wheaten terrier
+standard schnauzer
+Irish terrier
+Lakeland terrier
+giant schnauzer
+
+
+Img: 29
+Type: gray
+standard schnauzer
+miniature schnauzer
+cairn, cairn terrier
+Australian terrier
+Yorkshire terrier
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+West Highland white terrier
+Dandie Dinmont, Dandie Dinmont terrier
+
+Type: result
+miniature schnauzer
+standard schnauzer
+cairn, cairn terrier
+Australian terrier
+soft-coated wheaten terrier
+
+
+Img: 30
+Type: gray
+standard schnauzer
+Airedale, Airedale terrier
+giant schnauzer
+miniature schnauzer
+Irish terrier
+
+Type: ground truth
+standard schnauzer
+giant schnauzer
+miniature schnauzer
+Irish wolfhound
+Scottish deerhound, deerhound
+
+Type: result
+Airedale, Airedale terrier
+standard schnauzer
+Irish wolfhound
+giant schnauzer
+Scottish deerhound, deerhound
+
+
+Img: 31
+Type: gray
+standard schnauzer
+miniature schnauzer
+Australian terrier
+giant schnauzer
+cairn, cairn terrier
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+Scotch terrier, Scottish terrier, Scottie
+
+Type: result
+Irish terrier
+standard schnauzer
+cairn, cairn terrier
+Australian terrier
+briard
+
+
+Img: 32
+Type: gray
+standard schnauzer
+giant schnauzer
+Irish wolfhound
+miniature schnauzer
+Irish terrier
+
+Type: ground truth
+standard schnauzer
+giant schnauzer
+miniature schnauzer
+Irish wolfhound
+Bouvier des Flandres, Bouviers des Flandres
+
+Type: result
+Irish wolfhound
+standard schnauzer
+Irish terrier
+Border terrier
+giant schnauzer
+
+
+Img: 33
+Type: gray
+giant schnauzer
+standard schnauzer
+miniature schnauzer
+Scotch terrier, Scottish terrier, Scottie
+Great Dane
+
+Type: ground truth
+giant schnauzer
+standard schnauzer
+Scotch terrier, Scottish terrier, Scottie
+miniature schnauzer
+Great Dane
+
+Type: result
+giant schnauzer
+standard schnauzer
+Irish wolfhound
+Scottish deerhound, deerhound
+miniature schnauzer
+
+
+Img: 34
+Type: gray
+standard schnauzer
+otterhound, otter hound
+giant schnauzer
+miniature schnauzer
+Irish wolfhound
+
+Type: ground truth
+standard schnauzer
+giant schnauzer
+miniature schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+Irish wolfhound
+
+Type: result
+standard schnauzer
+Irish wolfhound
+otterhound, otter hound
+Bouvier des Flandres, Bouviers des Flandres
+giant schnauzer
+
+
+Img: 35
+Type: gray
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+Dandie Dinmont, Dandie Dinmont terrier
+Kerry blue terrier
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+giant schnauzer
+Kerry blue terrier
+
+Type: result
+standard schnauzer
+soft-coated wheaten terrier
+miniature schnauzer
+Kerry blue terrier
+Irish terrier
+
+
+Img: 36
+Type: gray
+standard schnauzer
+miniature schnauzer
+Australian terrier
+cairn, cairn terrier
+Yorkshire terrier
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+Dandie Dinmont, Dandie Dinmont terrier
+wire-haired fox terrier
+
+Type: result
+standard schnauzer
+miniature schnauzer
+cairn, cairn terrier
+giant schnauzer
+Australian terrier
+
+
+Img: 37
+Type: gray
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+soft-coated wheaten terrier
+Irish terrier
+
+Type: ground truth
+standard schnauzer
+giant schnauzer
+miniature schnauzer
+Sealyham terrier, Sealyham
+Kerry blue terrier
+
+Type: result
+standard schnauzer
+giant schnauzer
+miniature schnauzer
+soft-coated wheaten terrier
+Sealyham terrier, Sealyham
+
+
+Img: 38
+Type: gray
+standard schnauzer
+giant schnauzer
+miniature schnauzer
+Irish terrier
+Irish wolfhound
+
+Type: ground truth
+standard schnauzer
+giant schnauzer
+miniature schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+Irish wolfhound
+
+Type: result
+standard schnauzer
+Irish wolfhound
+briard
+Bouvier des Flandres, Bouviers des Flandres
+giant schnauzer
+
+
+Img: 39
+Type: gray
+standard schnauzer
+giant schnauzer
+miniature schnauzer
+wire-haired fox terrier
+Irish terrier
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+wire-haired fox terrier
+Sealyham terrier, Sealyham
+
+Type: result
+standard schnauzer
+Irish terrier
+Lakeland terrier
+wire-haired fox terrier
+soft-coated wheaten terrier
+
+
+Img: 40
+Type: gray
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+Airedale, Airedale terrier
+Lakeland terrier
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+wire-haired fox terrier
+Lakeland terrier
+
+Type: result
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+Lakeland terrier
+wire-haired fox terrier
+
+
+Img: 41
+Type: gray
+standard schnauzer
+miniature schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+soft-coated wheaten terrier
+giant schnauzer
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+Sealyham terrier, Sealyham
+wire-haired fox terrier
+
+Type: result
+standard schnauzer
+miniature schnauzer
+soft-coated wheaten terrier
+Bouvier des Flandres, Bouviers des Flandres
+giant schnauzer
+
+
+Img: 42
+Type: gray
+standard schnauzer
+miniature schnauzer
+Norwegian elkhound, elkhound
+Yorkshire terrier
+Border terrier
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+Norwegian elkhound, elkhound
+Brabancon griffon
+
+Type: result
+standard schnauzer
+Norwegian elkhound, elkhound
+miniature schnauzer
+tabby, tabby cat
+lynx, catamount
+
+
+Img: 43
+Type: gray
+standard schnauzer
+giant schnauzer
+Afghan hound, Afghan
+miniature schnauzer
+Saluki, gazelle hound
+
+Type: ground truth
+standard schnauzer
+giant schnauzer
+miniature schnauzer
+Afghan hound, Afghan
+briard
+
+Type: result
+standard schnauzer
+Irish terrier
+giant schnauzer
+Afghan hound, Afghan
+briard
+
+
+Img: 44
+Type: gray
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+Kerry blue terrier
+Irish terrier
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+Kerry blue terrier
+Bouvier des Flandres, Bouviers des Flandres
+
+Type: result
+standard schnauzer
+Irish terrier
+giant schnauzer
+miniature schnauzer
+soft-coated wheaten terrier
+
+
+Img: 45
+Type: gray
+standard schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+giant schnauzer
+briard
+Irish wolfhound
+
+Type: ground truth
+standard schnauzer
+giant schnauzer
+miniature schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+Irish wolfhound
+
+Type: result
+standard schnauzer
+Irish wolfhound
+giant schnauzer
+briard
+Bouvier des Flandres, Bouviers des Flandres
+
+
+Img: 46
+Type: gray
+standard schnauzer
+miniature schnauzer
+Irish terrier
+Irish wolfhound
+wire-haired fox terrier
+
+Type: ground truth
+standard schnauzer
+miniature schnauzer
+giant schnauzer
+Bouvier des Flandres, Bouviers des Flandres
+Scotch terrier, Scottish terrier, Scottie
+
+Type: result
+standard schnauzer
+briard
+Irish wolfhound
+miniature schnauzer
+Irish terrier
+
+
