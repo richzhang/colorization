@@ -53,6 +53,24 @@
 		font-size: 22px;
 	}
 	
+	.layered-paper-big { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
+		box-shadow:
+		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
+		        5px 5px 0 0px #fff, /* The second layer */
+		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
+		        10px 10px 0 0px #fff, /* The third layer */
+		        10px 10px 1px 1px rgba(0,0,0,0.35), /* The third layer shadow */
+		        15px 15px 0 0px #fff, /* The fourth layer */
+		        15px 15px 1px 1px rgba(0,0,0,0.35), /* The fourth layer shadow */
+		        20px 20px 0 0px #fff, /* The fifth layer */
+		        20px 20px 1px 1px rgba(0,0,0,0.35), /* The fifth layer shadow */
+		        25px 25px 0 0px #fff, /* The fifth layer */
+		        25px 25px 1px 1px rgba(0,0,0,0.35); /* The fifth layer shadow */
+		margin-left: 10px;
+		margin-right: 30px;
+	}
+
+
 	.layered-paper { /* modified from: http://css-tricks.com/snippets/css/layered-paper/ */
 		box-shadow:
 		        0px 0px 1px 1px rgba(0,0,0,0.35), /* The top layer shadow */
@@ -60,8 +78,10 @@
 		        5px 5px 1px 1px rgba(0,0,0,0.35), /* The second layer shadow */
 		        10px 10px 0 0px #fff, /* The third layer */
 		        10px 10px 1px 1px rgba(0,0,0,0.35); /* The third layer shadow */
+		margin-top: 5px;
 		margin-left: 10px;
-		margin-right: 40px;
+		margin-right: 30px;
+		margin-bottom: 5px;
 	}
 	
 	.vert-cent {
@@ -119,7 +139,7 @@
 		  <hr> -->
 
   		  <br>
-  		  <table align=center width=1000px>
+  		  <table align=center width=800px>
   			  <tr>
   	              <td width=400px>
   					<center>
@@ -127,30 +147,28 @@
 					</center>
   	              </td>
                 </tr>
+  	              <td width=400px>
+  					<center>
+  	                	Example  input  grayscale  photos  and  output  colorizations  from  our  algorithm. These examples are cases where our model works especially well. For randomly selected examples, see <b>Comparisons on Imagenet</b> in the <a href="#perform_comp"><b>Performance comparisons</b></a> section below.
+					</center>
+  	              </td>
+
   		  </table>
 
   		  <br>
-		  <!-- <hr> -->
+		  <hr>
 
   		  <table align=center width=800px>
 	  		  <center><h1>Abstract</h1></center>
 	  		  <tr>
 	  		  	<td>
-				Given a grayscale photograph as input, this paper attacks the problem of hallucinating a <i>plausible</i> color version of the photograph. This problem is clearly underconstrained, so previous approaches have either relied on significant user interaction or resulted in desaturated colorizations. We propose a fully automatic approach that produces vibrant and realistic colorizations. We embrace the underlying uncertainty of the problem by posing it as a classification task and explore using class-rebalancing at training time to increase the diversity of colors in the result. Finally, we convert the predicted distribution into a final colorization by taking the annealed distribution mean, which providing a spatially coherent and vibrant colorization. The system is implemented as a feed-forward operation in a CNN at test time and is trained on over a million color images. We evaluate our algorithm using a "colorization Turing test", asking human subjects to choose between a generated and ground truth color image. Our method successfully fools humans 20% of the time, significantly higher than previous methods.
+					Given a grayscale photograph as input, this paper attacks the problem of hallucinating a <i>plausible</i> color version of the photograph. This problem is clearly underconstrained, so previous approaches have either relied on significant user interaction or resulted in desaturated colorizations. We propose a fully automatic approach that produces vibrant and realistic colorizations. We embrace the underlying uncertainty of the problem by posing it as a classification task and explore using class-rebalancing at training time to increase the diversity of colors in the result. The system is implemented as a feed-forward operation in a CNN at test time and is trained on over a million color images. We evaluate our algorithm using a "colorization Turing test", asking human subjects to choose between a generated and ground truth color image. Our method successfully fools humans 20\% of the time, significantly higher than previous methods.
 	  		    </td>
 	  		  </tr>
-<!--   			  <tr>
-  	              <td width=900px>
-  					<span style="text-align:center">
-				Given a grayscale photograph as input, this paper attacks the problem of hallucinating a <i>plausible</i> color version of the photograph. This problem is clearly underconstrained, so previous approaches have either relied on significant user interaction or resulted in desaturated colorizations. We propose a fully automatic approach that produces vibrant and realistic colorizations. We embrace the underlying uncertainty of the problem by posing it as a classification task and explore using class-rebalancing at training time to increase the diversity of colors in the result. Finally, we convert the predicted distribution into a final colorization by taking the annealed distribution mean, which providing a spatially coherent and vibrant colorization. The system is implemented as a feed-forward operation in a CNN at test time and is trained on over a million color images. We evaluate our algorithm using a "colorization Turing test", asking human subjects to choose between a generated and ground truth color image. Our method successfully fools humans 20% of the time, significantly higher than previous methods.
- 				</span>
-				</td>
-			</tr>
- -->			</table>
+			</table>
 
-      	  <br><br>
+      	  <br>
 		  <hr>
-		  <br>
 
 		  <!-- NETWORK ARCHITECTURE, TRY THE MODEL -->
  		<center><h1>Try our model</h1></center>
@@ -160,7 +178,7 @@
   					<center>
 						  <td><img class="round" style="height:275px" src="./resources/images/net_diagram.png"/></td>
 	  		  		</center>
-	  		  	</br>
+	  		  	<!-- </br> -->
 			  </tr>
 		  </table>
 
@@ -172,31 +190,30 @@
 			  </center></tr>
 		  </table>
 
-      	  <br><br>
+      	  <br>
 		  <hr>
 
   		  <table align=center width=600px>
 	 		<center><h1>Paper and Supplementary Material</h1></center>
   			  <tr>
-  	              <td width=200px align=center>
-				  <tr>
-				  <td><a href="arxiv"><img class="layered-paper" style="height:150px" src="./resources/images/paper_pdf_thumb.png"/></a></td>
-				  <td><span style="font-size:20pt"><a href="./resources/supp.pdf">Full paper [20MB]</a></td>
+  	              <td width=300px align=left>
+				  <td></a><a href="arxiv"><img class="layered-paper-big" style="height:150px" src="./resources/images/paper_pdf_thumb.png"/></a></td>
+				  <td><span style="font-size:20pt"><a href="./resources/supp.pdf">Full paper [10MB]</a></td>
   	              </td>
 
-                  <td width=400px>
+                  <td width=200px align=center>
 				  <td><a href="./resources/supp.pdf"><img class="layered-paper" style="height:150px" src="./resources/images/supp_pdf_thumb.png"/></a></td>
-				  <td><span style="font-size:20pt"><a href="./resources/supp.pdf">Additional details and experiments [5MB]</a></td>
+				  <td><span style="font-size:16pt"><a href="./resources/supp.pdf">Additional details and experiments [1MB]</a></td>
                   </td>
                 </tr>
   		  </table>
 
-		  <br><br>
-		  <hr>
 		  <br>
+		  <hr>
 
+  		  <a name="perform_comp"></a>
   		  <center><h1>Performance comparisons</h1></center>
-  		  Click the montage to the left to see our results on Imagenet validation photos (this is an extension of Figure 10 from our paper). Click the montage to the right to see results on a test set sampled from SUN (extension of Figure 12 in our paper). These images are random samples from the test set and are <i>not</i> hand-selected.<br>
+  		  Click the montage to the left to see our results on Imagenet validation photos (this is an extension of Figure 6 from our paper). Click the montage to the right to see results on a test set sampled from SUN (extension of Figure 12 in our paper). These images are random samples from the test set and are <i>not</i> hand-selected.<br>
   		  <br>
   		  <table align=center width=1000px>
   			  <tr>
@@ -220,9 +237,8 @@
 		We also provide an initial comparison against Cheng et al. 2015 <a href="./resources/deep_colorization_comparison.html">here</a>. We were unable to acquire code or results from the authors, so we simply ran our method on screenshots from the figures in the paper of Cheng et al. See Section 3 in the <a href="./resources/supp.pdf">supplemental pdf</a> for further discussion of the differences between our algorithm and that of Cheng et al.
   		<br><br>  
   	  	<hr>
-  		<br><br>
 			  
-  	  	<center><h1>Semantic Interpretability of results <br>
+  	  	<center><h1>Semantic interpretability of results <br>
   	  		<!-- Categories for which colorization most helps/hurts recognition -->
   	  	</h1></center>
 		Here, we show the ImageNet categories for which our colorization helps and hurts the most on object classification. Categories are ranked according to the difference in performance of VGG classification on the colorized result compared to on the grayscale version. This is an extension of Figure 6 in the paper.<br><br>
@@ -272,20 +288,18 @@
   				  </td>
   			  </tr>
   		   </table>	  
-		
-		
-		  <br><br>
+				
+		  <br>
 		  <hr>
 		  <br>
 		  	
   		  <table align=center width=750px>
   			  <tr>
   	              <td width=400px>
-  					<center>
+  					<left>
 	  		  <center><h1>Acknowledgements</h1></center>
-			This research was supported, in part, by
-ONR MURI N000141010934, NSF SMA-1514512, and a hardware donation by NVIDIA Corp. We thank members of the Berkeley Vision Lab for helpful discussions. We thank Aditya Deshpande for providing help with comparisons to <a href="http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Deshpande_Learning_Large-Scale_Automatic_ICCV_2015_paper.pdf">Deshpande et al.</a>
-			</center>
+					This research was supported, in part, by ONR MURI N000141010934, NSF SMA-1514512, and a hardware donation by NVIDIA Corp. We thank members of the Berkeley Vision Lab for helpful discussions. We thank Aditya Deshpande for providing help with comparisons to <a href="http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Deshpande_Learning_Large-Scale_Automatic_ICCV_2015_paper.pdf">Deshpande et al.</a>
+			</left>
 		</td>
 			 </tr>
 		</table>
