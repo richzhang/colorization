@@ -1,5 +1,4 @@
-This repo contains demo code to run the colorization model described in <br><br>
-
+This repo contains demo code to run the colorization model described in <br>
 <b>Colorful Image Colorization</b> <br>
 Richard Zhang, Phillip Isola, Alexei A. Efros <br>
 In [arXiv, 2016](http://arxiv.org/abs/1603.08511) <br>
