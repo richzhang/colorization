@@ -1,8 +1,8 @@
-This repo contains demo code to run the colorization model described in: <br>
+This repo contains demo code to run the colorization model described in <br><br>
+
 <b>Colorful Image Colorization</b> <br>
 Richard Zhang, Phillip Isola, Alexei A. Efros <br>
-In arXiv, 2016 <br>
-http://arxiv.org/abs/1603.08511 <br>
+In [arXiv, 2016](http://arxiv.org/abs/1603.08511) <br>
 
 We include demo usage as an iPython notebook, under [./demo/colorization_demo_v0.ipynb](https://github.com/richzhang/colorization/blob/master/demo/colorization_demo_v0.ipynb).
 
