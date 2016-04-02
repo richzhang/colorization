@@ -1,6 +1,6 @@
 This repo contains demo code to run the colorization model described in <br>
-<b>Colorful Image Colorization</b> <br>
-Richard Zhang, Phillip Isola, Alexei A. Efros <br>
+[<b>Colorful Image Colorization</b> <br>](http://richzhang.github.io/colorization/)
+[Richard Zhang](https://richzhang.github.io/), [Phillip Isola](http://web.mit.edu/phillipi/), [Alexei A. Efros](http://www.eecs.berkeley.edu/~efros/) <br>
 In [arXiv, 2016](http://arxiv.org/abs/1603.08511) <br>
 
 We include demo usage as an iPython notebook, under [./demo/colorization_demo_v0.ipynb](https://github.com/richzhang/colorization/blob/master/demo/colorization_demo_v0.ipynb). Clone the master branch of the respository using `git clone -b master --single-branch https://github.com/richzhang/colorization.git`, `cd` into the `demo` directory, run `ipython notebook` and open `colorization_demo_v0.ipynb` in your web browser.
