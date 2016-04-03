@@ -1,6 +1,6 @@
 This repo contains demo code to run the colorization model described in: <br><br>
 
-<h2>[<b>Colorful Image Colorization</b> <br>](http://richzhang.github.io/colorization/)</h2>
+<h3><b>Colorful Image Colorization</b></h3> [Project Page](http://richzhang.github.io/colorization/)<br>
 [Richard Zhang](https://richzhang.github.io/), [Phillip Isola](http://web.mit.edu/phillipi/), [Alexei A. Efros](http://www.eecs.berkeley.edu/~efros/) <br>
 In [arXiv, 2016](http://arxiv.org/abs/1603.08511) <br>
 
