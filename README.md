@@ -10,4 +10,4 @@ We include demo usage as an iPython notebook, under [./demo/colorization_demo_v0
 
 This demo code requires a working installation of [Caffe](http://caffe.berkeleyvision.org/) and basic Python libraries (numpy, pyplot, skimage, scipy). For guidelines and help with installation of Caffe, consult the [installation guide](http://caffe.berkeleyvision.org/), [Caffe users group](https://groups.google.com/forum/#!forum/caffe-users), and [Caffe Github site](https://github.com/BVLC/caffe).
 
-Please contact Richard Zhang at rich.zhang@eecs.berkeley.edu for any questions or comments. Should you find this model useful for your resesarch, please use this [bibtex](http://richzhang.github.io/index_files/bibtex_arxiv2016_colorization.txt) to cite.
+Should you wish to share your colorizations with us, please email Richard Zhang with subject "MyColorization" at rich.zhang@eecs.berkeley.edu. Also contact Richard for any questions or comments. If you find this model useful for your resesarch, please use this [bibtex](http://richzhang.github.io/index_files/bibtex_arxiv2016_colorization.txt) to cite.
