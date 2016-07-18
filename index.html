@@ -218,6 +218,11 @@
 
 	  <!-- TRY THE DEMO -->
  		<center><h1>Try the Interactive Demo</h1></center>
+
+<!--  		  Algorithmia implemented an interactive demo using our algorithm. You can upload your own black and white photo and have it colorized.
+
+ 		  <br> -->
+
   		  <table align=center width=1000px>
   			  <tr>
   	              <td align=center width=175px>
@@ -417,15 +422,167 @@
 				
 		  <br>
 		  <hr>
-		  <br>
 
-  		<a name="related_work"></a>
-  		<table align=center width=1100px>
+  		<a name="deep_dream"></a>
+
+  	  	<center><h1>Deep Dream Visualization<br>
+  	  		<!-- Categories for which colorization most helps/hurts recognition -->
+  	  	</h1></center>
+  		Alexander Mordvintsev has visualized the contents of our network by applying the <a href="https://web.archive.org/web/20150708233542/http://googleresearch.blogspot.co.uk/2015/07/deepdream-code-example-for-visualizing.html">Deep Dream</a> algorithm to each filter in each layer of our network. He has kindly shared his results with us. Click on each layer below to see the results, and let us know what you see!
+
+  		<br><br>
+
+<!--   		<table align=center width=1100px>
   			<tr>
   	        <td width=400px>
 		  		<center><h1>Deep Dream Visualization</h1></center>
+ -->
+	  		  <table align=center width=1000px>
+	  			  <tr>
+	  	              <td width=200px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/001_conv1_2.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv1_2.jpg';" onmouseout="this.src='./resources/images/deepdream_conv1_2.jpg;" src = "./resources/images/deepdream_conv1_2.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/001_conv1_2.html'>conv1_2</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+	  	              </td>
+	  	              <td width=175px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/002_conv2_1.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv2_1.jpg';" onmouseout="this.src='./resources/images/deepdream_conv2_1.jpg;" src = "./resources/images/deepdream_conv2_1.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/002_conv2_1.html'>conv2_1</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+					  </td>
+	  	              <td width=175px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/003_conv2_2.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv2_2.jpg';" onmouseout="this.src='./resources/images/deepdream_conv2_2.jpg;" src = "./resources/images/deepdream_conv2_2.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/003_conv2_2.html'>conv2_2</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+					  </td>
 
-		  		Alexander Mordvintsev has visualized the contents of our network by applying the <a href="https://web.archive.org/web/20150708233542/http://googleresearch.blogspot.co.uk/2015/07/deepdream-code-example-for-visualizing.html">Deep Dream</a> algorithm to each filter in our network. He has kindly shared his results with us. Go <a href="http://storage.googleapis.com/deepdream/visualz/colorize/index.html">check them out</a>!
+	  	              <td width=175px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/004_conv3_1.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv3_1.jpg';" onmouseout="this.src='./resources/images/deepdream_conv3_1.jpg;" src = "./resources/images/deepdream_conv3_1.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/004_conv3_1.html'>conv3_1</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+					  </td>
+
+	  	              <td width=175px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/005_conv3_2.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv3_2.jpg';" onmouseout="this.src='./resources/images/deepdream_conv3_2.jpg;" src = "./resources/images/deepdream_conv3_2.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/005_conv3_2.html'>conv3_2</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+					  </td>
+					  
+	  	              <td width=175px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/006_conv3_3.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv3_3.jpg';" onmouseout="this.src='./resources/images/deepdream_conv3_3.jpg;" src = "./resources/images/deepdream_conv3_3.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/006_conv3_3.html'>conv3_3</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+					  </td>
+	                </tr>
+
+	  			  <tr>
+	  	              <td width=200px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/007_conv4_1.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv4_1.jpg';" onmouseout="this.src='./resources/images/deepdream_conv4_1.jpg;" src = "./resources/images/deepdream_conv4_1.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/007_conv4_1.html'>conv4_1</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+	  	              </td>
+	  	              <td width=175px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/008_conv4_2.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv4_2.jpg';" onmouseout="this.src='./resources/images/deepdream_conv4_2.jpg;" src = "./resources/images/deepdream_conv4_2.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/008_conv4_2.html'>conv4_2</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+					  </td>
+	  	              <td width=175px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/009_conv4_3.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv4_3.jpg';" onmouseout="this.src='./resources/images/deepdream_conv4_3.jpg;" src = "./resources/images/deepdream_conv4_3.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/009_conv4_3.html'>conv4_3</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+					  </td>
+
+	  	              <td width=175px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/010_conv5_1.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv5_1.jpg';" onmouseout="this.src='./resources/images/deepdream_conv5_1.jpg;" src = "./resources/images/deepdream_conv5_1.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/010_conv5_1.html'>conv5_1</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+					  </td>
+
+	  	              <td width=175px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/011_conv5_2.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv5_2.jpg';" onmouseout="this.src='./resources/images/deepdream_conv5_2.jpg;" src = "./resources/images/deepdream_conv5_2.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/011_conv5_2.html'>conv5_2</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+					  </td>
+					  
+	  	              <td width=175px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/012_conv5_3.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv5_3.jpg';" onmouseout="this.src='./resources/images/deepdream_conv5_3.jpg;" src = "./resources/images/deepdream_conv5_3.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/012_conv5_3.html'>conv5_3</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+					  </td>
+	                </tr>
+
+	  			  <tr>
+	  	              <td width=200px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/013_conv6_1.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv6_1.jpg';" onmouseout="this.src='./resources/images/deepdream_conv6_1.jpg;" src = "./resources/images/deepdream_conv6_1.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/013_conv6_1.html'>conv6_1</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+	  	              </td>
+	  	              <td width=175px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/014_conv6_2.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv6_2.jpg';" onmouseout="this.src='./resources/images/deepdream_conv6_2.jpg;" src = "./resources/images/deepdream_conv6_2.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/014_conv6_2.html'>conv6_2</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+					  </td>
+	  	              <td width=175px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/015_conv6_3.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv6_3.jpg';" onmouseout="this.src='./resources/images/deepdream_conv6_3.jpg;" src = "./resources/images/deepdream_conv6_3.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/015_conv6_3.html'>conv6_3</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+					  </td>
+
+	  	              <td width=175px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/016_conv7_1.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv7_1.jpg';" onmouseout="this.src='./resources/images/deepdream_conv7_1.jpg;" src = "./resources/images/deepdream_conv7_1.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/016_conv7_1.html'>conv7_1</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+					  </td>
+
+	  	              <td width=175px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/017_conv7_2.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv7_2.jpg';" onmouseout="this.src='./resources/images/deepdream_conv7_2.jpg;" src = "./resources/images/deepdream_conv7_2.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/017_conv7_2.html'>conv7_2</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+					  </td>
+					  
+	  	              <td width=175px>
+	  					<center>
+	  						<a href="http://storage.googleapis.com/deepdream/visualz/colorize/018_conv7_3.html"><img class="rounded" onmouseover="this.src='./resources/images/deepdream_conv7_3.jpg';" onmouseout="this.src='./resources/images/deepdream_conv7_3.jpg;" src = "./resources/images/deepdream_conv7_3.jpg" height = "150px"></a><br>
+	  						<span style="font-size:18px"><a href='http://storage.googleapis.com/deepdream/visualz/colorize/018_conv7_3.html'>conv7_3</a></span><br>
+	  					<span style="font-size:16px"></span>
+						</center>
+					  </td>
+	                </tr>
+
+	  		  </table>
 
  			</td>
 			</tr>
