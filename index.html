@@ -211,7 +211,10 @@
 	  		    </td>
 	  		  </tr>
 			</table>
-					Given a grayscale photograph as input, this paper attacks the problem of hallucinating a <i>plausible</i> color version of the photograph. This problem is clearly underconstrained, so previous approaches have either relied on significant user interaction or resulted in desaturated colorizations. We propose a fully automatic approach that produces vibrant and realistic colorizations. We embrace the underlying uncertainty of the problem by posing it as a classification task and explore using class-rebalancing at training time to increase the diversity of colors in the result. The system is implemented as a feed-forward operation in a CNN at test time and is trained on over a million color images. We evaluate our algorithm using a "colorization Turing test", asking human subjects to choose between a generated and ground truth color image. Our method successfully fools humans 20% of the time, significantly higher than previous methods.
+
+					Given a grayscale photograph as input, this paper attacks the problem of hallucinating a <i>plausible</i> color version of the photograph.	This problem is clearly underconstrained, so previous approaches have either relied on significant user interaction or resulted in desaturated colorizations. We propose a fully automatic approach that produces vibrant and realistic colorizations. We embrace the underlying uncertainty of the	problem by posing it as a classification task and use class-rebalancing at training time to increase the diversity of colors in the result. The system is implemented as a feed-forward pass in a CNN at test time and is trained on over a million color images. We evaluate our algorithm using a "colorization Turing test," asking human participants to choose between a generated and ground truth color image. Our method successfully fools	humans on 32% of the trials, significantly higher than previous methods. Moreover, we show that colorization can be a powerful pretext task for	self-supervised feature learning, acting as a <i>cross-channel encoder</i>. This approach results in state-of-the-art performance on several feature learning benchmarks.
+
+<!-- 					Given a grayscale photograph as input, this paper attacks the problem of hallucinating a <i>plausible</i> color version of the photograph. This problem is clearly underconstrained, so previous approaches have either relied on significant user interaction or resulted in desaturated colorizations. We propose a fully automatic approach that produces vibrant and realistic colorizations. We embrace the underlying uncertainty of the problem by posing it as a classification task and explore using class-rebalancing at training time to increase the diversity of colors in the result. The system is implemented as a feed-forward operation in a CNN at test time and is trained on over a million color images. We evaluate our algorithm using a "colorization Turing test", asking human subjects to choose between a generated and ground truth color image. Our method successfully fools humans 20% of the time, significantly higher than previous methods. -->
 
   		  <br><br>
 		  <hr>
@@ -219,9 +222,7 @@
 	  <!-- TRY THE DEMO -->
  		<center><h1>Try the Interactive Demo</h1></center>
 
-<!--  		  Algorithmia implemented an interactive demo using our algorithm. You can upload your own black and white photo and have it colorized.
-
- 		  <br> -->
+ 		  <br>
 
   		  <table align=center width=1000px>
   			  <tr>
@@ -233,13 +234,12 @@
 			  </tr>
 		  </table>
 
-  		  <table align=center width=800px>
+  		  <table align=center width=100px>
 			  <tr><center> <br>
 				<!-- <span style="font-size:28px">Code coming soon!</span></i>			  	 -->
-				<span style="font-size:28px"><a href='http://demos.algorithmia.com/colorize-photos/'>[Algorithmia]</a> Demo
-
-				<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caffe&nbsp;<a href="http://www.eecs.berkeley.edu/~rich.zhang/projects/2016_colorization/files/demo_v0/colorization_deploy_v0.prototxt">[Prototxt]</a>&nbsp;<a href="https://www.dropbox.com/s/8iq5wm4ton5gwe1/colorization_release_v0.caffemodel">[Model 129MB]--></span></span><i></i>
-				<span style="font-size:28px"></a></span>
+				<span style="font-size:28px"><a href='http://demos.algorithmia.com/colorize-photos/'>[Algorithmia]</a> Demo</span></span><i></i>
+				<br><br>
+				<span style="font-size:18px"></a>Please contact the corresponding author at <b>rich.zhang at eecs.berkeley.edu</b> with any examples you would like to share.</span>
 			  <br>
 			  </center></tr>
 		  </table>
@@ -262,7 +262,7 @@
   		  <table align=center width=800px>
 			  <tr><center> <br>
 				<!-- <span style="font-size:28px">Code coming soon!</span></i>			  	 -->
-				<span style="font-size:28px">&nbsp;<a href='https://github.com/richzhang/colorization'>[GitHub]</a> Demo
+				<span style="font-size:28px">&nbsp;<a href='https://github.com/richzhang/colorization'>[GitHub v1]</a> Demo
 
 				<!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Caffe&nbsp;<a href="http://www.eecs.berkeley.edu/~rich.zhang/projects/2016_colorization/files/demo_v0/colorization_deploy_v0.prototxt">[Prototxt]</a>&nbsp;<a href="https://www.dropbox.com/s/8iq5wm4ton5gwe1/colorization_release_v0.caffemodel">[Model 129MB]--></span></span><i></i>
 				<span style="font-size:28px"></a></span>
@@ -275,32 +275,31 @@
       	  <br>
 		  <hr>
 
-  		  <table align=center width=300px>
+  		  <table align=center width=500px>
 	 		<center><h1>Paper and Supplementary Material</h1></center>
   			  <tr>
   	              <!--<td width=300px align=left>-->
 				  <td><a href="./resources/colorful_eccv2016.pdf"><img class="layered-paper-big" style="height:150px" src="./resources/images/paper_pdf_thumb.png"/></a></td>
-				  <td><span style="font-size:20pt"><a href="./resources/colorful_eccv2016.pdf"><br>Full paper [6MB]</a></td>
+				  <td><span style="font-size:20pt"><a href="./resources/colorful_eccv2016.pdf"><br>Full paper [v2] [6MB]</a><br>
+				  <span style="font-size:14pt"><br><b>Primary revisions in v2</b>
+				  <span style="font-size:12pt"><br> &bull; Self-supervision/Representation learning experiments (see <b>Section 3.2</b>)
+				  <br> &bull; Loss function comparisons, with all models re-trained from scratch (see <b>Table 1</b>)
+				  </span>
+				  </td>
   	              </td>
-
-                  <!--<td width=200px align=center>
-				  <td><a href="./resources/supp.pdf"><img class="layered-paper" style="height:150px" src="./resources/images/supp_pdf_thumb.png"/></a></td>
-				  <td><span style="font-size:16pt"><a href="./resources/supp.pdf">Additional details and experiments [1MB]</a></td>
-                  </td>-->
               </tr>
   		  </table>
 		  <br>
 
-  		  <br>
-  		  <table align=center width=340px>
+  		  <table align=center width=200px>
 			  <tr>
-				  <td><span style="font-size:11pt"><a href="http://arxiv.org/pdf/1603.08511.pdf">Previous version [10MB]</a></td>
+				  <td><span style="font-size:11pt"><a href="http://arxiv.org/pdf/1603.08511.pdf">Previous version [v1] [10MB]</a></td>
 			  </tr>
 			  <tr>
-				  <td><span style="font-size:11pt"><a href="./resources/supp.pdf">Additional details [1MB]</a> (refers to previous version)</td>
+				  <td><span style="font-size:11pt"><a href="./resources/supp.pdf">Additional details [v1] [1MB]</a></td>
 			  </tr>
 		  </table>
-		  <br>
+
 		  <table align=center width=600px>
 			  <tr>
 				  <td><span style="font-size:14pt"><center>
@@ -309,7 +308,6 @@
               </tr>
   		  </table>
 
-		  <br>
 		  <hr>
 
   		  <a name="bw_legacy"></a>
@@ -352,7 +350,7 @@
 
   		  <a name="perform_comp"></a>
   		  <center><h1>Performance comparisons</h1></center>
-  		  Click the montage to the left to see our results on Imagenet validation photos (this is an extension of Figure 6 from our paper). Click the montage to the right to see results on a test set sampled from SUN (extension of Figure 12 in our paper). These images are random samples from the test set and are <i>not</i> hand-selected.<br>
+  		  Click the montage to the left to see our results on Imagenet validation photos (this is an extension of Figure 6 from our [v1] paper). Click the montage to the right to see results on a test set sampled from SUN (extension of Figure 12 in our [v1] paper). These images are random samples from the test set and are <i>not</i> hand-selected.<br>
   		  <br>
   		  <table align=center width=1000px>
   			  <tr>
@@ -381,7 +379,7 @@
   	  	<center><h1>Semantic interpretability of results <br>
   	  		<!-- Categories for which colorization most helps/hurts recognition -->
   	  	</h1></center>
-		Here, we show the ImageNet categories for which our colorization helps and hurts the most on object classification. Categories are ranked according to the difference in performance of VGG classification on the colorized result compared to on the grayscale version. This is an extension of Figure 6 in the paper.<br><br>
+		Here, we show the ImageNet categories for which our colorization helps and hurts the most on object classification. Categories are ranked according to the difference in performance of VGG classification on the colorized result compared to on the grayscale version. This is an extension of Figure 6 in the [v1] paper.<br><br>
 			<center>Click a category below to see our results on all test images in that category.</center><br>
     		  <table align=center width=1100px>
     			  <tr>
@@ -437,7 +435,7 @@
   	  	<center><h1>Deep Dream Visualization<br>
   	  		<!-- Categories for which colorization most helps/hurts recognition -->
   	  	</h1></center>
-  		Alexander Mordvintsev visualized the contents of our network by applying the <a href="https://research.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html">Deep Dream</a> algorithm to each filter in each layer of our network. He has kindly shared his results with us! The deep-dream images are grayscale and colorized with out network. We found that the <a href="http://storage.googleapis.com/deepdream/visualz/colorize/009_conv4_3.html">conv4_3</a> layer had the most interesting structures. Click on each layer below to see the results, and let us know what you see!
+  		Alexander Mordvintsev visualized the contents of our network by applying the <a href="https://research.googleblog.com/2015/06/inceptionism-going-deeper-into-neural.html">Deep Dream</a> algorithm to each filter in each layer of our [v1] network. He has kindly shared his results with us! The deep-dream images are grayscale and colorized with out network. We found that the <a href="http://storage.googleapis.com/deepdream/visualz/colorize/009_conv4_3.html">conv4_3</a> layer had the most interesting structures. Click on each layer below to see the results, and let us know what you see!
 
   		<br><br>
 
@@ -643,7 +641,11 @@
   	              <td width=400px>
   					<left>
 	  		  <center><h1>Acknowledgements</h1></center>
-					This research was supported, in part, by ONR MURI N000141010934, NSF SMA-1514512, an Intel research grant, and a Tesla K40 GPU hardware donation by NVIDIA Corp. We thank members of the Berkeley Vision Lab for helpful discussions. We thank Aditya Deshpande for providing help with comparisons to <a href="http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Deshpande_Learning_Large-Scale_Automatic_ICCV_2015_paper.pdf">Deshpande et al.</a>
+	  		  This research was supported, in part, by ONR MURI N000141010934, NSF SMA-
+1514512, an Intel research grant, and a Tesla K40 GPU hardware donation by NVIDIA Corp. We thank members of the Berkeley Vision Lab for helpful discussions,
+Philipp Kr&auml;henb&uuml;hl and Jeff Donahue for help with self-supervision experiments, and
+Aditya Deshpande and Gustav Larsson for providing help with comparisons to <a href="http://www.cv-foundation.org/openaccess/content_iccv_2015/papers/Deshpande_Learning_Large-Scale_Automatic_ICCV_2015_paper.pdf">Deshpande et al.</a> and <a href="http://arxiv.org/pdf/1603.06668v1.pdf">Larsson et al</a>.
+
 			</left>
 		</td>
 			 </tr>
