@@ -1,0 +1,19 @@
+net: "./models/colorization_train_val_v2.prototxt"
+test_iter: 1 # number of iterations per step
+test_interval: 10000000 # never test
+test_initialization: False # don't run validation when loading
+base_lr: 3e-5
+# base_lr: 1e-5 # 220k iters
+lr_policy: "step"
+gamma: 0.1
+stepsize: 225000
+display: 1
+max_iter: 500000
+momentum: 0.9
+momentum2: 0.99
+weight_decay: 0.001
+snapshot: 1000
+snapshot_prefix: "./train/models/colornet"
+solver_mode: GPU
+type: "Adam"
+average_loss: 1000
