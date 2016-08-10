@@ -39,17 +39,17 @@ If you do this, link your modified Caffe build as `./caffe-colorization` in the 
 
 (a) Training completes around 450k iterations. Training is done on mirrored and randomly cropped 176x176 resolution images, with mini-batch size 40.
 
-(b) Snapshots every 1000 iterations will be saved in `./train/models/colornet_[ITERNUMBER].caffemodel` and `./train/models/colornet_iter_[ITERNUMBER].snapshot`.
+(b) Snapshots every 1000 iterations will be saved in `./train/models/colornet_iter_[ITERNUMBER].caffemodel` and `./train/models/colornet_iter_[ITERNUMBER].snapshot`.
 
 (c) If training is interupted, resume training by running `./train/train_resume.sh ./train/models/colornet_iter_[ITERNUMBER].snapshot [GPU_ID]`, where `[ITERNUMBER]` is the last snapshotted model.
 
-(d) Check validation loss by running `./val_model.sh ./train/models/colornet_iter_[ITERNUMBER].caffemodel [GPU_ID] 1000`, where [ITERNUMBER] is the model you would like to validate. This runs the first 10k imagenet validation images at full 256x256 resolution through the model. Validation loss on 'colorization_release_v2.caffemodel' is 7715.
+(d) Check validation loss by running `./val_model.sh ./train/models/colornet_iter_[ITERNUMBER].caffemodel [GPU_ID] 1000`, where [ITERNUMBER] is the model you would like to validate. This runs the first 10k imagenet validation images at full 256x256 resolution through the model. Validation loss on `colorization_release_v2.caffemodel' is 7715.
 
 (e) Check model outputs by running the IPython notebook demo. Replace the release model with your snapshotted model.
 
-(f) To download reference pre-trained model, run `./models/fetch_release_models.sh`. This will load reference model `./models/colorization_release_v2.caffemodel`. This model used to generate results in the ECCV 2016 camera ready.
+(f) To download reference pre-trained model, run `./models/fetch_release_models.sh`. This will load reference model `./models/colorization_release_v2.caffemodel`. This model used to generate results in the [ECCV 2016 camera ready](arxiv.org/pdf/1603.08511.pdf).
 
-For completeness, this will also load model `./models/colorization_release_v2_norebal.caffemodel`, which is was trained without class rebalancing. This model will provide duller but "safer" colorizations. This will also load model `./models/colorization_release_v1.caffemodel`, which was used to generate the results in the arXiv v1 paper.
+For completeness, this will also load model `./models/colorization_release_v2_norebal.caffemodel`, which is was trained without class rebalancing. This model will provide duller but "safer" colorizations. This will also load model `./models/colorization_release_v1.caffemodel`, which was used to generate the results in the [arXiv v1](arxiv.org/pdf/1603.08511v1.pdf) paper.
 
 ### Citation ###
 If you find this model useful for your resesarch, please use this [bibtex](http://richzhang.github.io/colorization/resources/bibtex_eccv2016_colorization.txt) to cite.
