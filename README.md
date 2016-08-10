@@ -35,7 +35,7 @@ If you do this, link your modified Caffe build as `./caffe-colorization` in the 
 
 (4) Modify paths in data layers `./models/colorization_train_val_v2.prototxt` to locate where ImageNet LMDB files are on your machine. These should be BGR images, non-mean centered, in [0,255].
 
-(5) Run `./train_model.sh [GPU_ID]`, where `[GPU_ID]` is the gpu you choose to specify. Notes about training:
+(5) Run `./train/train_model.sh [GPU_ID]`, where `[GPU_ID]` is the gpu you choose to specify. Notes about training:
 
 (a) Training completes around 450k iterations. Training is done on mirrored and randomly cropped 176x176 resolution images, with mini-batch size 40.
 
@@ -43,7 +43,7 @@ If you do this, link your modified Caffe build as `./caffe-colorization` in the 
 
 (c) If training is interupted, resume training by running `./train/train_resume.sh ./train/models/colornet_iter_[ITERNUMBER].snapshot [GPU_ID]`, where `[ITERNUMBER]` is the last snapshotted model.
 
-(d) Check validation loss by running `./val_model.sh ./train/models/colornet_iter_[ITERNUMBER].caffemodel [GPU_ID] 1000`, where [ITERNUMBER] is the model you would like to validate. This runs the first 10k imagenet validation images at full 256x256 resolution through the model. Validation loss on `colorization_release_v2.caffemodel' is 7715.
+(d) Check validation loss by running `./val_model.sh ./train/models/colornet_iter_[ITERNUMBER].caffemodel [GPU_ID] 1000`, where [ITERNUMBER] is the model you would like to validate. This runs the first 10k imagenet validation images at full 256x256 resolution through the model. Validation loss on `colorization_release_v2.caffemodel` is 7715.
 
 (e) Check model outputs by running the IPython notebook demo. Replace the release model with your snapshotted model.
 
