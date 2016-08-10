@@ -5,13 +5,16 @@ layer {
   top: "data"
   include {    phase: TRAIN  }
   transform_param {
-   mirror: true
-   crop_size: 176
+    # mirror: true
+    # crop_size: 176
+    mirror: 0  # 1 = on, 0 = off
+    crop_size: 256
   }
   data_param {
     # source: "/PATH/TO/DATA/ilsvrc_lmdb/caffe-train-lmdb"
     source: "/data/big/rzhang/dataset/ilsvrc_lmdb/caffe-train-lmdb"
-    batch_size: 40
+    # batch_size: 40
+    batch_size: 10
     backend: LMDB
   }
 }
@@ -21,13 +24,16 @@ layer {
   top: "data"
   include {    phase: TEST  }
   transform_param {
-   mirror: true
-   crop_size: 176
+   # mirror: true
+   # crop_size: 176
+    mirror: 0  # 1 = on, 0 = off
+    crop_size: 256
   }
   data_param {
     # source: "/PATH/TO/DATA/ilsvrc_lmdb/caffe-val-lmdb"
     source: "/data/big/rzhang/dataset/ilsvrc_lmdb/caffe-val-lmdb"
-    batch_size: 40
+    # batch_size: 40
+    batch_size: 10
     backend: LMDB
   }
 }

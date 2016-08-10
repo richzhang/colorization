@@ -2,12 +2,11 @@ net: "./models/colorization_train_val_v2.prototxt"
 test_iter: 1 # number of iterations per step
 test_interval: 10000000 # never test
 test_initialization: False # don't run validation when loading
-base_lr: 3e-5
-# base_lr: 1e-5 # 220k iters
+base_lr: 3.16e-5
 lr_policy: "step"
-gamma: 0.1
-stepsize: 225000
-display: 1
+gamma: 0.316
+stepsize: 215000
+display: 100
 max_iter: 500000
 momentum: 0.9
 momentum2: 0.99

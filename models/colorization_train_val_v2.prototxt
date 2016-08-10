@@ -1,5 +1,4 @@
 name: "LtoAB"
-
 layer {
   name: "data"
   type: "Data"
@@ -11,7 +10,7 @@ layer {
   }
   data_param {
     # source: "/PATH/TO/DATA/ilsvrc_lmdb/caffe-train-lmdb"
-    source: "/data/big/rzhang/dataset/ilsvrc_lmdb/caffe-train-lmdb"
+    source: "/data/big/rzhang/dataset/ilsvrc_lmdb/caffe-train-lmdb" # [[REPLACE WITH YOUR PATH]]
     batch_size: 40
     backend: LMDB
   }
@@ -22,41 +21,29 @@ layer {
   top: "data"
   include {    phase: TEST  }
   transform_param {
-   mirror: true
+   mirror: false
    crop_size: 256
   }
   data_param {
     # source: "/PATH/TO/DATA/ilsvrc_lmdb/caffe-val-lmdb"
-    source: "/data/big/rzhang/dataset/ilsvrc_lmdb/caffe-val-lmdb"
+    source: "/data/big/rzhang/dataset/ilsvrc_lmdb/caffe-val-lmdb" # [[REPLACE WITH YOUR PATH]]
     batch_size: 10
     backend: LMDB
   }
 }
-layer { # compute gray mask
+# ****************************
+# ***** Color Conversion *****
+# ****************************
+layer { # color conversion
   type: 'Python'
-  name: 'nongray_mask'
+  name: 'img_lab'
   bottom: "data"
-  top: "img_lab" # quantized gt colors
+  top: "img_lab" # image in Lab space
   python_param {
     module: 'caffe_traininglayers'
     layer: 'BGR2LabLayer'
   }
 }
-
-# ****************************
-# ***** Color Conversion *****
-# ****************************
-# layer { # Convert to lab
-#   name: "img_lab"
-#   type: "ColorConv"
-#   bottom: "img"
-#   top: "img_lab"
-#   propagate_down: false
-#   color_conv_param {
-#     input: 0 # BGR
-#     output: 3 # Lab
-#   }
-# }
 layer {
   name: "img_slice"
   type: "Slice"
@@ -86,24 +73,11 @@ layer { # 0-center data_l channel
 # ****************************
 # ***** PROCESS LABELS *******
 # ****************************
-# layer { # subsample ab through pooling
-#   name: 'data_ab_ss'
-#   type: 'Pooling'
-#   bottom: "data_ab"
-#   top: "data_ab_ss" # quantized gt colors
-#   # param {lr_mult: 0 decay_mult: 0}
-#   # param {lr_mult: 0 decay_mult: 0}
-#   pooling_param {
-#     pool: AVE
-#     kernel_size: 4
-#     stride: 4
-#   }
-# }
 layer { # subsample ab
   name: 'data_ab_ss'
   type: 'Convolution'
   bottom: "data_ab"
-  top: "data_ab_ss" # quantized gt colors
+  top: "data_ab_ss" # subsampled colors
   param {lr_mult: 0 decay_mult: 0}
   param {lr_mult: 0 decay_mult: 0}
   convolution_param {
@@ -128,7 +102,7 @@ layer { # compute gray mask
   type: 'Python'
   name: 'nongray_mask'
   bottom: "data_ab_ss"
-  top: "nongray_mask" # quantized gt colors
+  top: "nongray_mask" # mask out grayscale images
   python_param {
     module: 'caffe_traininglayers'
     layer: 'NonGrayMaskLayer'
@@ -138,7 +112,7 @@ layer { # compute prior boost
   type: 'Python'
   name: 'prior_boost'
   bottom: "gt_ab_313"
-  top: "prior_boost" # quantized gt colors
+  top: "prior_boost" # gradient boosting factors
   python_param {
     module: 'caffe_traininglayers'
     layer: 'PriorBoostLayer'
@@ -163,8 +137,6 @@ layer {
   type: "Convolution"
   bottom: "data_l"
   top: "conv1_1"
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
   convolution_param {
     num_output: 64
     pad: 1
@@ -182,8 +154,6 @@ layer {
   type: "Convolution"
   bottom: "conv1_1"
   top: "conv1_2"
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
   convolution_param {
     num_output: 64
     pad: 1
@@ -217,8 +187,6 @@ layer {
   bottom: "conv1_2norm"
   # bottom: "pool1"
   top: "conv2_1"
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
   convolution_param {
     num_output: 128
     pad: 1
@@ -236,8 +204,6 @@ layer {
   type: "Convolution"
   bottom: "conv2_1"
   top: "conv2_2"
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
   convolution_param {
     num_output: 128
     pad: 1
@@ -271,8 +237,6 @@ layer {
   bottom: "conv2_2norm"
   # bottom: "pool2"
   top: "conv3_1"
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
   convolution_param {
     num_output: 256
     pad: 1
@@ -290,8 +254,6 @@ layer {
   type: "Convolution"
   bottom: "conv3_1"
   top: "conv3_2"
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
   convolution_param {
     num_output: 256
     pad: 1
@@ -309,8 +271,6 @@ layer {
   type: "Convolution"
   bottom: "conv3_2"
   top: "conv3_3"
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
   convolution_param {
     num_output: 256
     pad: 1
@@ -344,8 +304,6 @@ layer {
   bottom: "conv3_3norm"
   # bottom: "pool3"
   top: "conv4_1"
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
   convolution_param {
     num_output: 512
     kernel_size: 3
@@ -365,8 +323,6 @@ layer {
   type: "Convolution"
   bottom: "conv4_1"
   top: "conv4_2"
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
   convolution_param {
     num_output: 512
     kernel_size: 3
@@ -386,8 +342,6 @@ layer {
   type: "Convolution"
   bottom: "conv4_2"
   top: "conv4_3"
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
   convolution_param {
     num_output: 512
     kernel_size: 3
@@ -422,8 +376,6 @@ layer {
   bottom: "conv4_3norm"
   # bottom: "pool4"
   top: "conv5_1"
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE  
   convolution_param {
     num_output: 512
     kernel_size: 3
@@ -443,8 +395,6 @@ layer {
   type: "Convolution"
   bottom: "conv5_1"
   top: "conv5_2"
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
   convolution_param {
     num_output: 512
     kernel_size: 3
@@ -464,8 +414,6 @@ layer {
   type: "Convolution"
   bottom: "conv5_2"
   top: "conv5_3"
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
-  # param {lr_mult: 0 decay_mult: 0} # UNARY_BRANCH_PROPAGATE
   convolution_param {
     num_output: 512
     kernel_size: 3
@@ -705,7 +653,6 @@ layer {
   name: "conv8_313_boost"
   type: "Python"
   bottom: "conv8_313"
-  # bottom: "prior_boost"
   bottom: "prior_boost_nongray"
   top: "conv8_313_boost"
   python_param {
