@@ -1,11 +1,11 @@
 <!--<h3><b>Colorful Image Colorization</b></h3>-->
 ## <b>Colorful Image Colorization</b> [[Project Page]](http://richzhang.github.io/colorization/) <br>
-[Richard Zhang](https://richzhang.github.io/), [Phillip Isola](http://web.mit.edu/phillipi/), [Alexei A. Efros](http://www.eecs.berkeley.edu/~efros/). In [ECCV, 2016](http://richzhang.github.io/colorization/resources/colorful_eccv2016.pdf). 
+[Richard Zhang](https://richzhang.github.io/), [Phillip Isola](http://web.mit.edu/phillipi/), [Alexei A. Efros](http://www.eecs.berkeley.edu/~efros/). In [ECCV, 2016](http://arxiv.org/pdf/1603.08511.pdf).
 
 ![Teaser Image](http://richzhang.github.io/colorization/resources/images/teaser3.jpg)
 
 ### Overview ###
-This repo contains:
+This repository contains:
  - (1) a test time demonstration using a pre-trained colorization network (in IPython notebook)
  - (2) code for training a colorization network
 
