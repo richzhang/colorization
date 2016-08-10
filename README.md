@@ -16,7 +16,7 @@ Clone the master branch of the respository using `git clone -b master --single-b
 This code requires a working installation of [Caffe](http://caffe.berkeleyvision.org/) and basic Python libraries (numpy, pyplot, skimage, scipy). For guidelines and help with installation of Caffe, consult the [installation guide](http://caffe.berkeleyvision.org/) and [Caffe users group](https://groups.google.com/forum/#!forum/caffe-users).
 
 ### (1) Test-Time Demo Usage ###
-We include demo usage as an iPython notebook, under [`./demo/colorization_demo_v0.ipynb`](https://github.com/richzhang/colorization/blob/master/demo/colorization_demo_v1.ipynb). This IPython Notebook demonstrates how to use our colorization network to colorize a grayscale image. To run this, after cloning the directory, `cd` into the `demo` directory, run `ipython notebook` and open `colorization_demo_v0.ipynb` in your web browser.
+We include demo usage as an iPython notebook, under [`./demo/colorization_demo_v1.ipynb`](https://github.com/richzhang/colorization/blob/master/demo/colorization_demo_v1.ipynb). This IPython Notebook demonstrates how to use our colorization network to colorize a grayscale image. To run this, after cloning the directory, `cd` into the `demo` directory, run `ipython notebook` and open `colorization_demo_v1.ipynb` in your web browser.
 
 ### (2) Training Usage ###
 The following contains instructions for training a colorization network from scratch. After cloning the repository, from the root directory:
@@ -49,7 +49,7 @@ If you do this, link your modified Caffe build as `./caffe-colorization` in the 
 
 (f) To download reference pre-trained model, run `./models/fetch_release_models.sh`. This will load reference model `./models/colorization_release_v2.caffemodel`. This model used to generate results in the ECCV 2016 camera ready.
 
-For completeness, this will also load model `./models/colorization_release_v2_norebal.caffemodel`, which is was trained without class rebalancing. This model will provide duller but "safer" colorizations. This will also load model `./models/colorization_release_v0.caffemodel`, which was used to generate the results in the arXiv v1 paper.
+For completeness, this will also load model `./models/colorization_release_v2_norebal.caffemodel`, which is was trained without class rebalancing. This model will provide duller but "safer" colorizations. This will also load model `./models/colorization_release_v1.caffemodel`, which was used to generate the results in the arXiv v1 paper.
 
 ### Citation ###
 If you find this model useful for your resesarch, please use this [bibtex](http://richzhang.github.io/colorization/resources/bibtex_eccv2016_colorization.txt) to cite.
