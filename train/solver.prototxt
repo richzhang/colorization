@@ -6,7 +6,7 @@ base_lr: 3.16e-5
 lr_policy: "step"
 gamma: 0.316
 stepsize: 215000
-display: 100
+display: 1
 max_iter: 500000
 momentum: 0.9
 momentum2: 0.99

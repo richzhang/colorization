@@ -144,16 +144,15 @@ class NonGrayMaskLayer(caffe.Layer):
             bottom[i].diff[...] = np.zeros_like(bottom[i].data)
 
 class ClassRebalanceMultLayer(caffe.Layer):
-'''
-INPUTS
-    bottom[0]   NxMxXxY     feature map
-    bottom[1]   Nx1xXxY     boost coefficients
-OUTPUTS
-    top[0]      NxMxXxY     on forward, gets copied from bottom[0]
-FUNCTIONALITY
-    On forward pass, top[0] passes bottom[0]
-    On backward pass, bottom[0] gets boosted by bottom[1]
-    through pointwise multiplication (with singleton expansion) '''
+    ''' INPUTS
+        bottom[0]   NxMxXxY     feature map
+        bottom[1]   Nx1xXxY     boost coefficients
+    OUTPUTS
+        top[0]      NxMxXxY     on forward, gets copied from bottom[0]
+    FUNCTIONALITY
+        On forward pass, top[0] passes bottom[0]
+        On backward pass, bottom[0] gets boosted by bottom[1]
+        through pointwise multiplication (with singleton expansion) '''
     def setup(self, bottom, top):
         # check input pair
         if len(bottom)==0:
@@ -250,7 +249,6 @@ class NNEncode():
         self.alreadyUsed = False
 
     def encode_points_mtx_nd(self,pts_nd,axis=1,returnSparse=False,sameBlock=True):
-        t = rz.Timer();
         pts_flt = flatten_nd_array(pts_nd,axis=axis)
         P = pts_flt.shape[0]
         if(sameBlock and self.alreadyUsed):
