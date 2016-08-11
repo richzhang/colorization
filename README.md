@@ -16,7 +16,7 @@ Clone the master branch of the respository using `git clone -b master --single-b
 This code requires a working installation of [Caffe](http://caffe.berkeleyvision.org/) and basic Python libraries (numpy, pyplot, skimage, scipy). For guidelines and help with installation of Caffe, consult the [installation guide](http://caffe.berkeleyvision.org/) and [Caffe users group](https://groups.google.com/forum/#!forum/caffe-users).
 
 ### (1) Test-Time Demo Usage ###
-We include demo usage as an iPython notebook, under [`./demo/colorization_demo_v1.ipynb`](https://github.com/richzhang/colorization/blob/master/demo/colorization_demo_v1.ipynb). This IPython Notebook demonstrates how to use our colorization network to colorize a grayscale image. To run this, after cloning the directory, `cd` into the `demo` directory, run `ipython notebook` and open `colorization_demo_v1.ipynb` in your web browser.
+We include demo usage as an iPython notebook, under [`./demo/colorization_demo_v2.ipynb`](https://github.com/richzhang/colorization/blob/master/demo/colorization_demo_v2.ipynb). This IPython Notebook demonstrates how to use our colorization network to colorize a grayscale image. To run this, after cloning the directory, `cd` into the `demo` directory, run `ipython notebook` and open `colorization_demo_v2.ipynb` in your web browser.
 
 ### (2) Training Usage ###
 The following contains instructions for training a colorization network from scratch. After cloning the repository, from the root directory:
