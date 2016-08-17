@@ -557,7 +557,7 @@ layer {
   bottom: "conv8_313"
   top: "conv8_313_rh"
   scale_param {
-    bias_term: False
+    bias_term: false
     filler {      type: 'constant'      value: 2.606    }
   }
 }
