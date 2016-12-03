@@ -57,7 +57,9 @@ For completeness, this will also load model `./models/colorization_release_v2_no
 (1) Run `./models/fetch_alexnet_model.sh`. load model `./models/alexnet_release_450000_nobn_fc_rs.caffemodel`. This model was used for the representation learning tests.
 
 (2) You have two choices.
+
 (i) If you do the color conversion into Lab space outside of the network, use prototxt `./models/alexnet_deploy_lab.prototxt`. The input blob will be an image in Lab color space
+
 (ii) If you wish to do the color conversion inside of the network, use prototxt `./models/alexnet_deploy.prototxt`. The input should be BGR images, non-mean centered, in [0,255]. You will have to follow Caffe installation (described in step (2) in the previous section).
 
 ### Citation ###
