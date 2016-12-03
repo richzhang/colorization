@@ -8,6 +8,7 @@
 This repository contains:
  - (1) a test time demonstration using a pre-trained colorization network (in IPython notebook)
  - (2) code for training a colorization network
+ - (3) pre-trained AlexNet, used for representation learning tests
 
 ### Clone this repository ###
 Clone the master branch of the respository using `git clone -b master --single-branch https://github.com/richzhang/colorization.git`
@@ -50,6 +51,14 @@ If you do this, link your modified Caffe build as `./caffe-colorization` in the 
 (f) To download reference pre-trained model, run `./models/fetch_release_models.sh`. This will load reference model `./models/colorization_release_v2.caffemodel`. This model used to generate results in the [ECCV 2016 camera ready](arxiv.org/pdf/1603.08511.pdf).
 
 For completeness, this will also load model `./models/colorization_release_v2_norebal.caffemodel`, which is was trained without class rebalancing. This model will provide duller but "safer" colorizations. This will also load model `./models/colorization_release_v1.caffemodel`, which was used to generate the results in the [arXiv v1](arxiv.org/pdf/1603.08511v1.pdf) paper.
+
+### (3) Representation Learning models ###
+
+(1) Run `./models/fetch_alexnet_model.sh`. load model `./models/alexnet_release_450000_nobn_fc_rs.caffemodel`. This model was used for the representation learning tests.
+
+(2) You have two choices.
+(i) If you do the color conversion into Lab space outside of the network, use prototxt `./models/alexnet_deploy_lab.prototxt`. The input blob will be an image in Lab color space
+(ii) If you wish to do the color conversion inside of the network, use prototxt `./models/alexnet_deploy.prototxt`. The input should be BGR images, non-mean centered, in [0,255]. You will have to follow Caffe installation (described in step (2) in the previous section).
 
 ### Citation ###
 If you find this model useful for your resesarch, please use this [bibtex](http://richzhang.github.io/colorization/resources/bibtex_eccv2016_colorization.txt) to cite.
