@@ -6,7 +6,8 @@
 
 ### Overview ###
 This repository contains:
- - (1) a test time demonstration using a pre-trained colorization network (script and IPython Notebook)
+ - (0) a test time script to colorize an image (python script)
+ - (1) a test time demonstration (IPython Notebook)
  - (2) code for training a colorization network
  - (3) pre-trained AlexNet, used for representation learning tests (Section 3.2)
 
@@ -16,10 +17,11 @@ Clone the master branch of the respository using `git clone -b master --single-b
 ### Dependencies ###
 This code requires a working installation of [Caffe](http://caffe.berkeleyvision.org/) and basic Python libraries (numpy, pyplot, skimage, scipy). For guidelines and help with installation of Caffe, consult the [installation guide](http://caffe.berkeleyvision.org/) and [Caffe users group](https://groups.google.com/forum/#!forum/caffe-users).
 
-### (1) Test-Time Demo Usage ###
-(1) We provide a script for colorizing a single image. Run `./models/fetch_release_models.sh` to download the model. Then, run `python ./colorize.py -img_in [[INPUT_IMG_PATH]] -img_out [[OUTPUT_IMG_PATH]]`. For example, try `python ./colorize.py -img_in ./demo/imgs/ILSVRC2012_val_00041580.JPEG -img_out ./out.png`.
+### (0) Test-Time Python Script ###
+We provide a script for colorizing a single image. Run `./models/fetch_release_models.sh` to download the model. Then, run `python ./colorize.py -img_in [[INPUT_IMG_PATH]] -img_out [[OUTPUT_IMG_PATH]]`. For example, try `python ./colorize.py -img_in ./demo/imgs/ILSVRC2012_val_00041580.JPEG -img_out ./out.png`.
 
-(2) We also include demo usage as an iPython notebook, under [`./demo/colorization_demo_v2.ipynb`](https://github.com/richzhang/colorization/blob/master/demo/colorization_demo_v2.ipynb). This IPython Notebook demonstrates how to use our colorization network to colorize a grayscale image. To run this, after cloning the directory, `cd` into the `demo` directory, run `ipython notebook` and open `colorization_demo_v2.ipynb` in your web browser.
+### (1) Test-Time Demo in IPython Notebook ###
+We also include demo usage as an iPython notebook, under [`./demo/colorization_demo_v2.ipynb`](https://github.com/richzhang/colorization/blob/master/demo/colorization_demo_v2.ipynb). This IPython Notebook demonstrates how to use our colorization network to colorize a grayscale image. To run this, after cloning the directory, `cd` into the `demo` directory, run `ipython notebook` and open `colorization_demo_v2.ipynb` in your web browser.
 
 ### (2) Training Usage ###
 The following contains instructions for training a colorization network from scratch. After cloning the repository, from the root directory:
