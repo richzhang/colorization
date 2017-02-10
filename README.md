@@ -10,6 +10,7 @@ This repository contains:
  - (1) a test time demonstration (IPython Notebook)
  - (2) code for training a colorization network
  - (3) pre-trained AlexNet, used for representation learning tests (Section 3.2)
+ - (4) links to our results on the ImageNet test set, along with a pointer to AMT real vs fake test code
 
 ### Clone this repository ###
 Clone the master branch of the respository using `git clone -b master --single-branch https://github.com/richzhang/colorization.git`
@@ -66,7 +67,7 @@ For completeness, this will also load model `./models/colorization_release_v2_no
 
 (ii) If you wish to do the color conversion inside of the network, use prototxt `./models/alexnet_deploy.prototxt`. The input should be BGR images, non-mean centered, in [0,255]. You will have to follow Caffe installation (described in step (2) in the previous section).
 
-### Results/Real vs Fake Test ###
+### (4) Results / Real vs Fake Test ###
 
 To run the "real vs fake" Amazon Mechanical Turk test (Table 1 of the paper), see [this repository]( https://github.com/phillipi/AMT_Real_vs_Fake). See line 1 of the **Usage** section. Corresponding paths are: [Ours (full)](http://colorization.eecs.berkeley.edu/imgs/classrebal_turk_imgs_438000/), [Ours (class, no rebal)](http://colorization.eecs.berkeley.edu/imgs/classnorebal_turk_imgs_446000/), [Ours (L2)](http://colorization.eecs.berkeley.edu/imgs/regress_turk_imgs_534000/), [Ours (L2, ft from class)](http://colorization.eecs.berkeley.edu/imgs/regressft_turk_imgs_312000/), [Ground Truth](http://colorization.eecs.berkeley.edu/imgs/gt_imgs_0/).
 
