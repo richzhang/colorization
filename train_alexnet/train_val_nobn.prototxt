@@ -1,16 +1,56 @@
-name: "Colornet"
-layer {
+name: "CaffeNet"
+# no batch norm layers in this prototxt
+# ************************
+# ***** DATA LAYER *******
+# ************************
+# layer {
+#   name: "data"
+#   type: "Data"
+#   top: "data"
+#   include {    phase: TRAIN  }
+#   transform_param {
+#     mirror: 1  # 1 = on, 0 = off
+#     crop_size: 180
+#   }
+#   data_param {
+#     source: "./data/caffe-train-lmdb"
+#     batch_size: 80
+#     backend: LMDB
+#   }
+# }
+# layer {
+#   name: "data"
+#   type: "Data"
+#   top: "data"
+#   include {    phase: TEST  }
+#   transform_param {
+#     mirror: 0  # 1 = on, 0 = off
+#     crop_size: 256
+#   }
+#   data_param {
+#     source: "./data/caffe-val-lmdb"
+#     batch_size: 10
+#     backend: LMDB
+#   }
+# }
+layer { 
   name: "data"
-  top: "data" # BGR [0,255] ***non-mean centered***
   type: "Input"
-  input_param { shape { dim: 1 dim: 3 dim: 227 dim: 227 } }
+  top: "data"
+  include {    phase: TRAIN  }
+  input_param { shape { dim: 80 dim: 3 dim: 180 dim: 180 } }
 }
-# **************************
-# ***** PROCESS COLORS *****
-# **************************
+layer { 
+  name: "data"
+  type: "Input"
+  top: "data"
+  include {    phase: TEST  }
+  input_param { shape { dim: 10 dim: 3 dim: 256 dim: 256 } }
+}
 layer { # Convert to lab
   name: "img_lab"
   type: "ColorConv"
+  # bottom: "img"
   bottom: "data"
   top: "img_lab"
   propagate_down: false
@@ -19,6 +59,7 @@ layer { # Convert to lab
     output: 3 # Lab
   }
 }
+
 layer {
   name: "img_slice"
   type: "Slice"
@@ -31,24 +72,80 @@ layer {
     slice_point: 1
   }
 }
-layer {
-  name: "silence_ab"
-  type: "Silence"
-  bottom: "data_ab"
-}
 layer { # 0-center lightness channel
   name: "data_l"
   type: "Convolution"
   bottom: "img_l"
-  top: "data_l" # scaled and centered lightness value
+  top: "data_l" # [-50,50]
   propagate_down: false
   param {lr_mult: 0 decay_mult: 0}
   param {lr_mult: 0 decay_mult: 0}
   convolution_param {
     kernel_size: 1
     num_output: 1
+    weight_filler { type: 'constant' value: 1}
+    bias_filler { type: 'constant' value: -50}
   }
 }
+# ****************************
+# ***** PROCESS LABELS *******
+# ****************************
+layer { # subsample ab
+  name: 'data_ab_ss'
+  type: 'Convolution'
+  bottom: "data_ab"
+  top: "data_ab_ss" # quantized gt colors
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+  convolution_param {
+    num_output: 2
+    kernel_size: 1
+    stride: 8
+    group: 2
+    weight_filler { type: 'constant' value: 1 }
+  }
+}
+layer { # encode
+  name: 'ab_enc'
+  type: 'Python'
+  bottom: "data_ab_ss"
+  top: "gt_ab_ss" # quantized gt colors
+  python_param {
+    module: 'caffe_traininglayers'
+    layer: 'NNEncLayer'
+  }
+}
+layer { # compute gray mask
+  name: 'ab_graymask'
+  type: 'Python'
+  bottom: "data_ab_ss"
+  top: "nongray_mask"
+  python_param {
+    module: 'caffe_traininglayers'
+    layer: 'NonGrayMaskLayer'
+  }
+}
+layer { # compute prior boost
+  type: 'Python'
+  name: 'ab_pb'
+  bottom: "gt_ab_ss"
+  top: "prior_boost"
+  python_param {
+    module: 'caffe_traininglayers'
+    layer: 'PriorBoostLayer'
+  }
+}
+layer { # multiply nongray mask and prior boost
+  type: 'Eltwise'
+  name: 'pb_nongray'
+  bottom: "prior_boost"
+  bottom: "nongray_mask"
+  top: "prior_boost_nongray" # prior boost to use 
+  eltwise_param {    operation: 0  }
+}
+# *****************
+# ***** Conv1 *****
+# *****************
 layer {
   name: "conv1"
   type: "Convolution"
@@ -59,15 +156,8 @@ layer {
   convolution_param {
     num_output: 96
     kernel_size: 11
+    pad: 5
     stride: 4
-    weight_filler {
-      type: "gaussian"
-      std: 0.01
-    }
-    bias_filler {
-      type: "constant"
-      value: 0
-    }
   }
 }
 layer {
@@ -85,6 +175,7 @@ layer {
     pool: MAX
     kernel_size: 3
     stride: 2
+    pad: 1
   }
 }
 layer {
@@ -99,14 +190,6 @@ layer {
     pad: 2
     kernel_size: 5
     group: 2
-    weight_filler {
-      type: "gaussian"
-      std: 0.01
-    }
-    bias_filler {
-      type: "constant"
-      value: 1
-    }
   }
 }
 layer {
@@ -124,6 +207,7 @@ layer {
     pool: MAX
     kernel_size: 3
     stride: 2
+    pad: 1
   }
 }
 layer {
@@ -135,16 +219,9 @@ layer {
   param {    lr_mult: 2    decay_mult: 0  }
   convolution_param {
     num_output: 384
+    dilation: 1
     pad: 1
     kernel_size: 3
-    weight_filler {
-      type: "gaussian"
-      std: 0.01
-    }
-    bias_filler {
-      type: "constant"
-      value: 0
-    }
   }
 }
 layer {
@@ -162,17 +239,10 @@ layer {
   param {    lr_mult: 2    decay_mult: 0  }
   convolution_param {
     num_output: 384
+    dilation: 1
     pad: 1
     kernel_size: 3
     group: 2
-    weight_filler {
-      type: "gaussian"
-      std: 0.01
-    }
-    bias_filler {
-      type: "constant"
-      value: 1
-    }
   }
 }
 layer {
@@ -190,17 +260,10 @@ layer {
   param {    lr_mult: 2    decay_mult: 0  }
   convolution_param {
     num_output: 256
+    dilation: 1
     pad: 1
     kernel_size: 3
     group: 2
-    weight_filler {
-      type: "gaussian"
-      std: 0.01
-    }
-    bias_filler {
-      type: "constant"
-      value: 1
-    }
   }
 }
 layer {
@@ -217,7 +280,8 @@ layer {
   pooling_param {
     pool: MAX
     kernel_size: 3
-    stride: 2
+    pad: 1
+    stride: 1
   }
 }
 layer {
@@ -229,6 +293,8 @@ layer {
   param {    lr_mult: 2    decay_mult: 0  }
   convolution_param {
     kernel_size: 6
+    dilation: 2
+    pad: 5
     stride: 1
     num_output: 4096
   }
@@ -238,15 +304,6 @@ layer {
   type: "ReLU"
   bottom: "fc6"
   top: "fc6"
-}
-layer {
-  name: "drop6"
-  type: "Dropout"
-  bottom: "fc6"
-  top: "fc6"
-  dropout_param {
-    dropout_ratio: 0.5
-  }
 }
 layer {
   name: "fc7"
@@ -268,12 +325,14 @@ layer {
   top: "fc7"
 }
 layer {
-  name: "drop7"
-  type: "Dropout"
+  name: "fc8"
+  type: "Convolution"
   bottom: "fc7"
-  top: "fc7"
-  dropout_param {
-    dropout_ratio: 0.5
+  top: "fc8"
+  param {    lr_mult: 1    decay_mult: 1  }
+  param {    lr_mult: 2    decay_mult: 0  }
+  convolution_param {
+    kernel_size: 1
+    num_output: 313
   }
 }
-

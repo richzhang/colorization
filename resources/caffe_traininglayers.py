@@ -179,6 +179,72 @@ class ClassRebalanceMultLayer(caffe.Layer):
             bottom[0].diff[...] = top[0].diff[...]*bottom[1].data[...]
             # print 'Back-propagating class rebalance, %i'%i
 
+class LossMeterLayer(caffe.Layer):
+    ''' Layer acts as a "meter" to track loss values '''
+    def setup(self,bottom,top):
+        if(len(bottom)==0):
+            raise Exception("Layer needs inputs")
+
+        self.param_str_split = self.param_str.split(' ')
+        self.LOSS_DIR = self.param_str_split[0]
+        self.P = int(self.param_str_split[1])
+        self.H = int(self.param_str_split[2])
+        if(len(self.param_str_split)==4):
+            self.prefix = self.param_str_split[3]
+        else:
+            self.prefix = ''
+
+        self.cnt = 0 # loss track counter
+        # self.P = 1 # interval to print losses
+        self.h = 0 # index into history
+        self.L = len(bottom)
+        self.losses = np.zeros((self.L,self.H))
+
+        self.ITER_PATH = os.path.join(self.LOSS_DIR,'iter.npy')
+        self.LOG_PATH = os.path.join(self.LOSS_DIR,'loss_log')
+
+        if(not os.path.exists(self.LOSS_DIR)):
+            os.mkdir(self.LOSS_DIR)
+            
+        if(os.path.exists(self.ITER_PATH)):
+            self.iter = np.load(self.ITER_PATH)
+        else:
+            self.iter = 0 # iteration counter
+        print 'Initial iteration: %i'%(self.iter+1)
+
+    def reshape(self,bottom,top):
+        0;
+
+    def forward(self,bottom,top):
+        for ll in range(self.L):
+            self.losses[ll,self.h] = bottom[ll].data[...]
+
+        if(np.mod(self.cnt,self.P)==self.P-1): # print
+            if(self.cnt >= self.H-1):
+                tmp_str = 'NumAvg %i, Loss '%(self.H)
+                for ll in range(self.L):
+                    tmp_str += '%.3f, '%np.mean(self.losses[ll,:])
+            else:
+                tmp_str = 'NumAvg %i, Loss '%(self.h)
+                for ll in range(self.L):
+                    tmp_str += '%.3f, '%np.mean(self.losses[ll,:self.cnt+1])
+            print_str = '%s: Iter %i, %s'%(self.prefix,self.iter+1,tmp_str)
+            print print_str
+
+            self.f = open(self.LOG_PATH,'a')
+            self.f.write(print_str)
+            self.f.write('\n')
+            self.f.close()
+            np.save(self.ITER_PATH,self.iter)
+
+        self.h = np.mod(self.h+1,self.H) # roll through history
+        self.cnt = self.cnt+1
+        self.iter = self.iter+1
+
+    def backward(self,top,propagate_down,bottom):
+        for ll in range(self.L):
+            continue
+
 # ***************************
 # ***** SUPPORT CLASSES *****
 # ***************************
@@ -333,8 +399,6 @@ def unflatten_2d_array(pts_flt,pts_nd,axis=1,squeeze=False):
         axorder_rev = np.argsort(axorder)
         M = pts_flt.shape[1]
         NEW_SHP = SHP[nax].tolist()
-        # print NEW_SHP
-        # print pts_flt.shape
         pts_out = pts_flt.reshape(NEW_SHP)
         pts_out = pts_out.transpose(axorder_rev)
     else:

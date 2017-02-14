@@ -1,16 +1,54 @@
-name: "Colornet"
-layer {
+name: "Caffenet"
+# force_backward: true
+# layer {
+#   name: "data"
+#   type: "Data"
+#   top: "data"
+#   include {    phase: TRAIN  }
+#   transform_param {
+#     mirror: 1  # 1 = on, 0 = off
+#     crop_size: 180
+#   }
+#   data_param {
+#     source: "./data/caffe-train-lmdb"
+#     batch_size: 80
+#     backend: LMDB
+#   }
+# }
+# layer {
+#   name: "data"
+#   type: "Data"
+#   top: "data"
+#   include {    phase: TEST  }
+#   transform_param {
+#     mirror: 0  # 1 = on, 0 = off
+#     crop_size: 256
+#   }
+#   data_param {
+#     source: "./data/caffe-val-lmdb"
+#     batch_size: 10
+#     backend: LMDB
+#   }
+# }
+layer { 
   name: "data"
-  top: "data" # BGR [0,255] ***non-mean centered***
   type: "Input"
-  input_param { shape { dim: 1 dim: 3 dim: 227 dim: 227 } }
+  top: "data"
+  include {    phase: TRAIN  }
+  input_param { shape { dim: 80 dim: 3 dim: 227 dim: 227 } }
 }
-# **************************
-# ***** PROCESS COLORS *****
-# **************************
+layer { 
+  name: "data"
+  type: "Input"
+  top: "data"
+  include {    phase: TEST  }
+  input_param { shape { dim: 10 dim: 3 dim: 227 dim: 227 } }
+}
+
 layer { # Convert to lab
   name: "img_lab"
   type: "ColorConv"
+  # bottom: "img"
   bottom: "data"
   top: "img_lab"
   propagate_down: false
@@ -31,31 +69,35 @@ layer {
     slice_point: 1
   }
 }
-layer {
-  name: "silence_ab"
-  type: "Silence"
-  bottom: "data_ab"
-}
 layer { # 0-center lightness channel
   name: "data_l"
   type: "Convolution"
   bottom: "img_l"
-  top: "data_l" # scaled and centered lightness value
+  top: "data_l" # [-50,50]
   propagate_down: false
   param {lr_mult: 0 decay_mult: 0}
   param {lr_mult: 0 decay_mult: 0}
   convolution_param {
     kernel_size: 1
     num_output: 1
+    weight_filler { type: 'constant' value: 1}
+    bias_filler { type: 'constant' value: -50}
   }
+}
+layer { 
+  name: "silence_data_ab"
+  type: "Silence"
+  bottom: "data_ab"
 }
 layer {
   name: "conv1"
   type: "Convolution"
+  # bottom: "img"
   bottom: "data_l"
+  # bottom: "img_bn"
   top: "conv1"
-  param {    lr_mult: 1    decay_mult: 1  }
-  param {    lr_mult: 2    decay_mult: 0  }
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
   convolution_param {
     num_output: 96
     kernel_size: 11
@@ -92,21 +134,13 @@ layer {
   type: "Convolution"
   bottom: "pool1"
   top: "conv2"
-  param {    lr_mult: 1    decay_mult: 1  }
-  param {    lr_mult: 2    decay_mult: 0  }
+  param {    lr_mult: 0    decay_mult: 0  }
+  param {    lr_mult: 0    decay_mult: 0  }
   convolution_param {
     num_output: 256
     pad: 2
     kernel_size: 5
     group: 2
-    weight_filler {
-      type: "gaussian"
-      std: 0.01
-    }
-    bias_filler {
-      type: "constant"
-      value: 1
-    }
   }
 }
 layer {
@@ -118,12 +152,14 @@ layer {
 layer {
   name: "pool2"
   type: "Pooling"
+  # bottom: "conv2"
   bottom: "conv2"
   top: "pool2"
   pooling_param {
     pool: MAX
     kernel_size: 3
     stride: 2
+    # pad: 1
   }
 }
 layer {
@@ -131,6 +167,7 @@ layer {
   type: "Convolution"
   bottom: "pool2"
   top: "conv3"
+  propagate_down: False
   param {    lr_mult: 1    decay_mult: 1  }
   param {    lr_mult: 2    decay_mult: 0  }
   convolution_param {
@@ -165,14 +202,6 @@ layer {
     pad: 1
     kernel_size: 3
     group: 2
-    weight_filler {
-      type: "gaussian"
-      std: 0.01
-    }
-    bias_filler {
-      type: "constant"
-      value: 1
-    }
   }
 }
 layer {
@@ -186,6 +215,7 @@ layer {
   type: "Convolution"
   bottom: "conv4"
   top: "conv5"
+  # propagate_down: False # freeze everything
   param {    lr_mult: 1    decay_mult: 1  }
   param {    lr_mult: 2    decay_mult: 0  }
   convolution_param {
@@ -193,14 +223,6 @@ layer {
     pad: 1
     kernel_size: 3
     group: 2
-    weight_filler {
-      type: "gaussian"
-      std: 0.01
-    }
-    bias_filler {
-      type: "constant"
-      value: 1
-    }
   }
 }
 layer {
@@ -222,14 +244,13 @@ layer {
 }
 layer {
   name: "fc6"
-  type: "Convolution"
+  type: "InnerProduct"
   bottom: "pool5"
   top: "fc6"
+  # propagate_down: False # freeze everything
   param {    lr_mult: 1    decay_mult: 1  }
   param {    lr_mult: 2    decay_mult: 0  }
-  convolution_param {
-    kernel_size: 6
-    stride: 1
+  inner_product_param {
     num_output: 4096
   }
 }
@@ -250,14 +271,13 @@ layer {
 }
 layer {
   name: "fc7"
-  type: "Convolution"
+  type: "InnerProduct"
   bottom: "fc6"
   top: "fc7"
+  # propagate_down: False # freeze everything
   param {    lr_mult: 1    decay_mult: 1  }
   param {    lr_mult: 2    decay_mult: 0  }
-  convolution_param {
-    kernel_size: 1
-    stride: 1
+  inner_product_param {
     num_output: 4096
   }
 }
@@ -276,4 +296,3 @@ layer {
     dropout_ratio: 0.5
   }
 }
-

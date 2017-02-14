@@ -1,0 +1,23 @@
+net: "./train_alexnet/train_val.prototxt"
+test_iter: 1000 # number of iterations per step
+test_interval: 1000 # number of iterations before testing
+# base_lr: 0.0001
+# base_lr: 0.0003
+base_lr: 3.e-5
+# base_lr: 1.e-5 # lowered at 240k iterations
+# base_lr: 3.e-6 # lowered at 300k iterations
+# base_lr: 1.e-6 # lowered at 400k iterations
+lr_policy: "fixed"
+gamma: 0.1
+stepsize: 100000
+display: 10
+max_iter: 240000
+momentum: 0.9
+momentum2: 0.999
+weight_decay: 0.001
+snapshot: 1000
+snapshot_prefix: "./train_alexnet/models/colornet"
+solver_mode: GPU
+type: "Adam"
+average_loss: 1000
+test_initialization: false

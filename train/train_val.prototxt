@@ -5,16 +5,12 @@ layer {
   top: "data"
   include {    phase: TRAIN  }
   transform_param {
-    # mirror: true
-    # crop_size: 176
-    mirror: 0  # 1 = on, 0 = off
-    crop_size: 256
+    mirror: true
+    crop_size: 176
   }
   data_param {
-    # source: "/PATH/TO/DATA/ilsvrc_lmdb/caffe-train-lmdb"
-    source: "/data/big/rzhang/dataset/ilsvrc_lmdb/caffe-train-lmdb"
-    # batch_size: 40
-    batch_size: 10
+    source: "./data/caffe-train-lmdb"
+    batch_size: 40
     backend: LMDB
   }
 }
@@ -30,38 +26,37 @@ layer {
     crop_size: 256
   }
   data_param {
-    # source: "/PATH/TO/DATA/ilsvrc_lmdb/caffe-val-lmdb"
-    source: "/data/big/rzhang/dataset/ilsvrc_lmdb/caffe-val-lmdb"
+    source: "./data/caffe-val-lmdb"
     # batch_size: 40
     batch_size: 10
     backend: LMDB
   }
 }
-layer { # compute gray mask
-  type: 'Python'
-  name: 'nongray_mask'
-  bottom: "data"
-  top: "img_lab" # quantized gt colors
-  python_param {
-    module: 'caffe_traininglayers'
-    layer: 'BGR2LabLayer'
-  }
-}
+# layer { # compute gray mask
+#   type: 'Python'
+#   name: 'img_lab'
+#   bottom: "data"
+#   top: "img_lab" # quantized gt colors
+#   python_param {
+#     module: 'caffe_traininglayers'
+#     layer: 'BGR2LabLayer'
+#   }
+# }
 
 # ****************************
 # ***** Color Conversion *****
 # ****************************
-# layer { # Convert to lab
-#   name: "img_lab"
-#   type: "ColorConv"
-#   bottom: "img"
-#   top: "img_lab"
-#   propagate_down: false
-#   color_conv_param {
-#     input: 0 # BGR
-#     output: 3 # Lab
-#   }
-# }
+layer { # Convert to lab
+  name: "img_lab"
+  type: "ColorConv"
+  bottom: "img"
+  top: "img_lab"
+  propagate_down: false
+  color_conv_param {
+    input: 0 # BGR
+    output: 3 # Lab
+  }
+}
 layer {
   name: "img_slice"
   type: "Slice"

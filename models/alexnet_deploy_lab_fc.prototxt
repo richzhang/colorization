@@ -1,24 +1,24 @@
 name: "Colornet"
 layer {
-  name: "data"
-  top: "data" # BGR [0,255] ***non-mean centered***
+  name: "img_lab"
+  top: "img_lab" # Lab color space
   type: "Input"
   input_param { shape { dim: 1 dim: 3 dim: 227 dim: 227 } }
 }
 # **************************
 # ***** PROCESS COLORS *****
 # **************************
-layer { # Convert to lab
-  name: "img_lab"
-  type: "ColorConv"
-  bottom: "data"
-  top: "img_lab"
-  propagate_down: false
-  color_conv_param {
-    input: 0 # BGR
-    output: 3 # Lab
-  }
-}
+# layer { # Convert to lab
+#   name: "img_lab"
+#   type: "ColorConv"
+#   bottom: "data"
+#   top: "img_lab"
+#   propagate_down: false
+#   color_conv_param {
+#     input: 0 # BGR
+#     output: 3 # Lab
+#   }
+# }
 layer {
   name: "img_slice"
   type: "Slice"
@@ -222,14 +222,12 @@ layer {
 }
 layer {
   name: "fc6"
-  type: "Convolution"
+  type: "InnerProduct"
   bottom: "pool5"
   top: "fc6"
   param {    lr_mult: 1    decay_mult: 1  }
   param {    lr_mult: 2    decay_mult: 0  }
-  convolution_param {
-    kernel_size: 6
-    stride: 1
+  inner_product_param {
     num_output: 4096
   }
 }
@@ -250,14 +248,12 @@ layer {
 }
 layer {
   name: "fc7"
-  type: "Convolution"
+  type: "InnerProduct"
   bottom: "fc6"
   top: "fc7"
   param {    lr_mult: 1    decay_mult: 1  }
   param {    lr_mult: 2    decay_mult: 0  }
-  convolution_param {
-    kernel_size: 1
-    stride: 1
+  inner_product_param {
     num_output: 4096
   }
 }

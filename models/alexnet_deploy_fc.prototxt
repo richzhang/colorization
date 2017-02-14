@@ -222,14 +222,12 @@ layer {
 }
 layer {
   name: "fc6"
-  type: "Convolution"
+  type: "InnerProduct"
   bottom: "pool5"
   top: "fc6"
   param {    lr_mult: 1    decay_mult: 1  }
   param {    lr_mult: 2    decay_mult: 0  }
-  convolution_param {
-    kernel_size: 6
-    stride: 1
+  inner_product_param {
     num_output: 4096
   }
 }
@@ -250,14 +248,12 @@ layer {
 }
 layer {
   name: "fc7"
-  type: "Convolution"
+  type: "InnerProduct"
   bottom: "fc6"
   top: "fc7"
   param {    lr_mult: 1    decay_mult: 1  }
   param {    lr_mult: 2    decay_mult: 0  }
-  convolution_param {
-    kernel_size: 1
-    stride: 1
+  inner_product_param {
     num_output: 4096
   }
 }
