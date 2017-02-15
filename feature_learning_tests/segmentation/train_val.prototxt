@@ -1,0 +1,478 @@
+name: "FCN-AlexNet"
+layer {
+  name: "data"
+  type: "Data"
+  top: "data"
+  include {
+    phase: TRAIN
+  }
+  data_param {
+    source: "/data/efros/dataset/VOCseg/voc_fcn/datum_voc2011bh_segtrain"
+    batch_size: 1
+    backend: LMDB
+  }
+}
+layer {
+  name: "data"
+  type: "Data"
+  top: "data"
+  include {
+    phase: TEST
+  }
+  data_param {
+    source: "/data/efros/dataset/VOCseg/voc_fcn/datum_voc2011segvalid"
+    batch_size: 1
+    backend: LMDB
+  }
+}
+layer {
+  name: "label"
+  type: "Data"
+  top: "label"
+  include {
+    phase: TRAIN
+  }
+  data_param {
+    source: "/data/efros/dataset/VOCseg/voc_fcn/datum_voc2011bh_segtrain_gt"
+    batch_size: 1
+    backend: LMDB
+  }
+}
+layer {
+  name: "label"
+  type: "Data"
+  top: "label"
+  include {
+    phase: TEST
+  }
+  data_param {
+    source: "/data/efros/dataset/VOCseg/voc_fcn/datum_voc2011segvalid_gt"
+    batch_size: 1
+    backend: LMDB
+  }
+}
+# **************************
+# ***** PROCESS COLORS *****
+# **************************
+layer { # Convert to lab
+  name: "img_lab"
+  type: "ColorConv"
+  bottom: "data"
+  # bottom: "img"
+  top: "img_lab"
+  propagate_down: false
+  color_conv_param {
+    input: 0 # BGR
+    output: 3 # Lab
+  }
+}
+layer {
+  name: "img_slice"
+  type: "Slice"
+  bottom: "img_lab"
+  top: "img_l" # [0,100]
+  top: "img_ab" # [-110,110]
+  propagate_down: false
+  slice_param {
+    axis: 1
+    slice_point: 1
+  }
+}
+layer { # 0-center lightness channel
+  name: "data_l"
+  type: "Convolution"
+  bottom: "img_l"
+  top: "data_l" # [-50,50]
+  propagate_down: false
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+  convolution_param {
+    kernel_size: 1
+    num_output: 1
+    # weight_filler { type: 'constant' value: 1}
+    # bias_filler { type: 'constant' value: -50}
+  }
+}
+layer { # scale ab channel
+  name: "data_ab"
+  type: "Convolution"
+  bottom: "img_ab"
+  top: "data_ab" # [-50,50]
+  propagate_down: false
+  param {lr_mult: 0 decay_mult: 0}
+  convolution_param {
+    kernel_size: 1
+    num_output: 1
+    bias_term: 0
+    weight_filler { type: 'constant' value: 0.69308239}
+    # bias_filler { type: 'constant' value: -50}
+  }
+}
+# ****************************
+# ***** START OF NETWORK *****
+# ****************************
+layer {
+  name: "conv1"
+  type: "Convolution"
+  # bottom: "img"
+  bottom: "data_l"
+  # bottom: "img_bn"
+  top: "conv1"
+  param {lr_mult: 1 decay_mult: 1}
+  param {lr_mult: 2 decay_mult: 0}
+  convolution_param {
+    num_output: 96
+    kernel_size: 11
+    pad: 100
+    stride: 4
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+    engine: CAFFE
+  }
+}
+layer {
+  name: "conv1_ab"
+  type: "Convolution"
+  bottom: "data_ab"
+  top: "conv1_ab"
+  param {lr_mult: 1 decay_mult: 1} # Use these if you want to learn color filters
+  param {lr_mult: 2 decay_mult: 0} #   during fine-tuning
+  # param {lr_mult: 0 decay_mult: 0} # Use these if you want to keep grayscale only
+  # param {lr_mult: 0 decay_mult: 0} #  during fine-tuning
+  convolution_param {
+    num_output: 96
+    kernel_size: 11
+    pad: 100
+    stride: 4
+    engine: CAFFE
+  }
+}
+layer {
+  name: "conv1_lab"
+  type: "Eltwise"
+  bottom: "conv1"
+  bottom: "conv1_ab"
+  top: "conv1_lab"
+}
+layer {
+  name: "relu1"
+  type: "ReLU"
+  bottom: "conv1_lab"
+  top: "conv1_lab"
+}
+layer {
+  name: "pool1"
+  type: "Pooling"
+  bottom: "conv1_lab"
+  top: "pool1"
+  pooling_param {
+    pool: MAX
+    kernel_size: 3
+    stride: 2
+  }
+}
+layer {
+  name: "conv2"
+  type: "Convolution"
+  bottom: "pool1"
+  top: "conv2"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 256
+    pad: 2
+    kernel_size: 5
+    group: 2
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 1
+    }
+    engine: CAFFE
+  }
+}
+layer {
+  name: "relu2"
+  type: "ReLU"
+  bottom: "conv2"
+  top: "conv2"
+}
+layer {
+  name: "pool2"
+  type: "Pooling"
+  bottom: "conv2"
+  top: "pool2"
+  pooling_param {
+    pool: MAX
+    kernel_size: 3
+    stride: 2
+  }
+}
+layer {
+  name: "conv3"
+  type: "Convolution"
+  bottom: "pool2"
+  top: "conv3"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 384
+    pad: 1
+    kernel_size: 3
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 0
+    }
+    engine: CAFFE
+  }
+}
+layer {
+  name: "relu3"
+  type: "ReLU"
+  bottom: "conv3"
+  top: "conv3"
+}
+layer {
+  name: "conv4"
+  type: "Convolution"
+  bottom: "conv3"
+  top: "conv4"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 384
+    pad: 1
+    kernel_size: 3
+    group: 2
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 1
+    }
+    engine: CAFFE
+  }
+}
+layer {
+  name: "relu4"
+  type: "ReLU"
+  bottom: "conv4"
+  top: "conv4"
+}
+layer {
+  name: "conv5"
+  type: "Convolution"
+  bottom: "conv4"
+  top: "conv5"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 256
+    pad: 1
+    kernel_size: 3
+    group: 2
+    weight_filler {
+      type: "gaussian"
+      std: 0.01
+    }
+    bias_filler {
+      type: "constant"
+      value: 1
+    }
+    engine: CAFFE
+  }
+}
+layer {
+  name: "relu5"
+  type: "ReLU"
+  bottom: "conv5"
+  top: "conv5"
+}
+layer {
+  name: "pool5"
+  type: "Pooling"
+  bottom: "conv5"
+  top: "pool5"
+  pooling_param {
+    pool: MAX
+    kernel_size: 3
+    stride: 2
+  }
+}
+layer {
+  name: "fc6"
+  type: "Convolution"
+  bottom: "pool5"
+  top: "fc6"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 4096
+    kernel_size: 6
+    weight_filler {
+      type: "gaussian"
+      std: 0.005
+    }
+    bias_filler {
+      type: "constant"
+      value: 1
+    }
+    engine: CAFFE
+  }
+}
+layer {
+  name: "relu6"
+  type: "ReLU"
+  bottom: "fc6"
+  top: "fc6"
+}
+layer {
+  name: "drop6"
+  type: "Dropout"
+  bottom: "fc6"
+  top: "fc6"
+  dropout_param {
+    dropout_ratio: 0.5
+  }
+}
+layer {
+  name: "fc7"
+  type: "Convolution"
+  bottom: "fc6"
+  top: "fc7"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 4096
+    kernel_size: 1
+    weight_filler {
+      type: "gaussian"
+      std: 0.005
+    }
+    bias_filler {
+      type: "constant"
+      value: 1
+    }
+    engine: CAFFE
+  }
+}
+layer {
+  name: "relu7"
+  type: "ReLU"
+  bottom: "fc7"
+  top: "fc7"
+}
+layer {
+  name: "drop7"
+  type: "Dropout"
+  bottom: "fc7"
+  top: "fc7"
+  dropout_param {
+    dropout_ratio: 0.5
+  }
+}
+
+layer {
+  name: "score-fr"
+  type: "Convolution"
+  bottom: "fc7"
+  top: "score-fc7"
+  param {
+    lr_mult: 1
+    decay_mult: 1
+  }
+  param {
+    lr_mult: 2
+    decay_mult: 0
+  }
+  convolution_param {
+    num_output: 21
+    kernel_size: 1
+    engine: CAFFE
+  }
+}
+layer {
+  name: "upsample"
+  type: "Deconvolution"
+  bottom: "score-fc7"
+  top: "bigscore"
+  param {    lr_mult: 0  }
+  param {    lr_mult: 0  }
+  convolution_param {
+    num_output: 21
+    kernel_size: 63
+    group: 21
+    stride: 32
+    engine: CAFFE
+  }
+}
+layer {
+  name: "crop"
+  type: "Crop"
+  bottom: "bigscore"
+  bottom: "data"
+  top: "score"
+}
+layer {
+  name: "prob"
+  type: "SoftmaxWithLoss"
+  bottom: "score"
+  bottom: "label"
+  top: "loss"
+  loss_param {
+    ignore_label: 255
+    normalize: true
+    # normalize: false
+  }
+}
