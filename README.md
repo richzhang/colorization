@@ -88,7 +88,7 @@ To run the "real vs fake" Amazon Mechanical Turk test (Table 1 of the paper), se
 
 ### (5) Training AlexNet with Colorization ###
 
-(0) Link training nad validation lmdbs to `./data/caffe-train-lmdb/` and `./data/caffe-val-lmdb/`, respectively.
+(0) Link training and validation lmdbs to `./data/caffe-train-lmdb/` and `./data/caffe-val-lmdb/`, respectively.
 
 (1) Run `./train_alexnet/run_init.sh`. This runs the k-means initialization implemented in [Kraehenbuehl et al, ICLR 2016](https://github.com/philkr/magic_init) and will create model `./train_alexnet/mi.caffemodel`.
 
@@ -107,7 +107,7 @@ The provided scripts run representation learning tests. Note that the scripts ru
 
 (B) <b> PASCAL Classification </b>
 (a) Clone [VOC-Classification Repo](# github.com/jeffdonahue/voc-classification). Set up directories as instructed.
-(b) Run `./feature_learning_tests/run_classification_test_[LAYER].sh [PATH_TO train_cls.py] [GPU_ID]`, where `[LAYER]` is `{fc7,pool5,conv1}`, depending on which layers you would like to fine-tune to. Results will be printed on console. The value of interest is the 10-crops on the test set. This will also generate directories `./feature_learning_tests/classification/[LAYER]`. Each test takes ~30-60 minutes on a Titan X Pascal.
+(b) Run `./feature_learning_tests/run_classification_test_[LAYER].sh [PATH_TO train_cls.py] [GPU_ID]`, where `[LAYER]` is `{fc7,pool5,conv1}`, depending on which layers you would like to fine-tune from. Results will be printed on console. The value of interest is the 10-crops on the test set. This will also generate directories `./feature_learning_tests/classification/[LAYER]`. Each test takes ~30-60 minutes on a Titan X Pascal.
 
 (C) <b> PASCAL Segmentation </b>
 This code borrows from the [FCN repo](https://github.com/shelhamer/fcn.berkeleyvision.org). Prepare data as instructed. Then run `./run_segmentation.sh [GPU_ID]`. Results will be printed every 1000 iterations on screen. Training takes ~1 sec/iter = 44 hours/150k iterations on a Titan X Pascal.
