@@ -39,12 +39,6 @@ The following contains instructions for training a colorization network from scr
 
 (2) Run `./train/fetch_caffe.sh`. This will load a modified Caffe into directory `./caffe-colorization`. For guidelines and help with installation of Caffe, consult the [installation guide](http://caffe.berkeleyvision.org/) and [Caffe users group](https://groups.google.com/forum/#!forum/caffe-users).
 
-<!-- * Note that this is the same as vanilla-Caffe, with a `SoftmaxCrossEntropyLayer` layer added. You likely can add the layer to your current build of Caffe by adding the following files (found in the `./resources` directory) and re-compiling: -->
-	<!-- `./src/caffe/layers/softmax_cross_entropy_loss_layer.cpp` -->
-	<!-- `./src/caffe/layers/softmax_cross_entropy_loss_layer.cu` -->
-	<!-- `./include/caffe/layers/softmax_cross_entropy_loss_layer.hpp` -->
-<!-- If you do this, link your modified Caffe build as `./caffe-colorization` in the root directory and proceed. -->
-
 (3) Add the `./resources/` directory (as an absolute path) to your system environment variable $PYTHONPATH. This directory contains custom Python layers.
 
 (4) Modify paths in data layers `./models/colorization_train_val_v2.prototxt` to locate where ImageNet LMDB files are on your machine. These should be BGR images, non-mean centered, in [0,255].
