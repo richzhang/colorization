@@ -103,7 +103,7 @@ The provided scripts run representation learning tests. Note that the scripts ru
 (A) <b>ILSVRC Linear Classification</b> Run `./feature_learning_tests/linear/run_linear_tests.sh [GPU_ID]`. This will save results in `./feature_learning_tests/linear/test_acc_log`. Training takes roughly 0.25 sec/iter = 10 hrs/140k iters on a Titan X Pascal. Note that this test was slightly changed from the ECCV paper (instead of average pooling, we do bilinear resizing here). The updated test was used in our [Split-Brain Autoencoder paper](https://richzhang.github.io/splitbrainauto/). File `./feature_learning_tests/linear/test_acc_log/loss_log` shows results for layers `conv1, pool1, conv2, pool2, conv3, conv4, conv5, pool5`.
 
 (B) <b> PASCAL Classification </b>
-(a) Clone [VOC-Classification Repo](# https://github.com/jeffdonahue/voc-classification). Set up directories as instructed.
+(a) Clone [VOC-Classification Repo](https://github.com/jeffdonahue/voc-classification). Set up directories as instructed.
 (b) Run `./feature_learning_tests/run_classification_test_[LAYER].sh [PATH_TO train_cls.py] [GPU_ID]`, where `[LAYER]` is `{fc7,pool5,conv1}`, depending on which layers you would like to fine-tune from. Results will be printed on console. The value of interest is the 10-crops on the test set. This will also generate directories `./feature_learning_tests/classification/[LAYER]`. Each test takes ~30-60 minutes on a Titan X Pascal.
 
 (C) <b> PASCAL Segmentation </b>
