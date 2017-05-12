@@ -18,6 +18,9 @@ This repository contains:
  - (5) code for training AlexNet with colorization
  - (6) representation learning tests
 
+<b>Appendices</b>
+ - (A) Related follow-up work
+
 ### Clone this repository ###
 Clone the master branch of the respository using `git clone -b master --single-branch https://github.com/richzhang/colorization.git`
 
@@ -108,6 +111,12 @@ This code borrows from the [FCN repo](https://github.com/shelhamer/fcn.berkeleyv
 
 (D) <b> PASCAL Detection </b>
 We use [Fast R-CNN](https://github.com/rbgirshick/fast-rcnn) with multi-scale training and single scale testing. Run for 150k total iterations, dropping the LR by a factor of 10 every 50k iterations. This was to follow the Kraehenbuehl et al. ICLR 2016 procedure. Set `__C.PIXEL_MEANS = np.array([[[0,0,0]]])`.
+
+## Related follow-up work ##
+
+Interactive Colorization: <b>Real-Time User-Guided Image Colorization with Learned Deep Priors.</b> R. Zhang*, J.Y. Zhu*, P. Isola, X. Geng, A. S. Lin, T. Yu, A. A. Efros. In CVPR, 2017. [Website](https://richzhang.github.io/ideepcolor/)[GitHub](https://github.com/junyanz/ideepcolor)
+
+Representation Learning: <b>Split-Brain Autoencoders: Unsupervised Prediction by Cross-Channel Prediction.</b> R. Zhang, P. Isola, A. A. Efros. In SIGGRAPH, 2017. [Website](https://richzhang.github.io/splitbrainauto/)[GitHub](https://github.com/richzhang/splitbrainauto)
 
 ### Citation ###
 If you find this model useful for your resesarch, please use this [bibtex](http://richzhang.github.io/colorization/resources/bibtex_eccv2016_colorization.txt) to cite.
