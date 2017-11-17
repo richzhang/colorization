@@ -1,0 +1,440 @@
+name: "CaffeNet"
+# ************************
+# ***** DATA LAYER *******
+# ************************
+layer {
+  name: "data"
+  type: "Data"
+  top: "data"
+  include {    phase: TRAIN  }
+  transform_param {
+    mirror: 1  # 1 = on, 0 = off
+    crop_size: 180
+  }
+  data_param {
+    source: "./data/caffe-train-lmdb"
+    batch_size: 80
+    backend: LMDB
+  }
+}
+layer {
+  name: "data"
+  type: "Data"
+  top: "data"
+  include {    phase: TEST  }
+  transform_param {
+    mirror: 0  # 1 = on, 0 = off
+    crop_size: 256
+  }
+  data_param {
+    source: "./data/caffe-val-lmdb"
+    batch_size: 10
+    backend: LMDB
+  }
+}
+
+layer { # Convert to lab
+  name: "img_lab"
+  type: "ColorConv"
+  # bottom: "img"
+  bottom: "data"
+  top: "img_lab"
+  propagate_down: false
+  color_conv_param {
+    input: 0 # BGR
+    output: 3 # Lab
+  }
+}
+layer {
+  name: "img_slice"
+  type: "Slice"
+  bottom: "img_lab"
+  top: "img_l" # [0,100]
+  top: "data_ab" # [-110,110]
+  propagate_down: false
+  slice_param {
+    axis: 1
+    slice_point: 1
+  }
+}
+layer { # 0-center lightness channel
+  name: "data_l"
+  type: "Convolution"
+  bottom: "img_l"
+  top: "data_l" # [-50,50]
+  propagate_down: false
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+  convolution_param {
+    kernel_size: 1
+    num_output: 1
+    weight_filler { type: 'constant' value: 1}
+    bias_filler { type: 'constant' value: -50}
+  }
+}
+# ****************************
+# ***** PROCESS LABELS *******
+# ****************************
+layer { # subsample ab
+  name: 'data_ab_ss'
+  type: 'Convolution'
+  bottom: "data_ab"
+  top: "data_ab_ss" # quantized gt colors
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+  convolution_param {
+    num_output: 2
+    kernel_size: 1
+    stride: 8
+    group: 2
+    weight_filler { type: 'constant' value: 1 }
+  }
+}
+layer { # encode
+  name: 'ab_enc'
+  type: 'Python'
+  bottom: "data_ab_ss"
+  top: "gt_ab_ss" # quantized gt colors
+  python_param {
+    module: 'caffe_traininglayers'
+    layer: 'NNEncLayer'
+  }
+}
+layer { # compute gray mask
+  name: 'ab_graymask'
+  type: 'Python'
+  bottom: "data_ab_ss"
+  top: "nongray_mask"
+  python_param {
+    module: 'caffe_traininglayers'
+    layer: 'NonGrayMaskLayer'
+  }
+}
+layer { # compute prior boost
+  type: 'Python'
+  name: 'ab_pb'
+  bottom: "gt_ab_ss"
+  top: "prior_boost"
+  python_param {
+    module: 'caffe_traininglayers'
+    layer: 'PriorBoostLayer'
+  }
+}
+layer { # multiply nongray mask and prior boost
+  type: 'Eltwise'
+  name: 'pb_nongray'
+  bottom: "prior_boost"
+  bottom: "nongray_mask"
+  top: "prior_boost_nongray" # prior boost to use 
+  eltwise_param {    operation: 0  }
+}
+# *****************
+# ***** Conv1 *****
+# *****************
+layer {
+  name: "conv1"
+  type: "Convolution"
+  bottom: "data_l"
+  top: "conv1"
+  param {    lr_mult: 1    decay_mult: 1  }
+  param {    lr_mult: 2    decay_mult: 0  }
+  convolution_param {
+    num_output: 96
+    kernel_size: 11
+    pad: 5
+    stride: 4
+  }
+}
+layer {
+  name: "conv1norm"
+  type: "BatchNorm"
+  bottom: "conv1"
+  top: "conv1norm"
+  batch_norm_param{ }
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+}
+layer {
+  name: "relu1"
+  type: "ReLU"
+  bottom: "conv1norm"
+  top: "conv1norm"
+}
+layer {
+  name: "pool1"
+  type: "Pooling"
+  bottom: "conv1norm"
+  top: "pool1"
+  pooling_param {
+    pool: MAX
+    kernel_size: 3
+    stride: 2
+    pad: 1
+  }
+}
+layer {
+  name: "conv2"
+  type: "Convolution"
+  bottom: "pool1"
+  top: "conv2"
+  param {    lr_mult: 1    decay_mult: 1  }
+  param {    lr_mult: 2    decay_mult: 0  }
+  convolution_param {
+    num_output: 256
+    pad: 2
+    kernel_size: 5
+    group: 2
+  }
+}
+layer {
+  name: "conv2norm"
+  type: "BatchNorm"
+  bottom: "conv2"
+  top: "conv2norm"
+  batch_norm_param{ }
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+}
+layer {
+  name: "relu2"
+  type: "ReLU"
+  bottom: "conv2norm"
+  top: "conv2norm"
+}
+layer {
+  name: "pool2"
+  type: "Pooling"
+  # bottom: "conv2"
+  bottom: "conv2norm"
+  top: "pool2"
+  pooling_param {
+    pool: MAX
+    kernel_size: 3
+    stride: 2
+    pad: 1
+  }
+}
+layer {
+  name: "conv3"
+  type: "Convolution"
+  bottom: "pool2"
+  top: "conv3"
+  param {    lr_mult: 1    decay_mult: 1  }
+  param {    lr_mult: 2    decay_mult: 0  }
+  convolution_param {
+    num_output: 384
+    dilation: 1
+    pad: 1
+    kernel_size: 3
+  }
+}
+layer {
+  name: "conv3norm"
+  type: "BatchNorm"
+  bottom: "conv3"
+  top: "conv3norm"
+  batch_norm_param{ }
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+}
+layer {
+  name: "relu3"
+  type: "ReLU"
+  bottom: "conv3norm"
+  top: "conv3norm"
+}
+layer {
+  name: "conv4"
+  type: "Convolution"
+  bottom: "conv3norm"
+  top: "conv4"
+  param {    lr_mult: 1    decay_mult: 1  }
+  param {    lr_mult: 2    decay_mult: 0  }
+  convolution_param {
+    num_output: 384
+    dilation: 1
+    pad: 1
+    kernel_size: 3
+    group: 2
+  }
+}
+layer {
+  name: "conv4norm"
+  type: "BatchNorm"
+  bottom: "conv4"
+  top: "conv4norm"
+  batch_norm_param{ }
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+}
+layer {
+  name: "relu4"
+  type: "ReLU"
+  bottom: "conv4norm"
+  top: "conv4norm"
+}
+layer {
+  name: "conv5"
+  type: "Convolution"
+  bottom: "conv4norm"
+  top: "conv5"
+  param {    lr_mult: 1    decay_mult: 1  }
+  param {    lr_mult: 2    decay_mult: 0  }
+  convolution_param {
+    num_output: 256
+    dilation: 1
+    pad: 1
+    kernel_size: 3
+    group: 2
+  }
+}
+layer {
+  name: "conv5norm"
+  type: "BatchNorm"
+  bottom: "conv5"
+  top: "conv5norm"
+  batch_norm_param{ }
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+}
+layer {
+  name: "relu5"
+  type: "ReLU"
+  bottom: "conv5norm"
+  top: "conv5norm"
+}
+layer {
+  name: "pool5"
+  type: "Pooling"
+  bottom: "conv5norm"
+  top: "pool5"
+  pooling_param {
+    pool: MAX
+    kernel_size: 3
+    pad: 1
+    stride: 1
+  }
+}
+layer {
+  name: "fc6"
+  type: "Convolution"
+  bottom: "pool5"
+  top: "fc6"
+  param {    lr_mult: 1    decay_mult: 1  }
+  param {    lr_mult: 2    decay_mult: 0  }
+  convolution_param {
+    kernel_size: 6
+    dilation: 2
+    pad: 5
+    stride: 1
+    num_output: 4096
+    weight_filler {
+      type: "gaussian"
+      std: 0.005
+    }
+    bias_filler {
+      type: "constant"
+      value: 1
+    }
+  }
+}
+layer {
+  name: "fc6norm"
+  type: "BatchNorm"
+  bottom: "fc6"
+  top: "fc6norm"
+  batch_norm_param{ }
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+}
+layer {
+  name: "relu6"
+  type: "ReLU"
+  bottom: "fc6norm"
+  top: "fc6norm"
+}
+layer {
+  name: "fc7"
+  type: "Convolution"
+  bottom: "fc6norm"
+  top: "fc7"
+  param {    lr_mult: 1    decay_mult: 1  }
+  param {    lr_mult: 2    decay_mult: 0  }
+  convolution_param {
+    kernel_size: 1
+    stride: 1
+    num_output: 4096
+    weight_filler {
+      type: "gaussian"
+      std: 0.005
+    }
+    bias_filler {
+      type: "constant"
+      value: 1
+    }
+  }
+}
+layer {
+  name: "fc7norm"
+  type: "BatchNorm"
+  bottom: "fc7"
+  top: "fc7norm"
+  batch_norm_param{ }
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+}
+layer {
+  name: "relu7"
+  type: "ReLU"
+  bottom: "fc7norm"
+  top: "fc7norm"
+}
+layer {
+  name: "fc8"
+  type: "Convolution"
+  bottom: "fc7norm"
+  top: "fc8"
+  param {    lr_mult: 1    decay_mult: 1  }
+  param {    lr_mult: 2    decay_mult: 0  }
+  convolution_param {
+    kernel_size: 1
+    num_output: 313
+  }
+}
+# ******************************
+# ***** POSTPROCESS LABELS *****
+# ******************************
+layer {
+  name: "fc8_upsample"
+  type: "Resize"
+  bottom: "fc8"
+  bottom: "gt_ab_ss"
+  top: "fc8_us"
+}
+layer {
+  name: "PriorBoost8"
+  type: "Python"
+  bottom: "fc8_us"
+  bottom: "prior_boost_nongray"
+  top: "fc8_boost"
+  python_param {
+    module: 'caffe_traininglayers'
+    layer: 'ClassRebalanceMultLayer'
+  }
+}
+layer {
+  name: "Softmax"
+  type: "SoftmaxCrossEntropyLoss"
+  bottom: "fc8_boost"
+  bottom: "gt_ab_ss"
+  top: "loss"
+  loss_weight: 1.
+  loss_param {    normalize: True  }
+}
