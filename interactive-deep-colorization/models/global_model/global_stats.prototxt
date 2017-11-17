@@ -1,0 +1,244 @@
+layer {
+  name: "img_bgr"
+  type: "Input"
+  top: "img_bgr" # img in BGR space
+  input_param { shape { dim: 1 dim: 3 dim: 256 dim: 256 } }
+}
+# ****************************
+# ***** Color Conversion *****
+# ****************************
+layer { # Convert to HSV
+  name: "img_hsv"
+  type: "Python"
+  bottom: "img_bgr"
+  top: "img_hsv"
+  propagate_down: false
+  python_param {
+    module: 'caffe_traininglayers'
+    layer: 'BGR2HSVLayer'
+  }
+}
+layer { # Convert to BGR
+  name: "img_lab"
+  type: "Python"
+  bottom: "img_bgr"
+  top: "img_lab"
+  propagate_down: false
+  python_param {
+    module: 'caffe_traininglayers'
+    layer: 'BGR2LabLayer'
+  }
+}
+# layer { # Convert to lab
+#   name: "img_lab"
+#   type: "ColorConv"
+#   bottom: "img_bgr"
+#   top: "img_lab"
+#   propagate_down: false
+#   color_conv_param {
+#     input: 0 # BGR
+#     output: 3 # Lab
+#   }
+# }
+layer {
+  name: "img_slice"
+  type: "Slice"
+  bottom: "img_lab"
+  top: "img_l" # [0,100]
+  top: "data_ab" # [-110,110]
+  propagate_down: false
+  slice_param {
+    axis: 1
+    slice_point: 1
+  }
+}
+layer { # 0-center data_l channel
+  name: "data_l_meansub"
+  type: "Scale"
+  bottom: "img_l"
+  top: "data_l" # [-50,50]
+  propagate_down: false
+  param {lr_mult: 0 decay_mult: 0}
+  param {lr_mult: 0 decay_mult: 0}
+  scale_param {
+    bias_term: true
+    filler {      type: 'constant'      value: 1    }
+    bias_filler {      type: 'constant'      value: -50    }
+  }
+}
+# *********************************
+# ***** Reveal Random Points  *****
+# *********************************
+# layer { # compute gray mask
+#   type: 'Python'
+#   name: 'data_ab_mask'
+#   bottom: "data_ab"
+#   top: "data_ab_mask" # quantized gt colors
+#   python_param {
+#     module: 'caffe_traininglayers'
+#     layer: 'ColorRandPointLayer'
+#   }
+# }
+# *******************************
+# ***** Resize ground truth *****
+# *******************************
+# layer { # subsample ab
+#   name: "data_ab_rs"
+#   type: "Resize"
+#   bottom: "data_ab"
+#   top: "data_ab_rs"
+#   include { phase: TRAIN }
+#   resize_param { height: 44 width: 44 }
+# }
+# layer { # subsample ab
+#   name: "data_ab_rs"
+#   type: "Resize"
+#   bottom: "data_ab"
+#   top: "data_ab_rs"
+#   include { phase: TEST }
+#   resize_param { height: 64 width: 64 }
+# }
+layer {
+  name: "data_ab_rs"
+  type: "Pooling"
+  bottom: "data_ab"
+  top: "data_ab_rs"
+  pooling_param {
+    kernel_size: 4
+    stride: 4
+    pool: AVE
+  }
+}
+# layer { # subsample ab
+#   name: "data_ab_rs"
+#   type: "Convolution"
+#   bottom: "data_ab"
+#   top: "data_ab_rs"
+#   convolution_param { kernel_size: 1 stride: 4 num_output: 2 
+#     weight_filler { type: "constant" value: 1 } }
+# }
+# *****************************
+# ***** Global statistics *****
+# *****************************
+layer {
+  name: "hsv_avg"
+  type: "Pooling"
+  bottom: "img_hsv"
+  top: "hsv_avg"
+  pooling_param {
+    global_pooling: true
+    pool: AVE
+  }
+}
+layer {
+  name: "h_avg"
+  type: "Slice"
+  bottom: "hsv_avg"
+  top: "h_avg"
+  top: "s_avg"
+  top: "v_avg"
+  slice_param {    axis: 1    slice_point: 1    slice_point: 2  }
+}
+layer {
+  name: "Silence"
+  type: "Silence"
+  bottom: "h_avg"
+  bottom: "v_avg"
+}
+layer {
+  name: "bgr_avg"
+  type: "Pooling"
+  bottom: "img_bgr"
+  top: "bgr_avg"
+  pooling_param {
+    global_pooling: true
+    pool: AVE
+  }
+}
+layer {
+  name: "b_avg"
+  type: "Slice"
+  bottom: "bgr_avg"
+  top: "b_avg"
+  top: "g_avg"
+  top: "r_avg"
+  slice_param {    axis: 1    slice_point: 1    slice_point: 2  }
+}
+layer {
+  name: "b_avg_drop"
+  type: "Python"
+  bottom: "b_avg"
+  top: "b_avg_drop"
+  python_param {
+    module: 'caffe_traininglayers'
+    layer: 'ColorGlobalDropoutLayer'
+    param_str: "1" # keep ratio
+  }
+}
+layer {
+  name: "g_avg_drop"
+  type: "Python"
+  bottom: "g_avg"
+  top: "g_avg_drop"
+  python_param {
+    module: 'caffe_traininglayers'
+    layer: 'ColorGlobalDropoutLayer'
+    param_str: "1" # keep ratio
+  }
+}
+layer {
+  name: "r_avg_drop"
+  type: "Python"
+  bottom: "r_avg"
+  top: "r_avg_drop"
+  python_param {
+    module: 'caffe_traininglayers'
+    layer: 'ColorGlobalDropoutLayer'
+    param_str: "1" # keep ratio
+  }
+}
+layer {
+  name: "s_avg_drop"
+  type: "Python"
+  bottom: "s_avg"
+  top: "s_avg_drop"
+  python_param {
+    module: 'caffe_traininglayers'
+    layer: 'ColorGlobalDropoutLayer'
+    param_str: "1" # keep ratio
+  }
+}
+# **************************************************
+# ***** Compute global distribution statistics *****
+# **************************************************
+layer { # encode
+  type: 'Python'
+  name: 'gt_ab_313'
+  bottom: "data_ab_rs"
+  top: "gt_ab_313" # quantized gt colors
+  python_param {
+    module: 'caffe_traininglayers'
+    layer: 'NNEncLayer'
+  }
+}
+layer {
+  name: "gt_glob_ab_313"
+  type: "Pooling"
+  bottom: "gt_ab_313"
+  top: "gt_glob_ab_313"
+  pooling_param {
+    global_pooling: true
+    pool: AVE
+  }
+}
+layer {
+  name: "gt_glob_ab_313_drop"
+  type: "Python"
+  bottom: "gt_glob_ab_313"
+  top: "gt_glob_ab_313_drop"
+  python_param {
+    module: 'caffe_traininglayers'
+    layer: 'ColorGlobalDropoutLayer'
+    param_str: "1" # keep ratio
+  }
+}
