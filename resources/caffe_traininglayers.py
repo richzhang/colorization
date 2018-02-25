@@ -55,7 +55,7 @@ class NNEncLayer(caffe.Layer):
 
         if len(bottom) == 0:
             raise Exception("Layer should have inputs")
-        self.NN = 10.
+        self.NN = 10
         self.sigma = 5.
         self.ENC_DIR = './resources/'
         self.nnenc = NNEncode(self.NN,self.sigma,km_filepath=os.path.join(self.ENC_DIR,'pts_in_hull.npy'))
