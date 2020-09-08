@@ -4,9 +4,7 @@
 
 ![Teaser Image](http://richzhang.github.io/colorization/resources/images/teaser4.jpg)
 
-### Note ###
-
-**Sept 2020** The original implementation is in the master branch and was in Caffe. Since it has been 3-4 years, I decided to make a simple PyTorch test-time script. I also added our interactive method from SIGGRAPH 2017 (which can also do automatic colorization).
+**Sept 2020 Update** Since it has been 3-4 years, I decided decided to make a minimal PyTorch test-time script and make this the master branch. I also added our interactive method from SIGGRAPH 2017 (which can also do automatic colorization).
 
 ### Quick and easy start
 
@@ -14,12 +12,11 @@ Clone the repository and checkout the pytorch branch
 
 ```
 git clone https://github.com/richzhang/colorization.git
-cd colorization
 git checkout pytorch
 pip install requirements.txt
 ```
 
-Running the following will colorize an image. The results should match the images in the `imgs_out` folder.
+This script will colorize an image. The results should match the images in the `imgs_out` folder.
 
 ```
 python demo_release.py # colorization a demo image
@@ -29,25 +26,13 @@ Loading the models is shown below. See [demo_release.py](demo_release.py) for ho
 
 ```python
 import colorizers
-colorizer_eccv16 = colorizers.eccv16(pretrained=True).eval()
-colorizer_siggraph17 = colorizers.siggraph17(pretrained=True).eval()
+colorizer_eccv16 = colorizers.eccv16().eval()
+colorizer_siggraph17 = colorizers.siggraph17().eval()
 ```
 
-### Original implementation functionalities
+### Original implementation functionality
 
-The original implementation contained the following. It is in Caffe and is no longer supported. Please see the **master** branch for it.
-
-<b>Colorization-centric functionality</b>
- - (0) a test time script to colorize an image (python script)
- - (1) a test time demonstration (IPython Notebook)
- - (2) code for training a colorization network
- - (3) links to our results on the ImageNet test set, along with a pointer to AMT real vs fake test code
-
-<b>Representation Learning-centric functionality</b>
- - (4) pre-trained AlexNet, used for representation learning tests (Section 3.2)
- - (5) code for training AlexNet with colorization
- - (6) representation learning tests
-
+The original implementation contained train and testing, our network and AlexNet (for representation learning tests), as well as representation learning tests. It is in Caffe and is no longer supported. Please see the **caffe** branch for it.
 
 ### Citation ###
 
