@@ -10,15 +10,22 @@
 
 ### Quick and easy start
 
+Clone the repository and checkout the pytorch branch
+
 ```
 git clone https://github.com/richzhang/colorization.git
 cd colorization
 git checkout pytorch
 pip install requirements.txt
+```
+
+Running the following will colorize an image. The results should match the images in the `imgs_out` folder.
+
+```
 python demo_release.py # colorization a demo image
 ```
 
-See [demo_release.py](demo_release.py) for how to run the model, since there are some pre and post-processing steps.
+Loading the models is shown below. See [demo_release.py](demo_release.py) for how to run the model, since there are some pre and post-processing steps.
 
 ```python
 import colorizers
