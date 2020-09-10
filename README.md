@@ -12,7 +12,6 @@
 
 ```
 git clone https://github.com/richzhang/colorization.git
-git checkout pytorch
 pip install requirements.txt
 ```
 
