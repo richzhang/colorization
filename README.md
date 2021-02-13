@@ -12,7 +12,7 @@
 
 ```
 git clone https://github.com/richzhang/colorization.git
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 **Colorize!** This script will colorize an image. The results should match the images in the `imgs_out` folder.
