@@ -1,0 +1,416 @@
+Microsoft Windows [Version 10.0.22623.1037]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\Vicky\Desktop\Repository\colorization>pip install requirements.txt
+ERROR: Could not find a version that satisfies the requirement requirements.txt (from versions: none)
+HINT: You are attempting to install a package literally named "requirements.txt" (which cannot exist). Consider using the '-r' flag to install the packages listed in requirements.txt
+ERROR: No matching distribution found for requirements.txt
+WARNING: There was an error checking the latest version of pip.
+
+C:\Users\Vicky\Desktop\Repository\colorization>pip
+
+Usage:
+  pip <command> [options]
+
+Commands:
+  install                     Install packages.
+  download                    Download packages.
+  uninstall                   Uninstall packages.
+  freeze                      Output installed packages in requirements format.
+  list                        List installed packages.
+  show                        Show information about installed packages.
+  check                       Verify installed packages have compatible dependencies.
+  config                      Manage local and global configuration.
+  search                      Search PyPI for packages.
+  cache                       Inspect and manage pip's wheel cache.
+  index                       Inspect information available from package indexes.
+  wheel                       Build wheels from your requirements.
+  hash                        Compute hashes of package archives.
+  completion                  A helper command used for command completion.
+  debug                       Show information useful for debugging.
+  help                        Show help for commands.
+
+General Options:
+  -h, --help                  Show help.
+  --debug                     Let unhandled exceptions propagate outside
+                              the main subroutine, instead of logging them
+                              to stderr.
+  --isolated                  Run pip in an isolated mode, ignoring
+                              environment variables and user
+                              configuration.
+  --require-virtualenv        Allow pip to only run in a virtual
+                              environment; exit with an error otherwise.
+  -v, --verbose               Give more output. Option is additive, and
+                              can be used up to 3 times.
+  -V, --version               Show version and exit.
+  -q, --quiet                 Give less output. Option is additive, and
+                              can be used up to 3 times (corresponding to
+                              WARNING, ERROR, and CRITICAL logging
+                              levels).
+  --log <path>                Path to a verbose appending log.
+  --no-input                  Disable prompting for input.
+  --proxy <proxy>             Specify a proxy in the form
+                              scheme://[user:passwd@]proxy.server:port.
+  --retries <retries>         Maximum number of retries each connection
+                              should attempt (default 5 times).
+  --timeout <sec>             Set the socket timeout (default 15 seconds).
+  --exists-action <action>    Default action when a path already exists:
+                              (s)witch, (i)gnore, (w)ipe, (b)ackup,
+                              (a)bort.
+  --trusted-host <hostname>   Mark this host or host:port pair as trusted,
+                              even though it does not have valid or any
+                              HTTPS.
+  --cert <path>               Path to PEM-encoded CA certificate bundle.
+                              If provided, overrides the default. See 'SSL
+                              Certificate Verification' in pip
+                              documentation for more information.
+  --client-cert <path>        Path to SSL client certificate, a single
+                              file containing the private key and the
+                              certificate in PEM format.
+  --cache-dir <dir>           Store the cache data in <dir>.
+  --no-cache-dir              Disable the cache.
+  --disable-pip-version-check
+                              Don't periodically check PyPI to determine
+                              whether a new version of pip is available
+                              for download. Implied with --no-index.
+  --no-color                  Suppress colored output.
+  --no-python-version-warning
+                              Silence deprecation warnings for upcoming
+                              unsupported Pythons.
+  --use-feature <feature>     Enable new functionality, that may be
+                              backward incompatible.
+  --use-deprecated <feature>  Enable deprecated functionality, that will
+                              be removed in the future.
+
+C:\Users\Vicky\Desktop\Repository\colorization>pip install --upgrade pip
+Requirement already satisfied: pip in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (22.1.1)
+Collecting pip
+  Downloading pip-22.3.1-py3-none-any.whl (2.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 6.2 MB/s eta 0:00:00
+ERROR: To modify pip, please run the following command:
+C:\Users\Vicky\AppData\Local\Programs\Python\Python39\python.exe -m pip install --upgrade pip
+WARNING: There was an error checking the latest version of pip.
+
+C:\Users\Vicky\Desktop\Repository\colorization>pip install requirements.txt
+ERROR: Could not find a version that satisfies the requirement requirements.txt (from versions: none)
+HINT: You are attempting to install a package literally named "requirements.txt" (which cannot exist). Consider using the '-r' flag to install the packages listed in requirements.txt
+ERROR: No matching distribution found for requirements.txt
+WARNING: There was an error checking the latest version of pip.
+
+C:\Users\Vicky\Desktop\Repository\colorization>python
+Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>>
+>>>
+>>> import colorizers
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\Vicky\Desktop\Repository\colorization\colorizers\__init__.py", line 3, in <module>
+    from .eccv16 import *
+  File "C:\Users\Vicky\Desktop\Repository\colorization\colorizers\eccv16.py", line 5, in <module>
+    from IPython import embed
+ModuleNotFoundError: No module named 'IPython'
+>>>
+KeyboardInterrupt
+>>> ModuleNotFoundError: No module named 'IPython'^X
+  File "<stdin>", line 1
+    ModuleNotFoundError: No module named 'IPython'↑
+                            ^
+SyntaxError: invalid syntax
+>>>
+>>>
+>>>
+>>> ^Z
+
+
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>pip install ipython
+Collecting ipython
+  Downloading ipython-8.7.0-py3-none-any.whl (761 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 761.7/761.7 kB 3.7 MB/s eta 0:00:00
+Collecting backcall
+  Downloading backcall-0.2.0-py2.py3-none-any.whl (11 kB)
+Collecting prompt-toolkit<3.1.0,>=3.0.11
+  Downloading prompt_toolkit-3.0.36-py3-none-any.whl (386 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 386.4/386.4 kB 8.0 MB/s eta 0:00:00
+Collecting pickleshare
+  Downloading pickleshare-0.7.5-py2.py3-none-any.whl (6.9 kB)
+Collecting stack-data
+  Downloading stack_data-0.6.2-py3-none-any.whl (24 kB)
+Requirement already satisfied: pygments>=2.4.0 in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from ipython) (2.10.0)
+Collecting traitlets>=5
+  Downloading traitlets-5.7.1-py3-none-any.whl (109 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 109.9/109.9 kB 3.2 MB/s eta 0:00:00
+Requirement already satisfied: colorama in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from ipython) (0.4.4)
+Collecting jedi>=0.16
+  Downloading jedi-0.18.2-py2.py3-none-any.whl (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 5.9 MB/s eta 0:00:00
+Requirement already satisfied: decorator in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from ipython) (4.4.2)
+Collecting matplotlib-inline
+  Downloading matplotlib_inline-0.1.6-py3-none-any.whl (9.4 kB)
+Collecting parso<0.9.0,>=0.8.0
+  Downloading parso-0.8.3-py2.py3-none-any.whl (100 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.8/100.8 kB 5.7 MB/s eta 0:00:00
+Collecting wcwidth
+  Downloading wcwidth-0.2.5-py2.py3-none-any.whl (30 kB)
+Collecting asttokens>=2.1.0
+  Downloading asttokens-2.2.1-py2.py3-none-any.whl (26 kB)
+Collecting pure-eval
+  Downloading pure_eval-0.2.2-py3-none-any.whl (11 kB)
+Collecting executing>=1.2.0
+  Downloading executing-1.2.0-py2.py3-none-any.whl (24 kB)
+Requirement already satisfied: six in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from asttokens>=2.1.0->stack-data->ipython) (1.15.0)
+Installing collected packages: wcwidth, pure-eval, pickleshare, executing, backcall, traitlets, prompt-toolkit, parso, asttokens, stack-data, matplotlib-inline, jedi, ipython
+Successfully installed asttokens-2.2.1 backcall-0.2.0 executing-1.2.0 ipython-8.7.0 jedi-0.18.2 matplotlib-inline-0.1.6 parso-0.8.3 pickleshare-0.7.5 prompt-toolkit-3.0.36 pure-eval-0.2.2 stack-data-0.6.2 traitlets-5.7.1 wcwidth-0.2.5
+WARNING: There was an error checking the latest version of pip.
+
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>python
+Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import colorizers
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\Vicky\Desktop\Repository\colorization\colorizers\__init__.py", line 5, in <module>
+    from .util import *
+  File "C:\Users\Vicky\Desktop\Repository\colorization\colorizers\util.py", line 4, in <module>
+    from skimage import color
+ModuleNotFoundError: No module named 'skimage'
+>>> import colorizers^Z
+  File "<stdin>", line 1
+    import colorizers→
+                     ^
+SyntaxError: invalid syntax
+>>>
+>>> ^Z
+
+
+C:\Users\Vicky\Desktop\Repository\colorization>pip install requirements.txt
+ERROR: Could not find a version that satisfies the requirement requirements.txt (from versions: none)
+HINT: You are attempting to install a package literally named "requirements.txt" (which cannot exist). Consider using the '-r' flag to install the packages listed in requirements.txt
+ERROR: No matching distribution found for requirements.txt
+WARNING: There was an error checking the latest version of pip.
+
+C:\Users\Vicky\Desktop\Repository\colorization>pip install requirements.txt
+ERROR: Could not find a version that satisfies the requirement requirements.txt (from versions: none)
+HINT: You are attempting to install a package literally named "requirements.txt" (which cannot exist). Consider using the '-r' flag to install the packages listed in requirements.txt
+ERROR: No matching distribution found for requirements.txt
+WARNING: There was an error checking the latest version of pip.
+
+C:\Users\Vicky\Desktop\Repository\colorization>pip install torch
+Requirement already satisfied: torch in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (1.11.0)
+Requirement already satisfied: typing-extensions in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from torch) (3.7.4.3)
+WARNING: There was an error checking the latest version of pip.
+
+C:\Users\Vicky\Desktop\Repository\colorization>pip install torch --upgrade
+Requirement already satisfied: torch in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (1.11.0)
+Collecting torch
+  Downloading torch-1.13.1-cp39-cp39-win_amd64.whl (162.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 162.5/162.5 MB 3.0 MB/s eta 0:00:00
+Requirement already satisfied: typing-extensions in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from torch) (3.7.4.3)
+Installing collected packages: torch
+  Attempting uninstall: torch
+    Found existing installation: torch 1.11.0
+    Uninstalling torch-1.11.0:
+      Successfully uninstalled torch-1.11.0
+Successfully installed torch-1.13.1
+WARNING: There was an error checking the latest version of pip.
+
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>python
+Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import colorizers
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+  File "C:\Users\Vicky\Desktop\Repository\colorization\colorizers\__init__.py", line 5, in <module>
+    from .util import *
+  File "C:\Users\Vicky\Desktop\Repository\colorization\colorizers\util.py", line 4, in <module>
+    from skimage import color
+ModuleNotFoundError: No module named 'skimage'
+>>> pip install scikit-image^Z^Z^Z^Z
+  File "<stdin>", line 1
+    pip install scikit-image→→→→
+        ^
+SyntaxError: invalid syntax
+>>>
+>>>
+>>> ^Z
+
+
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>pip install scikit-image
+Collecting scikit-image
+  Downloading scikit_image-0.19.3-cp39-cp39-win_amd64.whl (12.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 12.1/12.1 MB 2.0 MB/s eta 0:00:00
+Requirement already satisfied: networkx>=2.2 in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from scikit-image) (2.8.4)
+Collecting PyWavelets>=1.1.1
+  Downloading PyWavelets-1.4.1-cp39-cp39-win_amd64.whl (4.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.2/4.2 MB 1.8 MB/s eta 0:00:00
+Requirement already satisfied: scipy>=1.4.1 in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from scikit-image) (1.7.1)
+Requirement already satisfied: imageio>=2.4.1 in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from scikit-image) (2.9.0)
+Requirement already satisfied: pillow!=7.1.0,!=7.1.1,!=8.3.0,>=6.1.0 in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from scikit-image) (8.1.0)
+Requirement already satisfied: numpy>=1.17.0 in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from scikit-image) (1.19.5)
+Collecting tifffile>=2019.7.26
+  Downloading tifffile-2022.10.10-py3-none-any.whl (210 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 210.3/210.3 kB 2.6 MB/s eta 0:00:00
+Requirement already satisfied: packaging>=20.0 in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from scikit-image) (21.3)
+Requirement already satisfied: pyparsing!=3.0.5,>=2.0.2 in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from packaging>=20.0->scikit-image) (2.4.7)
+Installing collected packages: tifffile, PyWavelets, scikit-image
+Successfully installed PyWavelets-1.4.1 scikit-image-0.19.3 tifffile-2022.10.10
+WARNING: There was an error checking the latest version of pip.
+
+C:\Users\Vicky\Desktop\Repository\colorization>pip install argparse
+Collecting argparse
+  Downloading argparse-1.4.0-py2.py3-none-any.whl (23 kB)
+Installing collected packages: argparse
+Successfully installed argparse-1.4.0
+WARNING: There was an error checking the latest version of pip.
+
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>pip install matplotlib --upgr
+age
+
+Usage:
+  pip install [options] <requirement specifier> [package-index-options] ...
+  pip install [options] -r <requirements file> [package-index-options] ...
+  pip install [options] [-e] <vcs project url> ...
+  pip install [options] [-e] <local project path> ...
+  pip install [options] <archive url/path> ...
+
+no such option: --upgrage
+
+C:\Users\Vicky\Desktop\Repository\colorization>pip install matplotlib --upgrade
+Requirement already satisfied: matplotlib in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (3.4.2)
+Collecting matplotlib
+  Downloading matplotlib-3.6.2-cp39-cp39-win_amd64.whl (7.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 7.2/7.2 MB 6.2 MB/s eta 0:00:00
+Requirement already satisfied: packaging>=20.0 in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from matplotlib) (21.3)
+Collecting contourpy>=1.0.1
+  Downloading contourpy-1.0.6-cp39-cp39-win_amd64.whl (161 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 161.3/161.3 kB 4.7 MB/s eta 0:00:00
+Requirement already satisfied: pyparsing>=2.2.1 in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from matplotlib) (2.4.7)
+Collecting fonttools>=4.22.0
+  Downloading fonttools-4.38.0-py3-none-any.whl (965 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 965.4/965.4 kB 10.2 MB/s eta 0:00:00
+Requirement already satisfied: pillow>=6.2.0 in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from matplotlib) (8.1.0)
+Requirement already satisfied: python-dateutil>=2.7 in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from matplotlib) (2.8.1)
+Requirement already satisfied: numpy>=1.19 in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from matplotlib) (1.19.5)
+Requirement already satisfied: cycler>=0.10 in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from matplotlib) (0.10.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from matplotlib) (1.3.1)
+Requirement already satisfied: six in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (from cycler>=0.10->matplotlib) (1.15.0)
+Installing collected packages: fonttools, contourpy, matplotlib
+  Attempting uninstall: matplotlib
+    Found existing installation: matplotlib 3.4.2
+    Uninstalling matplotlib-3.4.2:
+      Successfully uninstalled matplotlib-3.4.2
+Successfully installed contourpy-1.0.6 fonttools-4.38.0 matplotlib-3.6.2
+WARNING: There was an error checking the latest version of pip.
+
+C:\Users\Vicky\Desktop\Repository\colorization>pip install numpy --upgrade
+Requirement already satisfied: numpy in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (1.19.5)
+Collecting numpy
+  Downloading numpy-1.23.5-cp39-cp39-win_amd64.whl (14.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.7/14.7 MB 3.9 MB/s eta 0:00:00
+Installing collected packages: numpy
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.19.5
+    Uninstalling numpy-1.19.5:
+      Successfully uninstalled numpy-1.19.5
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+tensorflow 2.5.0 requires numpy~=1.19.2, but you have numpy 1.23.5 which is incompatible.
+scipy 1.7.1 requires numpy<1.23.0,>=1.16.5, but you have numpy 1.23.5 which is incompatible.
+instabot 0.117.0 requires requests-toolbelt>=0.9.1, but you have requests-toolbelt 0.7.0 which is incompatible.
+Successfully installed numpy-1.23.5
+WARNING: There was an error checking the latest version of pip.
+
+C:\Users\Vicky\Desktop\Repository\colorization>pip install Pillow --upgrade
+Requirement already satisfied: Pillow in c:\users\vicky\appdata\local\programs\python\python39\lib\site-packages (8.1.0)
+Collecting Pillow
+  Downloading Pillow-9.3.0-cp39-cp39-win_amd64.whl (2.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.5/2.5 MB 9.9 MB/s eta 0:00:00
+Installing collected packages: Pillow
+  Attempting uninstall: Pillow
+    Found existing installation: Pillow 8.1.0
+    Uninstalling Pillow-8.1.0:
+      Successfully uninstalled Pillow-8.1.0
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+instabot 0.117.0 requires requests-toolbelt>=0.9.1, but you have requests-toolbelt 0.7.0 which is incompatible.
+Successfully installed Pillow-9.3.0
+WARNING: There was an error checking the latest version of pip.
+
+C:\Users\Vicky\Desktop\Repository\colorization>python
+Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import colorizers
+C:\Users\Vicky\AppData\Local\Programs\Python\Python39\lib\site-packages\scipy\__init__.py:146: UserWarning: A NumPy version >=1.16.5 and <1.23.0 is required for this version of SciPy (detected version 1.23.5
+  warnings.warn(f"A NumPy version >={np_minversion} and <{np_maxversion}"
+>>> ^Z
+
+
+C:\Users\Vicky\Desktop\Repository\colorization>pip install "numpy>=1.16.5,<1.23.0"
+Collecting numpy<1.23.0,>=1.16.5
+  Downloading numpy-1.22.4-cp39-cp39-win_amd64.whl (14.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 14.7/14.7 MB 4.0 MB/s eta 0:00:00
+Installing collected packages: numpy
+  Attempting uninstall: numpy
+    Found existing installation: numpy 1.23.5
+    Uninstalling numpy-1.23.5:
+      Successfully uninstalled numpy-1.23.5
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+tensorflow 2.5.0 requires numpy~=1.19.2, but you have numpy 1.22.4 which is incompatible.
+instabot 0.117.0 requires requests-toolbelt>=0.9.1, but you have requests-toolbelt 0.7.0 which is incompatible.
+Successfully installed numpy-1.22.4
+WARNING: There was an error checking the latest version of pip.
+
+C:\Users\Vicky\Desktop\Repository\colorization>
+C:\Users\Vicky\Desktop\Repository\colorization>python
+Python 3.9.5 (tags/v3.9.5:0a7dcbd, May  3 2021, 17:27:52) [MSC v.1928 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> import colorizers
+>>> colorizer_eccv16 = colorizers.eccv16().eval()
+Downloading: "https://colorizers.s3.us-east-2.amazonaws.com/colorization_release_v2-9b330a0b.pth" to C:\Users\Vicky/.cache\torch\hub\checkpoints\colorization_release_v2-9b330a0b.pth
+100%|███████████████████████████████████| 123M/123M [00:50<00:00, 2.54MB/s]
+>>> colorizer_siggraph17 = colorizers.siggraph17().eval()
+Downloading: "https://colorizers.s3.us-east-2.amazonaws.com/siggraph17-df00044c.pth" to C:\Users\Vicky/.cache\torch\hub\checkpoints\siggraph17-df00044c.pth
+100%|███████████████████████████████████| 130M/130M [00:31<00:00, 4.39MB/s]
+>>> ^Z
+
+
+C:\Users\Vicky\Desktop\Repository\colorization>python demo_release.py -i imgs/ansel_adams3.jpg
+C:\Users\Vicky\AppData\Local\Programs\Python\Python39\lib\site-packages\skimage\_shared\utils.py:394: UserWarning: Color data out of range: Z < 0 in 367 pixels
+  return func(*args, **kwargs)
+C:\Users\Vicky\AppData\Local\Programs\Python\Python39\lib\site-packages\skimage\_shared\utils.py:394: UserWarning: Color data out of range: Z < 0 in 33 pixels
+  return func(*args, **kwargs)
+
+C:\Users\Vicky\Desktop\Repository\colorization>python demo_release.py -i imgs/pexels-pixabay-276374.jpg
+Traceback (most recent call last):
+  File "C:\Users\Vicky\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\cbook\__init__.py", line 307, in process
+    func(*args, **kwargs)
+  File "C:\Users\Vicky\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\backend_bases.py", line 3290, in <lambda>
+    "close_event", lambda e: manager.destroy())
+  File "C:\Users\Vicky\AppData\Local\Programs\Python\Python39\lib\site-packages\matplotlib\backends\_backend_tk.py", line 529, in destroy
+    self._window_dpi.trace_remove('write', self._window_dpi_cbname)
+  File "C:\Users\Vicky\AppData\Local\Programs\Python\Python39\lib\tkinter\__init__.py", line 430, in trace_remove
+    self._tk.deletecommand(cbname)
+_tkinter.TclError: can't delete Tcl command
+
+C:\Users\Vicky\Desktop\Repository\colorization>python demo_release.py -i imgs/input bw.jpg
+usage: demo_release.py [-h] [-i IMG_PATH] [--use_gpu] [-o SAVE_PREFIX]
+demo_release.py: error: unrecognized arguments: bw.jpg
+
+C:\Users\Vicky\Desktop\Repository\colorization>python demo_release.py -i imgs/inputbw.jpg
+C:\Users\Vicky\AppData\Local\Programs\Python\Python39\lib\site-packages\skimage\_shared\utils.py:394: UserWarning: Color data out of range: Z < 0 in 86 pixels
+  return func(*args, **kwargs)
+
+C:\Users\Vicky\Desktop\Repository\colorization>
