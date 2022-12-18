@@ -40,7 +40,7 @@
 # count = 0
 
 # while success:
-#   cv2.imwrite("vid_out/frame%d.jpg" % count, image)     # save frame as JPEG file      
+#   cv2.imwrite(f"vid_out/{str(count).zfill(6)}.jpg", image)     # save frame as JPEG file      
 #   success,image = vidcap.read()
 #   print('Read a new frame: ', success)
 #   count += 1
@@ -53,7 +53,7 @@
 # import cv2
 # from PIL import Image
 
-# print(os.getcwd())
+# # print(os.getcwd())
 # os.chdir(r"C:\Users\Vicky\Desktop\Repository\colorization\vid_out")
 # path = r"C:\Users\Vicky\Desktop\Repository\colorization\vid_out"
 
@@ -61,7 +61,7 @@
 # mean_width = 0
 
 # num_of_images = len(os.listdir('.'))
-# print(num_of_images)
+# # print(num_of_images)
 
 # for file in os.listdir('.'):
 # 	im = Image.open(os.path.join(path, file))
@@ -79,7 +79,7 @@
 # 		width, height = im.size
 # 		imResize = im.resize((mean_width, mean_height), Image.ANTIALIAS)
 # 		imResize.save( file, 'JPEG', quality = 95)
-# 		# print(im.filename.split('\\')[-1], " is resized")
+# 		print(im.filename.split('\\')[-1], " is resized")
 
 # def generate_video():
 # 	image_folder = r'C:\Users\Vicky\Desktop\Repository\colorization\vid_out'
@@ -103,7 +103,11 @@
 
 # generate_video()
 
-# ---------------------------------------
+# import time
+# print("Print now")
+# time.sleep(2)
+# print("Printing after 2 seconds")
+
 
 # https://stackoverflow.com/questions/63631973/how-can-i-use-python-to-speed-up-a-video-without-dropping-frames/63632689#63632689
 
@@ -126,3 +130,25 @@ print("fps: {}".format(final.fps))
 
 # Save video clip
 final.write_videofile(out_loc)
+
+# -----------------------------------
+
+# Import everything needed to edit video clips
+from moviepy.editor import *
+
+
+# loading video dsa gfg intro video
+clip = VideoFileClip("dsa_geek.mp4")
+
+
+# getting only first 5 seconds
+clip = clip.subclip(0, 5)
+
+# loading audio file
+audioclip = AudioFileClip("allwell.mp3").subclip(0, 5)
+
+# adding audio to the video clip
+videoclip = clip.set_audio(audioclip)
+
+# showing video clip
+videoclip.ipython_display()
