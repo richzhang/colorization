@@ -1,15 +1,13 @@
 
 # # python video_colorization.py -i input.jpg -o output.jpg
 
-import argparse
+import argparse, os
 import matplotlib.pyplot as plt
 from colorizers import *
 
 def magic(input_path, output_path):
 	parser = argparse.ArgumentParser()
-	# parser.add_argument('-i','--img_path', type=str, default='imgs/ansel_adams3.jpg')
 	parser.add_argument('--use_gpu', action='store_true', help='whether to use GPU')
-	# parser.add_argument('-o','--save_prefix', type=str, default='saved', help='will save into this file with {eccv16.png, siggraph17.png} suffixes')
 	opt = parser.parse_args()
 
 	colorizer_eccv16 = eccv16(pretrained=True).eval()
@@ -28,7 +26,15 @@ def magic(input_path, output_path):
 	plt.imsave(output_path, out_img_eccv16)
 
 	# out_img_siggraph17 = postprocess_tens(tens_l_orig, colorizer_siggraph17(tens_l_rs).cpu())
-	# plt.imsave('vid_out/output_siggraph17.png', out_img_siggraph17)
+	# plt.imsave(output_path, out_img_siggraph17)
+
+images = [img for img in os.listdir('vid_out')
+			if img.endswith(".jpg") or
+				img.endswith(".jpeg") or
+				img.endswith("png")]
+
+for i in images:
+	magic(f'vid_out/{i}', f'bw_vid_out/{i}')
 
 # ------------------------------
 
@@ -53,8 +59,6 @@ def magic(input_path, output_path):
 
 # https://www.geeksforgeeks.org/python-create-video-using-multiple-images-using-opencv/
 
-# import os
-# import cv2
 # from PIL import Image
 
 # # print(os.getcwd())
@@ -120,7 +124,6 @@ def magic(input_path, output_path):
 
 # move file
 
-# import os
 # os.replace("vid_out/mygeneratedvideo.avi", "vid/mygeneratedvideo.avi")
 
 # ---------------------------------
