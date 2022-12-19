@@ -1,6 +1,20 @@
 <!--<h3><b>Colorful Image Colorization</b></h3>-->
-## <b>Colorful Image Colorization</b> [[Project Page]](http://richzhang.github.io/colorization/) <br>
+# <b>Colorful Image Colorization</b> [[Project Page]](http://richzhang.github.io/colorization/) <br>
 [Richard Zhang](https://richzhang.github.io/), [Phillip Isola](http://web.mit.edu/phillipi/), [Alexei A. Efros](http://www.eecs.berkeley.edu/~efros/). In [ECCV, 2016](http://arxiv.org/pdf/1603.08511.pdf).
+
+-----------------------
+
+## Video_colorization.[py](https://github.com/imvickykumar999/colorization/blob/master/video_colorization.py)
+
+### Transformed Video
+
+https://user-images.githubusercontent.com/50515418/208450925-81a28039-1ee6-48e6-afc4-e41ebb9ab95c.mp4
+
+### Original Video
+
+https://user-images.githubusercontent.com/50515418/208451041-b5ab039c-36d4-432f-9047-f15d3da0bea9.mp4
+
+----------------------
 
 **+ automatic colorization functionality for Real-Time User-Guided Image Colorization with Learned Deep Priors, SIGGRAPH 2017!**
 
