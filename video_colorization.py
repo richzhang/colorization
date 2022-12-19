@@ -1,10 +1,16 @@
 
+import argparse, os, cv2, time
+import matplotlib.pyplot as plt
+from colorizers import *
+from PIL import Image
+from moviepy.editor import VideoFileClip, AudioFileClip
+import moviepy.video.fx.all as vfx
+
 # step 1
 # video into frame
 
 # # https://stackoverflow.com/questions/33311153/python-extracting-and-saving-video-frames/33399711#33399711
 
-# import cv2
 # vidcap = cv2.VideoCapture('vid/oldsong.mp4')
 # success,image = vidcap.read()
 # count = 0
@@ -19,10 +25,6 @@
 
 # step 2
 # # python video_colorization.py -i input.jpg -o output.jpg
-
-import argparse, os
-import matplotlib.pyplot as plt
-from colorizers import *
 
 def magic(input_path, output_path):
 	parser = argparse.ArgumentParser()
@@ -65,19 +67,14 @@ images = [img for img in os.listdir('vid_out')
 
 # https://www.geeksforgeeks.org/python-create-video-using-multiple-images-using-opencv/
 
-# from PIL import Image
-
-# # print(os.getcwd())
-# os.chdir(r"C:\Users\Vicky\Desktop\Repository\colorization\bw_vid_out")
-# path = r"C:\Users\Vicky\Desktop\Repository\colorization\bw_vid_out"
-
 # mean_height = 0
 # mean_width = 0
 
-# num_of_images = len(os.listdir('.'))
+# path = 'bw_vid_out'
+# num_of_images = len(os.listdir('bw_vid_out'))
 # # print(num_of_images)
 
-# for file in os.listdir('.'):
+# for file in os.listdir('bw_vid_out'):
 # 	im = Image.open(os.path.join(path, file))
 # 	width, height = im.size
 # 	mean_width += width
@@ -86,19 +83,18 @@ images = [img for img in os.listdir('vid_out')
 # mean_width = int(mean_width / num_of_images)
 # mean_height = int(mean_height / num_of_images)
 
-# for file in os.listdir('.'):
+# for file in os.listdir('bw_vid_out'):
 # 	if file.endswith(".jpg") or file.endswith(".jpeg") or file.endswith("png"):
 # 		im = Image.open(os.path.join(path, file))
 
 # 		width, height = im.size
 # 		imResize = im.resize((mean_width, mean_height), Image.ANTIALIAS)
-# 		imResize.save( file, 'JPEG', quality = 95)
+# 		imResize.save(os.path.join(path, file), 'JPEG', quality = 95)
 # 		print(im.filename.split('\\')[-1], " is resized")
 
 # def generate_video():
-# 	image_folder = r'C:\Users\Vicky\Desktop\Repository\colorization\bw_vid_out'
+# 	image_folder = 'bw_vid_out'
 # 	video_name = 'mygeneratedvideo.avi'
-# 	os.chdir(r"C:\Users\Vicky\Desktop\Repository\colorization\bw_vid_out")
 	
 # 	images = [img for img in os.listdir(image_folder)
 # 			if img.endswith(".jpg") or
@@ -114,14 +110,13 @@ images = [img for img in os.listdir('vid_out')
 	
 # 	cv2.destroyAllWindows()
 # 	video.release()
-
+# 
 # generate_video()
 
 # -----------------------------------
 
 # waiting 
 
-# import time
 # print("Print now")
 # time.sleep(2)
 # print("Printing after 2 seconds")
@@ -130,7 +125,10 @@ images = [img for img in os.listdir('vid_out')
 
 # move file
 
-# os.replace("bw_vid_out/mygeneratedvideo.avi", "vid/mygeneratedvideo.avi")
+# try:
+# 	os.replace("mygeneratedvideo.avi", "vid/mygeneratedvideo.avi")
+# except:
+# 	pass
 
 # ---------------------------------
 
@@ -138,35 +136,32 @@ images = [img for img in os.listdir('vid_out')
 
 # https://stackoverflow.com/questions/63631973/how-can-i-use-python-to-speed-up-a-video-without-dropping-frames/63632689#63632689
 
-# from moviepy.editor import VideoFileClip, AudioFileClip
-# import moviepy.video.fx.all as vfx
+in_loc = 'vid/mygeneratedvideo.avi'
+out_loc = 'vid/final.mp4'
 
-# in_loc = 'vid/mygeneratedvideo.avi'
-# out_loc = 'vid/dummy_out.mp4'
+# Import video clip
+clip = VideoFileClip(in_loc)
+print("fps: {}".format(clip.fps))
 
-# # Import video clip
-# clip = VideoFileClip(in_loc)
-# print("fps: {}".format(clip.fps))
+# Modify the FPS
+clip = clip.set_fps(clip.fps * 30)
 
-# # Modify the FPS
-# clip = clip.set_fps(clip.fps * 3)
+# Apply speed up
+final = clip.fx(vfx.speedx, 30)
+print("fps: {}".format(final.fps))
 
-# # Apply speed up
-# final = clip.fx(vfx.speedx, 25)
-# print("fps: {}".format(final.fps))
+# getting only first 5 seconds
+# clip = clip.subclip(0, 5)
 
-# # getting only first 5 seconds
-# # clip = clip.subclip(0, 5)
+# https://zulko.github.io/moviepy/getting_started/audioclips.html
+# loading audio file
+audioclip = AudioFileClip("vid/oldsong.mp4")
 
-# # https://zulko.github.io/moviepy/getting_started/audioclips.html
-# # loading audio file
-# audioclip = AudioFileClip("vid/oldsong.mp4")
+# adding audio to the video clip
+videoclip = final.set_audio(audioclip)
 
-# # adding audio to the video clip
-# videoclip = final.set_audio(audioclip)
+# showing video clip
+# videoclip.ipython_display()
 
-# # showing video clip
-# # videoclip.ipython_display()
-
-# # Save video clip
-# videoclip.write_videofile(out_loc)
+# Save video clip
+videoclip.write_videofile(out_loc)
