@@ -1,4 +1,23 @@
 
+# step 1
+# video into frame
+
+# # https://stackoverflow.com/questions/33311153/python-extracting-and-saving-video-frames/33399711#33399711
+
+# import cv2
+# vidcap = cv2.VideoCapture('vid/oldsong.mp4')
+# success,image = vidcap.read()
+# count = 0
+
+# while success:
+#   cv2.imwrite(f"vid_out/{str(count).zfill(6)}.jpg", image)     # save frame as JPEG file      
+#   success,image = vidcap.read()
+#   print('Read a new frame: ', success)
+#   count += 1
+
+# ---------------------------------
+
+# step 2
 # # python video_colorization.py -i input.jpg -o output.jpg
 
 import argparse, os
@@ -28,33 +47,20 @@ def magic(input_path, output_path):
 	# out_img_siggraph17 = postprocess_tens(tens_l_orig, colorizer_siggraph17(tens_l_rs).cpu())
 	# plt.imsave(output_path, out_img_siggraph17)
 
+
+
 images = [img for img in os.listdir('vid_out')
 			if img.endswith(".jpg") or
 				img.endswith(".jpeg") or
 				img.endswith("png")]
 
-for i in images:
-	magic(f'vid_out/{i}', f'bw_vid_out/{i}')
+# for i in images:
+# 	magic(f'vid_out/{i}', f'bw_vid_out/{i}')
+
 
 # ------------------------------
 
-# video into frame
-
-# # https://stackoverflow.com/questions/33311153/python-extracting-and-saving-video-frames/33399711#33399711
-
-# import cv2
-# vidcap = cv2.VideoCapture('vid/big_buck_bunny_720p_5mb.mp4')
-# success,image = vidcap.read()
-# count = 0
-
-# while success:
-#   cv2.imwrite(f"vid_out/{str(count).zfill(6)}.jpg", image)     # save frame as JPEG file      
-#   success,image = vidcap.read()
-#   print('Read a new frame: ', success)
-#   count += 1
-
-# ---------------------------------
-
+# step 3
 # merge frame into video
 
 # https://www.geeksforgeeks.org/python-create-video-using-multiple-images-using-opencv/
@@ -62,8 +68,8 @@ for i in images:
 # from PIL import Image
 
 # # print(os.getcwd())
-# os.chdir(r"C:\Users\Vicky\Desktop\Repository\colorization\vid_out")
-# path = r"C:\Users\Vicky\Desktop\Repository\colorization\vid_out"
+# os.chdir(r"C:\Users\Vicky\Desktop\Repository\colorization\bw_vid_out")
+# path = r"C:\Users\Vicky\Desktop\Repository\colorization\bw_vid_out"
 
 # mean_height = 0
 # mean_width = 0
@@ -90,9 +96,9 @@ for i in images:
 # 		print(im.filename.split('\\')[-1], " is resized")
 
 # def generate_video():
-# 	image_folder = r'C:\Users\Vicky\Desktop\Repository\colorization\vid_out'
+# 	image_folder = r'C:\Users\Vicky\Desktop\Repository\colorization\bw_vid_out'
 # 	video_name = 'mygeneratedvideo.avi'
-# 	os.chdir(r"C:\Users\Vicky\Desktop\Repository\colorization\vid_out")
+# 	os.chdir(r"C:\Users\Vicky\Desktop\Repository\colorization\bw_vid_out")
 	
 # 	images = [img for img in os.listdir(image_folder)
 # 			if img.endswith(".jpg") or
@@ -124,7 +130,7 @@ for i in images:
 
 # move file
 
-# os.replace("vid_out/mygeneratedvideo.avi", "vid/mygeneratedvideo.avi")
+# os.replace("bw_vid_out/mygeneratedvideo.avi", "vid/mygeneratedvideo.avi")
 
 # ---------------------------------
 
@@ -154,7 +160,7 @@ for i in images:
 
 # # https://zulko.github.io/moviepy/getting_started/audioclips.html
 # # loading audio file
-# audioclip = AudioFileClip("vid/big_buck_bunny_720p_5mb.mp4")
+# audioclip = AudioFileClip("vid/oldsong.mp4")
 
 # # adding audio to the video clip
 # videoclip = final.set_audio(audioclip)
