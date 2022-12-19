@@ -8,18 +8,17 @@ import moviepy.video.fx.all as vfx
 
 # step 1
 # video into frame
-
 # # https://stackoverflow.com/questions/33311153/python-extracting-and-saving-video-frames/33399711#33399711
 
-# vidcap = cv2.VideoCapture('vid/oldsong.mp4')
-# success,image = vidcap.read()
-# count = 0
+vidcap = cv2.VideoCapture('vid/oldsong.mp4')
+success,image = vidcap.read()
+count = 0
 
-# while success:
-#   cv2.imwrite(f"vid_out/{str(count).zfill(6)}.jpg", image)     # save frame as JPEG file      
-#   success,image = vidcap.read()
-#   print('Read a new frame: ', success)
-#   count += 1
+while success:
+  cv2.imwrite(f"vid_out/{str(count).zfill(6)}.jpg", image)     # save frame as JPEG file      
+  success,image = vidcap.read()
+  print('Read a new frame: ', success)
+  count += 1
 
 # ---------------------------------
 
@@ -49,69 +48,65 @@ def magic(input_path, output_path):
 	# out_img_siggraph17 = postprocess_tens(tens_l_orig, colorizer_siggraph17(tens_l_rs).cpu())
 	# plt.imsave(output_path, out_img_siggraph17)
 
-
-
 images = [img for img in os.listdir('vid_out')
 			if img.endswith(".jpg") or
 				img.endswith(".jpeg") or
 				img.endswith("png")]
 
-# for i in images:
-# 	magic(f'vid_out/{i}', f'bw_vid_out/{i}')
-
+for i in images:
+	magic(f'vid_out/{i}', f'bw_vid_out/{i}')
 
 # ------------------------------
 
 # step 3
 # merge frame into video
-
 # https://www.geeksforgeeks.org/python-create-video-using-multiple-images-using-opencv/
 
-# mean_height = 0
-# mean_width = 0
+mean_height = 0
+mean_width = 0
 
-# path = 'bw_vid_out'
-# num_of_images = len(os.listdir('bw_vid_out'))
-# # print(num_of_images)
+path = 'bw_vid_out'
+num_of_images = len(os.listdir('bw_vid_out'))
+print(f'num_of_images = {num_of_images}')
 
-# for file in os.listdir('bw_vid_out'):
-# 	im = Image.open(os.path.join(path, file))
-# 	width, height = im.size
-# 	mean_width += width
-# 	mean_height += height
+for file in os.listdir('bw_vid_out'):
+	im = Image.open(os.path.join(path, file))
+	width, height = im.size
+	mean_width += width
+	mean_height += height
 
-# mean_width = int(mean_width / num_of_images)
-# mean_height = int(mean_height / num_of_images)
+mean_width = int(mean_width / num_of_images)
+mean_height = int(mean_height / num_of_images)
 
-# for file in os.listdir('bw_vid_out'):
-# 	if file.endswith(".jpg") or file.endswith(".jpeg") or file.endswith("png"):
-# 		im = Image.open(os.path.join(path, file))
+for file in os.listdir('bw_vid_out'):
+	if file.endswith(".jpg") or file.endswith(".jpeg") or file.endswith("png"):
+		im = Image.open(os.path.join(path, file))
 
-# 		width, height = im.size
-# 		imResize = im.resize((mean_width, mean_height), Image.ANTIALIAS)
-# 		imResize.save(os.path.join(path, file), 'JPEG', quality = 95)
-# 		print(im.filename.split('\\')[-1], " is resized")
+		width, height = im.size
+		imResize = im.resize((mean_width, mean_height), Image.ANTIALIAS)
+		imResize.save(os.path.join(path, file), 'JPEG', quality = 95)
+		print(im.filename.split('\\')[-1], " is resized")
 
-# def generate_video():
-# 	image_folder = 'bw_vid_out'
-# 	video_name = 'mygeneratedvideo.avi'
+def generate_video():
+	image_folder = 'bw_vid_out'
+	video_name = 'mygeneratedvideo.avi'
 	
-# 	images = [img for img in os.listdir(image_folder)
-# 			if img.endswith(".jpg") or
-# 				img.endswith(".jpeg") or
-# 				img.endswith("png")]
+	images = [img for img in os.listdir(image_folder)
+			if img.endswith(".jpg") or
+				img.endswith(".jpeg") or
+				img.endswith("png")]
 	
-# 	frame = cv2.imread(os.path.join(image_folder, images[0]))
-# 	height, width, layers = frame.shape
-# 	video = cv2.VideoWriter(video_name, 0, 1, (width, height))
+	frame = cv2.imread(os.path.join(image_folder, images[0]))
+	height, width, layers = frame.shape
+	video = cv2.VideoWriter(os.path.join('vid', video_name), 0, 1, (width, height))
 
-# 	for image in images:
-# 		video.write(cv2.imread(os.path.join(image_folder, image)))
+	for image in images:
+		video.write(cv2.imread(os.path.join(image_folder, image)))
 	
-# 	cv2.destroyAllWindows()
-# 	video.release()
-# 
-# generate_video()
+	cv2.destroyAllWindows()
+	video.release()
+
+generate_video()
 
 # -----------------------------------
 
@@ -133,35 +128,15 @@ images = [img for img in os.listdir('vid_out')
 # ---------------------------------
 
 # video speed change
-
 # https://stackoverflow.com/questions/63631973/how-can-i-use-python-to-speed-up-a-video-without-dropping-frames/63632689#63632689
 
-in_loc = 'vid/mygeneratedvideo.avi'
-out_loc = 'vid/final.mp4'
+# in_loc = 'vid/mygeneratedvideo.avi'
+# out_loc = 'vid/final.mp4'
 
-# Import video clip
-clip = VideoFileClip(in_loc)
-print("fps: {}".format(clip.fps))
+# clip = VideoFileClip(in_loc)
+# clip = clip.set_fps(clip.fps * 30)
+# final = clip.fx(vfx.speedx, 30)
 
-# Modify the FPS
-clip = clip.set_fps(clip.fps * 30)
-
-# Apply speed up
-final = clip.fx(vfx.speedx, 30)
-print("fps: {}".format(final.fps))
-
-# getting only first 5 seconds
-# clip = clip.subclip(0, 5)
-
-# https://zulko.github.io/moviepy/getting_started/audioclips.html
-# loading audio file
-audioclip = AudioFileClip("vid/oldsong.mp4")
-
-# adding audio to the video clip
-videoclip = final.set_audio(audioclip)
-
-# showing video clip
-# videoclip.ipython_display()
-
-# Save video clip
-videoclip.write_videofile(out_loc)
+# audioclip = AudioFileClip("vid/oldsong.mp4")
+# videoclip = final.set_audio(audioclip)
+# videoclip.write_videofile(out_loc)
