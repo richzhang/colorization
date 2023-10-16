@@ -3,7 +3,8 @@ scikit-image
 numpy
 matplotlib
 argparse
-PIL
 
 tqdm==4.66.1
 opencv-python==4.8.1.78
+pillow
+ipython
