@@ -4,6 +4,8 @@ import numpy as np
 from skimage import color
 import torch
 import torch.nn.functional as F
+import warnings
+warnings.filterwarnings("ignore", category=UserWarning)
 
 def load_img(img_path):
 	out_np = np.asarray(Image.open(img_path))
