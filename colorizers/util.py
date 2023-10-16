@@ -4,7 +4,6 @@ import numpy as np
 from skimage import color
 import torch
 import torch.nn.functional as F
-from IPython import embed
 
 def load_img(img_path):
 	out_np = np.asarray(Image.open(img_path))
