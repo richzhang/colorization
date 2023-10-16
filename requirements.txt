@@ -3,4 +3,5 @@ scikit-image
 numpy
 matplotlib
 argparse
-Pillow
+pillow
+ipython
