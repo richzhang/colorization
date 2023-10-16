@@ -4,8 +4,11 @@ import numpy as np
 from skimage import color
 import torch
 import torch.nn.functional as F
+<<<<<<< HEAD
 import warnings
 warnings.filterwarnings("ignore", category=UserWarning)
+=======
+>>>>>>> 6bc824c (remove unused package (ipython))
 
 def load_img(img_path):
 	out_np = np.asarray(Image.open(img_path))
