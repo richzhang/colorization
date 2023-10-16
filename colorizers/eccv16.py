@@ -2,7 +2,6 @@
 import torch
 import torch.nn as nn
 import numpy as np
-from IPython import embed
 
 from .base_color import *
 

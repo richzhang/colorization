@@ -4,4 +4,3 @@ numpy
 matplotlib
 argparse
 pillow
-ipython
