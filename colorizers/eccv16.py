@@ -9,7 +9,7 @@ class ECCVGenerator(BaseColor):
 
         self.model1 = build_basic_block(channels=[1, 64, 64], kernel_size=3, stride=[1, 2])
         self.model2 = build_basic_block(channels=[64, 128, 128], kernel_size=3, stride=[1, 2])
-        self.model3 = build_basic_block(channels=[128, 256, 256, 256], kernel_size=3, stride=[1, 2, 2])
+        self.model3 = build_basic_block(channels=[128, 256, 256, 256], kernel_size=3, stride=[1, 1, 2])
         self.model4 = build_basic_block(channels=[256, 512, 512, 512], kernel_size=3)
         self.model5 = build_basic_block(channels=[512, 512, 512, 512], kernel_size=3, dilation=2, padding=2)
         self.model6 = build_basic_block(channels=[512, 512, 512, 512], kernel_size=3, dilation=2, padding=2)

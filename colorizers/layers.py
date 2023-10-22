@@ -20,7 +20,7 @@ def build_basic_block(
 
     layers = [] if not init_relu else [nn.ReLU(True)]
     for i, (in_channels, out_channels) in enumerate(zip(channels[:-1], channels[1:])):
-        layers.append(conv_type[i](in_channels, out_channels, kernel_size[i], stride[i], padding[i], dilation[i], bias=bias))
+        layers.append(conv_type[i](in_channels, out_channels, kernel_size=kernel_size[i], stride=stride[i], padding=padding[i], dilation=dilation[i], bias=bias))
         layers.append(nn.ReLU(True))
     if norm_layer:
         layers.append(nn.BatchNorm2d(channels[-1]))
