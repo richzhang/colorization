@@ -10,3 +10,4 @@ opencv-python==4.8.1.78
 pillow
 ipython
 joblib
+tqdm
