@@ -1,6 +1,10 @@
 import typing as T
 from torch import nn
 
+
+# Rudy - suggested change for build_basic_block, we may need to to include a parameter
+# for dropout; we can include it at the end of the list and give it a default value of 
+# 0.0 so it isn't necessary to change 
 def build_basic_block(
         channels: T.List[int], kernel_size: T.Union[int, T.List[int]], 
         stride: T.Union[int, T.List[int]] = 1, dilation: T.Union[int, T.List[int]] = 1, 
