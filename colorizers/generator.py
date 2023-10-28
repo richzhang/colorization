@@ -4,6 +4,7 @@ import torch.nn as nn
 import json
 from colorizers.modified import modified_colorizer
 
+# Rudy - I need a little bit of clarification about what the purpose of this class is
 class ModelConfig:
     def __init__(self, name: str, dropout: T.List[float], channelMultiplier: int =  1, numExtraConv2DLayers: int = 0) -> None:
         '''
