@@ -9,8 +9,8 @@ def build_basic_block(
         channels: T.List[int], kernel_size: T.Union[int, T.List[int]], 
         stride: T.Union[int, T.List[int]] = 1, dilation: T.Union[int, T.List[int]] = 1, 
         padding: T.Union[int, T.List[int]] = 1, bias: bool = True, norm_layer: bool = True, 
-        conv_type: T.Union[nn.Module, T.List[nn.Module]] = nn.Conv2d, init_relu: bool = False
-    ) -> nn.Sequential:
+        conv_type: T.Union[nn.Module, T.List[nn.Module]] = nn.Conv2d, init_relu: bool = False,
+        dropout: float = 0.0) -> nn.Sequential:
     if isinstance(kernel_size, int):
         kernel_size = [kernel_size] * len(channels)
     if isinstance(stride, int):
@@ -28,6 +28,7 @@ def build_basic_block(
         layers.append(nn.ReLU(True))
     if norm_layer:
         layers.append(nn.BatchNorm2d(channels[-1]))
+    layers.append(nn.Dropout(dropout)) # add dropout to layers
     return nn.Sequential(*layers)
 
 # NOTE(Sebastian) the below function could be used to build a model from a 
