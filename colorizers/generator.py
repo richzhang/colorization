@@ -1,26 +1,28 @@
 import torch
 import typing as T
 import torch.nn as nn
+import json
 
-# Rudy - I need a little bit of clarification about what the purpose of this class is
 class ModelConfig:
-    def __init__(self, name: str, dropout: float = 0.0, channelMultiplier: int =  1, numExtraConv2DLayers: int = 0) -> None:
+    def __init__(self, name: str, dropout: T.List[float], channelMultiplier: int =  1, numExtraConv2DLayers: int = 0) -> None:
         self.name = name
-        self.model = None
-        # for dropout, build_basic_block currently doesn't support dropout layers, is it okay to edit to include that? -> if so
-        # we'd have to make edits everywhere else we call the function
-        raise NotImplementedError
+        self.dropoutLayers = dropout
+        self.channelMultiplier = channelMultiplier
+        self.numExtraConv2DLayers = numExtraConv2DLayers
     
     def dump(self, path: str) -> None:
         """
         Save the config to a file.
         """
-        # Rudy:
-        # Bit unsure of what you mean by config / what format to save it as;
-        # I looked through build_layer in layers.py and its given me a slight idea of what
-        # the input function expects but I'm still a little lost.
-        torch.save(self.model.state_dict(), path)
 
+        data = {
+            'dropoutLayers': self.dropoutLayers,
+            'channelMultiplier': self.channelMultiplier,
+            'numExtraConv2DLayers': self.numExtraConv2DLayers,
+        }
+
+        with open(path, 'w') as json_file:
+            json.dump(data, json_file, indent=4)
 
 """
 Base model: model in eccv16.py
@@ -35,3 +37,4 @@ def generate_model(config: ModelConfig) -> nn.Module:
     Build a model from the given config.
     """
     raise NotImplementedError
+    
