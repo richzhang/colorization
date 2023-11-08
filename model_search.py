@@ -4,7 +4,7 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 from colorizers.generator import ModelConfig, generate_model
-from train import build_optimizer, build_criterion, train, TrainingLogger
+from train import build_optimizer, build_criterion, train, TrainingLogger, mock_trainloader
 
 
 class MSPipeline:
@@ -54,3 +54,17 @@ class MSPipeline:
 
         # Save best model config
         best_model_config.dump(self.output_dir / 'best_model.json')
+
+
+if __name__ == '__main__':
+    # Load cifar10
+    trainloader = mock_trainloader()
+
+    # Define models
+    models_config = [
+        ModelConfig('model1', dropout=[]),
+    ]
+
+    # Train
+    pipeline = MSPipeline('output', models_config, trainloader, trainloader)
+    pipeline.train(n_epochs=10)

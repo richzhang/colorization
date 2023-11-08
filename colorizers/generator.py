@@ -2,6 +2,7 @@ import torch
 import typing as T
 import torch.nn as nn
 import json
+from colorizers.modified import modified_colorizer
 
 class ModelConfig:
     def __init__(self, name: str, dropout: T.List[float], channelMultiplier: int =  1, numExtraConv2DLayers: int = 0) -> None:
@@ -36,5 +37,5 @@ def generate_model(config: ModelConfig) -> nn.Module:
     """
     Build a model from the given config.
     """
-    raise NotImplementedError
+    return modified_colorizer()
     

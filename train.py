@@ -218,19 +218,3 @@ else:
 # MSE loss can be used for the other two models but the output needs to be
 # unnormalized first. Currently, neither pretrained model retunrs an ouput 
 # distribution over the ab color space.
-
-trainloader = mock_trainloader()
-net = modified_colorizer()
-net.to(device)
-optimizer = build_optimizer('Adam', {'params': net.parameters(), 'lr': 0.001})
-criterion = build_criterion('CrossEntropyLoss', {})
-n_epochs = 1
-train(net, optimizer, trainloader, trainloader, device, criterion, n_epochs)
-
-# batch = next(iter(trainloader))
-# orig_l, orig_ab, rs_l, rs_ab = batch
-# out_ab_dist = net(rs_l)
-# out_img = convet_output_to_rgb(out_ab_dist, orig_l)
-# import matplotlib.pyplot as plt
-# plt.imshow(out_img)
-# plt.show()
