@@ -13,6 +13,7 @@ import matplotlib.pyplot as plt
 from tqdm import tqdm
 from colorizers.modified import modified_colorizer
 from torch.utils.data import DataLoader, Dataset
+from utils import get_root_dir
 
 def resize_img(img: Image, HW: T.Tuple[int, int] = (256,256), resample: int = 3) -> np.ndarray:
     """
@@ -77,7 +78,8 @@ class MyDataset(Dataset):
         return len(self.dataset)
 
 def mock_trainloader(batch_size: int = 8, num_workers: int = 0) -> DataLoader:
-    trainset = torchvision.datasets.CIFAR10(root='./data', train=True, download=True)
+    data_dir = get_root_dir() / 'data'
+    trainset = torchvision.datasets.CIFAR10(root=data_dir, train=True, download=True)
     trainset = MyDataset(trainset)
     trainloader = DataLoader(trainset, batch_size=batch_size, shuffle=True, num_workers=num_workers)
     return trainloader
@@ -208,11 +210,6 @@ def convet_output_to_rgb(out_ab_dist, orig_l):
             for w in range(W):
                 out_ab[b, :, h, w] = mock_color_label_to_ab(out_ab_choice[b, h, w].item())
     return postprocess_tens(orig_l, out_ab)
-
-if torch.cuda.is_available():
-    device = torch.device('cuda')
-else:
-    device = torch.device('cpu')
 
 #NOTE(Sebastian) This training pipeline only works for the modified colorizer.
 # MSE loss can be used for the other two models but the output needs to be

@@ -5,7 +5,7 @@ import torch
 from torch.utils.data import DataLoader
 from colorizers.generator import ModelConfig, generate_model
 from train import build_optimizer, build_criterion, train, TrainingLogger, mock_trainloader
-
+from utils import get_device, get_root_dir
 
 class MSPipeline:
     def __init__(
@@ -66,5 +66,7 @@ if __name__ == '__main__':
     ]
 
     # Train
-    pipeline = MSPipeline('output', models_config, trainloader, trainloader)
-    pipeline.train(n_epochs=10)
+    output_dir = get_root_dir() / 'output'
+    pipeline = MSPipeline(output_dir, models_config, trainloader, trainloader)
+    device = get_device()
+    pipeline.train(n_epochs=1, device=device)
