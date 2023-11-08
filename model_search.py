@@ -4,8 +4,13 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 from colorizers.generator import ModelConfig, generate_model
+<<<<<<< HEAD
 from train import build_optimizer, build_criterion, train, TrainingLogger, get_dataloader
 from utils import get_device, get_root_dir
+=======
+from train import build_optimizer, build_criterion, train, TrainingLogger, mock_trainloader
+
+>>>>>>> 2a7febc (temp changes for training test)
 
 class MSPipeline:
     def __init__(
