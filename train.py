@@ -295,6 +295,7 @@ else:
 # MSE loss can be used for the other two models but the output needs to be
 # unnormalized first. Currently, neither pretrained model retunrs an ouput 
 # distribution over the ab color space.
+<<<<<<< HEAD
 
 trainloader = mock_trainloader()
 net = modified_colorizer()
@@ -315,3 +316,5 @@ eval_model(net, trainloader, device, criterion)
 
 
 >>>>>>> 3a3ea6d (add basic train pipeline)
+=======
+>>>>>>> 2a7febc (temp changes for training test)
