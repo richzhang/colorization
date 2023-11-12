@@ -1,7 +1,9 @@
 
 import argparse
-import cv2
 from pathlib import Path
+from skimage.color import rgb2gray
+from skimage.io import imread, imsave
+from skimage import img_as_ubyte
 from tqdm import tqdm
 
 def create_dataset(
@@ -24,7 +26,7 @@ def create_dataset(
     length = sum(1 for _ in images_path.iterdir())
 
     for image_path in tqdm(images_path.iterdir(), total=length):
-        image = cv2.imread(image_path.absolute().as_posix())
+        image = imread(image_path.absolute().as_posix())
         color_image_output = (
             color_path.joinpath(color_name_prefix +
                                 "_" +
@@ -37,10 +39,9 @@ def create_dataset(
                                     image_path.stem).absolute().as_posix() +
             ".png"
         )
-        cv2.imwrite(color_image_output, image)
-        image = cv2.cvtColor(image, cv2.COLOR_BGR2LAB)
-        L, _, _ = cv2.split(image)
-        cv2.imwrite(grayscale_image_output, L)
+        imsave(color_image_output, image)
+        image = img_as_ubyte(rgb2gray(image))
+        imsave(grayscale_image_output, image)
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
