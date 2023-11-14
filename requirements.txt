@@ -7,3 +7,9 @@ argparse
 
 tqdm==4.66.1
 opencv-python==4.8.1.78
+<<<<<<< HEAD
+=======
+pillow
+ipython
+joblib
+>>>>>>> e439376 (merge dataset logic into training pipeline)
