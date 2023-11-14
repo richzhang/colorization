@@ -13,7 +13,7 @@ class ColorizationDataset(Dataset):
     def __init__(
         self,
         dataset_path: str,
-        cielab_conversion: CIELabConversion,
+        cielab_conversion: CIELabConversion = CIELabConversion(),
         grayscale_name_prefix: str = "gray",
         color_name_prefix: str = "color"
     ) -> None:

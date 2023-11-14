@@ -4,7 +4,7 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 from colorizers.generator import ModelConfig, generate_model
-from train import build_optimizer, build_criterion, train, TrainingLogger, mock_trainloader
+from train import build_optimizer, build_criterion, train, TrainingLogger, get_dataloader
 from utils import get_device, get_root_dir
 
 class MSPipeline:
@@ -57,8 +57,10 @@ class MSPipeline:
 
 
 if __name__ == '__main__':
-    # Load cifar10
-    trainloader = mock_trainloader()
+    train_data_path = ""
+    test_data_path = ""
+    trainloader = get_dataloader(train_data_path)
+    testloader = get_dataloader(test_data_path)
 
     # Define models
     models_config = [
@@ -67,6 +69,6 @@ if __name__ == '__main__':
 
     # Train
     output_dir = get_root_dir() / 'output'
-    pipeline = MSPipeline(output_dir, models_config, trainloader, trainloader)
+    pipeline = MSPipeline(output_dir, models_config, trainloader, testloader)
     device = get_device()
     pipeline.train(n_epochs=1, device=device)

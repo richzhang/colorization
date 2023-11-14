@@ -8,12 +8,11 @@ from torch import Tensor
 from torch.optim import Optimizer
 import torch.nn as nn
 import torch.nn.functional as F
-import torchvision
 import matplotlib.pyplot as plt
 from tqdm import tqdm
-from colorizers.modified import modified_colorizer
-from torch.utils.data import DataLoader, Dataset
-from utils import get_root_dir
+from torch.utils.data import DataLoader
+from torchvision import transforms
+from dataset.dataset import ColorizationDataset
 
 def resize_img(img: Image, HW: T.Tuple[int, int] = (256,256), resample: int = 3) -> np.ndarray:
     """
@@ -66,23 +65,13 @@ def postprocess_tens(tens_orig_l: Tensor, out_ab: Tensor, mode='bilinear') -> np
     out_lab_orig = torch.cat((tens_orig_l, out_ab_orig), dim=1)
     return color.lab2rgb(out_lab_orig.data.cpu().numpy()[0,...].transpose((1,2,0)))
 
-class MyDataset(Dataset):
-    def __init__(self, dataset: Dataset):
-        self.dataset = dataset
-
-    def __getitem__(self, index: int) -> T.Tuple[Tensor, Tensor, Tensor, Tensor]:
-        img, _ = self.dataset[index]
-        return preprocess_img(img, HW=(256,256))
-
-    def __len__(self):
-        return len(self.dataset)
-
-def mock_trainloader(batch_size: int = 8, num_workers: int = 0) -> DataLoader:
-    data_dir = get_root_dir() / 'data'
-    trainset = torchvision.datasets.CIFAR10(root=data_dir, train=True, download=True)
-    trainset = MyDataset(trainset)
-    trainloader = DataLoader(trainset, batch_size=batch_size, shuffle=True, num_workers=num_workers)
-    return trainloader
+def get_dataloader(data_path: str, batch_size: int = 8, num_workers: int = 0) -> DataLoader:
+    transform = transforms.Compose([
+        transforms.ToTensor(),
+    ])
+    dataset = ColorizationDataset(data_path, transform=transform)
+    dataloader = DataLoader(dataset, batch_size=batch_size, shuffle=True, num_workers=num_workers)
+    return dataloader
 
 
 def build_optimizer(type: str, args: T.Dict[str, T.Any]) -> Optimizer:
@@ -192,26 +181,3 @@ def train(
                 best_model = net.state_dict()
     print('\nFinished Training')
     return best_eval_loss, best_model
-
-#TODO(Sebastian) implement this. Requires determining the Q=313 buckets of ab 
-# colors from training data (in-gamut colors).
-def mock_color_label_to_ab(label: int):
-    ab = torch.rand((2)) * 200 - 100
-    return ab
-
-#TODO(Sebastian) Got lazy here. This is not the correct way to index tensors.
-# will do this once above is done.
-def convet_output_to_rgb(out_ab_dist, orig_l):
-    out_ab_choice = out_ab_dist.argmax(dim=1)
-    B, H, W = out_ab_choice.shape
-    out_ab = torch.zeros((B, 2, H, W))
-    for b in range(B):
-        for h in range(H):
-            for w in range(W):
-                out_ab[b, :, h, w] = mock_color_label_to_ab(out_ab_choice[b, h, w].item())
-    return postprocess_tens(orig_l, out_ab)
-
-#NOTE(Sebastian) This training pipeline only works for the modified colorizer.
-# MSE loss can be used for the other two models but the output needs to be
-# unnormalized first. Currently, neither pretrained model retunrs an ouput 
-# distribution over the ab color space.

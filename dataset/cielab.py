@@ -1,13 +1,16 @@
+import torch
 import joblib
 import numpy as np
 
-import typing
+RESOURCES_DIR = "resources/"
+BUCKETS_PATH = RESOURCES_DIR + "buckets_313.npy"
+BUCKETS_KNN_PATH = RESOURCES_DIR + "buckets_knn.joblib"
 
 class CIELabConversion():
     def __init__(
         self,
-        buckets_path: str,
-        buckets_knn_path: str
+        buckets_path: str = BUCKETS_PATH,
+        buckets_knn_path: str = BUCKETS_KNN_PATH
     ) -> None:
         """
         Instantiates class for converting CIELab ab-values to Buckets.
@@ -54,3 +57,10 @@ class CIELabConversion():
         converted_image_ab = np.array(converted_image_ab)
 
         return converted_image_ab
+
+    def batch_convert_buckets_to_ab(self, batch):
+        converted_batch = []
+        for image in batch:
+            converted_image = self.convert_buckets_to_ab(image)
+            converted_batch.append(converted_image)
+        return torch.stack(converted_batch)
