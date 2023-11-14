@@ -13,3 +13,4 @@ joblib
 tqdm
 pillow
 ipython
+joblib
