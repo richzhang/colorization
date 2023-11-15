@@ -3,7 +3,7 @@ import argparse
 from pathlib import Path
 from skimage.color import rgb2gray
 from skimage.io import imread, imsave
-from skimage import img_as_ubyte
+from skimage.util import img_as_ubyte
 from tqdm import tqdm
 
 def create_dataset(
@@ -40,6 +40,8 @@ def create_dataset(
             ".png"
         )
         imsave(color_image_output, image)
+        # Convert from float grayscale format to uint 0-255 format
+        # NOTE: this changes the values ever so slightly but is not significant
         image = img_as_ubyte(rgb2gray(image))
         imsave(grayscale_image_output, image)
 

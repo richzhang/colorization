@@ -36,7 +36,10 @@ class CIELabConversion():
         self.ab2bucket = {tuple(self.buckets[i]): i+1 for i in range(len(self.buckets))}
         self.bucket2ab = {i+1: tuple(self.buckets[i]) for i in range(len(self.buckets))}
         
-    def get_image_ab_buckets(self, image_lab: np.ndarray):
+    def get_image_ab_buckets(self, image_lab: np.ndarray) -> np.ndarray:
+        """
+        Get bucketed ab-values from Lab image.
+        """
         image_ab = image_lab[:, :, 1:]
         orig_ab_shape = image_ab.shape
 
@@ -46,7 +49,10 @@ class CIELabConversion():
 
         return image_ab
 
-    def convert_buckets_to_ab(self, image_buckets):
+    def convert_buckets_to_ab(self, image_buckets: np.ndarray) -> np.ndarray:
+        """
+        Get ab-values from bucketed image.
+        """
         converted_image_ab = []
         for row in image_buckets:
             new_row = []
