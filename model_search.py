@@ -4,8 +4,8 @@ import numpy as np
 import torch
 from torch.utils.data import DataLoader
 from colorizers.generator import ModelConfig, generate_model
-from train import build_optimizer, build_criterion, train, TrainingLogger
-
+from train import build_optimizer, build_criterion, train, TrainingLogger, get_dataloader
+from utils import get_device, get_root_dir
 
 class MSPipeline:
     def __init__(
@@ -54,3 +54,21 @@ class MSPipeline:
 
         # Save best model config
         best_model_config.dump(self.output_dir / 'best_model.json')
+
+
+if __name__ == '__main__':
+    train_data_path = ""
+    test_data_path = ""
+    trainloader = get_dataloader(train_data_path)
+    testloader = get_dataloader(test_data_path)
+
+    # Define models
+    models_config = [
+        ModelConfig('model1', dropout=[]),
+    ]
+
+    # Train
+    output_dir = get_root_dir() / 'output'
+    pipeline = MSPipeline(output_dir, models_config, trainloader, testloader)
+    device = get_device()
+    pipeline.train(n_epochs=1, device=device)

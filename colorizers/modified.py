@@ -19,18 +19,14 @@ class ModifiedColorizer(BaseColor):
               norm_layer=False, conv_type=[nn.ConvTranspose2d, nn.Conv2d, nn.Conv2d]
         )
         self.model9 = build_basic_block(
-              channels=[256, 256, 256, 256], kernel_size=[4, 3, 3], stride=[2, 1, 1], 
-              norm_layer=False, conv_type=[nn.ConvTranspose2d, nn.Conv2d, nn.Conv2d]
-        )
-        self.model10 = build_basic_block(
               channels=[256, 128, 128, 128], kernel_size=[4, 3, 3], stride=[2, 1, 1], 
               norm_layer=False, conv_type=[nn.ConvTranspose2d, nn.Conv2d, nn.Conv2d]
         )
-        self.model11 = build_basic_block(
+        self.model10 = build_basic_block(
               channels=[128, 64, 64, 64], kernel_size=[4, 3, 3], stride=[2, 1, 1], 
               norm_layer=False, conv_type=[nn.ConvTranspose2d, nn.Conv2d, nn.Conv2d]
         )
-        self.model11.append(nn.Conv2d(64, 313, kernel_size=1, stride=1, padding=0, bias=True))
+        self.model10.append(nn.Conv2d(64, 313, kernel_size=1, stride=1, padding=0, bias=True))
         self.softmax = nn.Softmax(dim=1)
 
     def forward(self, input_l):
@@ -44,8 +40,7 @@ class ModifiedColorizer(BaseColor):
         conv8_3 = self.model8(conv7_3)
         conv9_3 = self.model9(conv8_3)
         conv10_3 = self.model10(conv9_3)
-        conv11_3 = self.model11(conv10_3)
-        out_reg = self.softmax(conv11_3)
+        out_reg = self.softmax(conv10_3)
         return out_reg
 
 def modified_colorizer():
