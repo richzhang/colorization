@@ -6,8 +6,11 @@ from colorizers.modified import modified_colorizer
 
 class ModelConfig:
     def __init__(self, name: str, dropout: T.List[float], channelMultiplier: int =  1, numExtraConv2DLayers: int = 0) -> None:
+        '''
+        Need to ensure len(dropout) >= # of layers in base model
+        '''
         self.name = name
-        self.dropoutLayers = dropout
+        self.dropoutLayers = dropout if len(dropout) >= 10 else [0.0] * 10
         self.channelMultiplier = channelMultiplier
         self.numExtraConv2DLayers = numExtraConv2DLayers
     
@@ -37,5 +40,5 @@ def generate_model(config: ModelConfig) -> nn.Module:
     """
     Build a model from the given config.
     """
-    return modified_colorizer()
+    return modified_colorizer(config)
     
