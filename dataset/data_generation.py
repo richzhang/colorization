@@ -2,7 +2,7 @@
 import argparse
 import numpy as np
 from pathlib import Path
-from skimage.color import rgb2gray
+from skimage.color import rgb2gray, rgb2lab
 from skimage.io import imread, imsave
 from skimage.util import img_as_ubyte
 from tqdm import tqdm
@@ -61,7 +61,7 @@ def create_dataset(
         )
         imsave(color_image_output, image)
 
-        np.save(bucket_label_output, cielab.get_image_ab_buckets(image))
+        np.save(bucket_label_output, cielab.get_image_ab_buckets(rgb2lab(image)))
 
         # Convert from float grayscale format to uint 0-255 format
         # NOTE: this changes the values ever so slightly but is not significant
