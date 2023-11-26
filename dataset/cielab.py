@@ -35,6 +35,9 @@ class CIELabConversion():
         self.buckets_knn = joblib.load(buckets_knn_path)
         self.ab2bucket = {tuple(self.buckets[i]): i+1 for i in range(len(self.buckets))}
         self.bucket2ab = {i+1: tuple(self.buckets[i]) for i in range(len(self.buckets))}
+
+    def bucket_knn_predict(self, input_data: np.ndarray) -> np.ndarray:
+        return self.buckets_knn.predict(input_data)
         
     def get_image_ab_buckets(self, image_lab: np.ndarray) -> np.ndarray:
         """
