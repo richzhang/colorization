@@ -15,7 +15,6 @@ class ColorizationDataset(Dataset):
     def __init__(
         self,
         dataset_path: str,
-        cielab_conversion: CIELabConversion = CIELabConversion(),
         grayscale_name_prefix: str = "gray",
         color_name_prefix: str = "color",
         bucket_label_prefix: str = "bucket",
@@ -34,7 +33,6 @@ class ColorizationDataset(Dataset):
         self.color_images = os.listdir(self.color_path)
         self.bucket_labels = os.listdir(self.bucket_path)
 
-        self.cielab = cielab_conversion
         self.resize_image_size = resize_image_size
 
     def __len__(self) -> int:
