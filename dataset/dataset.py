@@ -18,10 +18,7 @@ class ColorizationDataset(Dataset):
         cielab_conversion: CIELabConversion = CIELabConversion(),
         grayscale_name_prefix: str = "gray",
         color_name_prefix: str = "color",
-<<<<<<< HEAD
         bucket_label_prefix: str = "bucket",
-=======
->>>>>>> 89c3ffd (Add resizing & other small changes)
         resize_image_size: T.Union[T.Tuple[int, int], None] = (256, 256)
     ) -> None:
         self.grayscale_name_prefix = grayscale_name_prefix
@@ -37,10 +34,7 @@ class ColorizationDataset(Dataset):
         self.color_images = os.listdir(self.color_path)
         self.bucket_labels = os.listdir(self.bucket_path)
 
-<<<<<<< HEAD
-=======
         self.cielab = cielab_conversion
->>>>>>> 89c3ffd (Add resizing & other small changes)
         self.resize_image_size = resize_image_size
 
     def __len__(self) -> int:
