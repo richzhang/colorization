@@ -11,7 +11,7 @@ BUCKET_B_MAX = 100
 class CIELabConversion():
     def __init__(
         self,
-        buckets_path: str,
+        buckets_path: str = "resources/buckets_313.npy",
     ) -> None:
         """
         Instantiates class for converting CIELab ab-values to Buckets.
