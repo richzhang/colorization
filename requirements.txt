@@ -1,5 +1,6 @@
 torch
 scikit-image
+scikit-learn==1.2.2
 numpy
 matplotlib
 argparse
