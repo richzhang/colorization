@@ -41,7 +41,6 @@ class ColorizationDataset(Dataset):
 
     def __getitem__(self, index: int) -> T.Tuple[np.ndarray, np.ndarray]:
         grayscale_image_path = self.grayscale_images[index]
-
         # There's probably a better way to do this
         bucket_label_path = (self.bucket_label_prefix +
                              "_" +
