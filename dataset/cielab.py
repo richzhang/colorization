@@ -1,16 +1,17 @@
-import torch
-import joblib
 import numpy as np
 
-RESOURCES_DIR = "resources/"
-BUCKETS_PATH = RESOURCES_DIR + "buckets_313.npy"
-BUCKETS_KNN_PATH = RESOURCES_DIR + "buckets_knn.joblib"
+import typing as T
+
+# Hardcoded min/max ranges for the buckets
+BUCKET_A_MIN = -90
+BUCKET_A_MAX = 100
+BUCKET_B_MIN = -110
+BUCKET_B_MAX = 100
 
 class CIELabConversion():
     def __init__(
         self,
-        buckets_path: str = BUCKETS_PATH,
-        buckets_knn_path: str = BUCKETS_KNN_PATH
+        buckets_path: str,
     ) -> None:
         """
         Instantiates class for converting CIELab ab-values to Buckets.
@@ -24,30 +25,38 @@ class CIELabConversion():
         Attributes:
             buckets (np.ndarray): NumPy array containing all the quantized ab-value
                 buckets.
-            buckets_knn (sklearn.neighbors.KNeighborsClassifier): Nearest-Neighbor (k = 1)
-                classifier for finding the closest bucket to an ab-value.
             ab2bucket (dict[tuple[int, int], int]): Dict for converting a quantized ab-value
                 to corresponding bucket index.
             bucket2ab (dict[int, tuple[int, int]]): Dict for converting a bucket index to
                 corresponding ab-value.
         """
         self.buckets = np.load(buckets_path)
-        self.buckets_knn = joblib.load(buckets_knn_path)
         self.ab2bucket = {tuple(self.buckets[i]): i+1 for i in range(len(self.buckets))}
         self.bucket2ab = {i+1: tuple(self.buckets[i]) for i in range(len(self.buckets))}
-
-    def bucket_knn_predict(self, input_data: np.ndarray) -> np.ndarray:
-        return self.buckets_knn.predict(input_data)
         
     def get_image_ab_buckets(self, image_lab: np.ndarray) -> np.ndarray:
         """
         Get bucketed ab-values from Lab image.
         """
+        # Extract only ab-values
         image_ab = image_lab[:, :, 1:]
         orig_ab_shape = image_ab.shape
 
+        # Reshape to essentially 1D with 2 element ab-values
         image_ab = image_ab.reshape(-1, 2)
-        image_ab = self.buckets_knn.predict(image_ab)
+
+        # Round to nearest 10 (abusing our bucket values)
+        image_ab = np.round(image_ab, -1)
+        # Clamp values to valid mapping values
+        image_ab[:, 0] = np.clip(image_ab[:, 0], BUCKET_A_MIN, BUCKET_A_MAX)
+        image_ab[:, 1] = np.clip(image_ab[:, 1], BUCKET_B_MIN, BUCKET_B_MAX)
+        image_ab = image_ab.astype(int)
+        # Apply ab to bucket mapping
+        for i in range(len(image_ab)):
+            image_ab[i] = self.ab2bucket[tuple(image_ab[i])] # changes [a, b] to bucket [x, x]
+        image_ab = image_ab[:, 0] # remove duplicate bucket value
+
+        # Reshape to original shape
         image_ab = image_ab.reshape((orig_ab_shape[0], orig_ab_shape[1]))
 
         return image_ab
@@ -66,10 +75,3 @@ class CIELabConversion():
         converted_image_ab = np.array(converted_image_ab)
 
         return converted_image_ab
-
-    def batch_convert_buckets_to_ab(self, batch):
-        converted_batch = []
-        for image in batch:
-            converted_image = self.convert_buckets_to_ab(image)
-            converted_batch.append(converted_image)
-        return torch.stack(converted_batch)

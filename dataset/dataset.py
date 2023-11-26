@@ -40,23 +40,13 @@ class ColorizationDataset(Dataset):
 
     def __getitem__(self, index: int) -> T.Tuple[np.ndarray, np.ndarray]:
         grayscale_image_path = self.grayscale_images[index]
-        color_image_path = (self.color_name_prefix +
-                            "_" +
-                            grayscale_image_path.removeprefix(self.grayscale_name_prefix + "_"))
+
         # There's probably a better way to do this
         bucket_label_path = (self.bucket_label_prefix +
                              "_" +
                              grayscale_image_path.removeprefix(self.grayscale_name_prefix + "_"))[:-4] + ".npy"
         
         grayscale_image = imread(os.path.join(self.grayscale_path, grayscale_image_path), as_gray=True)
-        if self.resize_image_size:
-            grayscale_image = resize_image(grayscale_image, shape=self.resize_image_size)
-            grayscale_image = img_as_ubyte(grayscale_image) # resize automatically converts to float 0-1 grayscale format
-        
-        color_image = imread(os.path.join(self.color_path, color_image_path))
-        if self.resize_image_size:
-            color_image = resize_image(color_image, shape=self.resize_image_size)
-        color_image = rgb2lab(color_image)
 
         bucket_ids = np.load(os.path.join(self.bucket_path, bucket_label_path))
 
