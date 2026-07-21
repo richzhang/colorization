@@ -12,10 +12,22 @@ opt = parser.parse_args()
 
 # load colorizers
 colorizer_eccv16 = eccv16(pretrained=True).eval()
-colorizer_siggraph17 = siggraph17(pretrained=True).eval()
+# TODO can I load pretrained weights for attention26 if I added a layer?
+colorizer_attention26 = attention26(pretrained=True).eval()
 if(opt.use_gpu):
 	colorizer_eccv16.cuda()
-	colorizer_siggraph17.cuda()
+	colorizer_attention26.cuda()
+
+
+# 2. Freeze early layers (adjust this list to match your definition of "early")
+modules_to_freeze = [colorizer_attention26.model1, colorizer_attention26.model2, colorizer_attention26.model3, colorizer_attention26.model4]
+
+for module in modules_to_freeze:
+    for param in module.parameters():
+        param.requires_grad = False
+# BatchNorm stats: If you freeze model1–model4, their BN layers will still update during train(). 
+# To fully freeze them, call module.eval() on those blocks during training, 
+# or use torch.nn.SyncBatchNorm.convert_sync_batchnorm() with track_running_stats=False
 
 # default size to process images is 256x256
 # grab L channel in both original ("orig") and resized ("rs") resolutions
@@ -28,10 +40,10 @@ if(opt.use_gpu):
 # resize and concatenate to original L channel
 img_bw = postprocess_tens(tens_l_orig, torch.cat((0*tens_l_orig,0*tens_l_orig),dim=1))
 out_img_eccv16 = postprocess_tens(tens_l_orig, colorizer_eccv16(tens_l_rs).cpu())
-out_img_siggraph17 = postprocess_tens(tens_l_orig, colorizer_siggraph17(tens_l_rs).cpu())
+out_img_attention26 = postprocess_tens(tens_l_orig, colorizer_attention26(tens_l_rs).cpu())
 
-plt.imsave('%s_eccv16.png'%opt.save_prefix, out_img_eccv16)
-plt.imsave('%s_siggraph17.png'%opt.save_prefix, out_img_siggraph17)
+# plt.imsave('%s_eccv16.png'%opt.save_prefix, out_img_eccv16)
+# plt.imsave('%s_attention26.png'%opt.save_prefix, out_img_attention26)
 
 plt.figure(figsize=(12,8))
 plt.subplot(2,2,1)
@@ -50,7 +62,7 @@ plt.title('Output (ECCV 16)')
 plt.axis('off')
 
 plt.subplot(2,2,4)
-plt.imshow(out_img_siggraph17)
-plt.title('Output (SIGGRAPH 17)')
+plt.imshow(out_img_attention26)
+plt.title('Output (ATTENTION 26)')
 plt.axis('off')
 plt.show()

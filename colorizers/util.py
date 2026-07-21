@@ -33,7 +33,7 @@ def preprocess_img(img_rgb_orig, HW=(256,256), resample=3):
 def postprocess_tens(tens_orig_l, out_ab, mode='bilinear'):
 	# tens_orig_l 	1 x 1 x H_orig x W_orig
 	# out_ab 		1 x 2 x H x W
-
+	
 	HW_orig = tens_orig_l.shape[2:]
 	HW = out_ab.shape[2:]
 
@@ -44,4 +44,21 @@ def postprocess_tens(tens_orig_l, out_ab, mode='bilinear'):
 		out_ab_orig = out_ab
 
 	out_lab_orig = torch.cat((tens_orig_l, out_ab_orig), dim=1)
+
 	return color.lab2rgb(out_lab_orig.data.cpu().numpy()[0,...].transpose((1,2,0)))
+
+def scaled_dot_product_attention(Q, K, V, mask=None):
+    # Compute the dot products between Q and K, then scale by the square root of the key dimension
+    d_k = Q.size(-1)
+    scores = torch.matmul(Q, K.transpose(-2, -1)) / torch.sqrt(torch.tensor(d_k, dtype=torch.float32))
+
+    # Apply mask if provided (useful for masked self-attention in transformers)
+    if mask is not None:
+        scores = scores.masked_fill(mask == 0, float('-inf'))
+
+    # Softmax to normalize scores, producing attention weights
+    attention_weights = F.softmax(scores, dim=-1)
+    
+    # Compute the final output as weighted values
+    output = torch.matmul(attention_weights, V)
+    return output, attention_weights
