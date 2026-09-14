@@ -3,6 +3,7 @@ import argparse
 import matplotlib.pyplot as plt
 
 from colorizers import *
+from colorizers.evaluation import evaluate_colorization
 
 parser = argparse.ArgumentParser()
 parser.add_argument('-i','--img_path', type=str, default='imgs/ansel_adams3.jpg')
@@ -29,9 +30,13 @@ if(opt.use_gpu):
 img_bw = postprocess_tens(tens_l_orig, torch.cat((0*tens_l_orig,0*tens_l_orig),dim=1))
 out_img_eccv16 = postprocess_tens(tens_l_orig, colorizer_eccv16(tens_l_rs).cpu())
 out_img_siggraph17 = postprocess_tens(tens_l_orig, colorizer_siggraph17(tens_l_rs).cpu())
+eccv_score = evaluate_colorization(img, out_img_eccv16)
+siggraph_score = evaluate_colorization(img, out_img_siggraph17)
 
 plt.imsave('%s_eccv16.png'%opt.save_prefix, out_img_eccv16)
 plt.imsave('%s_siggraph17.png'%opt.save_prefix, out_img_siggraph17)
+print('ECCV16: CIEDE2000={mean_delta_e:.4f}, MSE={mse:.8f}, PSNR={psnr}, SSIM={ssim:.4f}, similarity={similarity_score:.2f}/100'.format(**eccv_score))
+print('SIGGRAPH17: CIEDE2000={mean_delta_e:.4f}, MSE={mse:.8f}, PSNR={psnr}, SSIM={ssim:.4f}, similarity={similarity_score:.2f}/100'.format(**siggraph_score))
 
 plt.figure(figsize=(12,8))
 plt.subplot(2,2,1)

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Gray-to-Glow</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <h1>Gray-to-Glow</h1>
+      <p class="lead">Upload a colored image to convert it to grayscale and evaluate both colorization models.</p>
+
+      <form id="uploadForm">
+        <input type="file" id="imageInput" name="image" accept="image/*">
+        <button id="colorizeBtn" type="submit" class="btn">Colorize</button>
+      </form>
+
+      <!-- loader hidden by default -->
+      <div id="loader" class="hidden" style="display:none" aria-hidden="true">Processing... <div class="spinner"></div></div>
+
+      <!-- Carousel / slideshow -->
+      <div id="carouselContainer" class="hidden">
+        <button id="prevBtn" class="navBtn" aria-label="Previous">◀</button>
+        <div id="carousel" class="carousel">
+          <img id="carouselImg" src="" alt="result image">
+          <div id="caption" class="caption"></div>
+        </div>
+        <button id="nextBtn" class="navBtn" aria-label="Next">▶</button>
+      </div>
+
+      <div id="thumbs" class="hidden thumbs">
+        <img id="thumb0" class="thumb" src="" data-index="0" alt="original thumb">
+        <img id="thumb1" class="thumb" src="" data-index="1" alt="eccv thumb">
+        <img id="thumb2" class="thumb" src="" data-index="2" alt="sig thumb">
+      </div>
+
+      <section id="scores" class="hidden scores" aria-live="polite">
+        <h2>Colorization evaluation</h2>
+        <p class="score-help">CIEDE2000 and MSE are errors (lower is better). PSNR, SSIM, and similarity are quality scores (higher is better).</p>
+        <div class="score-grid">
+          <article class="score-card">
+            <h3>ECCV16</h3>
+            <p><strong id="eccvScore">-</strong><span>/100 similarity</span></p>
+            <small id="eccvMetrics">CIEDE2000: -<br>MSE: -<br>PSNR: - dB<br>SSIM: -</small>
+          </article>
+          <article class="score-card">
+            <h3>SIGGRAPH17</h3>
+            <p><strong id="sigScore">-</strong><span>/100 similarity</span></p>
+            <small id="sigMetrics">CIEDE2000: -<br>MSE: -<br>PSNR: - dB<br>SSIM: -</small>
+          </article>
+        </div>
+      </section>
+
+    </div>
+    <footer>
+      <p>Made by Mukashifa Fatima</p>
+    </footer>
+
+    <script src="/static/js/app.js"></script>
+  </body>
+</html>
